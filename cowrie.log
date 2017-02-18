@@ -3429,3 +3429,51 @@
 2017-02-18T12:20:11+0000 [CowrieTelnetTransport,6662,222.104.99.73] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-02-18T12:20:11+0000 [CowrieTelnetTransport,6662,222.104.99.73] Connection lost after 106 seconds
+2017-02-18T12:21:21+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 107.189.39.114:62652 (10.8.41.81:2222) [session: 4acf0142]
+2017-02-18T12:21:21+0000 [HoneyPotSSHTransport,15844,107.189.39.114] Remote SSH version: SSH-2.0-libssh2_1.8.1
+2017-02-18T12:21:21+0000 [HoneyPotSSHTransport,15844,107.189.39.114] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-02-18T12:21:21+0000 [HoneyPotSSHTransport,15844,107.189.39.114] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-18T12:21:21+0000 [HoneyPotSSHTransport,15844,107.189.39.114] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-18T12:21:21+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 108.87.28.117:48487 (10.8.41.81:2223) [session: TT6663]
+2017-02-18T12:21:22+0000 [HoneyPotSSHTransport,15844,107.189.39.114] NEW KEYS
+2017-02-18T12:21:22+0000 [HoneyPotSSHTransport,15844,107.189.39.114] starting service 'ssh-userauth'
+2017-02-18T12:21:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15844,107.189.39.114] 'user' trying auth 'none'
+2017-02-18T12:21:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15844,107.189.39.114] 'user' authenticated with 'none'
+2017-02-18T12:21:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15844,107.189.39.114] starting service 'ssh-connection'
+2017-02-18T12:21:24+0000 [CowrieTelnetTransport,6663,108.87.28.117] first time for 108.87.28.117, found cached: admin:7ujMko0admin
+2017-02-18T12:21:24+0000 [CowrieTelnetTransport,6663,108.87.28.117] login attempt [admin/7ujMko0admin] succeeded
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] Opening TTY Log: log/tty/20170218-122126-None-6663i.log
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] Warning: state changed and new state returned
+2017-02-18T12:21:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,15844,107.189.39.114] got channel 'direct-tcpip' request
+2017-02-18T12:21:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,15844,107.189.39.114] direct-tcp connection request to google.com:80 from localhost:8080
+2017-02-18T12:21:26+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15844,107.189.39.114] direct-tcp forward to google.com:80 with data 'GET /\r\n'
+2017-02-18T12:21:26+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15844,107.189.39.114] failed to connect: Connection refused
+2017-02-18T12:21:26+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15844,107.189.39.114] sending close 0
+2017-02-18T12:21:26+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15844,107.189.39.114] remote eof
+2017-02-18T12:21:26+0000 [HoneyPotSSHTransport,15844,107.189.39.114] avatar user logging out
+2017-02-18T12:21:26+0000 [HoneyPotSSHTransport,15844,107.189.39.114] connection lost
+2017-02-18T12:21:26+0000 [HoneyPotSSHTransport,15844,107.189.39.114] Connection lost after 4 seconds
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] CMD: enable
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command found: enable 
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] CMD: shell
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command not found: shell
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] CMD: sh
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command found: sh 
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] CMD: cat /proc/mounts; /bin/busybox QZIKX
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command found: cat /proc/mounts
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command found: /bin/busybox QZIKX
+2017-02-18T12:21:26+0000 [CowrieTelnetTransport,6663,108.87.28.117] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox QZIKX
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command found: cd /dev/shm
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command found: cat .s
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command found: cp /bin/echo .s
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command found: /bin/busybox QZIKX
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] CMD: nc; wget; /bin/busybox QZIKX
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command not found: nc
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command found: wget 
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command found: /bin/busybox QZIKX
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command not found: dd bs=52 count=1 if=.s
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command found: cat /dev/shm/.s
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] CMD: /bin/busybox QZIKX
+2017-02-18T12:21:27+0000 [CowrieTelnetTransport,6663,108.87.28.117] Command found: /bin/busybox QZIKX
