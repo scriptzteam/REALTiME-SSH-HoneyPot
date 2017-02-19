@@ -3042,3 +3042,38 @@
 2017-02-19T14:35:56+0000 [CowrieTelnetTransport,7493,59.126.137.121] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-02-19T14:35:56+0000 [CowrieTelnetTransport,7493,59.126.137.121] Connection lost after 105 seconds
+2017-02-19T14:36:01+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 176.216.122.121:50076 (10.8.41.81:2223) [session: TT7494]
+2017-02-19T14:36:02+0000 [CowrieTelnetTransport,7494,176.216.122.121] first time for 176.216.122.121, need: 1
+2017-02-19T14:36:02+0000 [CowrieTelnetTransport,7494,176.216.122.121] login attempt: 1
+2017-02-19T14:36:02+0000 [CowrieTelnetTransport,7494,176.216.122.121] login attempt [root/root] succeeded
+2017-02-19T14:36:03+0000 [CowrieTelnetTransport,7494,176.216.122.121] Opening TTY Log: log/tty/20170219-143603-None-7494i.log
+2017-02-19T14:36:03+0000 [CowrieTelnetTransport,7494,176.216.122.121] Warning: state changed and new state returned
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] CMD: enable
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command found: enable 
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] CMD: shell
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command not found: shell
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] CMD: sh
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command found: sh 
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] CMD: cat /proc/mounts; /bin/busybox CFHRE
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command found: cat /proc/mounts
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command found: /bin/busybox CFHRE
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox CFHRE
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command found: cd /dev/shm
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command found: cat .s
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command found: cp /bin/echo .s
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command found: /bin/busybox CFHRE
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] CMD: nc; wget; /bin/busybox CFHRE
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command not found: nc
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command found: wget 
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command found: /bin/busybox CFHRE
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command not found: dd bs=52 count=1 if=.s
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command found: cat /dev/shm/.s
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] CMD: /bin/busybox CFHRE
+2017-02-19T14:36:04+0000 [CowrieTelnetTransport,7494,176.216.122.121] Command found: /bin/busybox CFHRE
+2017-02-19T14:36:11+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.51:60336 (10.8.41.81:2222) [session: 47f7c32f]
+2017-02-19T14:36:11+0000 [HoneyPotSSHTransport,16222,116.31.116.51] Remote SSH version: SSH-2.0-PUTTY
+2017-02-19T14:36:11+0000 [HoneyPotSSHTransport,16222,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-19T14:36:11+0000 [HoneyPotSSHTransport,16222,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-19T14:36:11+0000 [HoneyPotSSHTransport,16222,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
