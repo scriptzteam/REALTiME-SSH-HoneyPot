@@ -1353,3 +1353,89 @@
 2017-02-19T07:16:32+0000 [CowrieTelnetTransport,7174,222.171.214.175] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-02-19T07:16:32+0000 [CowrieTelnetTransport,7174,222.171.214.175] Connection lost after 190 seconds
+2017-02-19T07:17:02+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 116.251.9.2:41723 (10.8.41.81:2223) [session: TT7184]
+2017-02-19T07:17:02+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 116.251.9.2:41726 (10.8.41.81:2223) [session: TT7185]
+2017-02-19T07:17:06+0000 [CowrieTelnetTransport,7184,116.251.9.2] first time for 116.251.9.2, need: 1
+2017-02-19T07:17:06+0000 [CowrieTelnetTransport,7184,116.251.9.2] login attempt: 1
+2017-02-19T07:17:06+0000 [CowrieTelnetTransport,7184,116.251.9.2] login attempt [support/support] succeeded
+2017-02-19T07:17:08+0000 [CowrieTelnetTransport,7184,116.251.9.2] Opening TTY Log: log/tty/20170219-071708-None-7184i.log
+2017-02-19T07:17:08+0000 [CowrieTelnetTransport,7184,116.251.9.2] Warning: state changed and new state returned
+2017-02-19T07:17:08+0000 [CowrieTelnetTransport,7185,116.251.9.2] login attempt: 2
+2017-02-19T07:17:08+0000 [CowrieTelnetTransport,7185,116.251.9.2] login return, expect: [support/support]
+2017-02-19T07:17:08+0000 [CowrieTelnetTransport,7185,116.251.9.2] login attempt [root/anko] failed
+2017-02-19T07:17:08+0000 [CowrieTelnetTransport,7185,116.251.9.2] Warning: state changed and new state returned
+2017-02-19T07:17:10+0000 [CowrieTelnetTransport,7184,116.251.9.2] CMD: enable
+2017-02-19T07:17:10+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command found: enable 
+2017-02-19T07:17:10+0000 [CowrieTelnetTransport,7184,116.251.9.2] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-19T07:17:10+0000 [CowrieTelnetTransport,7184,116.251.9.2] CMD: shell
+2017-02-19T07:17:10+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command not found: shell
+2017-02-19T07:17:10+0000 [CowrieTelnetTransport,7184,116.251.9.2] CMD: sh
+2017-02-19T07:17:10+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command found: sh 
+2017-02-19T07:17:11+0000 [CowrieTelnetTransport,7184,116.251.9.2] CMD: cat /proc/mounts; /bin/busybox LECJZ
+2017-02-19T07:17:11+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command found: cat /proc/mounts
+2017-02-19T07:17:11+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command found: /bin/busybox LECJZ
+2017-02-19T07:17:11+0000 [CowrieTelnetTransport,7185,116.251.9.2] login attempt: 3
+2017-02-19T07:17:11+0000 [CowrieTelnetTransport,7185,116.251.9.2] login return, expect: [support/support]
+2017-02-19T07:17:12+0000 [CowrieTelnetTransport,7185,116.251.9.2] login attempt [root/realtek] failed
+2017-02-19T07:17:12+0000 [CowrieTelnetTransport,7185,116.251.9.2] Warning: state changed and new state returned
+2017-02-19T07:17:12+0000 [CowrieTelnetTransport,7184,116.251.9.2] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox LECJZ
+2017-02-19T07:17:12+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command found: cd /dev/shm
+2017-02-19T07:17:12+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command found: cat .s
+2017-02-19T07:17:12+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command found: cp /bin/echo .s
+2017-02-19T07:17:12+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command found: /bin/busybox LECJZ
+2017-02-19T07:17:13+0000 [CowrieTelnetTransport,7184,116.251.9.2] CMD: nc; wget; /bin/busybox LECJZ
+2017-02-19T07:17:13+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command not found: nc
+2017-02-19T07:17:13+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command found: wget 
+2017-02-19T07:17:13+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command found: /bin/busybox LECJZ
+2017-02-19T07:17:14+0000 [CowrieTelnetTransport,7184,116.251.9.2] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-19T07:17:14+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command not found: dd bs=52 count=1 if=.s
+2017-02-19T07:17:14+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command found: cat /dev/shm/.s
+2017-02-19T07:17:14+0000 [CowrieTelnetTransport,7185,116.251.9.2] login attempt: 4
+2017-02-19T07:17:14+0000 [CowrieTelnetTransport,7185,116.251.9.2] login return, expect: [support/support]
+2017-02-19T07:17:15+0000 [CowrieTelnetTransport,7185,116.251.9.2] login attempt [root/00000000] failed
+2017-02-19T07:17:15+0000 [CowrieTelnetTransport,7185,116.251.9.2] Warning: state changed and new state returned
+2017-02-19T07:17:15+0000 [CowrieTelnetTransport,7184,116.251.9.2] CMD: /bin/busybox LECJZ
+2017-02-19T07:17:15+0000 [CowrieTelnetTransport,7184,116.251.9.2] Command found: /bin/busybox LECJZ
+2017-02-19T07:17:17+0000 [CowrieTelnetTransport,7185,116.251.9.2] login attempt: 5
+2017-02-19T07:17:17+0000 [CowrieTelnetTransport,7185,116.251.9.2] login return, expect: [support/support]
+2017-02-19T07:17:18+0000 [CowrieTelnetTransport,7185,116.251.9.2] login attempt [admin/admin] failed
+2017-02-19T07:17:18+0000 [CowrieTelnetTransport,7185,116.251.9.2] Warning: state changed and new state returned
+2017-02-19T07:17:20+0000 [CowrieTelnetTransport,7185,116.251.9.2] login attempt: 6
+2017-02-19T07:17:20+0000 [CowrieTelnetTransport,7185,116.251.9.2] login return, expect: [support/support]
+2017-02-19T07:17:21+0000 [CowrieTelnetTransport,7185,116.251.9.2] login attempt [root/Zte521] failed
+2017-02-19T07:17:21+0000 [CowrieTelnetTransport,7185,116.251.9.2] Warning: state changed and new state returned
+2017-02-19T07:17:22+0000 [CowrieTelnetTransport,7185,116.251.9.2] Connection lost after 19 seconds
+2017-02-19T07:17:22+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 116.251.9.2:45954 (10.8.41.81:2223) [session: TT7186]
+2017-02-19T07:17:24+0000 [CowrieTelnetTransport,7186,116.251.9.2] login attempt: 7
+2017-02-19T07:17:24+0000 [CowrieTelnetTransport,7186,116.251.9.2] login return, expect: [support/support]
+2017-02-19T07:17:25+0000 [CowrieTelnetTransport,7186,116.251.9.2] login attempt [support/support] succeeded
+2017-02-19T07:17:26+0000 [CowrieTelnetTransport,7186,116.251.9.2] Opening TTY Log: log/tty/20170219-071726-None-7186i.log
+2017-02-19T07:17:26+0000 [CowrieTelnetTransport,7186,116.251.9.2] Warning: state changed and new state returned
+2017-02-19T07:17:27+0000 [CowrieTelnetTransport,7186,116.251.9.2] CMD: enable
+2017-02-19T07:17:27+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command found: enable 
+2017-02-19T07:17:27+0000 [CowrieTelnetTransport,7186,116.251.9.2] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-19T07:17:27+0000 [CowrieTelnetTransport,7186,116.251.9.2] CMD: shell
+2017-02-19T07:17:27+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command not found: shell
+2017-02-19T07:17:27+0000 [CowrieTelnetTransport,7186,116.251.9.2] CMD: sh
+2017-02-19T07:17:27+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command found: sh 
+2017-02-19T07:17:28+0000 [CowrieTelnetTransport,7186,116.251.9.2] CMD: cat /proc/mounts; /bin/busybox AHWEF
+2017-02-19T07:17:28+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command found: cat /proc/mounts
+2017-02-19T07:17:28+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command found: /bin/busybox AHWEF
+2017-02-19T07:17:29+0000 [CowrieTelnetTransport,7186,116.251.9.2] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox AHWEF
+2017-02-19T07:17:29+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command found: cd /dev/shm
+2017-02-19T07:17:29+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command found: cat .s
+2017-02-19T07:17:29+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command found: cp /bin/echo .s
+2017-02-19T07:17:29+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command found: /bin/busybox AHWEF
+2017-02-19T07:17:30+0000 [CowrieTelnetTransport,7186,116.251.9.2] CMD: nc; wget; /bin/busybox AHWEF
+2017-02-19T07:17:30+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command not found: nc
+2017-02-19T07:17:30+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command found: wget 
+2017-02-19T07:17:30+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command found: /bin/busybox AHWEF
+2017-02-19T07:17:31+0000 [CowrieTelnetTransport,7186,116.251.9.2] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-19T07:17:31+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command not found: dd bs=52 count=1 if=.s
+2017-02-19T07:17:31+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command found: cat /dev/shm/.s
+2017-02-19T07:17:31+0000 [CowrieTelnetTransport,7186,116.251.9.2] CMD: /bin/busybox AHWEF
+2017-02-19T07:17:31+0000 [CowrieTelnetTransport,7186,116.251.9.2] Command found: /bin/busybox AHWEF
+2017-02-19T07:18:00+0000 [CowrieTelnetTransport,7183,222.171.214.175] Closing TTY Log: log/tty/20170219-071617-None-7183i.log after 103 seconds
+2017-02-19T07:18:00+0000 [CowrieTelnetTransport,7183,222.171.214.175] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-19T07:18:00+0000 [CowrieTelnetTransport,7183,222.171.214.175] Connection lost after 111 seconds
