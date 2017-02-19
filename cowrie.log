@@ -7419,3 +7419,66 @@
 2017-02-19T12:25:00+0000 [HoneyPotSSHTransport,16165,31.134.102.190] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
 2017-02-19T12:25:00+0000 [HoneyPotSSHTransport,16165,31.134.102.190] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
 2017-02-19T12:25:00+0000 [HoneyPotSSHTransport,16165,31.134.102.190] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-02-19T12:25:01+0000 [HoneyPotSSHTransport,16165,31.134.102.190] NEW KEYS
+2017-02-19T12:25:01+0000 [HoneyPotSSHTransport,16165,31.134.102.190] starting service 'ssh-userauth'
+2017-02-19T12:25:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16165,31.134.102.190] 'root' trying auth 'none'
+2017-02-19T12:25:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16165,31.134.102.190] 'root' authenticated with 'none'
+2017-02-19T12:25:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16165,31.134.102.190] starting service 'ssh-connection'
+2017-02-19T12:25:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] got channel 'session' request
+2017-02-19T12:25:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] channel open
+2017-02-19T12:25:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] pty request: 'xterm' (24, 80, 0, 0)
+2017-02-19T12:25:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] Terminal Size: 24 80
+2017-02-19T12:25:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] getting shell
+2017-02-19T12:25:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] Opening TTY Log: log/tty/20170219-122504-29da09ec-0i.log
+2017-02-19T12:25:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] CMD: ls
+2017-02-19T12:25:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] Command found: ls 
+2017-02-19T12:25:09+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] CMD: cd /home
+2017-02-19T12:25:09+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] Command found: cd /home
+2017-02-19T12:25:09+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] CMD: l
+2017-02-19T12:25:09+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] Command not found: l
+2017-02-19T12:25:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] CMD: ls
+2017-02-19T12:25:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] Command found: ls 
+2017-02-19T12:25:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] CMD: exit
+2017-02-19T12:25:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] Command found: exit 
+2017-02-19T12:25:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] exitCode: 0
+2017-02-19T12:25:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] sending request 'exit-status'
+2017-02-19T12:25:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] Closing TTY Log: log/tty/20170219-122504-29da09ec-0i.log after 9 seconds
+2017-02-19T12:25:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-19T12:25:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] sending close 0
+2017-02-19T12:25:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16165,31.134.102.190] remote close
+2017-02-19T12:25:13+0000 [HoneyPotSSHTransport,16165,31.134.102.190] avatar root logging out
+2017-02-19T12:25:13+0000 [HoneyPotSSHTransport,16165,31.134.102.190] connection lost
+2017-02-19T12:25:13+0000 [HoneyPotSSHTransport,16165,31.134.102.190] Connection lost after 13 seconds
+2017-02-19T12:25:18+0000 [CowrieTelnetTransport,7314,14.18.234.16] Connection lost after 31 seconds
+2017-02-19T12:25:19+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 14.18.234.16:4767 (10.8.41.81:2223) [session: TT7315]
+2017-02-19T12:25:20+0000 [CowrieTelnetTransport,7315,14.18.234.16] first time for 14.18.234.16, need: 1
+2017-02-19T12:25:20+0000 [CowrieTelnetTransport,7315,14.18.234.16] login attempt: 1
+2017-02-19T12:25:20+0000 [CowrieTelnetTransport,7315,14.18.234.16] login attempt [root/] succeeded
+2017-02-19T12:25:22+0000 [CowrieTelnetTransport,7315,14.18.234.16] Opening TTY Log: log/tty/20170219-122522-None-7315i.log
+2017-02-19T12:25:22+0000 [CowrieTelnetTransport,7315,14.18.234.16] Warning: state changed and new state returned
+2017-02-19T12:25:22+0000 [CowrieTelnetTransport,7315,14.18.234.16] Received unhandled keyID: '\x00'
+2017-02-19T12:25:23+0000 [CowrieTelnetTransport,7315,14.18.234.16] CMD: enable
+2017-02-19T12:25:23+0000 [CowrieTelnetTransport,7315,14.18.234.16] Command found: enable 
+2017-02-19T12:25:23+0000 [CowrieTelnetTransport,7315,14.18.234.16] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-19T12:25:24+0000 [CowrieTelnetTransport,7315,14.18.234.16] Received unhandled keyID: '\x00'
+2017-02-19T12:25:25+0000 [CowrieTelnetTransport,7315,14.18.234.16] CMD: system
+2017-02-19T12:25:25+0000 [CowrieTelnetTransport,7315,14.18.234.16] Command not found: system
+2017-02-19T12:25:25+0000 [CowrieTelnetTransport,7315,14.18.234.16] Received unhandled keyID: '\x00'
+2017-02-19T12:25:25+0000 [CowrieTelnetTransport,7315,14.18.234.16] CMD: shell
+2017-02-19T12:25:25+0000 [CowrieTelnetTransport,7315,14.18.234.16] Command not found: shell
+2017-02-19T12:25:25+0000 [CowrieTelnetTransport,7315,14.18.234.16] Received unhandled keyID: '\x00'
+2017-02-19T12:25:25+0000 [CowrieTelnetTransport,7315,14.18.234.16] CMD: sh
+2017-02-19T12:25:25+0000 [CowrieTelnetTransport,7315,14.18.234.16] Command found: sh 
+2017-02-19T12:25:26+0000 [CowrieTelnetTransport,7315,14.18.234.16] Received unhandled keyID: '\x00'
+2017-02-19T12:25:26+0000 [CowrieTelnetTransport,7315,14.18.234.16] CMD: /bin/busybox MM
+2017-02-19T12:25:26+0000 [CowrieTelnetTransport,7315,14.18.234.16] Command found: /bin/busybox MM
+2017-02-19T12:25:30+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.51:52846 (10.8.41.81:2222) [session: 00e5d66a]
+2017-02-19T12:25:30+0000 [HoneyPotSSHTransport,16166,116.31.116.51] Remote SSH version: SSH-2.0-PUTTY
+2017-02-19T12:25:30+0000 [HoneyPotSSHTransport,16166,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-19T12:25:30+0000 [HoneyPotSSHTransport,16166,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-19T12:25:30+0000 [HoneyPotSSHTransport,16166,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-19T12:25:33+0000 [CowrieTelnetTransport,7315,14.18.234.16] Closing TTY Log: log/tty/20170219-122522-None-7315i.log after 10 seconds
+2017-02-19T12:25:33+0000 [CowrieTelnetTransport,7315,14.18.234.16] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-19T12:25:33+0000 [CowrieTelnetTransport,7315,14.18.234.16] Connection lost after 14 seconds
