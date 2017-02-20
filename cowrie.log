@@ -578,3 +578,79 @@
 2017-02-20T11:34:55+0000 [-] unauthorized login: 
 2017-02-20T11:34:55+0000 [HoneyPotSSHTransport,17171,147.102.19.132] connection lost
 2017-02-20T11:34:55+0000 [HoneyPotSSHTransport,17171,147.102.19.132] Connection lost after 4 seconds
+2017-02-20T11:35:12+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 202.250.64.222:44405 (10.8.41.81:2222) [session: 77189c96]
+2017-02-20T11:35:18+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 182.176.161.190:54629 (10.8.41.81:2223) [session: TT9464]
+2017-02-20T11:35:19+0000 [CowrieTelnetTransport,9464,182.176.161.190] first time for 182.176.161.190, found cached: service:service
+2017-02-20T11:35:19+0000 [CowrieTelnetTransport,9464,182.176.161.190] login attempt [service/service] succeeded
+2017-02-20T11:35:21+0000 [CowrieTelnetTransport,9464,182.176.161.190] Opening TTY Log: log/tty/20170220-113521-None-9464i.log
+2017-02-20T11:35:21+0000 [CowrieTelnetTransport,9464,182.176.161.190] Warning: state changed and new state returned
+2017-02-20T11:35:21+0000 [HoneyPotSSHTransport,17172,202.250.64.222] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-02-20T11:35:21+0000 [HoneyPotSSHTransport,17172,202.250.64.222] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-20T11:35:21+0000 [HoneyPotSSHTransport,17172,202.250.64.222] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-20T11:35:21+0000 [HoneyPotSSHTransport,17172,202.250.64.222] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-20T11:35:21+0000 [HoneyPotSSHTransport,17172,202.250.64.222] NEW KEYS
+2017-02-20T11:35:21+0000 [CowrieTelnetTransport,9464,182.176.161.190] CMD: enable
+2017-02-20T11:35:21+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command found: enable 
+2017-02-20T11:35:21+0000 [CowrieTelnetTransport,9464,182.176.161.190] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-20T11:35:21+0000 [CowrieTelnetTransport,9464,182.176.161.190] CMD: shell
+2017-02-20T11:35:21+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command not found: shell
+2017-02-20T11:35:21+0000 [CowrieTelnetTransport,9464,182.176.161.190] CMD: sh
+2017-02-20T11:35:21+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command found: sh 
+2017-02-20T11:35:21+0000 [CowrieTelnetTransport,9464,182.176.161.190] CMD: cat /proc/mounts; /bin/busybox ZVVMD
+2017-02-20T11:35:21+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command found: cat /proc/mounts
+2017-02-20T11:35:21+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command found: /bin/busybox ZVVMD
+2017-02-20T11:35:21+0000 [HoneyPotSSHTransport,17172,202.250.64.222] starting service 'ssh-userauth'
+2017-02-20T11:35:22+0000 [CowrieTelnetTransport,9464,182.176.161.190] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox ZVVMD
+2017-02-20T11:35:22+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command found: cd /dev/shm
+2017-02-20T11:35:22+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command found: cat .s
+2017-02-20T11:35:22+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command found: cp /bin/echo .s
+2017-02-20T11:35:22+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command found: /bin/busybox ZVVMD
+2017-02-20T11:35:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17172,202.250.64.222] 'oracle' trying auth 'password'
+2017-02-20T11:35:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17172,202.250.64.222] login attempt: 25
+2017-02-20T11:35:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17172,202.250.64.222] login return, expect: [a/a]
+2017-02-20T11:35:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17172,202.250.64.222] login attempt [oracle/oracle] failed
+2017-02-20T11:35:22+0000 [CowrieTelnetTransport,9464,182.176.161.190] CMD: nc; wget; /bin/busybox ZVVMD
+2017-02-20T11:35:22+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command not found: nc
+2017-02-20T11:35:22+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command found: wget 
+2017-02-20T11:35:22+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command found: /bin/busybox ZVVMD
+2017-02-20T11:35:22+0000 [CowrieTelnetTransport,9464,182.176.161.190] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-20T11:35:22+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command not found: dd bs=52 count=1 if=.s
+2017-02-20T11:35:22+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command found: cat /dev/shm/.s
+2017-02-20T11:35:23+0000 [CowrieTelnetTransport,9464,182.176.161.190] CMD: /bin/busybox ZVVMD
+2017-02-20T11:35:23+0000 [CowrieTelnetTransport,9464,182.176.161.190] Command found: /bin/busybox ZVVMD
+2017-02-20T11:35:23+0000 [-] 'oracle' failed auth 'password'
+2017-02-20T11:35:23+0000 [-] unauthorized login: 
+2017-02-20T11:35:24+0000 [HoneyPotSSHTransport,17172,202.250.64.222] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-02-20T11:35:24+0000 [HoneyPotSSHTransport,17172,202.250.64.222] connection lost
+2017-02-20T11:35:24+0000 [HoneyPotSSHTransport,17172,202.250.64.222] Connection lost after 11 seconds
+2017-02-20T11:35:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 177.97.60.119:52287 (10.8.41.81:2223) [session: TT9465]
+2017-02-20T11:35:53+0000 [CowrieTelnetTransport,9465,177.97.60.119] first time for 177.97.60.119, need: 1
+2017-02-20T11:35:53+0000 [CowrieTelnetTransport,9465,177.97.60.119] login attempt: 1
+2017-02-20T11:35:53+0000 [CowrieTelnetTransport,9465,177.97.60.119] login attempt [admin/7ujMko0admin] succeeded
+2017-02-20T11:35:55+0000 [CowrieTelnetTransport,9465,177.97.60.119] Opening TTY Log: log/tty/20170220-113555-None-9465i.log
+2017-02-20T11:35:55+0000 [CowrieTelnetTransport,9465,177.97.60.119] Warning: state changed and new state returned
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] CMD: enable
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command found: enable 
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] CMD: shell
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command not found: shell
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] CMD: sh
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command found: sh 
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] CMD: cat /proc/mounts; /bin/busybox UQHZI
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command found: cat /proc/mounts
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command found: /bin/busybox UQHZI
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox UQHZI
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command found: cd /dev/shm
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command found: cat .s
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command found: cp /bin/echo .s
+2017-02-20T11:35:56+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command found: /bin/busybox UQHZI
+2017-02-20T11:35:57+0000 [CowrieTelnetTransport,9465,177.97.60.119] CMD: nc; wget; /bin/busybox UQHZI
+2017-02-20T11:35:57+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command not found: nc
+2017-02-20T11:35:57+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command found: wget 
+2017-02-20T11:35:57+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command found: /bin/busybox UQHZI
+2017-02-20T11:35:57+0000 [CowrieTelnetTransport,9465,177.97.60.119] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-20T11:35:57+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command not found: dd bs=52 count=1 if=.s
+2017-02-20T11:35:57+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command found: cat /dev/shm/.s
+2017-02-20T11:35:57+0000 [CowrieTelnetTransport,9465,177.97.60.119] CMD: /bin/busybox UQHZI
+2017-02-20T11:35:57+0000 [CowrieTelnetTransport,9465,177.97.60.119] Command found: /bin/busybox UQHZI
