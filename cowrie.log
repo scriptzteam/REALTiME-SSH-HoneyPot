@@ -2098,3 +2098,97 @@
 2017-02-20T09:38:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17027,195.154.102.193] login attempt: 314
 2017-02-20T09:38:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17027,195.154.102.193] login return, expect: [user/1234]
 2017-02-20T09:38:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17027,195.154.102.193] login attempt [welcome/welcome] failed
+2017-02-20T09:38:01+0000 [-] 'welcome' failed auth 'password'
+2017-02-20T09:38:01+0000 [-] unauthorized login: 
+2017-02-20T09:38:02+0000 [HoneyPotSSHTransport,17027,195.154.102.193] connection lost
+2017-02-20T09:38:02+0000 [HoneyPotSSHTransport,17027,195.154.102.193] Connection lost after 10 seconds
+2017-02-20T09:38:02+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 195.154.102.193:51442 (10.8.41.81:2222) [session: 6c05628d]
+2017-02-20T09:38:03+0000 [HoneyPotSSHTransport,17028,195.154.102.193] Remote SSH version: SSH-2.0-Granados-1.0
+2017-02-20T09:38:03+0000 [HoneyPotSSHTransport,17028,195.154.102.193] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-02-20T09:38:03+0000 [HoneyPotSSHTransport,17028,195.154.102.193] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-02-20T09:38:03+0000 [HoneyPotSSHTransport,17028,195.154.102.193] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-02-20T09:38:35+0000 [HoneyPotSSHTransport,17028,195.154.102.193] NEW KEYS
+2017-02-20T09:38:35+0000 [HoneyPotSSHTransport,17028,195.154.102.193] starting service 'ssh-userauth'
+2017-02-20T09:38:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17028,195.154.102.193] 'root1234' trying auth 'password'
+2017-02-20T09:38:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17028,195.154.102.193] login attempt: 315
+2017-02-20T09:38:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17028,195.154.102.193] login return, expect: [user/1234]
+2017-02-20T09:38:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17028,195.154.102.193] login attempt [root1234/root1234] failed
+2017-02-20T09:38:36+0000 [HoneyPotSSHTransport,17028,195.154.102.193] connection lost
+2017-02-20T09:38:36+0000 [HoneyPotSSHTransport,17028,195.154.102.193] Connection lost after 33 seconds
+2017-02-20T09:38:36+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 195.154.102.193:52224 (10.8.41.81:2222) [session: d495db18]
+2017-02-20T09:38:36+0000 [-] 'root1234' failed auth 'password'
+2017-02-20T09:38:36+0000 [-] unauthorized login: 
+2017-02-20T09:38:36+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-02-20T09:38:36+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-02-20T09:38:44+0000 [HoneyPotSSHTransport,17029,195.154.102.193] Remote SSH version: SSH-2.0-Granados-1.0
+2017-02-20T09:38:44+0000 [HoneyPotSSHTransport,17029,195.154.102.193] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-02-20T09:38:44+0000 [HoneyPotSSHTransport,17029,195.154.102.193] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-02-20T09:38:44+0000 [HoneyPotSSHTransport,17029,195.154.102.193] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-02-20T09:38:45+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 147.102.19.132:33576 (10.8.41.81:2222) [session: 63d7118b]
+2017-02-20T09:38:46+0000 [HoneyPotSSHTransport,17030,147.102.19.132] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-02-20T09:38:46+0000 [HoneyPotSSHTransport,17030,147.102.19.132] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-20T09:38:46+0000 [HoneyPotSSHTransport,17030,147.102.19.132] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-20T09:38:46+0000 [HoneyPotSSHTransport,17030,147.102.19.132] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-20T09:38:46+0000 [HoneyPotSSHTransport,17030,147.102.19.132] NEW KEYS
+2017-02-20T09:38:46+0000 [HoneyPotSSHTransport,17030,147.102.19.132] starting service 'ssh-userauth'
+2017-02-20T09:38:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17030,147.102.19.132] 'teamspeak' trying auth 'password'
+2017-02-20T09:38:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17030,147.102.19.132] login attempt: 477
+2017-02-20T09:38:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17030,147.102.19.132] login return, expect: [test/password]
+2017-02-20T09:38:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17030,147.102.19.132] login attempt [teamspeak/Qwerty] failed
+2017-02-20T09:38:47+0000 [-] 'teamspeak' failed auth 'password'
+2017-02-20T09:38:47+0000 [-] unauthorized login: 
+2017-02-20T09:38:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17030,147.102.19.132] 'teamspeak' trying auth 'password'
+2017-02-20T09:38:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17030,147.102.19.132] login attempt: 478
+2017-02-20T09:38:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17030,147.102.19.132] login return, expect: [test/password]
+2017-02-20T09:38:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17030,147.102.19.132] login attempt [teamspeak/qwerty123456] failed
+2017-02-20T09:38:49+0000 [-] 'teamspeak' failed auth 'password'
+2017-02-20T09:38:49+0000 [-] unauthorized login: 
+2017-02-20T09:38:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17030,147.102.19.132] 'teamspeak' trying auth 'password'
+2017-02-20T09:38:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17030,147.102.19.132] login attempt: 479
+2017-02-20T09:38:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17030,147.102.19.132] login return, expect: [test/password]
+2017-02-20T09:38:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17030,147.102.19.132] login attempt [teamspeak/qwerty1223] failed
+2017-02-20T09:38:50+0000 [-] 'teamspeak' failed auth 'password'
+2017-02-20T09:38:50+0000 [-] unauthorized login: 
+2017-02-20T09:38:50+0000 [HoneyPotSSHTransport,17030,147.102.19.132] connection lost
+2017-02-20T09:38:50+0000 [HoneyPotSSHTransport,17030,147.102.19.132] Connection lost after 4 seconds
+2017-02-20T09:38:54+0000 [HoneyPotSSHTransport,17029,195.154.102.193] NEW KEYS
+2017-02-20T09:38:54+0000 [HoneyPotSSHTransport,17029,195.154.102.193] starting service 'ssh-userauth'
+2017-02-20T09:38:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17029,195.154.102.193] 'zxcvbnm' trying auth 'password'
+2017-02-20T09:38:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17029,195.154.102.193] login attempt: 316
+2017-02-20T09:38:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17029,195.154.102.193] login return, expect: [user/1234]
+2017-02-20T09:38:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17029,195.154.102.193] login attempt [zxcvbnm/zxcvbnm] failed
+2017-02-20T09:38:56+0000 [-] 'zxcvbnm' failed auth 'password'
+2017-02-20T09:38:56+0000 [-] unauthorized login: 
+2017-02-20T09:38:57+0000 [HoneyPotSSHTransport,17029,195.154.102.193] connection lost
+2017-02-20T09:38:57+0000 [HoneyPotSSHTransport,17029,195.154.102.193] Connection lost after 21 seconds
+2017-02-20T09:38:57+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 195.154.102.193:52735 (10.8.41.81:2222) [session: 613bc4d8]
+2017-02-20T09:38:58+0000 [HoneyPotSSHTransport,17031,195.154.102.193] Remote SSH version: SSH-2.0-Granados-1.0
+2017-02-20T09:38:58+0000 [HoneyPotSSHTransport,17031,195.154.102.193] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-02-20T09:38:58+0000 [HoneyPotSSHTransport,17031,195.154.102.193] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-02-20T09:38:58+0000 [HoneyPotSSHTransport,17031,195.154.102.193] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-02-20T09:38:59+0000 [HoneyPotSSHTransport,17031,195.154.102.193] NEW KEYS
+2017-02-20T09:38:59+0000 [HoneyPotSSHTransport,17031,195.154.102.193] starting service 'ssh-userauth'
+2017-02-20T09:39:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17031,195.154.102.193] 'rootroot' trying auth 'password'
+2017-02-20T09:39:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17031,195.154.102.193] login attempt: 317
+2017-02-20T09:39:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17031,195.154.102.193] login return, expect: [user/1234]
+2017-02-20T09:39:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17031,195.154.102.193] login attempt [rootroot/rootroot] failed
+2017-02-20T09:39:01+0000 [-] 'rootroot' failed auth 'password'
+2017-02-20T09:39:01+0000 [-] unauthorized login: 
