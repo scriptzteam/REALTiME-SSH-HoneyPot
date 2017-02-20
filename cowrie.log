@@ -5555,3 +5555,39 @@
 2017-02-20T17:50:46+0000 [CowrieTelnetTransport,10402,213.136.79.201] Warning: state changed and new state returned
 2017-02-20T17:50:46+0000 [HoneyPotSSHTransport,17488,147.102.19.132] connection lost
 2017-02-20T17:50:46+0000 [HoneyPotSSHTransport,17488,147.102.19.132] Connection lost after 6 seconds
+2017-02-20T17:51:07+0000 [CowrieTelnetTransport,10401,213.136.79.201] Connection lost after 36 seconds
+2017-02-20T17:51:18+0000 [CowrieTelnetTransport,10396,213.136.79.201] Closing TTY Log: log/tty/20170220-174915-None-10396i.log after 122 seconds
+2017-02-20T17:51:18+0000 [CowrieTelnetTransport,10396,213.136.79.201] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-20T17:51:18+0000 [CowrieTelnetTransport,10396,213.136.79.201] Connection lost after 128 seconds
+2017-02-20T17:51:18+0000 [CowrieTelnetTransport,10402,213.136.79.201] Connection lost after 37 seconds
+2017-02-20T17:51:32+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 213.136.79.201:41047 (10.8.41.81:2223) [session: TT10403]
+2017-02-20T17:51:36+0000 [CowrieTelnetTransport,10403,213.136.79.201] login attempt: 4688
+2017-02-20T17:51:36+0000 [CowrieTelnetTransport,10403,213.136.79.201] login return, expect: [root/default]
+2017-02-20T17:51:36+0000 [CowrieTelnetTransport,10403,213.136.79.201] login attempt [root/123456] failed
+2017-02-20T17:51:36+0000 [CowrieTelnetTransport,10403,213.136.79.201] Warning: state changed and new state returned
+2017-02-20T17:51:36+0000 [CowrieTelnetTransport,10403,213.136.79.201] login attempt: 4689
+2017-02-20T17:51:36+0000 [CowrieTelnetTransport,10403,213.136.79.201] login return, expect: [root/default]
+2017-02-20T17:51:37+0000 [CowrieTelnetTransport,10403,213.136.79.201] login attempt [enable/shell] failed
+2017-02-20T17:51:37+0000 [CowrieTelnetTransport,10403,213.136.79.201] Warning: state changed and new state returned
+2017-02-20T17:51:37+0000 [CowrieTelnetTransport,10403,213.136.79.201] login attempt: 4690
+2017-02-20T17:51:37+0000 [CowrieTelnetTransport,10403,213.136.79.201] login return, expect: [root/default]
+2017-02-20T17:51:37+0000 [CowrieTelnetTransport,10403,213.136.79.201] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-20T17:51:37+0000 [CowrieTelnetTransport,10403,213.136.79.201] Warning: state changed and new state returned
+2017-02-20T17:51:58+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 147.102.19.132:47305 (10.8.41.81:2222) [session: bc01b1d9]
+2017-02-20T17:51:58+0000 [HoneyPotSSHTransport,17489,147.102.19.132] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-02-20T17:51:58+0000 [HoneyPotSSHTransport,17489,147.102.19.132] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-20T17:51:58+0000 [HoneyPotSSHTransport,17489,147.102.19.132] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-20T17:51:58+0000 [HoneyPotSSHTransport,17489,147.102.19.132] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-20T17:51:59+0000 [HoneyPotSSHTransport,17489,147.102.19.132] NEW KEYS
+2017-02-20T17:51:59+0000 [HoneyPotSSHTransport,17489,147.102.19.132] starting service 'ssh-userauth'
+2017-02-20T17:51:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17489,147.102.19.132] 'unison' trying auth 'password'
+2017-02-20T17:51:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17489,147.102.19.132] login attempt: 1511
+2017-02-20T17:51:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17489,147.102.19.132] login return, expect: [test/password]
+2017-02-20T17:51:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17489,147.102.19.132] login attempt [unison/123123] failed
+2017-02-20T17:52:00+0000 [-] 'unison' failed auth 'password'
+2017-02-20T17:52:00+0000 [-] unauthorized login: 
+2017-02-20T17:52:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17489,147.102.19.132] 'unison' trying auth 'password'
+2017-02-20T17:52:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17489,147.102.19.132] login attempt: 1512
+2017-02-20T17:52:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17489,147.102.19.132] login return, expect: [test/password]
+2017-02-20T17:52:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17489,147.102.19.132] login attempt [unison/112233] failed
