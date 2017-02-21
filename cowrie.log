@@ -8651,3 +8651,73 @@
 2017-02-21T13:54:55+0000 [CowrieTelnetTransport,12363,124.120.19.243] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-02-21T13:54:55+0000 [CowrieTelnetTransport,12363,124.120.19.243] Connection lost after 186 seconds
+2017-02-21T13:55:06+0000 [HoneyPotSSHTransport,19037,116.31.116.51] NEW KEYS
+2017-02-21T13:55:06+0000 [HoneyPotSSHTransport,19037,116.31.116.51] starting service 'ssh-userauth'
+2017-02-21T13:55:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19037,116.31.116.51] 'root' trying auth 'none'
+2017-02-21T13:55:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19037,116.31.116.51] 'root' authenticated with 'none'
+2017-02-21T13:55:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19037,116.31.116.51] starting service 'ssh-connection'
+2017-02-21T13:55:10+0000 [HoneyPotSSHTransport,19037,116.31.116.51] Got remote error, code 11
+	reason: 
+2017-02-21T13:55:10+0000 [HoneyPotSSHTransport,19037,116.31.116.51] avatar root logging out
+2017-02-21T13:55:10+0000 [HoneyPotSSHTransport,19037,116.31.116.51] connection lost
+2017-02-21T13:55:10+0000 [HoneyPotSSHTransport,19037,116.31.116.51] Connection lost after 81 seconds
+2017-02-21T13:55:41+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 138.121.119.55:56218 (10.8.41.81:2223) [session: TT12365]
+2017-02-21T13:55:42+0000 [CowrieTelnetTransport,12365,138.121.119.55] first time for 138.121.119.55, need: 1
+2017-02-21T13:55:42+0000 [CowrieTelnetTransport,12365,138.121.119.55] login attempt: 1
+2017-02-21T13:55:42+0000 [CowrieTelnetTransport,12365,138.121.119.55] login attempt [root/admin] succeeded
+2017-02-21T13:55:44+0000 [CowrieTelnetTransport,12365,138.121.119.55] Opening TTY Log: log/tty/20170221-135544-None-12365i.log
+2017-02-21T13:55:44+0000 [CowrieTelnetTransport,12365,138.121.119.55] Warning: state changed and new state returned
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] CMD: enable
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command found: enable 
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] CMD: shell
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command not found: shell
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] CMD: sh
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command found: sh 
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] CMD: cat /proc/mounts; /bin/busybox BTDKD
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command found: cat /proc/mounts
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command found: /bin/busybox BTDKD
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox BTDKD
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command found: cd /dev/shm
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command found: cat .s
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command found: cp /bin/echo .s
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command found: /bin/busybox BTDKD
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] CMD: nc; wget; /bin/busybox BTDKD
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command not found: nc
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command found: wget 
+2017-02-21T13:55:45+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command found: /bin/busybox BTDKD
+2017-02-21T13:55:46+0000 [CowrieTelnetTransport,12365,138.121.119.55] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-21T13:55:46+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command not found: dd bs=52 count=1 if=.s
+2017-02-21T13:55:46+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command found: cat /dev/shm/.s
+2017-02-21T13:55:46+0000 [CowrieTelnetTransport,12365,138.121.119.55] CMD: /bin/busybox BTDKD
+2017-02-21T13:55:46+0000 [CowrieTelnetTransport,12365,138.121.119.55] Command found: /bin/busybox BTDKD
+2017-02-21T13:55:55+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 1.252.164.59:4981 (10.8.41.81:2223) [session: TT12366]
+2017-02-21T13:55:56+0000 [CowrieTelnetTransport,12366,1.252.164.59] first time for 1.252.164.59, need: 1
+2017-02-21T13:55:56+0000 [CowrieTelnetTransport,12366,1.252.164.59] login attempt: 1
+2017-02-21T13:55:57+0000 [CowrieTelnetTransport,12366,1.252.164.59] login attempt [root/123456] succeeded
+2017-02-21T13:55:58+0000 [CowrieTelnetTransport,12366,1.252.164.59] Opening TTY Log: log/tty/20170221-135558-None-12366i.log
+2017-02-21T13:55:58+0000 [CowrieTelnetTransport,12366,1.252.164.59] Warning: state changed and new state returned
+2017-02-21T13:55:59+0000 [CowrieTelnetTransport,12366,1.252.164.59] CMD: enable
+2017-02-21T13:55:59+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command found: enable 
+2017-02-21T13:55:59+0000 [CowrieTelnetTransport,12366,1.252.164.59] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-21T13:55:59+0000 [CowrieTelnetTransport,12366,1.252.164.59] CMD: shell
+2017-02-21T13:55:59+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command not found: shell
+2017-02-21T13:55:59+0000 [CowrieTelnetTransport,12366,1.252.164.59] CMD: sh
+2017-02-21T13:55:59+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command found: sh 
+2017-02-21T13:55:59+0000 [CowrieTelnetTransport,12366,1.252.164.59] CMD: cat /proc/mounts; /bin/busybox PBBSX
+2017-02-21T13:55:59+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command found: cat /proc/mounts
+2017-02-21T13:55:59+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command found: /bin/busybox PBBSX
+2017-02-21T13:56:00+0000 [CowrieTelnetTransport,12366,1.252.164.59] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox PBBSX
+2017-02-21T13:56:00+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command found: cd /dev/shm
+2017-02-21T13:56:00+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command found: cat .s
+2017-02-21T13:56:00+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command found: cp /bin/echo .s
+2017-02-21T13:56:00+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command found: /bin/busybox PBBSX
+2017-02-21T13:56:00+0000 [CowrieTelnetTransport,12366,1.252.164.59] CMD: nc; wget; /bin/busybox PBBSX
+2017-02-21T13:56:00+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command not found: nc
+2017-02-21T13:56:00+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command found: wget 
+2017-02-21T13:56:00+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command found: /bin/busybox PBBSX
+2017-02-21T13:56:00+0000 [CowrieTelnetTransport,12366,1.252.164.59] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-21T13:56:00+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command not found: dd bs=52 count=1 if=.s
+2017-02-21T13:56:00+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command found: cat /dev/shm/.s
+2017-02-21T13:56:01+0000 [CowrieTelnetTransport,12366,1.252.164.59] CMD: /bin/busybox PBBSX
+2017-02-21T13:56:01+0000 [CowrieTelnetTransport,12366,1.252.164.59] Command found: /bin/busybox PBBSX
