@@ -8480,3 +8480,47 @@
 	]
 2017-02-21T16:37:48+0000 [CowrieTelnetTransport,12690,177.39.204.2] Connection lost after 14 seconds
 2017-02-21T16:38:44+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.51:52499 (10.8.41.81:2222) [session: f923d157]
+2017-02-21T16:39:12+0000 [HoneyPotSSHTransport,19134,116.31.116.51] Remote SSH version: SSH-2.0-PUTTY
+2017-02-21T16:39:12+0000 [HoneyPotSSHTransport,19134,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-21T16:39:12+0000 [HoneyPotSSHTransport,19134,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-21T16:39:12+0000 [HoneyPotSSHTransport,19134,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-21T16:39:25+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 118.127.195.65:55363 (10.8.41.81:2223) [session: TT12691]
+2017-02-21T16:39:26+0000 [CowrieTelnetTransport,12691,118.127.195.65] first time for 118.127.195.65, need: 1
+2017-02-21T16:39:26+0000 [CowrieTelnetTransport,12691,118.127.195.65] login attempt: 1
+2017-02-21T16:39:27+0000 [CowrieTelnetTransport,12691,118.127.195.65] login attempt [admin/1234] succeeded
+2017-02-21T16:39:29+0000 [CowrieTelnetTransport,12691,118.127.195.65] Opening TTY Log: log/tty/20170221-163929-None-12691i.log
+2017-02-21T16:39:29+0000 [CowrieTelnetTransport,12691,118.127.195.65] Warning: state changed and new state returned
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] CMD: enable
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command found: enable 
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] CMD: shell
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command not found: shell
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] CMD: sh
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command found: sh 
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] CMD: cat /proc/mounts; /bin/busybox DNGHB
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command found: cat /proc/mounts
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command found: /bin/busybox DNGHB
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox DNGHB
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command found: cd /dev/shm
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command found: cat .s
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command found: cp /bin/echo .s
+2017-02-21T16:39:30+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command found: /bin/busybox DNGHB
+2017-02-21T16:39:31+0000 [CowrieTelnetTransport,12691,118.127.195.65] CMD: nc; wget; /bin/busybox DNGHB
+2017-02-21T16:39:31+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command not found: nc
+2017-02-21T16:39:31+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command found: wget 
+2017-02-21T16:39:31+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command found: /bin/busybox DNGHB
+2017-02-21T16:39:31+0000 [CowrieTelnetTransport,12691,118.127.195.65] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-21T16:39:31+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command not found: dd bs=52 count=1 if=.s
+2017-02-21T16:39:31+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command found: cat /dev/shm/.s
+2017-02-21T16:39:31+0000 [CowrieTelnetTransport,12691,118.127.195.65] CMD: /bin/busybox DNGHB
+2017-02-21T16:39:31+0000 [CowrieTelnetTransport,12691,118.127.195.65] Command found: /bin/busybox DNGHB
+2017-02-21T16:39:37+0000 [HoneyPotSSHTransport,19134,116.31.116.51] NEW KEYS
+2017-02-21T16:39:37+0000 [HoneyPotSSHTransport,19134,116.31.116.51] starting service 'ssh-userauth'
+2017-02-21T16:39:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19134,116.31.116.51] 'root' trying auth 'none'
+2017-02-21T16:39:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19134,116.31.116.51] 'root' authenticated with 'none'
+2017-02-21T16:39:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19134,116.31.116.51] starting service 'ssh-connection'
+2017-02-21T16:39:59+0000 [HoneyPotSSHTransport,19134,116.31.116.51] Got remote error, code 11
+	reason: 
+2017-02-21T16:39:59+0000 [HoneyPotSSHTransport,19134,116.31.116.51] avatar root logging out
+2017-02-21T16:39:59+0000 [HoneyPotSSHTransport,19134,116.31.116.51] connection lost
+2017-02-21T16:39:59+0000 [HoneyPotSSHTransport,19134,116.31.116.51] Connection lost after 74 seconds
