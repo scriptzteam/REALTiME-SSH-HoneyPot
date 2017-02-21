@@ -4659,3 +4659,33 @@
 2017-02-21T19:33:40+0000 [CowrieTelnetTransport,12854,191.115.24.237] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-02-21T19:33:40+0000 [CowrieTelnetTransport,12854,191.115.24.237] Connection lost after 106 seconds
+2017-02-21T19:34:40+0000 [CowrieTelnetTransport,12855,120.84.11.190] CMD: cat $SHELL
+2017-02-21T19:34:40+0000 [CowrieTelnetTransport,12855,120.84.11.190] Command found: cat /bin/bash
+2017-02-21T19:34:56+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 123.24.255.39:52416 (10.8.41.81:2223) [session: TT12857]
+2017-02-21T19:34:57+0000 [CowrieTelnetTransport,12857,123.24.255.39] first time for 123.24.255.39, need: 1
+2017-02-21T19:34:57+0000 [CowrieTelnetTransport,12857,123.24.255.39] login attempt: 1
+2017-02-21T19:34:58+0000 [CowrieTelnetTransport,12857,123.24.255.39] login attempt [admin/pass] succeeded
+2017-02-21T19:34:59+0000 [CowrieTelnetTransport,12857,123.24.255.39] Opening TTY Log: log/tty/20170221-193459-None-12857i.log
+2017-02-21T19:34:59+0000 [CowrieTelnetTransport,12857,123.24.255.39] Warning: state changed and new state returned
+2017-02-21T19:35:00+0000 [CowrieTelnetTransport,12857,123.24.255.39] CMD: enable
+2017-02-21T19:35:00+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command found: enable 
+2017-02-21T19:35:00+0000 [CowrieTelnetTransport,12857,123.24.255.39] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-21T19:35:00+0000 [CowrieTelnetTransport,12857,123.24.255.39] CMD: shell
+2017-02-21T19:35:00+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command not found: shell
+2017-02-21T19:35:00+0000 [CowrieTelnetTransport,12857,123.24.255.39] CMD: sh
+2017-02-21T19:35:00+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command found: sh 
+2017-02-21T19:35:00+0000 [CowrieTelnetTransport,12857,123.24.255.39] CMD: cat /proc/mounts; /bin/busybox PLOYR
+2017-02-21T19:35:00+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command found: cat /proc/mounts
+2017-02-21T19:35:00+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command found: /bin/busybox PLOYR
+2017-02-21T19:35:01+0000 [CowrieTelnetTransport,12857,123.24.255.39] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox PLOYR
+2017-02-21T19:35:01+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command found: cd /dev/shm
+2017-02-21T19:35:01+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command found: cat .s
+2017-02-21T19:35:01+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command found: cp /bin/echo .s
+2017-02-21T19:35:01+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command found: /bin/busybox PLOYR
+2017-02-21T19:35:01+0000 [CowrieTelnetTransport,12857,123.24.255.39] CMD: nc; wget; /bin/busybox PLOYR
+2017-02-21T19:35:01+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command not found: nc
+2017-02-21T19:35:01+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command found: wget 
+2017-02-21T19:35:01+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command found: /bin/busybox PLOYR
+2017-02-21T19:35:01+0000 [CowrieTelnetTransport,12857,123.24.255.39] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-21T19:35:01+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command not found: dd bs=52 count=1 if=.s
+2017-02-21T19:35:01+0000 [CowrieTelnetTransport,12857,123.24.255.39] Command found: cat /dev/shm/.s
