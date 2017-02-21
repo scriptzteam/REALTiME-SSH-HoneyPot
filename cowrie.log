@@ -4180,3 +4180,60 @@
 2017-02-21T01:37:50+0000 [CowrieTelnetTransport,11298,27.68.16.77] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-02-21T01:37:50+0000 [CowrieTelnetTransport,11298,27.68.16.77] Connection lost after 186 seconds
+2017-02-21T01:38:22+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 165.255.42.202:38295 (10.8.41.81:2223) [session: TT11301]
+2017-02-21T01:38:23+0000 [CowrieTelnetTransport,11301,165.255.42.202] first time for 165.255.42.202, need: 1
+2017-02-21T01:38:23+0000 [CowrieTelnetTransport,11301,165.255.42.202] login attempt: 1
+2017-02-21T01:38:24+0000 [CowrieTelnetTransport,11301,165.255.42.202] login attempt [administrator/1234] succeeded
+2017-02-21T01:38:26+0000 [CowrieTelnetTransport,11301,165.255.42.202] Opening TTY Log: log/tty/20170221-013826-None-11301i.log
+2017-02-21T01:38:26+0000 [CowrieTelnetTransport,11301,165.255.42.202] Warning: state changed and new state returned
+2017-02-21T01:38:26+0000 [CowrieTelnetTransport,11301,165.255.42.202] CMD: enable
+2017-02-21T01:38:26+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command found: enable 
+2017-02-21T01:38:26+0000 [CowrieTelnetTransport,11301,165.255.42.202] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-21T01:38:26+0000 [CowrieTelnetTransport,11301,165.255.42.202] CMD: shell
+2017-02-21T01:38:26+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command not found: shell
+2017-02-21T01:38:26+0000 [CowrieTelnetTransport,11301,165.255.42.202] CMD: sh
+2017-02-21T01:38:26+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command found: sh 
+2017-02-21T01:38:26+0000 [CowrieTelnetTransport,11301,165.255.42.202] CMD: cat /proc/mounts; /bin/busybox OMZKP
+2017-02-21T01:38:26+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command found: cat /proc/mounts
+2017-02-21T01:38:26+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command found: /bin/busybox OMZKP
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox OMZKP
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command found: cd /dev/shm
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command found: cat .s
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command found: cp /bin/echo .s
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command found: /bin/busybox OMZKP
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] CMD: nc; wget; /bin/busybox OMZKP
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command not found: nc
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command found: wget 
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command found: /bin/busybox OMZKP
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command not found: dd bs=52 count=1 if=.s
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command found: cat /dev/shm/.s
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] CMD: /bin/busybox OMZKP
+2017-02-21T01:38:27+0000 [CowrieTelnetTransport,11301,165.255.42.202] Command found: /bin/busybox OMZKP
+2017-02-21T01:38:53+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 147.102.19.132:48246 (10.8.41.81:2222) [session: cd14bbba]
+2017-02-21T01:38:53+0000 [HoneyPotSSHTransport,17977,147.102.19.132] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-02-21T01:38:53+0000 [HoneyPotSSHTransport,17977,147.102.19.132] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-21T01:38:53+0000 [HoneyPotSSHTransport,17977,147.102.19.132] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-21T01:38:53+0000 [HoneyPotSSHTransport,17977,147.102.19.132] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-21T01:38:54+0000 [HoneyPotSSHTransport,17977,147.102.19.132] NEW KEYS
+2017-02-21T01:38:54+0000 [HoneyPotSSHTransport,17977,147.102.19.132] starting service 'ssh-userauth'
+2017-02-21T01:38:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17977,147.102.19.132] 'httpd' trying auth 'password'
+2017-02-21T01:38:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17977,147.102.19.132] login attempt: 2486
+2017-02-21T01:38:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17977,147.102.19.132] login return, expect: [test/password]
+2017-02-21T01:38:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17977,147.102.19.132] login attempt [httpd/123qwe] failed
+2017-02-21T01:38:55+0000 [-] 'httpd' failed auth 'password'
+2017-02-21T01:38:55+0000 [-] unauthorized login: 
+2017-02-21T01:38:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17977,147.102.19.132] 'httpd' trying auth 'password'
+2017-02-21T01:38:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17977,147.102.19.132] login attempt: 2487
+2017-02-21T01:38:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17977,147.102.19.132] login return, expect: [test/password]
+2017-02-21T01:38:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17977,147.102.19.132] login attempt [httpd/1q2w3e4r] failed
+2017-02-21T01:38:57+0000 [-] 'httpd' failed auth 'password'
+2017-02-21T01:38:57+0000 [-] unauthorized login: 
+2017-02-21T01:38:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17977,147.102.19.132] 'httpd' trying auth 'password'
+2017-02-21T01:38:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17977,147.102.19.132] login attempt: 2488
+2017-02-21T01:38:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17977,147.102.19.132] login return, expect: [test/password]
+2017-02-21T01:38:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17977,147.102.19.132] login attempt [httpd/Qwerty] failed
+2017-02-21T01:38:58+0000 [-] 'httpd' failed auth 'password'
+2017-02-21T01:38:58+0000 [-] unauthorized login: 
+2017-02-21T01:38:58+0000 [HoneyPotSSHTransport,17977,147.102.19.132] connection lost
+2017-02-21T01:38:58+0000 [HoneyPotSSHTransport,17977,147.102.19.132] Connection lost after 5 seconds
