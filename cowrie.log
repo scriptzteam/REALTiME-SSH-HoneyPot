@@ -5573,3 +5573,77 @@
 2017-02-22T06:40:00+0000 [HoneyPotSSHTransport,19363,5.196.76.41] NEW KEYS
 2017-02-22T06:40:00+0000 [HoneyPotSSHTransport,19363,5.196.76.41] starting service 'ssh-userauth'
 2017-02-22T06:40:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19363,5.196.76.41] 'a' trying auth 'none'
+2017-02-22T06:40:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19363,5.196.76.41] 'a' authenticated with 'none'
+2017-02-22T06:40:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19363,5.196.76.41] starting service 'ssh-connection'
+2017-02-22T06:40:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19363,5.196.76.41] got global no-more-sessions@openssh.com request
+2017-02-22T06:40:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19363,5.196.76.41] got channel 'direct-tcpip' request
+2017-02-22T06:40:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19363,5.196.76.41] direct-tcp connection request to 52.72.151.107:80 from 127.0.0.1:43084
+2017-02-22T06:40:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19363,5.196.76.41] direct-tcp forward to 52.72.151.107:80 with data 'GET / HTTP/1.1\r\nUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36\r\nHost: www.alexa.com\r\nAccept: */*\r\n\r\n'
+2017-02-22T06:40:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19363,5.196.76.41] failed to connect: Connection refused
+2017-02-22T06:40:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19363,5.196.76.41] sending close 0
+2017-02-22T06:40:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19363,5.196.76.41] remote close
+2017-02-22T06:40:20+0000 [HoneyPotSSHTransport,19363,5.196.76.41] Got remote error, code 11
+	reason: disconnected by user
+2017-02-22T06:40:20+0000 [HoneyPotSSHTransport,19363,5.196.76.41] avatar a logging out
+2017-02-22T06:40:20+0000 [HoneyPotSSHTransport,19363,5.196.76.41] connection lost
+2017-02-22T06:40:20+0000 [HoneyPotSSHTransport,19363,5.196.76.41] Connection lost after 19 seconds
+2017-02-22T06:40:21+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 186.45.82.187:40143 (10.8.41.81:2223) [session: TT13526]
+2017-02-22T06:40:22+0000 [CowrieTelnetTransport,13526,186.45.82.187] first time for 186.45.82.187, need: 1
+2017-02-22T06:40:22+0000 [CowrieTelnetTransport,13526,186.45.82.187] login attempt: 1
+2017-02-22T06:40:23+0000 [CowrieTelnetTransport,13526,186.45.82.187] login attempt [root/system] succeeded
+2017-02-22T06:40:24+0000 [CowrieTelnetTransport,13526,186.45.82.187] Opening TTY Log: log/tty/20170222-064024-None-13526i.log
+2017-02-22T06:40:24+0000 [CowrieTelnetTransport,13526,186.45.82.187] Warning: state changed and new state returned
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] CMD: enable
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command found: enable 
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] CMD: shell
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command not found: shell
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] CMD: sh
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command found: sh 
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] CMD: cat /proc/mounts; /bin/busybox ZXDBH
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command found: cat /proc/mounts
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command found: /bin/busybox ZXDBH
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox ZXDBH
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command found: cd /dev/shm
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command found: cat .s
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command found: cp /bin/echo .s
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command found: /bin/busybox ZXDBH
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] CMD: nc; wget; /bin/busybox ZXDBH
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command not found: nc
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command found: wget 
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command found: /bin/busybox ZXDBH
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command not found: dd bs=52 count=1 if=.s
+2017-02-22T06:40:25+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command found: cat /dev/shm/.s
+2017-02-22T06:40:26+0000 [CowrieTelnetTransport,13526,186.45.82.187] CMD: /bin/busybox ZXDBH
+2017-02-22T06:40:26+0000 [CowrieTelnetTransport,13526,186.45.82.187] Command found: /bin/busybox ZXDBH
+2017-02-22T06:40:49+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 117.218.52.71:37283 (10.8.41.81:2223) [session: TT13527]
+2017-02-22T06:40:51+0000 [CowrieTelnetTransport,13527,117.218.52.71] first time for 117.218.52.71, need: 1
+2017-02-22T06:40:51+0000 [CowrieTelnetTransport,13527,117.218.52.71] login attempt: 1
+2017-02-22T06:40:51+0000 [CowrieTelnetTransport,13527,117.218.52.71] login attempt [root/user] succeeded
+2017-02-22T06:40:52+0000 [CowrieTelnetTransport,13527,117.218.52.71] Opening TTY Log: log/tty/20170222-064052-None-13527i.log
+2017-02-22T06:40:52+0000 [CowrieTelnetTransport,13527,117.218.52.71] Warning: state changed and new state returned
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] CMD: enable
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command found: enable 
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] CMD: shell
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command not found: shell
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] CMD: sh
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command found: sh 
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] CMD: cat /proc/mounts; /bin/busybox BPEAI
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command found: cat /proc/mounts
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command found: /bin/busybox BPEAI
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox BPEAI
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command found: cd /dev/shm
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command found: cat .s
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command found: cp /bin/echo .s
+2017-02-22T06:40:53+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command found: /bin/busybox BPEAI
+2017-02-22T06:40:54+0000 [CowrieTelnetTransport,13527,117.218.52.71] CMD: nc; wget; /bin/busybox BPEAI
+2017-02-22T06:40:54+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command not found: nc
+2017-02-22T06:40:54+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command found: wget 
+2017-02-22T06:40:54+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command found: /bin/busybox BPEAI
+2017-02-22T06:40:54+0000 [CowrieTelnetTransport,13527,117.218.52.71] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-22T06:40:54+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command not found: dd bs=52 count=1 if=.s
+2017-02-22T06:40:54+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command found: cat /dev/shm/.s
+2017-02-22T06:40:54+0000 [CowrieTelnetTransport,13527,117.218.52.71] CMD: /bin/busybox BPEAI
+2017-02-22T06:40:54+0000 [CowrieTelnetTransport,13527,117.218.52.71] Command found: /bin/busybox BPEAI
