@@ -1182,3 +1182,46 @@
 2017-02-22T12:54:09+0000 [CowrieTelnetTransport,13877,188.121.103.246] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-02-22T12:54:09+0000 [CowrieTelnetTransport,13877,188.121.103.246] Connection lost after 104 seconds
+2017-02-22T12:56:05+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 179.217.141.161:50208 (10.8.41.81:2223) [session: TT13878]
+2017-02-22T12:56:06+0000 [CowrieTelnetTransport,13878,179.217.141.161] first time for 179.217.141.161, need: 1
+2017-02-22T12:56:06+0000 [CowrieTelnetTransport,13878,179.217.141.161] login attempt: 1
+2017-02-22T12:56:07+0000 [CowrieTelnetTransport,13878,179.217.141.161] login attempt [root/system] succeeded
+2017-02-22T12:56:09+0000 [CowrieTelnetTransport,13878,179.217.141.161] Opening TTY Log: log/tty/20170222-125609-None-13878i.log
+2017-02-22T12:56:09+0000 [CowrieTelnetTransport,13878,179.217.141.161] Warning: state changed and new state returned
+2017-02-22T12:56:09+0000 [CowrieTelnetTransport,13878,179.217.141.161] CMD: enable
+2017-02-22T12:56:09+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command found: enable 
+2017-02-22T12:56:09+0000 [CowrieTelnetTransport,13878,179.217.141.161] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-22T12:56:09+0000 [CowrieTelnetTransport,13878,179.217.141.161] CMD: shell
+2017-02-22T12:56:09+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command not found: shell
+2017-02-22T12:56:09+0000 [CowrieTelnetTransport,13878,179.217.141.161] CMD: sh
+2017-02-22T12:56:09+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command found: sh 
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] CMD: cat /proc/mounts; /bin/busybox OQARN
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command found: cat /proc/mounts
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command found: /bin/busybox OQARN
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox OQARN
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command found: cd /dev/shm
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command found: cat .s
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command found: cp /bin/echo .s
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command found: /bin/busybox OQARN
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] CMD: nc; wget; /bin/busybox OQARN
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command not found: nc
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command found: wget 
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command found: /bin/busybox OQARN
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command not found: dd bs=52 count=1 if=.s
+2017-02-22T12:56:10+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command found: cat /dev/shm/.s
+2017-02-22T12:56:11+0000 [CowrieTelnetTransport,13878,179.217.141.161] CMD: /bin/busybox OQARN
+2017-02-22T12:56:11+0000 [CowrieTelnetTransport,13878,179.217.141.161] Command found: /bin/busybox OQARN
+2017-02-22T12:56:17+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.243.107.233:58581 (10.8.41.81:2222) [session: 964cfbef]
+2017-02-22T12:56:17+0000 [HoneyPotSSHTransport,19447,103.243.107.233] Remote SSH version: SSH-2.0-Granados-1.0
+2017-02-22T12:56:17+0000 [HoneyPotSSHTransport,19447,103.243.107.233] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-02-22T12:56:17+0000 [HoneyPotSSHTransport,19447,103.243.107.233] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-02-22T12:56:17+0000 [HoneyPotSSHTransport,19447,103.243.107.233] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-02-22T12:56:19+0000 [HoneyPotSSHTransport,19447,103.243.107.233] NEW KEYS
+2017-02-22T12:56:19+0000 [HoneyPotSSHTransport,19447,103.243.107.233] starting service 'ssh-userauth'
+2017-02-22T12:56:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19447,103.243.107.233] 'root' trying auth 'password'
+2017-02-22T12:56:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19447,103.243.107.233] login attempt: 19
+2017-02-22T12:56:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19447,103.243.107.233] login return, expect: [root/root]
+2017-02-22T12:56:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19447,103.243.107.233] login attempt [root/admin] failed
+2017-02-22T12:56:21+0000 [-] 'root' failed auth 'password'
+2017-02-22T12:56:21+0000 [-] unauthorized login: 
