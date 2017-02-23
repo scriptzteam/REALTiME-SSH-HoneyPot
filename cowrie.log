@@ -7600,3 +7600,38 @@
 2017-02-23T08:38:46+0000 [CowrieTelnetTransport,14902,94.120.45.156] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-02-23T08:38:46+0000 [CowrieTelnetTransport,14902,94.120.45.156] Connection lost after 103 seconds
+2017-02-23T08:40:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 183.145.187.176:58225 (10.8.41.81:2223) [session: TT14903]
+2017-02-23T08:40:10+0000 [CowrieTelnetTransport,14903,183.145.187.176] first time for 183.145.187.176, need: 1
+2017-02-23T08:40:10+0000 [CowrieTelnetTransport,14903,183.145.187.176] login attempt: 1
+2017-02-23T08:40:10+0000 [CowrieTelnetTransport,14903,183.145.187.176] login attempt [administrator/1234] succeeded
+2017-02-23T08:40:12+0000 [CowrieTelnetTransport,14903,183.145.187.176] Opening TTY Log: log/tty/20170223-084012-None-14903i.log
+2017-02-23T08:40:12+0000 [CowrieTelnetTransport,14903,183.145.187.176] Warning: state changed and new state returned
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] CMD: enable
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command found: enable 
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] CMD: shell
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command not found: shell
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] CMD: sh
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command found: sh 
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] CMD: cat /proc/mounts; /bin/busybox IVAVO
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command found: cat /proc/mounts
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command found: /bin/busybox IVAVO
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox IVAVO
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command found: cd /dev/shm
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command found: cat .s
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command found: cp /bin/echo .s
+2017-02-23T08:40:13+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command found: /bin/busybox IVAVO
+2017-02-23T08:40:14+0000 [CowrieTelnetTransport,14903,183.145.187.176] CMD: nc; wget; /bin/busybox IVAVO
+2017-02-23T08:40:14+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command not found: nc
+2017-02-23T08:40:14+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command found: wget 
+2017-02-23T08:40:14+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command found: /bin/busybox IVAVO
+2017-02-23T08:40:14+0000 [CowrieTelnetTransport,14903,183.145.187.176] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-23T08:40:14+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command not found: dd bs=52 count=1 if=.s
+2017-02-23T08:40:14+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command found: cat /dev/shm/.s
+2017-02-23T08:40:14+0000 [CowrieTelnetTransport,14903,183.145.187.176] CMD: /bin/busybox IVAVO
+2017-02-23T08:40:14+0000 [CowrieTelnetTransport,14903,183.145.187.176] Command found: /bin/busybox IVAVO
+2017-02-23T08:40:59+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 221.194.47.224:59564 (10.8.41.81:2222) [session: 95537b63]
+2017-02-23T08:41:01+0000 [HoneyPotSSHTransport,20068,221.194.47.224] Remote SSH version: SSH-2.0-PUTTY
+2017-02-23T08:41:01+0000 [HoneyPotSSHTransport,20068,221.194.47.224] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-23T08:41:01+0000 [HoneyPotSSHTransport,20068,221.194.47.224] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-23T08:41:01+0000 [HoneyPotSSHTransport,20068,221.194.47.224] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
