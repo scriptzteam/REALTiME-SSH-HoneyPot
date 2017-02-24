@@ -331,3 +331,43 @@
 2017-02-24T18:05:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25889,5.189.140.7] login return, expect: [virus/virus]
 2017-02-24T18:05:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25889,5.189.140.7] login attempt [admin/1234567890] failed
 2017-02-24T18:05:01+0000 [CowrieTelnetTransport,18784,67.229.141.98] Connection lost after 39 seconds
+2017-02-24T18:05:02+0000 [-] 'admin' failed auth 'password'
+2017-02-24T18:05:02+0000 [-] unauthorized login: 
+2017-02-24T18:05:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25889,5.189.140.7] 'admin' trying auth 'password'
+2017-02-24T18:05:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25889,5.189.140.7] login attempt: 203
+2017-02-24T18:05:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25889,5.189.140.7] login return, expect: [virus/virus]
+2017-02-24T18:05:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25889,5.189.140.7] login attempt [admin/1234qwer] failed
+2017-02-24T18:05:04+0000 [-] 'admin' failed auth 'password'
+2017-02-24T18:05:04+0000 [-] unauthorized login: 
+2017-02-24T18:05:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25889,5.189.140.7] 'admin' trying auth 'password'
+2017-02-24T18:05:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25889,5.189.140.7] login attempt: 204
+2017-02-24T18:05:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25889,5.189.140.7] login return, expect: [virus/virus]
+2017-02-24T18:05:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25889,5.189.140.7] login attempt [admin/1234qwerty] failed
+2017-02-24T18:05:05+0000 [-] 'admin' failed auth 'password'
+2017-02-24T18:05:05+0000 [-] unauthorized login: 
+2017-02-24T18:05:05+0000 [HoneyPotSSHTransport,25889,5.189.140.7] connection lost
+2017-02-24T18:05:05+0000 [HoneyPotSSHTransport,25889,5.189.140.7] Connection lost after 5 seconds
+2017-02-24T18:05:07+0000 [CowrieTelnetTransport,18785,67.229.141.98] Connection lost after 37 seconds
+2017-02-24T18:05:13+0000 [CowrieTelnetTransport,18786,67.229.141.98] Connection lost after 37 seconds
+2017-02-24T18:05:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 38.84.132.236:47357 (10.8.41.81:2222) [session: 704b7607]
+2017-02-24T18:05:13+0000 [HoneyPotSSHTransport,25890,38.84.132.236] Remote SSH version: SSH-2.0-OpenSSH_6.6p1 Ubuntu-2ubuntu1
+2017-02-24T18:05:13+0000 [HoneyPotSSHTransport,25890,38.84.132.236] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-02-24T18:05:13+0000 [HoneyPotSSHTransport,25890,38.84.132.236] outgoing: 'aes128-ctr' 'hmac-md5' 'none'
+2017-02-24T18:05:13+0000 [HoneyPotSSHTransport,25890,38.84.132.236] incoming: 'aes128-ctr' 'hmac-md5' 'none'
+2017-02-24T18:05:13+0000 [HoneyPotSSHTransport,25890,38.84.132.236] NEW KEYS
+2017-02-24T18:05:13+0000 [HoneyPotSSHTransport,25890,38.84.132.236] starting service 'ssh-userauth'
+2017-02-24T18:05:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25890,38.84.132.236] 'virus' trying auth 'none'
+2017-02-24T18:05:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25890,38.84.132.236] 'virus' authenticated with 'none'
+2017-02-24T18:05:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25890,38.84.132.236] starting service 'ssh-connection'
+2017-02-24T18:05:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,25890,38.84.132.236] got global no-more-sessions@openssh.com request
+2017-02-24T18:05:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,25890,38.84.132.236] got channel 'direct-tcpip' request
+2017-02-24T18:05:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,25890,38.84.132.236] direct-tcp connection request to 52.207.56.193:80 from 127.0.0.1:58138
+2017-02-24T18:05:23+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25890,38.84.132.236] direct-tcp forward to 52.207.56.193:80 with data 'GET / HTTP/1.1\r\nUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36\r\nHost: www.alexa.com\r\nAccept: */*\r\n\r\n'
+2017-02-24T18:05:23+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25890,38.84.132.236] failed to connect: Connection refused
+2017-02-24T18:05:23+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25890,38.84.132.236] sending close 0
+2017-02-24T18:05:23+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25890,38.84.132.236] remote close
+2017-02-24T18:05:33+0000 [HoneyPotSSHTransport,25890,38.84.132.236] Got remote error, code 11
+	reason: disconnected by user
+2017-02-24T18:05:33+0000 [HoneyPotSSHTransport,25890,38.84.132.236] avatar virus logging out
+2017-02-24T18:05:33+0000 [HoneyPotSSHTransport,25890,38.84.132.236] connection lost
+2017-02-24T18:05:33+0000 [HoneyPotSSHTransport,25890,38.84.132.236] Connection lost after 19 seconds
