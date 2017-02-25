@@ -5739,3 +5739,43 @@
 2017-02-25T12:23:51+0000 [CowrieTelnetTransport,20610,82.50.134.195] login return, expect: [tech/tech]
 2017-02-25T12:23:52+0000 [CowrieTelnetTransport,20610,82.50.134.195] login attempt [shell\x00/sh\x00] failed
 2017-02-25T12:23:52+0000 [CowrieTelnetTransport,20610,82.50.134.195] Warning: state changed and new state returned
+2017-02-25T12:24:15+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 119.9.106.115:60912 (10.8.41.81:2222) [session: a4fed26e]
+2017-02-25T12:24:15+0000 [HoneyPotSSHTransport,26552,119.9.106.115] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-02-25T12:24:15+0000 [HoneyPotSSHTransport,26552,119.9.106.115] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-25T12:24:15+0000 [HoneyPotSSHTransport,26552,119.9.106.115] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-25T12:24:15+0000 [HoneyPotSSHTransport,26552,119.9.106.115] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-25T12:24:22+0000 [HoneyPotSSHTransport,26552,119.9.106.115] NEW KEYS
+2017-02-25T12:24:22+0000 [HoneyPotSSHTransport,26552,119.9.106.115] starting service 'ssh-userauth'
+2017-02-25T12:24:22+0000 [HoneyPotSSHTransport,26552,119.9.106.115] connection lost
+2017-02-25T12:24:22+0000 [HoneyPotSSHTransport,26552,119.9.106.115] Connection lost after 7 seconds
+2017-02-25T12:24:23+0000 [CowrieTelnetTransport,20610,82.50.134.195] Connection lost after 34 seconds
+2017-02-25T12:24:33+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 176.65.194.134:39598 (10.8.41.81:2223) [session: TT20611]
+2017-02-25T12:24:34+0000 [CowrieTelnetTransport,20611,176.65.194.134] first time for 176.65.194.134, need: 1
+2017-02-25T12:24:34+0000 [CowrieTelnetTransport,20611,176.65.194.134] login attempt: 1
+2017-02-25T12:24:35+0000 [CowrieTelnetTransport,20611,176.65.194.134] login attempt [root/jvbzd] succeeded
+2017-02-25T12:24:37+0000 [CowrieTelnetTransport,20611,176.65.194.134] Opening TTY Log: log/tty/20170225-122437-None-20611i.log
+2017-02-25T12:24:37+0000 [CowrieTelnetTransport,20611,176.65.194.134] Warning: state changed and new state returned
+2017-02-25T12:24:37+0000 [CowrieTelnetTransport,20611,176.65.194.134] CMD: enable
+2017-02-25T12:24:37+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command found: enable 
+2017-02-25T12:24:37+0000 [CowrieTelnetTransport,20611,176.65.194.134] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-25T12:24:37+0000 [CowrieTelnetTransport,20611,176.65.194.134] CMD: shell
+2017-02-25T12:24:37+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command not found: shell
+2017-02-25T12:24:37+0000 [CowrieTelnetTransport,20611,176.65.194.134] CMD: sh
+2017-02-25T12:24:37+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command found: sh 
+2017-02-25T12:24:37+0000 [CowrieTelnetTransport,20611,176.65.194.134] CMD: cat /proc/mounts; /bin/busybox ULBUX
+2017-02-25T12:24:37+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command found: cat /proc/mounts
+2017-02-25T12:24:37+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command found: /bin/busybox ULBUX
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox ULBUX
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command found: cd /dev/shm
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command found: cat .s
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command found: cp /bin/echo .s
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command found: /bin/busybox ULBUX
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] CMD: nc; wget; /bin/busybox ULBUX
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command not found: nc
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command found: wget 
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command found: /bin/busybox ULBUX
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command not found: dd bs=52 count=1 if=.s
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command found: cat /dev/shm/.s
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] CMD: /bin/busybox ULBUX
+2017-02-25T12:24:38+0000 [CowrieTelnetTransport,20611,176.65.194.134] Command found: /bin/busybox ULBUX
