@@ -4253,3 +4253,84 @@
 	    self.terminalProtocol.keystrokeReceived(ch, None)
 	exceptions.AttributeError: 'NoneType' object has no attribute 'keystrokeReceived'
 	
+2017-02-26T09:36:24+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 246, in ssh_CHANNEL_DATA
+	    log.callWithLogger(channel, channel.dataReceived, data)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 112, in dataReceived
+	    self.client.transport.write(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 163, in write
+	    self.proto.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'keystrokeReceived'
+	
+2017-02-26T09:36:38+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:43950 (10.8.41.81:2223) [session: TT1699]
+2017-02-26T09:36:42+0000 [CowrieTelnetTransport,1699,67.229.141.98] login attempt: 13470
+2017-02-26T09:36:42+0000 [CowrieTelnetTransport,1699,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T09:36:43+0000 [CowrieTelnetTransport,1699,67.229.141.98] login attempt [root/GM8182] failed
+2017-02-26T09:36:43+0000 [CowrieTelnetTransport,1699,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T09:36:43+0000 [CowrieTelnetTransport,1699,67.229.141.98] login attempt: 13471
+2017-02-26T09:36:43+0000 [CowrieTelnetTransport,1699,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T09:36:44+0000 [CowrieTelnetTransport,1699,67.229.141.98] login attempt [enable/shell] failed
+2017-02-26T09:36:44+0000 [CowrieTelnetTransport,1699,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T09:36:44+0000 [CowrieTelnetTransport,1699,67.229.141.98] login attempt: 13472
+2017-02-26T09:36:44+0000 [CowrieTelnetTransport,1699,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T09:36:44+0000 [CowrieTelnetTransport,1699,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-26T09:36:44+0000 [CowrieTelnetTransport,1699,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T09:36:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:43854 (10.8.41.81:2223) [session: TT1700]
+2017-02-26T09:36:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:48077 (10.8.41.81:2223) [session: TT1701]
+2017-02-26T09:36:49+0000 [CowrieTelnetTransport,1700,67.229.141.98] login attempt: 13473
+2017-02-26T09:36:49+0000 [CowrieTelnetTransport,1700,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T09:36:50+0000 [CowrieTelnetTransport,1700,67.229.141.98] login attempt [root/54321] failed
+2017-02-26T09:36:50+0000 [CowrieTelnetTransport,1700,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T09:36:50+0000 [CowrieTelnetTransport,1701,67.229.141.98] login attempt: 13474
+2017-02-26T09:36:50+0000 [CowrieTelnetTransport,1701,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T09:36:51+0000 [CowrieTelnetTransport,1701,67.229.141.98] login attempt [admin/admin1234] failed
+2017-02-26T09:36:51+0000 [CowrieTelnetTransport,1701,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T09:36:51+0000 [CowrieTelnetTransport,1700,67.229.141.98] login attempt: 13475
+2017-02-26T09:36:51+0000 [CowrieTelnetTransport,1700,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T09:36:52+0000 [CowrieTelnetTransport,1700,67.229.141.98] login attempt [enable/shell] failed
+2017-02-26T09:36:52+0000 [CowrieTelnetTransport,1700,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T09:36:52+0000 [CowrieTelnetTransport,1700,67.229.141.98] login attempt: 13476
+2017-02-26T09:36:52+0000 [CowrieTelnetTransport,1700,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T09:36:53+0000 [CowrieTelnetTransport,1700,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-26T09:36:53+0000 [CowrieTelnetTransport,1700,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T09:36:53+0000 [CowrieTelnetTransport,1701,67.229.141.98] login attempt: 13477
+2017-02-26T09:36:53+0000 [CowrieTelnetTransport,1701,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T09:36:53+0000 [CowrieTelnetTransport,1701,67.229.141.98] login attempt [enable/shell] failed
+2017-02-26T09:36:53+0000 [CowrieTelnetTransport,1701,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T09:36:54+0000 [CowrieTelnetTransport,1701,67.229.141.98] login attempt: 13478
+2017-02-26T09:36:54+0000 [CowrieTelnetTransport,1701,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T09:36:54+0000 [CowrieTelnetTransport,1701,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-26T09:36:54+0000 [CowrieTelnetTransport,1701,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T09:36:54+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:42200 (10.8.41.81:2223) [session: TT1702]
+2017-02-26T09:36:58+0000 [CowrieTelnetTransport,1702,67.229.141.98] login attempt: 13479
+2017-02-26T09:36:58+0000 [CowrieTelnetTransport,1702,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T09:36:59+0000 [CowrieTelnetTransport,1702,67.229.141.98] login attempt [root/12345] failed
+2017-02-26T09:36:59+0000 [CowrieTelnetTransport,1702,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T09:36:59+0000 [CowrieTelnetTransport,1702,67.229.141.98] login attempt: 13480
+2017-02-26T09:36:59+0000 [CowrieTelnetTransport,1702,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T09:37:00+0000 [CowrieTelnetTransport,1702,67.229.141.98] login attempt [enable/shell] failed
+2017-02-26T09:37:00+0000 [CowrieTelnetTransport,1702,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T09:37:00+0000 [CowrieTelnetTransport,1702,67.229.141.98] login attempt: 13481
+2017-02-26T09:37:00+0000 [CowrieTelnetTransport,1702,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T09:37:01+0000 [CowrieTelnetTransport,1702,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-26T09:37:01+0000 [CowrieTelnetTransport,1702,67.229.141.98] Warning: state changed and new state returned
