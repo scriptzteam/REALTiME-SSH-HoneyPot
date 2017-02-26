@@ -6089,3 +6089,60 @@
 2017-02-26T17:47:50+0000 [CowrieTelnetTransport,2538,95.67.199.92] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-02-26T17:47:50+0000 [CowrieTelnetTransport,2538,95.67.199.92] Connection lost after 106 seconds
+2017-02-26T17:48:16+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 85.11.20.2:40556 (10.8.41.81:2223) [session: TT2540]
+2017-02-26T17:48:16+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 85.11.20.2:40558 (10.8.41.81:2223) [session: TT2541]
+2017-02-26T17:48:16+0000 [CowrieTelnetTransport,2540,85.11.20.2] first time for 85.11.20.2, need: 1
+2017-02-26T17:48:16+0000 [CowrieTelnetTransport,2540,85.11.20.2] login attempt: 1
+2017-02-26T17:48:17+0000 [CowrieTelnetTransport,2540,85.11.20.2] login attempt [admin/1111111] succeeded
+2017-02-26T17:48:18+0000 [CowrieTelnetTransport,2540,85.11.20.2] Opening TTY Log: log/tty/20170226-174818-None-2540i.log
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2540,85.11.20.2] Warning: state changed and new state returned
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2541,85.11.20.2] login attempt: 2
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2541,85.11.20.2] login return, expect: [admin/1111111]
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2541,85.11.20.2] login attempt [root/xc3511] failed
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2541,85.11.20.2] Warning: state changed and new state returned
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2540,85.11.20.2] CMD: enable
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command found: enable 
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2540,85.11.20.2] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2540,85.11.20.2] CMD: shell
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command not found: shell
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2540,85.11.20.2] CMD: sh
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command found: sh 
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2540,85.11.20.2] CMD: cat /proc/mounts; /bin/busybox NZANL
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command found: cat /proc/mounts
+2017-02-26T17:48:19+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command found: /bin/busybox NZANL
+2017-02-26T17:48:20+0000 [CowrieTelnetTransport,2541,85.11.20.2] login attempt: 3
+2017-02-26T17:48:20+0000 [CowrieTelnetTransport,2541,85.11.20.2] login return, expect: [admin/1111111]
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2541,85.11.20.2] login attempt [enable\x00/system\x00] failed
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2541,85.11.20.2] Warning: state changed and new state returned
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox NZANL
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command found: cd /dev/shm
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command found: cat .s
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command found: cp /bin/echo .s
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command found: /bin/busybox NZANL
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] CMD: nc; wget; /bin/busybox NZANL
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command not found: nc
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command found: wget 
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command found: /bin/busybox NZANL
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command not found: dd bs=52 count=1 if=.s
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command found: cat /dev/shm/.s
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] CMD: /bin/busybox NZANL
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2540,85.11.20.2] Command found: /bin/busybox NZANL
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2541,85.11.20.2] login attempt: 4
+2017-02-26T17:48:21+0000 [CowrieTelnetTransport,2541,85.11.20.2] login return, expect: [admin/1111111]
+2017-02-26T17:48:22+0000 [CowrieTelnetTransport,2541,85.11.20.2] login attempt [shell\x00/sh\x00] failed
+2017-02-26T17:48:22+0000 [CowrieTelnetTransport,2541,85.11.20.2] Warning: state changed and new state returned
+2017-02-26T17:48:53+0000 [CowrieTelnetTransport,2541,85.11.20.2] Connection lost after 36 seconds
+2017-02-26T17:48:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 85.11.20.2:45408 (10.8.41.81:2223) [session: TT2542]
+2017-02-26T17:48:53+0000 [CowrieTelnetTransport,2542,85.11.20.2] login attempt: 5
+2017-02-26T17:48:53+0000 [CowrieTelnetTransport,2542,85.11.20.2] login return, expect: [admin/1111111]
+2017-02-26T17:48:54+0000 [CowrieTelnetTransport,2542,85.11.20.2] login attempt [root/admin] failed
+2017-02-26T17:48:54+0000 [CowrieTelnetTransport,2542,85.11.20.2] Warning: state changed and new state returned
+2017-02-26T17:48:54+0000 [CowrieTelnetTransport,2542,85.11.20.2] login attempt: 6
+2017-02-26T17:48:54+0000 [CowrieTelnetTransport,2542,85.11.20.2] login return, expect: [admin/1111111]
+2017-02-26T17:48:55+0000 [CowrieTelnetTransport,2542,85.11.20.2] login attempt [enable\x00/system\x00] failed
+2017-02-26T17:48:55+0000 [CowrieTelnetTransport,2542,85.11.20.2] Warning: state changed and new state returned
+2017-02-26T17:48:55+0000 [CowrieTelnetTransport,2542,85.11.20.2] login attempt: 7
+2017-02-26T17:48:55+0000 [CowrieTelnetTransport,2542,85.11.20.2] login return, expect: [admin/1111111]
+2017-02-26T17:48:56+0000 [CowrieTelnetTransport,2542,85.11.20.2] login attempt [shell\x00/sh\x00] failed
+2017-02-26T17:48:56+0000 [CowrieTelnetTransport,2542,85.11.20.2] Warning: state changed and new state returned
