@@ -4366,3 +4366,68 @@
 2017-02-26T09:37:33+0000 [CowrieTelnetTransport,1702,67.229.141.98] Connection lost after 38 seconds
 2017-02-26T09:37:47+0000 [CowrieTelnetTransport,1703,67.229.141.98] Connection lost after 38 seconds
 2017-02-26T09:37:52+0000 [CowrieTelnetTransport,1704,67.229.141.98] Connection lost after 40 seconds
+2017-02-26T09:38:01+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 182.176.123.168:46060 (10.8.41.81:2223) [session: TT1705]
+2017-02-26T09:38:13+0000 [CowrieTelnetTransport,1705,182.176.123.168] first time for 182.176.123.168, need: 1
+2017-02-26T09:38:13+0000 [CowrieTelnetTransport,1705,182.176.123.168] login attempt: 1
+2017-02-26T09:38:14+0000 [CowrieTelnetTransport,1705,182.176.123.168] login attempt [root/xc3511] succeeded
+2017-02-26T09:38:15+0000 [CowrieTelnetTransport,1705,182.176.123.168] Opening TTY Log: log/tty/20170226-093815-None-1705i.log
+2017-02-26T09:38:15+0000 [CowrieTelnetTransport,1705,182.176.123.168] Warning: state changed and new state returned
+2017-02-26T09:38:17+0000 [CowrieTelnetTransport,1705,182.176.123.168] CMD: enable
+2017-02-26T09:38:17+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command found: enable 
+2017-02-26T09:38:17+0000 [CowrieTelnetTransport,1705,182.176.123.168] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-26T09:38:17+0000 [CowrieTelnetTransport,1705,182.176.123.168] CMD: shell
+2017-02-26T09:38:17+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command not found: shell
+2017-02-26T09:38:17+0000 [CowrieTelnetTransport,1705,182.176.123.168] CMD: sh
+2017-02-26T09:38:17+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command found: sh 
+2017-02-26T09:38:19+0000 [CowrieTelnetTransport,1705,182.176.123.168] CMD: cat /proc/mounts; /bin/busybox NNOAI
+2017-02-26T09:38:19+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command found: cat /proc/mounts
+2017-02-26T09:38:19+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command found: /bin/busybox NNOAI
+2017-02-26T09:38:20+0000 [CowrieTelnetTransport,1705,182.176.123.168] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox NNOAI
+2017-02-26T09:38:20+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command found: cd /dev/shm
+2017-02-26T09:38:20+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command found: cat .s
+2017-02-26T09:38:20+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command found: cp /bin/echo .s
+2017-02-26T09:38:20+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command found: /bin/busybox NNOAI
+2017-02-26T09:38:20+0000 [CowrieTelnetTransport,1705,182.176.123.168] CMD: nc; wget; /bin/busybox NNOAI
+2017-02-26T09:38:20+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command not found: nc
+2017-02-26T09:38:20+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command found: wget 
+2017-02-26T09:38:20+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command found: /bin/busybox NNOAI
+2017-02-26T09:38:21+0000 [CowrieTelnetTransport,1705,182.176.123.168] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-26T09:38:21+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command not found: dd bs=52 count=1 if=.s
+2017-02-26T09:38:21+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command found: cat /dev/shm/.s
+2017-02-26T09:38:22+0000 [CowrieTelnetTransport,1705,182.176.123.168] CMD: /bin/busybox NNOAI
+2017-02-26T09:38:22+0000 [CowrieTelnetTransport,1705,182.176.123.168] Command found: /bin/busybox NNOAI
+2017-02-26T09:38:36+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 246, in ssh_CHANNEL_DATA
+	    log.callWithLogger(channel, channel.dataReceived, data)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 112, in dataReceived
+	    self.client.transport.write(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 163, in write
+	    self.proto.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'keystrokeReceived'
+	
+2017-02-26T09:38:36+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] remote close
+2017-02-26T09:38:36+0000 [HoneyPotSSHTransport,2285,59.49.100.83] Got remote error, code 11
+	reason: 
+2017-02-26T09:38:36+0000 [HoneyPotSSHTransport,2285,59.49.100.83] avatar root logging out
+2017-02-26T09:38:36+0000 [HoneyPotSSHTransport,2285,59.49.100.83] connection lost
+2017-02-26T09:38:36+0000 [HoneyPotSSHTransport,2285,59.49.100.83] Connection lost after 266 seconds
