@@ -3962,3 +3962,200 @@
 2017-02-26T09:33:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2284,59.49.100.83] adding 65672 to 65400 in channel 1
 2017-02-26T09:33:43+0000 [CowrieTelnetTransport,1698,67.229.141.98] Connection lost after 38 seconds
 2017-02-26T09:33:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2284,59.49.100.83] adding 98100 to 32972 in channel 1
+2017-02-26T09:34:05+0000 [-] exitCode: 1
+2017-02-26T09:34:05+0000 [-] sending request 'exit-status'
+2017-02-26T09:34:05+0000 [-] Saved stdin contents with SHA-256 53c1b1bb4c135748066d53a43b3f26a2faee861d6170abe757955d15c480d31c to dl/53c1b1bb4c135748066d53a43b3f26a2faee861d6170abe757955d15c480d31c
+2017-02-26T09:34:05+0000 [-] Closing TTY Log: log/tty/20170226-093305-d5579904-1e.log after 60 seconds
+2017-02-26T09:34:05+0000 [-] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-26T09:34:05+0000 [-] sending close 1
+2017-02-26T09:34:10+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 59.49.100.83:2564 (10.8.41.81:2222) [session: 9af0298c]
+2017-02-26T09:34:10+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2284,59.49.100.83] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 246, in ssh_CHANNEL_DATA
+	    log.callWithLogger(channel, channel.dataReceived, data)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 112, in dataReceived
+	    self.client.transport.write(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 163, in write
+	    self.proto.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'keystrokeReceived'
+	
+2017-02-26T09:34:10+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2284,59.49.100.83] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 246, in ssh_CHANNEL_DATA
+	    log.callWithLogger(channel, channel.dataReceived, data)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 112, in dataReceived
+	    self.client.transport.write(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 163, in write
+	    self.proto.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'keystrokeReceived'
+	
+2017-02-26T09:34:11+0000 [HoneyPotSSHTransport,2285,59.49.100.83] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-02-26T09:34:11+0000 [HoneyPotSSHTransport,2285,59.49.100.83] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-26T09:34:11+0000 [HoneyPotSSHTransport,2285,59.49.100.83] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-26T09:34:11+0000 [HoneyPotSSHTransport,2285,59.49.100.83] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-26T09:34:11+0000 [HoneyPotSSHTransport,2285,59.49.100.83] NEW KEYS
+2017-02-26T09:34:11+0000 [HoneyPotSSHTransport,2285,59.49.100.83] starting service 'ssh-userauth'
+2017-02-26T09:34:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2285,59.49.100.83] 'root' trying auth 'password'
+2017-02-26T09:34:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2285,59.49.100.83] login attempt: 83
+2017-02-26T09:34:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2285,59.49.100.83] login return, expect: [root/root]
+2017-02-26T09:34:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2285,59.49.100.83] login attempt [root/root] succeeded
+2017-02-26T09:34:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2285,59.49.100.83] 'root' authenticated with 'password'
+2017-02-26T09:34:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2285,59.49.100.83] starting service 'ssh-connection'
+2017-02-26T09:34:14+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2284,59.49.100.83] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 246, in ssh_CHANNEL_DATA
+	    log.callWithLogger(channel, channel.dataReceived, data)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 112, in dataReceived
+	    self.client.transport.write(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 163, in write
+	    self.proto.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'keystrokeReceived'
+	
+2017-02-26T09:34:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] got channel 'session' request
+2017-02-26T09:34:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] channel open
+2017-02-26T09:34:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] executing command "mkdir /tmp/.xs/"
+2017-02-26T09:34:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] Opening TTY Log: log/tty/20170226-093415-9af0298c-0e.log
+2017-02-26T09:34:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] CMD: mkdir /tmp/.xs/
+2017-02-26T09:34:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] Command found: mkdir /tmp/.xs/
+2017-02-26T09:34:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] exitCode: 0
+2017-02-26T09:34:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] sending request 'exit-status'
+2017-02-26T09:34:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] sending close 0
+2017-02-26T09:34:16+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] received eof, sending ctrl-d to command
+2017-02-26T09:34:16+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] Received CTRL-D, exiting..
+2017-02-26T09:34:16+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] exitCode: 0
+2017-02-26T09:34:16+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] Closing TTY Log: log/tty/20170226-093415-9af0298c-0e.log after 0 seconds
+2017-02-26T09:34:16+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-26T09:34:17+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] remote close
+2017-02-26T09:34:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] got channel 'session' request
+2017-02-26T09:34:17+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] channel open
+2017-02-26T09:34:18+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] executing command "cat >/tmp/.xs/test.mod"
+2017-02-26T09:34:18+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] Opening TTY Log: log/tty/20170226-093418-9af0298c-1e.log
+2017-02-26T09:34:18+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] CMD: cat >/tmp/.xs/test.mod
+2017-02-26T09:34:18+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] Command found: cat > /tmp/.xs/test.mod
+2017-02-26T09:34:18+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2284,59.49.100.83] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 246, in ssh_CHANNEL_DATA
+	    log.callWithLogger(channel, channel.dataReceived, data)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 112, in dataReceived
+	    self.client.transport.write(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 163, in write
+	    self.proto.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'keystrokeReceived'
+	
+2017-02-26T09:34:28+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2284,59.49.100.83] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 246, in ssh_CHANNEL_DATA
+	    log.callWithLogger(channel, channel.dataReceived, data)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 112, in dataReceived
+	    self.client.transport.write(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 163, in write
+	    self.proto.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'keystrokeReceived'
+	
+2017-02-26T09:34:28+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2284,59.49.100.83] remote close
+2017-02-26T09:34:28+0000 [HoneyPotSSHTransport,2284,59.49.100.83] Got remote error, code 11
+	reason: 
+2017-02-26T09:34:28+0000 [HoneyPotSSHTransport,2284,59.49.100.83] avatar root logging out
+2017-02-26T09:34:28+0000 [HoneyPotSSHTransport,2284,59.49.100.83] connection lost
+2017-02-26T09:34:28+0000 [HoneyPotSSHTransport,2284,59.49.100.83] Connection lost after 103 seconds
+2017-02-26T09:34:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] adding 98100 to 32972 in channel 1
+2017-02-26T09:34:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] adding 98100 to 32972 in channel 1
+2017-02-26T09:34:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] adding 65672 to 65400 in channel 1
+2017-02-26T09:34:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2285,59.49.100.83] adding 98100 to 32972 in channel 1
