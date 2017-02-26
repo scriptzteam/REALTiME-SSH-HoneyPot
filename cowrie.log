@@ -942,3 +942,30 @@
 2017-02-26T08:40:00+0000 [HoneyPotSSHTransport,2265,194.63.141.141] NEW KEYS
 2017-02-26T08:40:00+0000 [HoneyPotSSHTransport,2265,194.63.141.141] starting service 'ssh-userauth'
 2017-02-26T08:40:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2265,194.63.141.141] 'doctor' trying auth 'none'
+2017-02-26T08:40:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2265,194.63.141.141] 'doctor' authenticated with 'none'
+2017-02-26T08:40:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2265,194.63.141.141] starting service 'ssh-connection'
+2017-02-26T08:40:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2265,194.63.141.141] got global no-more-sessions@openssh.com request
+2017-02-26T08:40:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2265,194.63.141.141] got channel 'direct-tcpip' request
+2017-02-26T08:40:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2265,194.63.141.141] direct-tcp connection request to 52.200.138.20:80 from 127.0.0.1:46859
+2017-02-26T08:40:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2265,194.63.141.141] direct-tcp forward to 52.200.138.20:80 with data 'GET / HTTP/1.1\r\nUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36\r\nHost: www.alexa.com\r\nAccept: */*\r\n\r\n'
+2017-02-26T08:40:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2265,194.63.141.141] failed to connect: Connection refused
+2017-02-26T08:40:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2265,194.63.141.141] sending close 0
+2017-02-26T08:40:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2265,194.63.141.141] remote close
+2017-02-26T08:40:13+0000 [CowrieTelnetTransport,1606,182.180.142.119] login attempt: 11
+2017-02-26T08:40:13+0000 [CowrieTelnetTransport,1606,182.180.142.119] login return, expect: [root/pass]
+2017-02-26T08:40:14+0000 [CowrieTelnetTransport,1606,182.180.142.119] login attempt [admin/admin1234] failed
+2017-02-26T08:40:14+0000 [CowrieTelnetTransport,1606,182.180.142.119] Warning: state changed and new state returned
+2017-02-26T08:40:19+0000 [CowrieTelnetTransport,1606,182.180.142.119] login attempt: 12
+2017-02-26T08:40:19+0000 [CowrieTelnetTransport,1606,182.180.142.119] login return, expect: [root/pass]
+2017-02-26T08:40:19+0000 [CowrieTelnetTransport,1606,182.180.142.119] login attempt [enable\x00/system\x00] failed
+2017-02-26T08:40:19+0000 [CowrieTelnetTransport,1606,182.180.142.119] Warning: state changed and new state returned
+2017-02-26T08:40:20+0000 [HoneyPotSSHTransport,2265,194.63.141.141] Got remote error, code 11
+	reason: disconnected by user
+2017-02-26T08:40:20+0000 [HoneyPotSSHTransport,2265,194.63.141.141] avatar doctor logging out
+2017-02-26T08:40:20+0000 [HoneyPotSSHTransport,2265,194.63.141.141] connection lost
+2017-02-26T08:40:20+0000 [HoneyPotSSHTransport,2265,194.63.141.141] Connection lost after 19 seconds
+2017-02-26T08:40:23+0000 [CowrieTelnetTransport,1606,182.180.142.119] login attempt: 13
+2017-02-26T08:40:23+0000 [CowrieTelnetTransport,1606,182.180.142.119] login return, expect: [root/pass]
+2017-02-26T08:40:23+0000 [CowrieTelnetTransport,1606,182.180.142.119] login attempt [shell\x00/sh\x00] failed
+2017-02-26T08:40:23+0000 [CowrieTelnetTransport,1606,182.180.142.119] Warning: state changed and new state returned
+2017-02-26T08:40:58+0000 [CowrieTelnetTransport,1606,182.180.142.119] Connection lost after 76 seconds
