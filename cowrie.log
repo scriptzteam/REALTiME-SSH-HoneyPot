@@ -8199,3 +8199,49 @@
 2017-02-26T11:10:01+0000 [HoneyPotSSHTransport,2322,221.194.44.231] Connection lost after 6 seconds
 2017-02-26T11:10:01+0000 [CowrieTelnetTransport,1869,67.229.141.98] login attempt: 13759
 2017-02-26T11:10:01+0000 [CowrieTelnetTransport,1869,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T11:10:02+0000 [CowrieTelnetTransport,1869,67.229.141.98] login attempt [enable/shell] failed
+2017-02-26T11:10:02+0000 [CowrieTelnetTransport,1869,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T11:10:02+0000 [CowrieTelnetTransport,1869,67.229.141.98] login attempt: 13760
+2017-02-26T11:10:02+0000 [CowrieTelnetTransport,1869,67.229.141.98] login return, expect: [root/666666]
+2017-02-26T11:10:03+0000 [CowrieTelnetTransport,1869,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-26T11:10:03+0000 [CowrieTelnetTransport,1869,67.229.141.98] Warning: state changed and new state returned
+2017-02-26T11:10:10+0000 [CowrieTelnetTransport,1864,67.229.141.98] Connection lost after 39 seconds
+2017-02-26T11:10:11+0000 [CowrieTelnetTransport,1865,67.229.141.98] Connection lost after 39 seconds
+2017-02-26T11:10:13+0000 [CowrieTelnetTransport,1866,67.229.141.98] Connection lost after 41 seconds
+2017-02-26T11:10:15+0000 [CowrieTelnetTransport,1867,67.229.141.98] Connection lost after 42 seconds
+2017-02-26T11:10:19+0000 [CowrieTelnetTransport,1868,67.229.141.98] Connection lost after 38 seconds
+2017-02-26T11:10:33+0000 [CowrieTelnetTransport,1869,67.229.141.98] Connection lost after 38 seconds
+2017-02-26T11:10:36+0000 [CowrieTelnetTransport,1862,123.110.74.251] Closing TTY Log: log/tty/20170226-110852-None-1862i.log after 103 seconds
+2017-02-26T11:10:36+0000 [CowrieTelnetTransport,1862,123.110.74.251] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-26T11:10:36+0000 [CowrieTelnetTransport,1862,123.110.74.251] Connection lost after 107 seconds
+2017-02-26T11:10:38+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 177.230.26.200:34513 (10.8.41.81:2223) [session: TT1870]
+2017-02-26T11:10:39+0000 [CowrieTelnetTransport,1870,177.230.26.200] first time for 177.230.26.200, need: 1
+2017-02-26T11:10:39+0000 [CowrieTelnetTransport,1870,177.230.26.200] login attempt: 1
+2017-02-26T11:10:39+0000 [CowrieTelnetTransport,1870,177.230.26.200] login attempt [root/jvbzd] succeeded
+2017-02-26T11:10:41+0000 [CowrieTelnetTransport,1870,177.230.26.200] Opening TTY Log: log/tty/20170226-111041-None-1870i.log
+2017-02-26T11:10:41+0000 [CowrieTelnetTransport,1870,177.230.26.200] Warning: state changed and new state returned
+2017-02-26T11:10:41+0000 [CowrieTelnetTransport,1870,177.230.26.200] CMD: enable
+2017-02-26T11:10:41+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command found: enable 
+2017-02-26T11:10:41+0000 [CowrieTelnetTransport,1870,177.230.26.200] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-26T11:10:41+0000 [CowrieTelnetTransport,1870,177.230.26.200] CMD: shell
+2017-02-26T11:10:41+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command not found: shell
+2017-02-26T11:10:41+0000 [CowrieTelnetTransport,1870,177.230.26.200] CMD: sh
+2017-02-26T11:10:41+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command found: sh 
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] CMD: cat /proc/mounts; /bin/busybox BMTRO
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command found: cat /proc/mounts
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command found: /bin/busybox BMTRO
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox BMTRO
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command found: cd /dev/shm
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command found: cat .s
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command found: cp /bin/echo .s
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command found: /bin/busybox BMTRO
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] CMD: nc; wget; /bin/busybox BMTRO
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command not found: nc
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command found: wget 
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command found: /bin/busybox BMTRO
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command not found: dd bs=52 count=1 if=.s
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command found: cat /dev/shm/.s
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] CMD: /bin/busybox BMTRO
+2017-02-26T11:10:42+0000 [CowrieTelnetTransport,1870,177.230.26.200] Command found: /bin/busybox BMTRO
