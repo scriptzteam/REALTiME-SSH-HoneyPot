@@ -4977,3 +4977,55 @@
 2017-02-26T13:40:04+0000 [CowrieTelnetTransport,2121,212.156.215.157] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-02-26T13:40:04+0000 [CowrieTelnetTransport,2121,212.156.215.157] Connection lost after 104 seconds
+2017-02-26T13:41:30+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 38.84.132.236:49257 (10.8.41.81:2222) [session: 8c8d6c12]
+2017-02-26T13:41:30+0000 [HoneyPotSSHTransport,2354,38.84.132.236] Remote SSH version: SSH-2.0-OpenSSH_6.6p1 Ubuntu-2ubuntu1
+2017-02-26T13:41:30+0000 [HoneyPotSSHTransport,2354,38.84.132.236] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-02-26T13:41:30+0000 [HoneyPotSSHTransport,2354,38.84.132.236] outgoing: 'aes128-ctr' 'hmac-md5' 'none'
+2017-02-26T13:41:30+0000 [HoneyPotSSHTransport,2354,38.84.132.236] incoming: 'aes128-ctr' 'hmac-md5' 'none'
+2017-02-26T13:41:30+0000 [HoneyPotSSHTransport,2354,38.84.132.236] NEW KEYS
+2017-02-26T13:41:31+0000 [HoneyPotSSHTransport,2354,38.84.132.236] starting service 'ssh-userauth'
+2017-02-26T13:41:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2354,38.84.132.236] 'doctor' trying auth 'none'
+2017-02-26T13:41:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2354,38.84.132.236] 'doctor' authenticated with 'none'
+2017-02-26T13:41:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2354,38.84.132.236] starting service 'ssh-connection'
+2017-02-26T13:41:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2354,38.84.132.236] got global no-more-sessions@openssh.com request
+2017-02-26T13:41:33+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 201.237.113.10:51062 (10.8.41.81:2223) [session: TT2125]
+2017-02-26T13:41:34+0000 [CowrieTelnetTransport,2125,201.237.113.10] first time for 201.237.113.10, need: 1
+2017-02-26T13:41:34+0000 [CowrieTelnetTransport,2125,201.237.113.10] login attempt: 1
+2017-02-26T13:41:35+0000 [CowrieTelnetTransport,2125,201.237.113.10] login attempt [root/juantech] succeeded
+2017-02-26T13:41:37+0000 [CowrieTelnetTransport,2125,201.237.113.10] Opening TTY Log: log/tty/20170226-134137-None-2125i.log
+2017-02-26T13:41:37+0000 [CowrieTelnetTransport,2125,201.237.113.10] Warning: state changed and new state returned
+2017-02-26T13:41:37+0000 [CowrieTelnetTransport,2125,201.237.113.10] CMD: enable
+2017-02-26T13:41:37+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command found: enable 
+2017-02-26T13:41:37+0000 [CowrieTelnetTransport,2125,201.237.113.10] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-26T13:41:37+0000 [CowrieTelnetTransport,2125,201.237.113.10] CMD: shell
+2017-02-26T13:41:37+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command not found: shell
+2017-02-26T13:41:37+0000 [CowrieTelnetTransport,2125,201.237.113.10] CMD: sh
+2017-02-26T13:41:37+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command found: sh 
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] CMD: cat /proc/mounts; /bin/busybox UXHOT
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command found: cat /proc/mounts
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command found: /bin/busybox UXHOT
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox UXHOT
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command found: cd /dev/shm
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command found: cat .s
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command found: cp /bin/echo .s
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command found: /bin/busybox UXHOT
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] CMD: nc; wget; /bin/busybox UXHOT
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command not found: nc
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command found: wget 
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command found: /bin/busybox UXHOT
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command not found: dd bs=52 count=1 if=.s
+2017-02-26T13:41:38+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command found: cat /dev/shm/.s
+2017-02-26T13:41:39+0000 [CowrieTelnetTransport,2125,201.237.113.10] CMD: /bin/busybox UXHOT
+2017-02-26T13:41:39+0000 [CowrieTelnetTransport,2125,201.237.113.10] Command found: /bin/busybox UXHOT
+2017-02-26T13:41:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2354,38.84.132.236] got channel 'direct-tcpip' request
+2017-02-26T13:41:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2354,38.84.132.236] direct-tcp connection request to 52.72.151.107:80 from 127.0.0.1:34379
+2017-02-26T13:41:40+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2354,38.84.132.236] direct-tcp forward to 52.72.151.107:80 with data 'GET / HTTP/1.1\r\nUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36\r\nHost: www.alexa.com\r\nAccept: */*\r\n\r\n'
+2017-02-26T13:41:40+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2354,38.84.132.236] failed to connect: Connection refused
+2017-02-26T13:41:40+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2354,38.84.132.236] sending close 0
+2017-02-26T13:41:40+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2354,38.84.132.236] remote close
+2017-02-26T13:41:50+0000 [HoneyPotSSHTransport,2354,38.84.132.236] Got remote error, code 11
+	reason: disconnected by user
+2017-02-26T13:41:50+0000 [HoneyPotSSHTransport,2354,38.84.132.236] avatar doctor logging out
+2017-02-26T13:41:50+0000 [HoneyPotSSHTransport,2354,38.84.132.236] connection lost
+2017-02-26T13:41:50+0000 [HoneyPotSSHTransport,2354,38.84.132.236] Connection lost after 19 seconds
