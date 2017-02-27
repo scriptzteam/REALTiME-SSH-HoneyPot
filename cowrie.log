@@ -3404,3 +3404,131 @@
 2017-02-27T19:47:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,3011,5.189.140.7] login attempt [account/account] failed
 2017-02-27T19:47:01+0000 [CowrieTelnetTransport,10070,185.2.82.6] login attempt: 7436
 2017-02-27T19:47:01+0000 [CowrieTelnetTransport,10070,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T19:47:02+0000 [CowrieTelnetTransport,10070,185.2.82.6] login attempt [root/admin] failed
+2017-02-27T19:47:02+0000 [CowrieTelnetTransport,10070,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T19:47:02+0000 [-] 'account' failed auth 'password'
+2017-02-27T19:47:02+0000 [-] unauthorized login: 
+2017-02-27T19:47:02+0000 [CowrieTelnetTransport,10070,185.2.82.6] login attempt: 7437
+2017-02-27T19:47:02+0000 [CowrieTelnetTransport,10070,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T19:47:03+0000 [CowrieTelnetTransport,10070,185.2.82.6] login attempt [enable/shell] failed
+2017-02-27T19:47:03+0000 [CowrieTelnetTransport,10070,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T19:47:03+0000 [CowrieTelnetTransport,10070,185.2.82.6] login attempt: 7438
+2017-02-27T19:47:03+0000 [CowrieTelnetTransport,10070,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T19:47:04+0000 [CowrieTelnetTransport,10070,185.2.82.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T19:47:04+0000 [CowrieTelnetTransport,10070,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T19:47:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,3011,5.189.140.7] 'account' trying auth 'password'
+2017-02-27T19:47:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,3011,5.189.140.7] login attempt: 618
+2017-02-27T19:47:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,3011,5.189.140.7] login return, expect: [virus/virus]
+2017-02-27T19:47:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,3011,5.189.140.7] login attempt [account/account123] failed
+2017-02-27T19:47:05+0000 [HoneyPotSSHTransport,3011,5.189.140.7] connection lost
+2017-02-27T19:47:05+0000 [HoneyPotSSHTransport,3011,5.189.140.7] Connection lost after 6 seconds
+2017-02-27T19:47:05+0000 [-] 'account' failed auth 'password'
+2017-02-27T19:47:05+0000 [-] unauthorized login: 
+2017-02-27T19:47:05+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-02-27T19:47:05+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-02-27T19:47:15+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.7:47000 (10.8.41.81:2223) [session: TT10071]
+2017-02-27T19:47:15+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.7:37975 (10.8.41.81:2223) [session: TT10072]
+2017-02-27T19:47:19+0000 [CowrieTelnetTransport,10071,185.2.82.7] login attempt: 4221
+2017-02-27T19:47:19+0000 [CowrieTelnetTransport,10071,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:20+0000 [CowrieTelnetTransport,10071,185.2.82.7] login attempt [root/vizxv] failed
+2017-02-27T19:47:20+0000 [CowrieTelnetTransport,10071,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:20+0000 [CowrieTelnetTransport,10072,185.2.82.7] login attempt: 4222
+2017-02-27T19:47:20+0000 [CowrieTelnetTransport,10072,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:21+0000 [CowrieTelnetTransport,10072,185.2.82.7] login attempt [root/vizxv] failed
+2017-02-27T19:47:21+0000 [CowrieTelnetTransport,10072,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:21+0000 [CowrieTelnetTransport,10071,185.2.82.7] login attempt: 4223
+2017-02-27T19:47:21+0000 [CowrieTelnetTransport,10071,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:22+0000 [CowrieTelnetTransport,10071,185.2.82.7] login attempt [enable/shell] failed
+2017-02-27T19:47:22+0000 [CowrieTelnetTransport,10071,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:22+0000 [CowrieTelnetTransport,10071,185.2.82.7] login attempt: 4224
+2017-02-27T19:47:22+0000 [CowrieTelnetTransport,10071,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:22+0000 [CowrieTelnetTransport,10071,185.2.82.7] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T19:47:22+0000 [CowrieTelnetTransport,10071,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:23+0000 [CowrieTelnetTransport,10072,185.2.82.7] login attempt: 4225
+2017-02-27T19:47:23+0000 [CowrieTelnetTransport,10072,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:23+0000 [CowrieTelnetTransport,10072,185.2.82.7] login attempt [enable/shell] failed
+2017-02-27T19:47:23+0000 [CowrieTelnetTransport,10072,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:23+0000 [CowrieTelnetTransport,10072,185.2.82.7] login attempt: 4226
+2017-02-27T19:47:23+0000 [CowrieTelnetTransport,10072,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:24+0000 [CowrieTelnetTransport,10072,185.2.82.7] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T19:47:24+0000 [CowrieTelnetTransport,10072,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:32+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.7:44126 (10.8.41.81:2223) [session: TT10073]
+2017-02-27T19:47:32+0000 [CowrieTelnetTransport,10065,187.232.35.161] Closing TTY Log: log/tty/20170227-194546-None-10065i.log after 106 seconds
+2017-02-27T19:47:32+0000 [CowrieTelnetTransport,10065,187.232.35.161] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-27T19:47:32+0000 [CowrieTelnetTransport,10065,187.232.35.161] Connection lost after 109 seconds
+2017-02-27T19:47:35+0000 [CowrieTelnetTransport,10070,185.2.82.6] Connection lost after 37 seconds
+2017-02-27T19:47:37+0000 [CowrieTelnetTransport,10073,185.2.82.7] login attempt: 4227
+2017-02-27T19:47:37+0000 [CowrieTelnetTransport,10073,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:37+0000 [CowrieTelnetTransport,10073,185.2.82.7] login attempt [support/support] failed
+2017-02-27T19:47:37+0000 [CowrieTelnetTransport,10073,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:38+0000 [CowrieTelnetTransport,10073,185.2.82.7] login attempt: 4228
+2017-02-27T19:47:38+0000 [CowrieTelnetTransport,10073,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:38+0000 [CowrieTelnetTransport,10073,185.2.82.7] login attempt [enable/shell] failed
+2017-02-27T19:47:38+0000 [CowrieTelnetTransport,10073,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:38+0000 [CowrieTelnetTransport,10073,185.2.82.7] login attempt: 4229
+2017-02-27T19:47:38+0000 [CowrieTelnetTransport,10073,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:39+0000 [CowrieTelnetTransport,10073,185.2.82.7] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T19:47:39+0000 [CowrieTelnetTransport,10073,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:44+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.6:34735 (10.8.41.81:2223) [session: TT10074]
+2017-02-27T19:47:48+0000 [CowrieTelnetTransport,10074,185.2.82.6] login attempt: 7439
+2017-02-27T19:47:48+0000 [CowrieTelnetTransport,10074,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T19:47:49+0000 [CowrieTelnetTransport,10074,185.2.82.6] login attempt [root/jvbzd] failed
+2017-02-27T19:47:49+0000 [CowrieTelnetTransport,10074,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T19:47:49+0000 [CowrieTelnetTransport,10074,185.2.82.6] login attempt: 7440
+2017-02-27T19:47:49+0000 [CowrieTelnetTransport,10074,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T19:47:50+0000 [CowrieTelnetTransport,10074,185.2.82.6] login attempt [enable/shell] failed
+2017-02-27T19:47:50+0000 [CowrieTelnetTransport,10074,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T19:47:50+0000 [CowrieTelnetTransport,10074,185.2.82.6] login attempt: 7441
+2017-02-27T19:47:50+0000 [CowrieTelnetTransport,10074,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-27T19:47:50+0000 [CowrieTelnetTransport,10074,185.2.82.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T19:47:50+0000 [CowrieTelnetTransport,10074,185.2.82.6] Warning: state changed and new state returned
+2017-02-27T19:47:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.7:39413 (10.8.41.81:2223) [session: TT10075]
+2017-02-27T19:47:53+0000 [CowrieTelnetTransport,10071,185.2.82.7] Connection lost after 37 seconds
+2017-02-27T19:47:54+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.7:53175 (10.8.41.81:2223) [session: TT10076]
+2017-02-27T19:47:55+0000 [CowrieTelnetTransport,10075,185.2.82.7] login attempt: 4230
+2017-02-27T19:47:55+0000 [CowrieTelnetTransport,10075,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:56+0000 [CowrieTelnetTransport,10075,185.2.82.7] login attempt [root/admin] failed
+2017-02-27T19:47:56+0000 [CowrieTelnetTransport,10075,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:56+0000 [CowrieTelnetTransport,10072,185.2.82.7] Connection lost after 40 seconds
+2017-02-27T19:47:56+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.7:38146 (10.8.41.81:2223) [session: TT10077]
+2017-02-27T19:47:56+0000 [CowrieTelnetTransport,10075,185.2.82.7] login attempt: 4231
+2017-02-27T19:47:56+0000 [CowrieTelnetTransport,10075,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:56+0000 [CowrieTelnetTransport,10075,185.2.82.7] login attempt [enable/shell] failed
+2017-02-27T19:47:57+0000 [CowrieTelnetTransport,10075,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:57+0000 [CowrieTelnetTransport,10075,185.2.82.7] login attempt: 4232
+2017-02-27T19:47:57+0000 [CowrieTelnetTransport,10075,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:57+0000 [CowrieTelnetTransport,10075,185.2.82.7] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T19:47:57+0000 [CowrieTelnetTransport,10075,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:58+0000 [CowrieTelnetTransport,10076,185.2.82.7] login attempt: 4233
+2017-02-27T19:47:58+0000 [CowrieTelnetTransport,10076,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:47:59+0000 [CowrieTelnetTransport,10076,185.2.82.7] login attempt [root/vizxv] failed
+2017-02-27T19:47:59+0000 [CowrieTelnetTransport,10076,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:47:59+0000 [CowrieTelnetTransport,10076,185.2.82.7] login attempt: 4234
+2017-02-27T19:47:59+0000 [CowrieTelnetTransport,10076,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:48:00+0000 [CowrieTelnetTransport,10076,185.2.82.7] login attempt [enable/shell] failed
+2017-02-27T19:48:00+0000 [CowrieTelnetTransport,10076,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:48:00+0000 [CowrieTelnetTransport,10076,185.2.82.7] login attempt: 4235
+2017-02-27T19:48:00+0000 [CowrieTelnetTransport,10076,185.2.82.7] login return, expect: [root/jvbzd]
+2017-02-27T19:48:00+0000 [CowrieTelnetTransport,10076,185.2.82.7] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-27T19:48:00+0000 [CowrieTelnetTransport,10076,185.2.82.7] Warning: state changed and new state returned
+2017-02-27T19:48:01+0000 [CowrieTelnetTransport,10077,185.2.82.7] login attempt: 4236
+2017-02-27T19:48:01+0000 [CowrieTelnetTransport,10077,185.2.82.7] login return, expect: [root/jvbzd]
