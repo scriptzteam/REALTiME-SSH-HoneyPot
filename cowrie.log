@@ -7679,3 +7679,42 @@
 2017-02-28T13:37:54+0000 [HoneyPotSSHTransport,4004,116.31.116.51] avatar root logging out
 2017-02-28T13:37:54+0000 [HoneyPotSSHTransport,4004,116.31.116.51] connection lost
 2017-02-28T13:37:54+0000 [HoneyPotSSHTransport,4004,116.31.116.51] Connection lost after 59 seconds
+2017-02-28T13:38:06+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.51:31441 (10.8.41.81:2222) [session: e97c1708]
+2017-02-28T13:38:12+0000 [HoneyPotSSHTransport,4006,116.31.116.51] Remote SSH version: SSH-2.0-PUTTY
+2017-02-28T13:38:12+0000 [HoneyPotSSHTransport,4006,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-28T13:38:12+0000 [HoneyPotSSHTransport,4006,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-28T13:38:12+0000 [HoneyPotSSHTransport,4006,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-28T13:38:21+0000 [CowrieTelnetTransport,17045,171.48.15.96] Closing TTY Log: log/tty/20170228-133639-None-17045i.log after 102 seconds
+2017-02-28T13:38:21+0000 [CowrieTelnetTransport,17045,171.48.15.96] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-02-28T13:38:21+0000 [CowrieTelnetTransport,17045,171.48.15.96] Connection lost after 106 seconds
+2017-02-28T13:38:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 221.158.137.238:57490 (10.8.41.81:2223) [session: TT17047]
+2017-02-28T13:38:54+0000 [CowrieTelnetTransport,17047,221.158.137.238] first time for 221.158.137.238, need: 1
+2017-02-28T13:38:54+0000 [CowrieTelnetTransport,17047,221.158.137.238] login attempt: 1
+2017-02-28T13:38:54+0000 [CowrieTelnetTransport,17047,221.158.137.238] login attempt [admin/1234] succeeded
+2017-02-28T13:38:56+0000 [CowrieTelnetTransport,17047,221.158.137.238] Opening TTY Log: log/tty/20170228-133856-None-17047i.log
+2017-02-28T13:38:56+0000 [CowrieTelnetTransport,17047,221.158.137.238] Warning: state changed and new state returned
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] CMD: enable
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command found: enable 
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] Reading txtcmd from "txtcmds/bin/enable"
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] CMD: shell
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command not found: shell
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] CMD: sh
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command found: sh 
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] CMD: cat /proc/mounts; /bin/busybox FGMYW
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command found: cat /proc/mounts
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command found: /bin/busybox FGMYW
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox FGMYW
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command found: cd /dev/shm
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command found: cat .s
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command found: cp /bin/echo .s
+2017-02-28T13:38:57+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command found: /bin/busybox FGMYW
+2017-02-28T13:38:58+0000 [CowrieTelnetTransport,17047,221.158.137.238] CMD: nc; wget; /bin/busybox FGMYW
+2017-02-28T13:38:58+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command not found: nc
+2017-02-28T13:38:58+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command found: wget 
+2017-02-28T13:38:58+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command found: /bin/busybox FGMYW
+2017-02-28T13:38:58+0000 [CowrieTelnetTransport,17047,221.158.137.238] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-02-28T13:38:58+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command not found: dd bs=52 count=1 if=.s
+2017-02-28T13:38:58+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command found: cat /dev/shm/.s
+2017-02-28T13:38:58+0000 [CowrieTelnetTransport,17047,221.158.137.238] CMD: /bin/busybox FGMYW
+2017-02-28T13:38:58+0000 [CowrieTelnetTransport,17047,221.158.137.238] Command found: /bin/busybox FGMYW
