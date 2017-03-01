@@ -4313,3 +4313,21 @@
 2017-03-01T07:55:50+0000 [CowrieTelnetTransport,22088,187.209.179.46] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-01T07:55:50+0000 [CowrieTelnetTransport,22088,187.209.179.46] Connection lost after 184 seconds
+2017-03-01T07:56:45+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 38.84.132.236:47496 (10.8.41.81:2222) [session: 63c6db36]
+2017-03-01T07:56:45+0000 [HoneyPotSSHTransport,5135,38.84.132.236] Remote SSH version: SSH-2.0-OpenSSH_6.6p1 Ubuntu-2ubuntu1
+2017-03-01T07:56:45+0000 [HoneyPotSSHTransport,5135,38.84.132.236] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-03-01T07:56:45+0000 [HoneyPotSSHTransport,5135,38.84.132.236] outgoing: 'aes128-ctr' 'hmac-md5' 'none'
+2017-03-01T07:56:45+0000 [HoneyPotSSHTransport,5135,38.84.132.236] incoming: 'aes128-ctr' 'hmac-md5' 'none'
+2017-03-01T07:56:45+0000 [HoneyPotSSHTransport,5135,38.84.132.236] NEW KEYS
+2017-03-01T07:56:45+0000 [HoneyPotSSHTransport,5135,38.84.132.236] starting service 'ssh-userauth'
+2017-03-01T07:56:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5135,38.84.132.236] 'virus' trying auth 'none'
+2017-03-01T07:56:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5135,38.84.132.236] 'virus' authenticated with 'none'
+2017-03-01T07:56:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5135,38.84.132.236] starting service 'ssh-connection'
+2017-03-01T07:56:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5135,38.84.132.236] got global no-more-sessions@openssh.com request
+2017-03-01T07:56:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5135,38.84.132.236] got channel 'direct-tcpip' request
+2017-03-01T07:56:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5135,38.84.132.236] direct-tcp connection request to 52.207.56.193:80 from 127.0.0.1:51467
+2017-03-01T07:56:55+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5135,38.84.132.236] direct-tcp forward to 52.207.56.193:80 with data 'GET / HTTP/1.1\r\nUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36\r\nHost: www.alexa.com\r\nAccept: */*\r\n\r\n'
+2017-03-01T07:56:55+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5135,38.84.132.236] failed to connect: Connection refused
+2017-03-01T07:56:55+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5135,38.84.132.236] sending close 0
+2017-03-01T07:56:55+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5135,38.84.132.236] remote close
+2017-03-01T07:56:56+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 211.36.142.163:30637 (10.8.41.81:2223) [session: TT22094]
