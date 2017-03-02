@@ -4895,3 +4895,44 @@
 2017-03-02T03:35:04+0000 [CowrieTelnetTransport,25079,88.225.219.246] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-02T03:35:04+0000 [CowrieTelnetTransport,25079,88.225.219.246] Connection lost after 4 seconds
+2017-03-02T03:36:45+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 223.100.160.65:18537 (10.8.41.81:2222) [session: b6305077]
+2017-03-02T03:36:45+0000 [HoneyPotSSHTransport,6106,223.100.160.65] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-02T03:36:45+0000 [HoneyPotSSHTransport,6106,223.100.160.65] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-02T03:36:45+0000 [HoneyPotSSHTransport,6106,223.100.160.65] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-02T03:36:45+0000 [HoneyPotSSHTransport,6106,223.100.160.65] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-02T03:36:46+0000 [HoneyPotSSHTransport,6106,223.100.160.65] NEW KEYS
+2017-03-02T03:36:46+0000 [HoneyPotSSHTransport,6106,223.100.160.65] starting service 'ssh-userauth'
+2017-03-02T03:36:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6106,223.100.160.65] 'pi' trying auth 'password'
+2017-03-02T03:36:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6106,223.100.160.65] login attempt: 1588
+2017-03-02T03:36:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6106,223.100.160.65] login return, expect: [agent/agent]
+2017-03-02T03:36:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6106,223.100.160.65] login attempt [pi/raspberry] failed
+2017-03-02T03:36:48+0000 [-] 'pi' failed auth 'password'
+2017-03-02T03:36:48+0000 [-] unauthorized login: 
+2017-03-02T03:36:48+0000 [HoneyPotSSHTransport,6106,223.100.160.65] connection lost
+2017-03-02T03:36:48+0000 [HoneyPotSSHTransport,6106,223.100.160.65] Connection lost after 3 seconds
+2017-03-02T03:36:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 41.155.254.98:51430 (10.8.41.81:2223) [session: TT25080]
+2017-03-02T03:36:50+0000 [CowrieTelnetTransport,25080,41.155.254.98] first time for 41.155.254.98, need: 1
+2017-03-02T03:36:50+0000 [CowrieTelnetTransport,25080,41.155.254.98] login attempt: 1
+2017-03-02T03:36:51+0000 [CowrieTelnetTransport,25080,41.155.254.98] login attempt [root/] succeeded
+2017-03-02T03:36:53+0000 [CowrieTelnetTransport,25080,41.155.254.98] Opening TTY Log: log/tty/20170302-033653-None-25080i.log
+2017-03-02T03:36:53+0000 [CowrieTelnetTransport,25080,41.155.254.98] Warning: state changed and new state returned
+2017-03-02T03:36:53+0000 [CowrieTelnetTransport,25080,41.155.254.98] Received unhandled keyID: '\x00'
+2017-03-02T03:36:53+0000 [CowrieTelnetTransport,25080,41.155.254.98] CMD: enable
+2017-03-02T03:36:53+0000 [CowrieTelnetTransport,25080,41.155.254.98] Command found: enable 
+2017-03-02T03:36:53+0000 [CowrieTelnetTransport,25080,41.155.254.98] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-02T03:36:53+0000 [CowrieTelnetTransport,25080,41.155.254.98] Received unhandled keyID: '\x00'
+2017-03-02T03:36:53+0000 [CowrieTelnetTransport,25080,41.155.254.98] CMD: system
+2017-03-02T03:36:53+0000 [CowrieTelnetTransport,25080,41.155.254.98] Command not found: system
+2017-03-02T03:36:53+0000 [CowrieTelnetTransport,25080,41.155.254.98] Received unhandled keyID: '\x00'
+2017-03-02T03:36:53+0000 [CowrieTelnetTransport,25080,41.155.254.98] CMD: shell
+2017-03-02T03:36:53+0000 [CowrieTelnetTransport,25080,41.155.254.98] Command not found: shell
+2017-03-02T03:36:54+0000 [CowrieTelnetTransport,25080,41.155.254.98] Received unhandled keyID: '\x00'
+2017-03-02T03:36:54+0000 [CowrieTelnetTransport,25080,41.155.254.98] CMD: sh
+2017-03-02T03:36:54+0000 [CowrieTelnetTransport,25080,41.155.254.98] Command found: sh 
+2017-03-02T03:36:54+0000 [CowrieTelnetTransport,25080,41.155.254.98] Received unhandled keyID: '\x00'
+2017-03-02T03:36:54+0000 [CowrieTelnetTransport,25080,41.155.254.98] CMD: /bin/busybox FREEPEIN
+2017-03-02T03:36:54+0000 [CowrieTelnetTransport,25080,41.155.254.98] Command found: /bin/busybox FREEPEIN
+2017-03-02T03:36:54+0000 [CowrieTelnetTransport,25080,41.155.254.98] Closing TTY Log: log/tty/20170302-033653-None-25080i.log after 1 seconds
+2017-03-02T03:36:54+0000 [CowrieTelnetTransport,25080,41.155.254.98] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-02T03:36:54+0000 [CowrieTelnetTransport,25080,41.155.254.98] Connection lost after 4 seconds
