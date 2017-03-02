@@ -33,3 +33,154 @@
 2017-03-02T20:06:10+0000 [CowrieTelnetTransport,32113,81.227.89.196] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-02T20:06:10+0000 [CowrieTelnetTransport,32113,81.227.89.196] Connection lost after 103 seconds
+2017-03-02T20:07:20+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 92.247.32.226:9224 (10.8.41.81:2222) [session: c991f72a]
+2017-03-02T20:07:20+0000 [HoneyPotSSHTransport,6962,92.247.32.226] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-03-02T20:07:20+0000 [HoneyPotSSHTransport,6962,92.247.32.226] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-03-02T20:07:20+0000 [HoneyPotSSHTransport,6962,92.247.32.226] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-02T20:07:20+0000 [HoneyPotSSHTransport,6962,92.247.32.226] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-02T20:07:20+0000 [HoneyPotSSHTransport,6962,92.247.32.226] NEW KEYS
+2017-03-02T20:07:20+0000 [HoneyPotSSHTransport,6962,92.247.32.226] starting service 'ssh-userauth'
+2017-03-02T20:07:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6962,92.247.32.226] 'hadhoop' trying auth 'password'
+2017-03-02T20:07:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6962,92.247.32.226] first time for 92.247.32.226, need: 1
+2017-03-02T20:07:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6962,92.247.32.226] login attempt: 1
+2017-03-02T20:07:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6962,92.247.32.226] login attempt [hadhoop/123456] succeeded
+2017-03-02T20:07:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6962,92.247.32.226] 'hadhoop' authenticated with 'password'
+2017-03-02T20:07:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6962,92.247.32.226] starting service 'ssh-connection'
+2017-03-02T20:07:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] got channel 'session' request
+2017-03-02T20:07:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] channel open
+2017-03-02T20:07:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] pty request: 'vanilla' (24, 80, 0, 0)
+2017-03-02T20:07:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Terminal Size: 24 80
+2017-03-02T20:07:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] getting shell
+2017-03-02T20:07:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Opening TTY Log: log/tty/20170302-200723-c991f72a-0i.log
+2017-03-02T20:07:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] got channel 'session' request
+2017-03-02T20:07:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] channel open
+2017-03-02T20:07:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] executing command "uname"
+2017-03-02T20:07:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Opening TTY Log: log/tty/20170302-200726-c991f72a-1e.log
+2017-03-02T20:07:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] CMD: uname
+2017-03-02T20:07:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Command found: uname 
+2017-03-02T20:07:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] exitCode: 0
+2017-03-02T20:07:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] sending request 'exit-status'
+2017-03-02T20:07:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] sending close 1
+2017-03-02T20:07:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] got channel 'session' request
+2017-03-02T20:07:26+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] channel open
+2017-03-02T20:07:26+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] pty request: 'vanilla' (24, 80, 0, 0)
+2017-03-02T20:07:26+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Terminal Size: 24 80
+2017-03-02T20:07:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] getting shell
+2017-03-02T20:07:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Opening TTY Log: log/tty/20170302-200726-c991f72a-2i.log
+2017-03-02T20:07:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] got channel 'session' request
+2017-03-02T20:07:30+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] channel open
+2017-03-02T20:07:30+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] executing command "free -m"
+2017-03-02T20:07:30+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Opening TTY Log: log/tty/20170302-200730-c991f72a-3e.log
+2017-03-02T20:07:30+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] CMD: free -m
+2017-03-02T20:07:30+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Command found: free -m
+2017-03-02T20:07:30+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] exitCode: 0
+2017-03-02T20:07:30+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] sending request 'exit-status'
+2017-03-02T20:07:30+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] sending close 3
+2017-03-02T20:07:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] got channel 'session' request
+2017-03-02T20:07:30+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] channel open
+2017-03-02T20:07:30+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] pty request: 'vanilla' (24, 80, 0, 0)
+2017-03-02T20:07:30+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Terminal Size: 24 80
+2017-03-02T20:07:30+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] getting shell
+2017-03-02T20:07:30+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Opening TTY Log: log/tty/20170302-200730-c991f72a-4i.log
+2017-03-02T20:07:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] got channel 'session' request
+2017-03-02T20:07:33+0000 [SSHChannel session (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] channel open
+2017-03-02T20:07:33+0000 [SSHChannel session (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] executing command "ps x"
+2017-03-02T20:07:33+0000 [SSHChannel session (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Opening TTY Log: log/tty/20170302-200733-c991f72a-5e.log
+2017-03-02T20:07:33+0000 [SSHChannel session (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] CMD: ps x
+2017-03-02T20:07:33+0000 [SSHChannel session (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Command found: ps x
+2017-03-02T20:07:33+0000 [SSHChannel session (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] exitCode: 0
+2017-03-02T20:07:33+0000 [SSHChannel session (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] sending request 'exit-status'
+2017-03-02T20:07:33+0000 [SSHChannel session (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] sending close 5
+2017-03-02T20:07:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] got channel 'session' request
+2017-03-02T20:07:33+0000 [SSHChannel session (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] channel open
+2017-03-02T20:07:33+0000 [SSHChannel session (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] pty request: 'vanilla' (24, 80, 0, 0)
+2017-03-02T20:07:33+0000 [SSHChannel session (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Terminal Size: 24 80
+2017-03-02T20:07:33+0000 [SSHChannel session (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] getting shell
+2017-03-02T20:07:33+0000 [SSHChannel session (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Opening TTY Log: log/tty/20170302-200733-c991f72a-6i.log
+2017-03-02T20:07:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] got channel 'session' request
+2017-03-02T20:07:36+0000 [SSHChannel session (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] channel open
+2017-03-02T20:07:36+0000 [SSHChannel session (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] executing command "cat /proc/cpuinfo"
+2017-03-02T20:07:36+0000 [SSHChannel session (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Opening TTY Log: log/tty/20170302-200736-c991f72a-7e.log
+2017-03-02T20:07:36+0000 [SSHChannel session (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] CMD: cat /proc/cpuinfo
+2017-03-02T20:07:36+0000 [SSHChannel session (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Command found: cat /proc/cpuinfo
+2017-03-02T20:07:36+0000 [SSHChannel session (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] exitCode: 0
+2017-03-02T20:07:36+0000 [SSHChannel session (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] sending request 'exit-status'
+2017-03-02T20:07:36+0000 [SSHChannel session (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] sending close 7
+2017-03-02T20:07:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] got channel 'session' request
+2017-03-02T20:07:36+0000 [SSHChannel session (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] channel open
+2017-03-02T20:07:36+0000 [SSHChannel session (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] pty request: 'vanilla' (24, 80, 0, 0)
+2017-03-02T20:07:36+0000 [SSHChannel session (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Terminal Size: 24 80
+2017-03-02T20:07:36+0000 [SSHChannel session (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] getting shell
+2017-03-02T20:07:36+0000 [SSHChannel session (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Opening TTY Log: log/tty/20170302-200736-c991f72a-8i.log
+2017-03-02T20:07:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] got channel 'session' request
+2017-03-02T20:07:39+0000 [SSHChannel session (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] channel open
+2017-03-02T20:07:40+0000 [SSHChannel session (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] executing command "free -m"
+2017-03-02T20:07:40+0000 [SSHChannel session (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Opening TTY Log: log/tty/20170302-200740-c991f72a-9e.log
+2017-03-02T20:07:40+0000 [SSHChannel session (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] CMD: free -m
+2017-03-02T20:07:40+0000 [SSHChannel session (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Command found: free -m
+2017-03-02T20:07:40+0000 [SSHChannel session (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] exitCode: 0
+2017-03-02T20:07:40+0000 [SSHChannel session (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] sending request 'exit-status'
+2017-03-02T20:07:40+0000 [SSHChannel session (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] sending close 9
+2017-03-02T20:07:40+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Closing TTY Log: log/tty/20170302-200723-c991f72a-0i.log after 16 seconds
+2017-03-02T20:07:40+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] honeypot terminal protocol connection lost disconnected
+2017-03-02T20:07:40+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Closing TTY Log: log/tty/20170302-200726-c991f72a-1e.log after 13 seconds
+2017-03-02T20:07:40+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] honeypot terminal protocol connection lost disconnected
+2017-03-02T20:07:40+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Closing TTY Log: log/tty/20170302-200726-c991f72a-2i.log after 13 seconds
+2017-03-02T20:07:40+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] honeypot terminal protocol connection lost disconnected
+2017-03-02T20:07:40+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Closing TTY Log: log/tty/20170302-200730-c991f72a-3e.log after 10 seconds
+2017-03-02T20:07:40+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] honeypot terminal protocol connection lost disconnected
+2017-03-02T20:07:40+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Closing TTY Log: log/tty/20170302-200730-c991f72a-4i.log after 9 seconds
+2017-03-02T20:07:40+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] honeypot terminal protocol connection lost disconnected
+2017-03-02T20:07:40+0000 [SSHChannel session (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Closing TTY Log: log/tty/20170302-200733-c991f72a-5e.log after 6 seconds
+2017-03-02T20:07:40+0000 [SSHChannel session (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] honeypot terminal protocol connection lost disconnected
+2017-03-02T20:07:40+0000 [SSHChannel session (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Closing TTY Log: log/tty/20170302-200733-c991f72a-6i.log after 6 seconds
+2017-03-02T20:07:40+0000 [SSHChannel session (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] honeypot terminal protocol connection lost disconnected
+2017-03-02T20:07:40+0000 [SSHChannel session (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Closing TTY Log: log/tty/20170302-200736-c991f72a-7e.log after 3 seconds
+2017-03-02T20:07:40+0000 [SSHChannel session (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] honeypot terminal protocol connection lost disconnected
+2017-03-02T20:07:40+0000 [SSHChannel session (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Closing TTY Log: log/tty/20170302-200736-c991f72a-8i.log after 3 seconds
+2017-03-02T20:07:40+0000 [SSHChannel session (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] honeypot terminal protocol connection lost disconnected
+2017-03-02T20:07:40+0000 [SSHChannel session (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] Closing TTY Log: log/tty/20170302-200740-c991f72a-9e.log after 0 seconds
+2017-03-02T20:07:40+0000 [SSHChannel session (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6962,92.247.32.226] honeypot terminal protocol connection lost disconnected
+2017-03-02T20:07:40+0000 [HoneyPotSSHTransport,6962,92.247.32.226] avatar hadhoop logging out
+2017-03-02T20:07:40+0000 [HoneyPotSSHTransport,6962,92.247.32.226] connection lost
+2017-03-02T20:07:40+0000 [HoneyPotSSHTransport,6962,92.247.32.226] Connection lost after 20 seconds
+2017-03-02T20:07:43+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:35592 (10.8.41.81:2223) [session: TT32114]
+2017-03-02T20:07:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:50754 (10.8.41.81:2223) [session: TT32115]
+2017-03-02T20:07:49+0000 [CowrieTelnetTransport,32114,67.229.141.98] login attempt: 41759
+2017-03-02T20:07:49+0000 [CowrieTelnetTransport,32114,67.229.141.98] login return, expect: [root/666666]
+2017-03-02T20:07:50+0000 [CowrieTelnetTransport,32114,67.229.141.98] login attempt [root/vizxv] failed
+2017-03-02T20:07:50+0000 [CowrieTelnetTransport,32114,67.229.141.98] Warning: state changed and new state returned
+2017-03-02T20:07:50+0000 [CowrieTelnetTransport,32115,67.229.141.98] login attempt: 41760
+2017-03-02T20:07:50+0000 [CowrieTelnetTransport,32115,67.229.141.98] login return, expect: [root/666666]
+2017-03-02T20:07:51+0000 [CowrieTelnetTransport,32115,67.229.141.98] login attempt [root/root] failed
+2017-03-02T20:07:51+0000 [CowrieTelnetTransport,32115,67.229.141.98] Warning: state changed and new state returned
+2017-03-02T20:07:51+0000 [CowrieTelnetTransport,32114,67.229.141.98] login attempt: 41761
+2017-03-02T20:07:51+0000 [CowrieTelnetTransport,32114,67.229.141.98] login return, expect: [root/666666]
+2017-03-02T20:07:52+0000 [CowrieTelnetTransport,32114,67.229.141.98] login attempt [enable/shell] failed
+2017-03-02T20:07:52+0000 [CowrieTelnetTransport,32114,67.229.141.98] Warning: state changed and new state returned
+2017-03-02T20:07:52+0000 [CowrieTelnetTransport,32115,67.229.141.98] login attempt: 41762
+2017-03-02T20:07:52+0000 [CowrieTelnetTransport,32115,67.229.141.98] login return, expect: [root/666666]
+2017-03-02T20:07:53+0000 [CowrieTelnetTransport,32115,67.229.141.98] login attempt [enable/shell] failed
+2017-03-02T20:07:53+0000 [CowrieTelnetTransport,32115,67.229.141.98] Warning: state changed and new state returned
+2017-03-02T20:07:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:52196 (10.8.41.81:2223) [session: TT32116]
+2017-03-02T20:07:53+0000 [CowrieTelnetTransport,32114,67.229.141.98] login attempt: 41763
+2017-03-02T20:07:53+0000 [CowrieTelnetTransport,32114,67.229.141.98] login return, expect: [root/666666]
+2017-03-02T20:07:54+0000 [CowrieTelnetTransport,32114,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-02T20:07:54+0000 [CowrieTelnetTransport,32114,67.229.141.98] Warning: state changed and new state returned
+2017-03-02T20:07:54+0000 [CowrieTelnetTransport,32115,67.229.141.98] login attempt: 41764
+2017-03-02T20:07:54+0000 [CowrieTelnetTransport,32115,67.229.141.98] login return, expect: [root/666666]
+2017-03-02T20:07:55+0000 [CowrieTelnetTransport,32115,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-02T20:07:55+0000 [CowrieTelnetTransport,32115,67.229.141.98] Warning: state changed and new state returned
+2017-03-02T20:07:57+0000 [CowrieTelnetTransport,32116,67.229.141.98] login attempt: 41765
+2017-03-02T20:07:57+0000 [CowrieTelnetTransport,32116,67.229.141.98] login return, expect: [root/666666]
+2017-03-02T20:07:58+0000 [CowrieTelnetTransport,32116,67.229.141.98] login attempt [admin/password] failed
+2017-03-02T20:07:58+0000 [CowrieTelnetTransport,32116,67.229.141.98] Warning: state changed and new state returned
+2017-03-02T20:07:58+0000 [CowrieTelnetTransport,32116,67.229.141.98] login attempt: 41766
+2017-03-02T20:07:58+0000 [CowrieTelnetTransport,32116,67.229.141.98] login return, expect: [root/666666]
+2017-03-02T20:07:59+0000 [CowrieTelnetTransport,32116,67.229.141.98] login attempt [enable/shell] failed
+2017-03-02T20:07:59+0000 [CowrieTelnetTransport,32116,67.229.141.98] Warning: state changed and new state returned
+2017-03-02T20:07:59+0000 [CowrieTelnetTransport,32116,67.229.141.98] login attempt: 41767
+2017-03-02T20:07:59+0000 [CowrieTelnetTransport,32116,67.229.141.98] login return, expect: [root/666666]
+2017-03-02T20:08:00+0000 [CowrieTelnetTransport,32116,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-02T20:08:00+0000 [CowrieTelnetTransport,32116,67.229.141.98] Warning: state changed and new state returned
+2017-03-02T20:08:00+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:37606 (10.8.41.81:2223) [session: TT32117]
