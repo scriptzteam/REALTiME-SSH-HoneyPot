@@ -447,3 +447,50 @@
 2017-03-02T20:13:59+0000 [CowrieTelnetTransport,32132,115.76.122.188] Received unhandled keyID: '\x00'
 2017-03-02T20:13:59+0000 [CowrieTelnetTransport,32132,115.76.122.188] CMD: shell
 2017-03-02T20:13:59+0000 [CowrieTelnetTransport,32132,115.76.122.188] Command not found: shell
+2017-03-02T20:14:04+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 115.76.122.188:54486 (10.8.41.81:2223) [session: TT32135]
+2017-03-02T20:14:24+0000 [CowrieTelnetTransport,32135,115.76.122.188] login attempt: 2
+2017-03-02T20:14:24+0000 [CowrieTelnetTransport,32135,115.76.122.188] login return, expect: [root/54321]
+2017-03-02T20:14:25+0000 [CowrieTelnetTransport,32135,115.76.122.188] login attempt [admin/4321] failed
+2017-03-02T20:14:25+0000 [CowrieTelnetTransport,32135,115.76.122.188] Warning: state changed and new state returned
+2017-03-02T20:14:43+0000 [CowrieTelnetTransport,32128,121.190.157.144] Closing TTY Log: log/tty/20170302-201300-None-32128i.log after 102 seconds
+2017-03-02T20:14:43+0000 [CowrieTelnetTransport,32128,121.190.157.144] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-02T20:14:43+0000 [CowrieTelnetTransport,32128,121.190.157.144] Connection lost after 106 seconds
+2017-03-02T20:14:44+0000 [CowrieTelnetTransport,32134,115.76.122.188] login attempt: 3
+2017-03-02T20:14:44+0000 [CowrieTelnetTransport,32134,115.76.122.188] login return, expect: [root/54321]
+2017-03-02T20:14:45+0000 [CowrieTelnetTransport,32134,115.76.122.188] login attempt [root/admin] failed
+2017-03-02T20:14:45+0000 [CowrieTelnetTransport,32134,115.76.122.188] Warning: state changed and new state returned
+2017-03-02T20:14:54+0000 [CowrieTelnetTransport,32134,115.76.122.188] login attempt: 4
+2017-03-02T20:14:54+0000 [CowrieTelnetTransport,32134,115.76.122.188] login return, expect: [root/54321]
+2017-03-02T20:14:55+0000 [CowrieTelnetTransport,32134,115.76.122.188] login attempt [enable\x00/system\x00] failed
+2017-03-02T20:14:55+0000 [CowrieTelnetTransport,32134,115.76.122.188] Warning: state changed and new state returned
+2017-03-02T20:14:57+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 80.238.124.55:49897 (10.8.41.81:2223) [session: TT32136]
+2017-03-02T20:14:58+0000 [CowrieTelnetTransport,32136,80.238.124.55] first time for 80.238.124.55, need: 1
+2017-03-02T20:14:58+0000 [CowrieTelnetTransport,32136,80.238.124.55] login attempt: 1
+2017-03-02T20:14:59+0000 [CowrieTelnetTransport,32136,80.238.124.55] login attempt [admin/pass] succeeded
+2017-03-02T20:15:00+0000 [CowrieTelnetTransport,32136,80.238.124.55] Opening TTY Log: log/tty/20170302-201500-None-32136i.log
+2017-03-02T20:15:00+0000 [CowrieTelnetTransport,32136,80.238.124.55] Warning: state changed and new state returned
+2017-03-02T20:15:00+0000 [CowrieTelnetTransport,32136,80.238.124.55] CMD: enable
+2017-03-02T20:15:00+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command found: enable 
+2017-03-02T20:15:00+0000 [CowrieTelnetTransport,32136,80.238.124.55] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-02T20:15:00+0000 [CowrieTelnetTransport,32136,80.238.124.55] CMD: shell
+2017-03-02T20:15:00+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command not found: shell
+2017-03-02T20:15:00+0000 [CowrieTelnetTransport,32136,80.238.124.55] CMD: sh
+2017-03-02T20:15:00+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command found: sh 
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] CMD: cat /proc/mounts; /bin/busybox KXCXW
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command found: cat /proc/mounts
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command found: /bin/busybox KXCXW
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox KXCXW
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command found: cd /dev/shm
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command found: cat .s
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command found: cp /bin/echo .s
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command found: /bin/busybox KXCXW
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] CMD: nc; wget; /bin/busybox KXCXW
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command not found: nc
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command found: wget 
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command found: /bin/busybox KXCXW
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command not found: dd bs=52 count=1 if=.s
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command found: cat /dev/shm/.s
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] CMD: /bin/busybox KXCXW
+2017-03-02T20:15:01+0000 [CowrieTelnetTransport,32136,80.238.124.55] Command found: /bin/busybox KXCXW
