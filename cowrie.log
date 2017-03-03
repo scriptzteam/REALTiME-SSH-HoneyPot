@@ -740,3 +740,37 @@
 	reason: 
 2017-03-03T19:26:46+0000 [HoneyPotSSHTransport,7409,221.194.47.224] connection lost
 2017-03-03T19:26:46+0000 [HoneyPotSSHTransport,7409,221.194.47.224] Connection lost after 2 seconds
+2017-03-03T19:27:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7408,195.22.127.83] 'root' trying auth 'password'
+2017-03-03T19:27:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7408,195.22.127.83] login attempt: 3719
+2017-03-03T19:27:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7408,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-03T19:27:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7408,195.22.127.83] login attempt [root/uClinux] failed
+2017-03-03T19:27:05+0000 [-] 'root' failed auth 'password'
+2017-03-03T19:27:05+0000 [-] unauthorized login: 
+2017-03-03T19:27:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7408,195.22.127.83] 'root' trying auth 'password'
+2017-03-03T19:27:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7408,195.22.127.83] login attempt: 3720
+2017-03-03T19:27:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7408,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-03T19:27:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7408,195.22.127.83] login attempt [root/uClinux] failed
+2017-03-03T19:27:07+0000 [HoneyPotSSHTransport,7408,195.22.127.83] connection lost
+2017-03-03T19:27:07+0000 [HoneyPotSSHTransport,7408,195.22.127.83] Connection lost after 74 seconds
+2017-03-03T19:27:08+0000 [-] 'root' failed auth 'password'
+2017-03-03T19:27:08+0000 [-] unauthorized login: 
+2017-03-03T19:27:08+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-03T19:27:08+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
