@@ -2652,3 +2652,30 @@
 2017-03-03T11:31:33+0000 [CowrieTelnetTransport,34421,177.242.162.166] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-03T11:31:33+0000 [CowrieTelnetTransport,34421,177.242.162.166] Connection lost after 220 seconds
+2017-03-03T11:32:20+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 192.162.101.217:53725 (10.8.41.81:2222) [session: 0dcada47]
+2017-03-03T11:32:20+0000 [HoneyPotSSHTransport,7262,192.162.101.217] Remote SSH version: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8
+2017-03-03T11:32:20+0000 [HoneyPotSSHTransport,7262,192.162.101.217] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-03-03T11:32:20+0000 [HoneyPotSSHTransport,7262,192.162.101.217] outgoing: 'aes128-ctr' 'hmac-md5' 'none'
+2017-03-03T11:32:20+0000 [HoneyPotSSHTransport,7262,192.162.101.217] incoming: 'aes128-ctr' 'hmac-md5' 'none'
+2017-03-03T11:32:20+0000 [HoneyPotSSHTransport,7262,192.162.101.217] NEW KEYS
+2017-03-03T11:32:20+0000 [HoneyPotSSHTransport,7262,192.162.101.217] starting service 'ssh-userauth'
+2017-03-03T11:32:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7262,192.162.101.217] 'lty' trying auth 'none'
+2017-03-03T11:32:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7262,192.162.101.217] 'lty' authenticated with 'none'
+2017-03-03T11:32:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7262,192.162.101.217] starting service 'ssh-connection'
+2017-03-03T11:32:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,7262,192.162.101.217] got global no-more-sessions@openssh.com request
+2017-03-03T11:32:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,7262,192.162.101.217] got channel 'direct-tcpip' request
+2017-03-03T11:32:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,7262,192.162.101.217] direct-tcp connection request to 52.207.56.193:80 from 127.0.0.1:57088
+2017-03-03T11:32:30+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7262,192.162.101.217] direct-tcp forward to 52.207.56.193:80 with data 'GET / HTTP/1.1\r\nUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36\r\nHost: www.alexa.com\r\nAccept: */*\r\n\r\n'
+2017-03-03T11:32:30+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7262,192.162.101.217] failed to connect: Connection refused
+2017-03-03T11:32:30+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7262,192.162.101.217] sending close 0
+2017-03-03T11:32:30+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7262,192.162.101.217] remote close
+2017-03-03T11:32:40+0000 [HoneyPotSSHTransport,7262,192.162.101.217] Got remote error, code 11
+	reason: disconnected by user
+2017-03-03T11:32:40+0000 [HoneyPotSSHTransport,7262,192.162.101.217] avatar lty logging out
+2017-03-03T11:32:40+0000 [HoneyPotSSHTransport,7262,192.162.101.217] connection lost
+2017-03-03T11:32:40+0000 [HoneyPotSSHTransport,7262,192.162.101.217] Connection lost after 19 seconds
+2017-03-03T11:32:46+0000 [CowrieTelnetTransport,34432,218.161.91.81] Closing TTY Log: log/tty/20170303-113103-None-34432i.log after 102 seconds
+2017-03-03T11:32:46+0000 [CowrieTelnetTransport,34432,218.161.91.81] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-03T11:32:46+0000 [CowrieTelnetTransport,34432,218.161.91.81] Connection lost after 106 seconds
+2017-03-03T11:33:01+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:48220 (10.8.41.81:2223) [session: TT34433]
