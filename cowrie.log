@@ -1550,3 +1550,44 @@
 2017-03-04T05:21:32+0000 [CowrieTelnetTransport,36965,123.149.77.178] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-04T05:21:32+0000 [CowrieTelnetTransport,36965,123.149.77.178] Connection lost after 191 seconds
+2017-03-04T05:22:27+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 88.247.191.135:54243 (10.8.41.81:2223) [session: TT36966]
+2017-03-04T05:22:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 109.236.91.85:60106 (10.8.41.81:2222) [session: 702c9d93]
+2017-03-04T05:22:29+0000 [HoneyPotSSHTransport,7694,109.236.91.85] Remote SSH version: SSH-2.0-libssh2_1.8.0
+2017-03-04T05:22:29+0000 [HoneyPotSSHTransport,7694,109.236.91.85] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-03-04T05:22:29+0000 [HoneyPotSSHTransport,7694,109.236.91.85] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-04T05:22:29+0000 [HoneyPotSSHTransport,7694,109.236.91.85] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-04T05:22:29+0000 [HoneyPotSSHTransport,7694,109.236.91.85] NEW KEYS
+2017-03-04T05:22:29+0000 [HoneyPotSSHTransport,7694,109.236.91.85] starting service 'ssh-userauth'
+2017-03-04T05:22:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7694,109.236.91.85] 'admin' trying auth 'none'
+2017-03-04T05:22:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7694,109.236.91.85] 'admin' authenticated with 'none'
+2017-03-04T05:22:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7694,109.236.91.85] starting service 'ssh-connection'
+2017-03-04T05:22:31+0000 [CowrieTelnetTransport,36966,88.247.191.135] first time for 88.247.191.135, need: 1
+2017-03-04T05:22:31+0000 [CowrieTelnetTransport,36966,88.247.191.135] login attempt: 1
+2017-03-04T05:22:32+0000 [CowrieTelnetTransport,36966,88.247.191.135] login attempt [root/xc3511] succeeded
+2017-03-04T05:22:34+0000 [CowrieTelnetTransport,36966,88.247.191.135] Opening TTY Log: log/tty/20170304-052234-None-36966i.log
+2017-03-04T05:22:34+0000 [CowrieTelnetTransport,36966,88.247.191.135] Warning: state changed and new state returned
+2017-03-04T05:22:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,7694,109.236.91.85] got channel 'direct-tcpip' request
+2017-03-04T05:22:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,7694,109.236.91.85] direct-tcp connection request to google.com:80 from localhost:8080
+2017-03-04T05:22:34+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7694,109.236.91.85] direct-tcp forward to google.com:80 with data 'GET /\r\n'
+2017-03-04T05:22:34+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7694,109.236.91.85] failed to connect: Connection refused
+2017-03-04T05:22:34+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7694,109.236.91.85] sending close 0
+2017-03-04T05:22:34+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7694,109.236.91.85] remote eof
+2017-03-04T05:22:34+0000 [HoneyPotSSHTransport,7694,109.236.91.85] avatar admin logging out
+2017-03-04T05:22:34+0000 [HoneyPotSSHTransport,7694,109.236.91.85] connection lost
+2017-03-04T05:22:34+0000 [HoneyPotSSHTransport,7694,109.236.91.85] Connection lost after 4 seconds
+2017-03-04T05:22:34+0000 [CowrieTelnetTransport,36966,88.247.191.135] CMD: enable
+2017-03-04T05:22:34+0000 [CowrieTelnetTransport,36966,88.247.191.135] Command found: enable 
+2017-03-04T05:22:34+0000 [CowrieTelnetTransport,36966,88.247.191.135] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-04T05:22:34+0000 [CowrieTelnetTransport,36966,88.247.191.135] CMD: system
+2017-03-04T05:22:34+0000 [CowrieTelnetTransport,36966,88.247.191.135] Command not found: system
+2017-03-04T05:22:34+0000 [CowrieTelnetTransport,36966,88.247.191.135] CMD: shell
+2017-03-04T05:22:34+0000 [CowrieTelnetTransport,36966,88.247.191.135] Command not found: shell
+2017-03-04T05:22:34+0000 [CowrieTelnetTransport,36966,88.247.191.135] CMD: sh
+2017-03-04T05:22:34+0000 [CowrieTelnetTransport,36966,88.247.191.135] Command found: sh 
+2017-03-04T05:22:35+0000 [CowrieTelnetTransport,36966,88.247.191.135] CMD: /bin/busybox FREEPEIN; echo -e '\x5a\x41\x43\x48\x41\x52\x59\x42\x55\x54\x43\x48\x41'
+2017-03-04T05:22:35+0000 [CowrieTelnetTransport,36966,88.247.191.135] Command found: /bin/busybox FREEPEIN
+2017-03-04T05:22:35+0000 [CowrieTelnetTransport,36966,88.247.191.135] Command found: echo -e '\x5a\x41\x43\x48\x41\x52\x59\x42\x55\x54\x43\x48\x41'
+2017-03-04T05:22:36+0000 [CowrieTelnetTransport,36966,88.247.191.135] Closing TTY Log: log/tty/20170304-052234-None-36966i.log after 2 seconds
+2017-03-04T05:22:36+0000 [CowrieTelnetTransport,36966,88.247.191.135] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-04T05:22:36+0000 [CowrieTelnetTransport,36966,88.247.191.135] Connection lost after 8 seconds
