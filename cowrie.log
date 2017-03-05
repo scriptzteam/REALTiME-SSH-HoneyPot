@@ -1755,3 +1755,75 @@
 2017-03-05T22:22:51+0000 [HoneyPotSSHTransport,9211,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
 2017-03-05T22:22:51+0000 [HoneyPotSSHTransport,9211,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
 2017-03-05T22:22:51+0000 [HoneyPotSSHTransport,9211,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-05T22:24:02+0000 [HoneyPotSSHTransport,9211,116.31.116.51] NEW KEYS
+2017-03-05T22:24:03+0000 [HoneyPotSSHTransport,9211,116.31.116.51] starting service 'ssh-userauth'
+2017-03-05T22:24:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9211,116.31.116.51] 'root' trying auth 'none'
+2017-03-05T22:24:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9211,116.31.116.51] 'root' authenticated with 'none'
+2017-03-05T22:24:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9211,116.31.116.51] starting service 'ssh-connection'
+2017-03-05T22:24:13+0000 [HoneyPotSSHTransport,9211,116.31.116.51] Got remote error, code 11
+	reason: 
+2017-03-05T22:24:13+0000 [HoneyPotSSHTransport,9211,116.31.116.51] avatar root logging out
+2017-03-05T22:24:13+0000 [HoneyPotSSHTransport,9211,116.31.116.51] connection lost
+2017-03-05T22:24:13+0000 [HoneyPotSSHTransport,9211,116.31.116.51] Connection lost after 89 seconds
+2017-03-05T22:24:18+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.51:20389 (10.8.41.81:2222) [session: 42fbcd94]
+2017-03-05T22:24:21+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 180.151.30.51:36944 (10.8.41.81:2223) [session: TT42564]
+2017-03-05T22:24:22+0000 [CowrieTelnetTransport,42564,180.151.30.51] first time for 180.151.30.51, need: 1
+2017-03-05T22:24:22+0000 [CowrieTelnetTransport,42564,180.151.30.51] login attempt: 1
+2017-03-05T22:24:23+0000 [CowrieTelnetTransport,42564,180.151.30.51] login attempt [support/support] succeeded
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Opening TTY Log: log/tty/20170305-222425-None-42564i.log
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Warning: state changed and new state returned
+2017-03-05T22:24:25+0000 [HoneyPotSSHTransport,9212,116.31.116.51] Remote SSH version: SSH-2.0-PUTTY
+2017-03-05T22:24:25+0000 [HoneyPotSSHTransport,9212,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-05T22:24:25+0000 [HoneyPotSSHTransport,9212,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-05T22:24:25+0000 [HoneyPotSSHTransport,9212,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] CMD: enable
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command found: enable 
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] CMD: shell
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command not found: shell
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] CMD: sh
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command found: sh 
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] CMD: cat /proc/mounts; /bin/busybox BODTG
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command found: cat /proc/mounts
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command found: /bin/busybox BODTG
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox BODTG
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command found: cd /dev/shm
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command found: cat .s
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command found: cp /bin/echo .s
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command found: /bin/busybox BODTG
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] CMD: nc; wget; /bin/busybox BODTG
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command not found: nc
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command found: wget 
+2017-03-05T22:24:25+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command found: /bin/busybox BODTG
+2017-03-05T22:24:26+0000 [CowrieTelnetTransport,42564,180.151.30.51] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-05T22:24:26+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command not found: dd bs=52 count=1 if=.s
+2017-03-05T22:24:26+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command found: cat /dev/shm/.s
+2017-03-05T22:24:26+0000 [CowrieTelnetTransport,42564,180.151.30.51] CMD: /bin/busybox BODTG
+2017-03-05T22:24:26+0000 [CowrieTelnetTransport,42564,180.151.30.51] Command found: /bin/busybox BODTG
+2017-03-05T22:24:30+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:55138 (10.8.41.81:2223) [session: TT42565]
+2017-03-05T22:24:34+0000 [CowrieTelnetTransport,42565,67.229.141.98] login attempt: 61142
+2017-03-05T22:24:34+0000 [CowrieTelnetTransport,42565,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T22:24:35+0000 [CowrieTelnetTransport,42565,67.229.141.98] login attempt [root/jvbzd] failed
+2017-03-05T22:24:35+0000 [CowrieTelnetTransport,42565,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T22:24:35+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:37287 (10.8.41.81:2223) [session: TT42566]
+2017-03-05T22:24:35+0000 [CowrieTelnetTransport,42565,67.229.141.98] login attempt: 61143
+2017-03-05T22:24:35+0000 [CowrieTelnetTransport,42565,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T22:24:36+0000 [CowrieTelnetTransport,42565,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T22:24:36+0000 [CowrieTelnetTransport,42565,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T22:24:37+0000 [CowrieTelnetTransport,42565,67.229.141.98] login attempt: 61144
+2017-03-05T22:24:37+0000 [CowrieTelnetTransport,42565,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T22:24:38+0000 [CowrieTelnetTransport,42565,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-05T22:24:38+0000 [CowrieTelnetTransport,42565,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T22:24:40+0000 [CowrieTelnetTransport,42566,67.229.141.98] login attempt: 61145
+2017-03-05T22:24:40+0000 [CowrieTelnetTransport,42566,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T22:24:41+0000 [CowrieTelnetTransport,42566,67.229.141.98] login attempt [administrator/1234] failed
+2017-03-05T22:24:41+0000 [CowrieTelnetTransport,42566,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T22:24:41+0000 [CowrieTelnetTransport,42566,67.229.141.98] login attempt: 61146
+2017-03-05T22:24:41+0000 [CowrieTelnetTransport,42566,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T22:24:42+0000 [CowrieTelnetTransport,42566,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T22:24:42+0000 [CowrieTelnetTransport,42566,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T22:24:43+0000 [CowrieTelnetTransport,42566,67.229.141.98] login attempt: 61147
+2017-03-05T22:24:43+0000 [CowrieTelnetTransport,42566,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T22:24:44+0000 [CowrieTelnetTransport,42566,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-05T22:24:44+0000 [CowrieTelnetTransport,42566,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T22:24:56+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:51305 (10.8.41.81:2223) [session: TT42567]
