@@ -2011,3 +2011,42 @@
 2017-03-05T15:31:34+0000 [CowrieTelnetTransport,41483,24.37.128.38] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-05T15:31:34+0000 [CowrieTelnetTransport,41483,24.37.128.38] Connection lost after 6 seconds
+2017-03-05T15:32:26+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.51:17411 (10.8.41.81:2222) [session: f345d13e]
+2017-03-05T15:32:33+0000 [HoneyPotSSHTransport,8807,116.31.116.51] Remote SSH version: SSH-2.0-PUTTY
+2017-03-05T15:32:33+0000 [HoneyPotSSHTransport,8807,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-05T15:32:33+0000 [HoneyPotSSHTransport,8807,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-05T15:32:33+0000 [HoneyPotSSHTransport,8807,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-05T15:32:47+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 182.246.240.43:54226 (10.8.41.81:2223) [session: TT41484]
+2017-03-05T15:32:53+0000 [CowrieTelnetTransport,41484,182.246.240.43] first time for 182.246.240.43, need: 1
+2017-03-05T15:32:53+0000 [CowrieTelnetTransport,41484,182.246.240.43] login attempt: 1
+2017-03-05T15:32:54+0000 [CowrieTelnetTransport,41484,182.246.240.43] login attempt [admin/admin1234] succeeded
+2017-03-05T15:32:56+0000 [CowrieTelnetTransport,41484,182.246.240.43] Opening TTY Log: log/tty/20170305-153256-None-41484i.log
+2017-03-05T15:32:56+0000 [CowrieTelnetTransport,41484,182.246.240.43] Warning: state changed and new state returned
+2017-03-05T15:32:57+0000 [CowrieTelnetTransport,41484,182.246.240.43] CMD: enable
+2017-03-05T15:32:57+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command found: enable 
+2017-03-05T15:32:57+0000 [CowrieTelnetTransport,41484,182.246.240.43] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-05T15:32:57+0000 [CowrieTelnetTransport,41484,182.246.240.43] CMD: shell
+2017-03-05T15:32:57+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command not found: shell
+2017-03-05T15:32:57+0000 [CowrieTelnetTransport,41484,182.246.240.43] CMD: sh
+2017-03-05T15:32:57+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command found: sh 
+2017-03-05T15:32:57+0000 [CowrieTelnetTransport,41484,182.246.240.43] CMD: cat /proc/mounts; /bin/busybox URRRW
+2017-03-05T15:32:57+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command found: cat /proc/mounts
+2017-03-05T15:32:57+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command found: /bin/busybox URRRW
+2017-03-05T15:32:58+0000 [CowrieTelnetTransport,41484,182.246.240.43] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox URRRW
+2017-03-05T15:32:58+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command found: cd /dev/shm
+2017-03-05T15:32:58+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command found: cat .s
+2017-03-05T15:32:58+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command found: cp /bin/echo .s
+2017-03-05T15:32:58+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command found: /bin/busybox URRRW
+2017-03-05T15:32:59+0000 [CowrieTelnetTransport,41484,182.246.240.43] CMD: nc; wget; /bin/busybox URRRW
+2017-03-05T15:32:59+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command not found: nc
+2017-03-05T15:32:59+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command found: wget 
+2017-03-05T15:32:59+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command found: /bin/busybox URRRW
+2017-03-05T15:32:59+0000 [CowrieTelnetTransport,41482,87.117.13.241] Closing TTY Log: log/tty/20170305-153117-None-41482i.log after 101 seconds
+2017-03-05T15:32:59+0000 [CowrieTelnetTransport,41482,87.117.13.241] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-05T15:32:59+0000 [CowrieTelnetTransport,41482,87.117.13.241] Connection lost after 104 seconds
+2017-03-05T15:32:59+0000 [CowrieTelnetTransport,41484,182.246.240.43] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-05T15:32:59+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command not found: dd bs=52 count=1 if=.s
+2017-03-05T15:32:59+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command found: cat /dev/shm/.s
+2017-03-05T15:32:59+0000 [CowrieTelnetTransport,41484,182.246.240.43] CMD: /bin/busybox URRRW
+2017-03-05T15:32:59+0000 [CowrieTelnetTransport,41484,182.246.240.43] Command found: /bin/busybox URRRW
