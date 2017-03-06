@@ -404,3 +404,63 @@
 2017-03-06T02:13:57+0000 [CowrieTelnetTransport,43277,46.119.218.44] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-06T02:13:57+0000 [CowrieTelnetTransport,43277,46.119.218.44] Connection lost after 4 seconds
+2017-03-06T02:14:06+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 116.111.215.104:58741 (10.8.41.81:2223) [session: TT43278]
+2017-03-06T02:14:08+0000 [CowrieTelnetTransport,43278,116.111.215.104] first time for 116.111.215.104, need: 1
+2017-03-06T02:14:08+0000 [CowrieTelnetTransport,43278,116.111.215.104] login attempt: 1
+2017-03-06T02:14:09+0000 [CowrieTelnetTransport,43278,116.111.215.104] login attempt [root/klv1234] succeeded
+2017-03-06T02:14:10+0000 [CowrieTelnetTransport,43278,116.111.215.104] Opening TTY Log: log/tty/20170306-021410-None-43278i.log
+2017-03-06T02:14:10+0000 [CowrieTelnetTransport,43278,116.111.215.104] Warning: state changed and new state returned
+2017-03-06T02:14:11+0000 [CowrieTelnetTransport,43276,216.157.85.71] Connection lost after 36 seconds
+2017-03-06T02:14:11+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 216.157.85.71:51196 (10.8.41.81:2223) [session: TT43279]
+2017-03-06T02:14:11+0000 [CowrieTelnetTransport,43278,116.111.215.104] CMD: enable
+2017-03-06T02:14:11+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command found: enable 
+2017-03-06T02:14:11+0000 [CowrieTelnetTransport,43278,116.111.215.104] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-06T02:14:11+0000 [CowrieTelnetTransport,43278,116.111.215.104] CMD: shell
+2017-03-06T02:14:11+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command not found: shell
+2017-03-06T02:14:11+0000 [CowrieTelnetTransport,43278,116.111.215.104] CMD: sh
+2017-03-06T02:14:11+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command found: sh 
+2017-03-06T02:14:11+0000 [HoneyPotSSHTransport,9429,116.31.116.51] NEW KEYS
+2017-03-06T02:14:11+0000 [CowrieTelnetTransport,43278,116.111.215.104] CMD: cat /proc/mounts; /bin/busybox PYOCC
+2017-03-06T02:14:11+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command found: cat /proc/mounts
+2017-03-06T02:14:11+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command found: /bin/busybox PYOCC
+2017-03-06T02:14:12+0000 [CowrieTelnetTransport,43279,216.157.85.71] login attempt: 29
+2017-03-06T02:14:12+0000 [CowrieTelnetTransport,43279,216.157.85.71] login return, expect: [root/12345]
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43279,216.157.85.71] login attempt [root/00000000] failed
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43279,216.157.85.71] Warning: state changed and new state returned
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43278,116.111.215.104] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox PYOCC
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command found: cd /dev/shm
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command found: cat .s
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command found: cp /bin/echo .s
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command found: /bin/busybox PYOCC
+2017-03-06T02:14:13+0000 [HoneyPotSSHTransport,9429,116.31.116.51] starting service 'ssh-userauth'
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43278,116.111.215.104] CMD: nc; wget; /bin/busybox PYOCC
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command not found: nc
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command found: wget 
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command found: /bin/busybox PYOCC
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43279,216.157.85.71] login attempt: 30
+2017-03-06T02:14:13+0000 [CowrieTelnetTransport,43279,216.157.85.71] login return, expect: [root/12345]
+2017-03-06T02:14:14+0000 [CowrieTelnetTransport,43279,216.157.85.71] login attempt [enable\x00/system\x00] failed
+2017-03-06T02:14:14+0000 [CowrieTelnetTransport,43279,216.157.85.71] Warning: state changed and new state returned
+2017-03-06T02:14:14+0000 [CowrieTelnetTransport,43278,116.111.215.104] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-06T02:14:14+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command not found: dd bs=52 count=1 if=.s
+2017-03-06T02:14:14+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command found: cat /dev/shm/.s
+2017-03-06T02:14:14+0000 [CowrieTelnetTransport,43278,116.111.215.104] CMD: /bin/busybox PYOCC
+2017-03-06T02:14:14+0000 [CowrieTelnetTransport,43278,116.111.215.104] Command found: /bin/busybox PYOCC
+2017-03-06T02:14:15+0000 [CowrieTelnetTransport,43279,216.157.85.71] login attempt: 31
+2017-03-06T02:14:15+0000 [CowrieTelnetTransport,43279,216.157.85.71] login return, expect: [root/12345]
+2017-03-06T02:14:16+0000 [CowrieTelnetTransport,43279,216.157.85.71] login attempt [shell\x00/sh\x00] failed
+2017-03-06T02:14:16+0000 [CowrieTelnetTransport,43279,216.157.85.71] Warning: state changed and new state returned
+2017-03-06T02:14:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9429,116.31.116.51] 'root' trying auth 'none'
+2017-03-06T02:14:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9429,116.31.116.51] 'root' authenticated with 'none'
+2017-03-06T02:14:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9429,116.31.116.51] starting service 'ssh-connection'
+2017-03-06T02:14:18+0000 [HoneyPotSSHTransport,9429,116.31.116.51] Got remote error, code 11
+	reason: 
+2017-03-06T02:14:18+0000 [HoneyPotSSHTransport,9429,116.31.116.51] avatar root logging out
+2017-03-06T02:14:18+0000 [HoneyPotSSHTransport,9429,116.31.116.51] connection lost
+2017-03-06T02:14:18+0000 [HoneyPotSSHTransport,9429,116.31.116.51] Connection lost after 60 seconds
+2017-03-06T02:14:49+0000 [CowrieTelnetTransport,43279,216.157.85.71] Connection lost after 37 seconds
+2017-03-06T02:14:54+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.51:24456 (10.8.41.81:2222) [session: b0f0d723]
+2017-03-06T02:14:56+0000 [HoneyPotSSHTransport,9430,116.31.116.51] Remote SSH version: SSH-2.0-PUTTY
+2017-03-06T02:14:56+0000 [HoneyPotSSHTransport,9430,116.31.116.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-06T02:14:56+0000 [HoneyPotSSHTransport,9430,116.31.116.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-06T02:14:56+0000 [HoneyPotSSHTransport,9430,116.31.116.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
