@@ -5391,3 +5391,52 @@
 2017-03-06T14:39:35+0000 [CowrieTelnetTransport,45528,67.229.141.98] Connection lost after 49 seconds
 2017-03-06T14:39:35+0000 [CowrieTelnetTransport,45529,67.229.141.98] Connection lost after 47 seconds
 2017-03-06T14:39:37+0000 [CowrieTelnetTransport,45530,67.229.141.98] Connection lost after 41 seconds
+2017-03-06T14:40:07+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 217.23.10.20:35922 (10.8.41.81:2222) [session: 14c36bf2]
+2017-03-06T14:40:07+0000 [HoneyPotSSHTransport,10350,217.23.10.20] Remote SSH version: SSH-2.0-libssh2_1.8.1
+2017-03-06T14:40:07+0000 [HoneyPotSSHTransport,10350,217.23.10.20] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-03-06T14:40:07+0000 [HoneyPotSSHTransport,10350,217.23.10.20] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-06T14:40:07+0000 [HoneyPotSSHTransport,10350,217.23.10.20] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-06T14:40:07+0000 [HoneyPotSSHTransport,10350,217.23.10.20] NEW KEYS
+2017-03-06T14:40:07+0000 [HoneyPotSSHTransport,10350,217.23.10.20] starting service 'ssh-userauth'
+2017-03-06T14:40:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10350,217.23.10.20] 'admin' trying auth 'none'
+2017-03-06T14:40:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10350,217.23.10.20] 'admin' authenticated with 'none'
+2017-03-06T14:40:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,10350,217.23.10.20] starting service 'ssh-connection'
+2017-03-06T14:40:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,10350,217.23.10.20] got channel 'direct-tcpip' request
+2017-03-06T14:40:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,10350,217.23.10.20] direct-tcp connection request to smtp.gmail.com:25 from localhost:8080
+2017-03-06T14:40:09+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10350,217.23.10.20] direct-tcp forward to smtp.gmail.com:25 with data 'EHLO test.com'
+2017-03-06T14:40:09+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10350,217.23.10.20] failed to connect: Connection refused
+2017-03-06T14:40:09+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10350,217.23.10.20] sending close 0
+2017-03-06T14:40:09+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10350,217.23.10.20] remote eof
+2017-03-06T14:40:09+0000 [HoneyPotSSHTransport,10350,217.23.10.20] avatar admin logging out
+2017-03-06T14:40:09+0000 [HoneyPotSSHTransport,10350,217.23.10.20] connection lost
+2017-03-06T14:40:09+0000 [HoneyPotSSHTransport,10350,217.23.10.20] Connection lost after 1 seconds
+2017-03-06T14:40:55+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 46.38.13.143:49195 (10.8.41.81:2223) [session: TT45532]
+2017-03-06T14:40:56+0000 [CowrieTelnetTransport,45532,46.38.13.143] first time for 46.38.13.143, need: 1
+2017-03-06T14:40:56+0000 [CowrieTelnetTransport,45532,46.38.13.143] login attempt: 1
+2017-03-06T14:40:57+0000 [CowrieTelnetTransport,45532,46.38.13.143] login attempt [admin/smcadmin] succeeded
+2017-03-06T14:40:59+0000 [CowrieTelnetTransport,45532,46.38.13.143] Opening TTY Log: log/tty/20170306-144059-None-45532i.log
+2017-03-06T14:40:59+0000 [CowrieTelnetTransport,45532,46.38.13.143] Warning: state changed and new state returned
+2017-03-06T14:40:59+0000 [CowrieTelnetTransport,45532,46.38.13.143] CMD: enable
+2017-03-06T14:40:59+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command found: enable 
+2017-03-06T14:40:59+0000 [CowrieTelnetTransport,45532,46.38.13.143] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-06T14:40:59+0000 [CowrieTelnetTransport,45532,46.38.13.143] CMD: shell
+2017-03-06T14:40:59+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command not found: shell
+2017-03-06T14:40:59+0000 [CowrieTelnetTransport,45532,46.38.13.143] CMD: sh
+2017-03-06T14:40:59+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command found: sh 
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] CMD: cat /proc/mounts; /bin/busybox WPCIQ
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command found: cat /proc/mounts
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command found: /bin/busybox WPCIQ
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox WPCIQ
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command found: cd /dev/shm
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command found: cat .s
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command found: cp /bin/echo .s
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command found: /bin/busybox WPCIQ
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] CMD: nc; wget; /bin/busybox WPCIQ
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command not found: nc
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command found: wget 
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command found: /bin/busybox WPCIQ
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command not found: dd bs=52 count=1 if=.s
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command found: cat /dev/shm/.s
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] CMD: /bin/busybox WPCIQ
+2017-03-06T14:41:00+0000 [CowrieTelnetTransport,45532,46.38.13.143] Command found: /bin/busybox WPCIQ
