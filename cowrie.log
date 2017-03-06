@@ -5934,3 +5934,97 @@
 2017-03-06T05:39:44+0000 [HoneyPotSSHTransport,9606,103.243.107.201] avatar root logging out
 2017-03-06T05:39:44+0000 [HoneyPotSSHTransport,9606,103.243.107.201] connection lost
 2017-03-06T05:39:44+0000 [HoneyPotSSHTransport,9606,103.243.107.201] Connection lost after 5 seconds
+2017-03-06T05:40:15+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 210.84.47.196:50342 (10.8.41.81:2223) [session: TT43865]
+2017-03-06T05:40:16+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.243.107.233:63774 (10.8.41.81:2222) [session: d9e34ef8]
+2017-03-06T05:40:17+0000 [CowrieTelnetTransport,43865,210.84.47.196] first time for 210.84.47.196, need: 1
+2017-03-06T05:40:17+0000 [CowrieTelnetTransport,43865,210.84.47.196] login attempt: 1
+2017-03-06T05:40:18+0000 [CowrieTelnetTransport,43865,210.84.47.196] login attempt [admin1/password] succeeded
+2017-03-06T05:40:19+0000 [CowrieTelnetTransport,43865,210.84.47.196] Opening TTY Log: log/tty/20170306-054019-None-43865i.log
+2017-03-06T05:40:19+0000 [CowrieTelnetTransport,43865,210.84.47.196] Warning: state changed and new state returned
+2017-03-06T05:40:19+0000 [HoneyPotSSHTransport,9607,103.243.107.233] Remote SSH version: SSH-2.0-Granados-1.0
+2017-03-06T05:40:19+0000 [HoneyPotSSHTransport,9607,103.243.107.233] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-03-06T05:40:19+0000 [HoneyPotSSHTransport,9607,103.243.107.233] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-06T05:40:19+0000 [HoneyPotSSHTransport,9607,103.243.107.233] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-06T05:40:20+0000 [HoneyPotSSHTransport,9607,103.243.107.233] NEW KEYS
+2017-03-06T05:40:20+0000 [CowrieTelnetTransport,43865,210.84.47.196] CMD: enable
+2017-03-06T05:40:20+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command found: enable 
+2017-03-06T05:40:20+0000 [CowrieTelnetTransport,43865,210.84.47.196] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-06T05:40:20+0000 [CowrieTelnetTransport,43865,210.84.47.196] CMD: shell
+2017-03-06T05:40:20+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command not found: shell
+2017-03-06T05:40:20+0000 [CowrieTelnetTransport,43865,210.84.47.196] CMD: sh
+2017-03-06T05:40:20+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command found: sh 
+2017-03-06T05:40:20+0000 [HoneyPotSSHTransport,9607,103.243.107.233] starting service 'ssh-userauth'
+2017-03-06T05:40:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9607,103.243.107.233] 'root' trying auth 'password'
+2017-03-06T05:40:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9607,103.243.107.233] login attempt: 80
+2017-03-06T05:40:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9607,103.243.107.233] login return, expect: [root/root]
+2017-03-06T05:40:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9607,103.243.107.233] login attempt [root/root] succeeded
+2017-03-06T05:40:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9607,103.243.107.233] 'root' authenticated with 'password'
+2017-03-06T05:40:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9607,103.243.107.233] starting service 'ssh-connection'
+2017-03-06T05:40:23+0000 [CowrieTelnetTransport,43865,210.84.47.196] CMD: cat /proc/mounts; /bin/busybox FQJYZ
+2017-03-06T05:40:23+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command found: cat /proc/mounts
+2017-03-06T05:40:23+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command found: /bin/busybox FQJYZ
+2017-03-06T05:40:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,9607,103.243.107.233] got channel 'direct-tcpip' request
+2017-03-06T05:40:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,9607,103.243.107.233] direct-tcp connection request to ipinfo.io:80 from localhost:80
+2017-03-06T05:40:24+0000 [CowrieTelnetTransport,43865,210.84.47.196] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox FQJYZ
+2017-03-06T05:40:24+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command found: cd /dev/shm
+2017-03-06T05:40:24+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command found: cat .s
+2017-03-06T05:40:24+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command found: cp /bin/echo .s
+2017-03-06T05:40:24+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command found: /bin/busybox FQJYZ
+2017-03-06T05:40:24+0000 [CowrieTelnetTransport,43865,210.84.47.196] CMD: nc; wget; /bin/busybox FQJYZ
+2017-03-06T05:40:24+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command not found: nc
+2017-03-06T05:40:24+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command found: wget 
+2017-03-06T05:40:24+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command found: /bin/busybox FQJYZ
+2017-03-06T05:40:25+0000 [CowrieTelnetTransport,43865,210.84.47.196] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-06T05:40:25+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command not found: dd bs=52 count=1 if=.s
+2017-03-06T05:40:25+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command found: cat /dev/shm/.s
+2017-03-06T05:40:25+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9607,103.243.107.233] direct-tcp forward to ipinfo.io:80 with data 'GET /json HTTP/1.1\r\nHost:ipinfo.io\r\n\r\n'
+2017-03-06T05:40:25+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9607,103.243.107.233] failed to connect: Connection refused
+2017-03-06T05:40:25+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9607,103.243.107.233] sending close 0
+2017-03-06T05:40:25+0000 [CowrieTelnetTransport,43865,210.84.47.196] CMD: /bin/busybox FQJYZ
+2017-03-06T05:40:25+0000 [CowrieTelnetTransport,43865,210.84.47.196] Command found: /bin/busybox FQJYZ
+2017-03-06T05:40:25+0000 [HoneyPotSSHTransport,9607,103.243.107.233] Got remote error, code 0
+	reason: 
+2017-03-06T05:40:25+0000 [HoneyPotSSHTransport,9607,103.243.107.233] avatar root logging out
+2017-03-06T05:40:25+0000 [HoneyPotSSHTransport,9607,103.243.107.233] connection lost
+2017-03-06T05:40:25+0000 [HoneyPotSSHTransport,9607,103.243.107.233] Connection lost after 8 seconds
+2017-03-06T05:40:32+0000 [HoneyPotSSHTransport,9605,116.31.116.51] NEW KEYS
+2017-03-06T05:40:33+0000 [HoneyPotSSHTransport,9605,116.31.116.51] starting service 'ssh-userauth'
+2017-03-06T05:40:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9605,116.31.116.51] 'root' trying auth 'none'
+2017-03-06T05:40:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9605,116.31.116.51] 'root' authenticated with 'none'
+2017-03-06T05:40:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9605,116.31.116.51] starting service 'ssh-connection'
+2017-03-06T05:40:39+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 176.209.222.195:57197 (10.8.41.81:2223) [session: TT43866]
+2017-03-06T05:40:40+0000 [CowrieTelnetTransport,43866,176.209.222.195] first time for 176.209.222.195, need: 1
+2017-03-06T05:40:40+0000 [CowrieTelnetTransport,43866,176.209.222.195] login attempt: 1
+2017-03-06T05:40:41+0000 [CowrieTelnetTransport,43866,176.209.222.195] login attempt [admin/1234] succeeded
+2017-03-06T05:40:42+0000 [CowrieTelnetTransport,43866,176.209.222.195] Opening TTY Log: log/tty/20170306-054042-None-43866i.log
+2017-03-06T05:40:42+0000 [CowrieTelnetTransport,43866,176.209.222.195] Warning: state changed and new state returned
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] CMD: enable
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command found: enable 
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] CMD: shell
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command not found: shell
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] CMD: sh
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command found: sh 
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] CMD: cat /proc/mounts; /bin/busybox TRTSZ
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command found: cat /proc/mounts
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command found: /bin/busybox TRTSZ
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox TRTSZ
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command found: cd /dev/shm
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command found: cat .s
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command found: cp /bin/echo .s
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command found: /bin/busybox TRTSZ
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] CMD: nc; wget; /bin/busybox TRTSZ
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command not found: nc
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command found: wget 
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command found: /bin/busybox TRTSZ
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command not found: dd bs=52 count=1 if=.s
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command found: cat /dev/shm/.s
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] CMD: /bin/busybox TRTSZ
+2017-03-06T05:40:43+0000 [CowrieTelnetTransport,43866,176.209.222.195] Command found: /bin/busybox TRTSZ
+2017-03-06T05:40:45+0000 [HoneyPotSSHTransport,9605,116.31.116.51] Got remote error, code 11
+	reason: 
+2017-03-06T05:40:45+0000 [HoneyPotSSHTransport,9605,116.31.116.51] avatar root logging out
+2017-03-06T05:40:45+0000 [HoneyPotSSHTransport,9605,116.31.116.51] connection lost
+2017-03-06T05:40:45+0000 [HoneyPotSSHTransport,9605,116.31.116.51] Connection lost after 80 seconds
+2017-03-06T05:40:56+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.51:57585 (10.8.41.81:2222) [session: 0a39fe5f]
