@@ -4447,3 +4447,73 @@
 2017-03-07T17:47:22+0000 [CowrieTelnetTransport,48361,103.204.189.194] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-07T17:47:22+0000 [CowrieTelnetTransport,48361,103.204.189.194] Connection lost after 105 seconds
+2017-03-07T17:53:17+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 93.150.212.6:57287 (10.8.41.81:2223) [session: TT48362]
+2017-03-07T17:53:17+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 93.150.212.6:57288 (10.8.41.81:2223) [session: TT48363]
+2017-03-07T17:53:18+0000 [CowrieTelnetTransport,48362,93.150.212.6] first time for 93.150.212.6, need: 1
+2017-03-07T17:53:18+0000 [CowrieTelnetTransport,48362,93.150.212.6] login attempt: 1
+2017-03-07T17:53:19+0000 [CowrieTelnetTransport,48362,93.150.212.6] login attempt [admin/pass] succeeded
+2017-03-07T17:53:21+0000 [CowrieTelnetTransport,48362,93.150.212.6] Opening TTY Log: log/tty/20170307-175321-None-48362i.log
+2017-03-07T17:53:21+0000 [CowrieTelnetTransport,48362,93.150.212.6] Warning: state changed and new state returned
+2017-03-07T17:53:21+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt: 2
+2017-03-07T17:53:21+0000 [CowrieTelnetTransport,48363,93.150.212.6] login return, expect: [admin/pass]
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt [root/123456] failed
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48363,93.150.212.6] Warning: state changed and new state returned
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] CMD: enable
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command found: enable 
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] CMD: shell
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command not found: shell
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] CMD: sh
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command found: sh 
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] CMD: cat /proc/mounts; /bin/busybox PZMYR
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command found: cat /proc/mounts
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command found: /bin/busybox PZMYR
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox PZMYR
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command found: cd /dev/shm
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command found: cat .s
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command found: cp /bin/echo .s
+2017-03-07T17:53:22+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command found: /bin/busybox PZMYR
+2017-03-07T17:53:23+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt: 3
+2017-03-07T17:53:23+0000 [CowrieTelnetTransport,48363,93.150.212.6] login return, expect: [admin/pass]
+2017-03-07T17:53:24+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt [admin/smcadmin] failed
+2017-03-07T17:53:24+0000 [CowrieTelnetTransport,48363,93.150.212.6] Warning: state changed and new state returned
+2017-03-07T17:53:24+0000 [CowrieTelnetTransport,48362,93.150.212.6] CMD: nc; wget; /bin/busybox PZMYR
+2017-03-07T17:53:24+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command not found: nc
+2017-03-07T17:53:24+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command found: wget 
+2017-03-07T17:53:24+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command found: /bin/busybox PZMYR
+2017-03-07T17:53:24+0000 [CowrieTelnetTransport,48362,93.150.212.6] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-07T17:53:24+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command not found: dd bs=52 count=1 if=.s
+2017-03-07T17:53:24+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command found: cat /dev/shm/.s
+2017-03-07T17:53:24+0000 [CowrieTelnetTransport,48362,93.150.212.6] CMD: /bin/busybox PZMYR
+2017-03-07T17:53:24+0000 [CowrieTelnetTransport,48362,93.150.212.6] Command found: /bin/busybox PZMYR
+2017-03-07T17:53:25+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt: 4
+2017-03-07T17:53:25+0000 [CowrieTelnetTransport,48363,93.150.212.6] login return, expect: [admin/pass]
+2017-03-07T17:53:26+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt [admin/password] failed
+2017-03-07T17:53:26+0000 [CowrieTelnetTransport,48363,93.150.212.6] Warning: state changed and new state returned
+2017-03-07T17:53:27+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt: 5
+2017-03-07T17:53:27+0000 [CowrieTelnetTransport,48363,93.150.212.6] login return, expect: [admin/pass]
+2017-03-07T17:53:28+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt [administrator/1234] failed
+2017-03-07T17:53:28+0000 [CowrieTelnetTransport,48363,93.150.212.6] Warning: state changed and new state returned
+2017-03-07T17:53:29+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt: 6
+2017-03-07T17:53:29+0000 [CowrieTelnetTransport,48363,93.150.212.6] login return, expect: [admin/pass]
+2017-03-07T17:53:30+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt [admin/] failed
+2017-03-07T17:53:30+0000 [CowrieTelnetTransport,48363,93.150.212.6] Warning: state changed and new state returned
+2017-03-07T17:53:31+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt: 7
+2017-03-07T17:53:31+0000 [CowrieTelnetTransport,48363,93.150.212.6] login return, expect: [admin/pass]
+2017-03-07T17:53:32+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt [guest/12345] failed
+2017-03-07T17:53:32+0000 [CowrieTelnetTransport,48363,93.150.212.6] Warning: state changed and new state returned
+2017-03-07T17:53:33+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt: 8
+2017-03-07T17:53:33+0000 [CowrieTelnetTransport,48363,93.150.212.6] login return, expect: [admin/pass]
+2017-03-07T17:53:34+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt [root/jvbzd] failed
+2017-03-07T17:53:34+0000 [CowrieTelnetTransport,48363,93.150.212.6] Warning: state changed and new state returned
+2017-03-07T17:53:34+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt: 9
+2017-03-07T17:53:34+0000 [CowrieTelnetTransport,48363,93.150.212.6] login return, expect: [admin/pass]
+2017-03-07T17:53:35+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt [root/klv123] failed
+2017-03-07T17:53:35+0000 [CowrieTelnetTransport,48363,93.150.212.6] Warning: state changed and new state returned
+2017-03-07T17:53:36+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt: 10
+2017-03-07T17:53:36+0000 [CowrieTelnetTransport,48363,93.150.212.6] login return, expect: [admin/pass]
+2017-03-07T17:53:37+0000 [CowrieTelnetTransport,48363,93.150.212.6] login attempt [admin/1111111] failed
+2017-03-07T17:53:37+0000 [CowrieTelnetTransport,48363,93.150.212.6] Warning: state changed and new state returned
+2017-03-07T17:53:38+0000 [CowrieTelnetTransport,48363,93.150.212.6] Connection lost after 20 seconds
+2017-03-07T17:53:59+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 93.150.212.6:57316 (10.8.41.81:2223) [session: TT48364]
+2017-03-07T17:53:59+0000 [CowrieTelnetTransport,48364,93.150.212.6] Connection lost after 0 seconds
