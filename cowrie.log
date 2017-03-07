@@ -1693,3 +1693,40 @@
 2017-03-07T20:04:35+0000 [CowrieTelnetTransport,48472,46.235.86.94] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-07T20:04:35+0000 [CowrieTelnetTransport,48472,46.235.86.94] Connection lost after 105 seconds
+2017-03-07T20:06:10+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 86.120.78.62:39596 (10.8.41.81:2223) [session: TT48473]
+2017-03-07T20:06:10+0000 [CowrieTelnetTransport,48473,86.120.78.62] first time for 86.120.78.62, need: 1
+2017-03-07T20:06:10+0000 [CowrieTelnetTransport,48473,86.120.78.62] login attempt: 1
+2017-03-07T20:06:12+0000 [CowrieTelnetTransport,48473,86.120.78.62] login attempt [root/7ujMko0admin] succeeded
+2017-03-07T20:06:13+0000 [CowrieTelnetTransport,48473,86.120.78.62] Opening TTY Log: log/tty/20170307-200613-None-48473i.log
+2017-03-07T20:06:13+0000 [CowrieTelnetTransport,48473,86.120.78.62] Warning: state changed and new state returned
+2017-03-07T20:06:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 51.15.55.53:52867 (10.8.41.81:2222) [session: 04c9f633]
+2017-03-07T20:06:13+0000 [HoneyPotSSHTransport,12352,51.15.55.53] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-07T20:06:13+0000 [HoneyPotSSHTransport,12352,51.15.55.53] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-07T20:06:13+0000 [HoneyPotSSHTransport,12352,51.15.55.53] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-07T20:06:13+0000 [HoneyPotSSHTransport,12352,51.15.55.53] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-07T20:06:13+0000 [CowrieTelnetTransport,48473,86.120.78.62] CMD: enable
+2017-03-07T20:06:13+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command found: enable 
+2017-03-07T20:06:13+0000 [CowrieTelnetTransport,48473,86.120.78.62] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-07T20:06:13+0000 [CowrieTelnetTransport,48473,86.120.78.62] CMD: shell
+2017-03-07T20:06:13+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command not found: shell
+2017-03-07T20:06:13+0000 [CowrieTelnetTransport,48473,86.120.78.62] CMD: sh
+2017-03-07T20:06:13+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command found: sh 
+2017-03-07T20:06:13+0000 [CowrieTelnetTransport,48473,86.120.78.62] CMD: cat /proc/mounts; /bin/busybox KTDRL
+2017-03-07T20:06:13+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command found: cat /proc/mounts
+2017-03-07T20:06:13+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command found: /bin/busybox KTDRL
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox KTDRL
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command found: cd /dev/shm
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command found: cat .s
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command found: cp /bin/echo .s
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command found: /bin/busybox KTDRL
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] CMD: nc; wget; /bin/busybox KTDRL
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command not found: nc
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command found: wget 
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command found: /bin/busybox KTDRL
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command not found: dd bs=52 count=1 if=.s
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command found: cat /dev/shm/.s
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] CMD: /bin/busybox KTDRL
+2017-03-07T20:06:14+0000 [CowrieTelnetTransport,48473,86.120.78.62] Command found: /bin/busybox KTDRL
+2017-03-07T20:06:14+0000 [HoneyPotSSHTransport,12352,51.15.55.53] connection lost
+2017-03-07T20:06:14+0000 [HoneyPotSSHTransport,12352,51.15.55.53] Connection lost after 0 seconds
