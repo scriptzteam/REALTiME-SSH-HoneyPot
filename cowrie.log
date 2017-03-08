@@ -2479,3 +2479,53 @@
 2017-03-08T02:14:00+0000 [CowrieTelnetTransport,48714,201.196.16.115] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-08T02:14:00+0000 [CowrieTelnetTransport,48714,201.196.16.115] Connection lost after 105 seconds
+2017-03-08T02:14:43+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 103.226.28.82:52059 (10.8.41.81:2223) [session: TT48717]
+2017-03-08T02:14:44+0000 [CowrieTelnetTransport,48717,103.226.28.82] first time for 103.226.28.82, need: 1
+2017-03-08T02:14:44+0000 [CowrieTelnetTransport,48717,103.226.28.82] login attempt: 1
+2017-03-08T02:14:45+0000 [CowrieTelnetTransport,48717,103.226.28.82] login attempt [root/root] succeeded
+2017-03-08T02:14:46+0000 [CowrieTelnetTransport,48717,103.226.28.82] Opening TTY Log: log/tty/20170308-021446-None-48717i.log
+2017-03-08T02:14:46+0000 [CowrieTelnetTransport,48717,103.226.28.82] Warning: state changed and new state returned
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] Received unhandled keyID: '\x00'
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] CMD: enable
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] Command found: enable 
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] Received unhandled keyID: '\x00'
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] CMD: system
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] Command not found: system
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] Received unhandled keyID: '\x00'
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] CMD: shell
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] Command not found: shell
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] Received unhandled keyID: '\x00'
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] CMD: sh
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] Command found: sh 
+2017-03-08T02:14:47+0000 [CowrieTelnetTransport,48717,103.226.28.82] Received unhandled keyID: '\x00'
+2017-03-08T02:14:48+0000 [CowrieTelnetTransport,48717,103.226.28.82] CMD: /bin/busybox MASUTA
+2017-03-08T02:14:48+0000 [CowrieTelnetTransport,48717,103.226.28.82] Command found: /bin/busybox MASUTA
+2017-03-08T02:14:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12788,195.22.127.83] 'root' trying auth 'password'
+2017-03-08T02:14:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12788,195.22.127.83] login attempt: 6126
+2017-03-08T02:14:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12788,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-08T02:14:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12788,195.22.127.83] login attempt [root/anko] failed
+2017-03-08T02:14:58+0000 [HoneyPotSSHTransport,12788,195.22.127.83] connection lost
+2017-03-08T02:14:58+0000 [HoneyPotSSHTransport,12788,195.22.127.83] Connection lost after 90 seconds
+2017-03-08T02:14:59+0000 [-] 'root' failed auth 'password'
+2017-03-08T02:14:59+0000 [-] unauthorized login: 
+2017-03-08T02:14:59+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-08T02:14:59+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
