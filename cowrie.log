@@ -6775,3 +6775,75 @@
 2017-03-08T03:48:39+0000 [CowrieTelnetTransport,48839,78.38.90.198] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-08T03:48:39+0000 [CowrieTelnetTransport,48839,78.38.90.198] Connection lost after 104 seconds
+2017-03-08T03:49:02+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 122.236.99.201:50876 (10.8.41.81:2223) [session: TT48840]
+2017-03-08T03:49:08+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 109.236.91.85:20208 (10.8.41.81:2222) [session: a95fc445]
+2017-03-08T03:49:08+0000 [HoneyPotSSHTransport,12825,109.236.91.85] Remote SSH version: SSH-2.0-libssh2_1.8.1
+2017-03-08T03:49:08+0000 [HoneyPotSSHTransport,12825,109.236.91.85] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-03-08T03:49:08+0000 [HoneyPotSSHTransport,12825,109.236.91.85] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-08T03:49:08+0000 [HoneyPotSSHTransport,12825,109.236.91.85] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-08T03:49:08+0000 [HoneyPotSSHTransport,12825,109.236.91.85] NEW KEYS
+2017-03-08T03:49:08+0000 [HoneyPotSSHTransport,12825,109.236.91.85] starting service 'ssh-userauth'
+2017-03-08T03:49:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12825,109.236.91.85] 'root' trying auth 'none'
+2017-03-08T03:49:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12825,109.236.91.85] 'root' authenticated with 'none'
+2017-03-08T03:49:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12825,109.236.91.85] starting service 'ssh-connection'
+2017-03-08T03:49:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,12825,109.236.91.85] got channel 'direct-tcpip' request
+2017-03-08T03:49:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,12825,109.236.91.85] direct-tcp connection request to google.com:80 from localhost:8080
+2017-03-08T03:49:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12825,109.236.91.85] direct-tcp forward to google.com:80 with data 'GET /\r\n'
+2017-03-08T03:49:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12825,109.236.91.85] failed to connect: Connection refused
+2017-03-08T03:49:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12825,109.236.91.85] sending close 0
+2017-03-08T03:49:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12825,109.236.91.85] remote eof
+2017-03-08T03:49:10+0000 [HoneyPotSSHTransport,12825,109.236.91.85] avatar root logging out
+2017-03-08T03:49:10+0000 [HoneyPotSSHTransport,12825,109.236.91.85] connection lost
+2017-03-08T03:49:10+0000 [HoneyPotSSHTransport,12825,109.236.91.85] Connection lost after 2 seconds
+2017-03-08T03:49:16+0000 [CowrieTelnetTransport,48840,122.236.99.201] first time for 122.236.99.201, need: 1
+2017-03-08T03:49:16+0000 [CowrieTelnetTransport,48840,122.236.99.201] login attempt: 1
+2017-03-08T03:49:17+0000 [CowrieTelnetTransport,48840,122.236.99.201] login attempt [root/admin] succeeded
+2017-03-08T03:49:18+0000 [CowrieTelnetTransport,48840,122.236.99.201] Opening TTY Log: log/tty/20170308-034918-None-48840i.log
+2017-03-08T03:49:18+0000 [CowrieTelnetTransport,48840,122.236.99.201] Warning: state changed and new state returned
+2017-03-08T03:49:19+0000 [CowrieTelnetTransport,48840,122.236.99.201] Received unhandled keyID: '\x00'
+2017-03-08T03:49:20+0000 [CowrieTelnetTransport,48840,122.236.99.201] CMD: enable
+2017-03-08T03:49:20+0000 [CowrieTelnetTransport,48840,122.236.99.201] Command found: enable 
+2017-03-08T03:49:20+0000 [CowrieTelnetTransport,48840,122.236.99.201] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-08T03:49:24+0000 [CowrieTelnetTransport,48840,122.236.99.201] Received unhandled keyID: '\x00'
+2017-03-08T03:49:24+0000 [CowrieTelnetTransport,48840,122.236.99.201] CMD: system
+2017-03-08T03:49:24+0000 [CowrieTelnetTransport,48840,122.236.99.201] Command not found: system
+2017-03-08T03:49:24+0000 [CowrieTelnetTransport,48840,122.236.99.201] Received unhandled keyID: '\x00'
+2017-03-08T03:49:24+0000 [CowrieTelnetTransport,48840,122.236.99.201] CMD: shell
+2017-03-08T03:49:24+0000 [CowrieTelnetTransport,48840,122.236.99.201] Command not found: shell
+2017-03-08T03:49:28+0000 [CowrieTelnetTransport,48840,122.236.99.201] Received unhandled keyID: '\x00'
+2017-03-08T03:49:28+0000 [CowrieTelnetTransport,48840,122.236.99.201] CMD: sh
+2017-03-08T03:49:28+0000 [CowrieTelnetTransport,48840,122.236.99.201] Command found: sh 
+2017-03-08T03:49:32+0000 [CowrieTelnetTransport,48840,122.236.99.201] Received unhandled keyID: '\x00'
+2017-03-08T03:49:32+0000 [CowrieTelnetTransport,48840,122.236.99.201] CMD: /bin/busybox MIRAI
+2017-03-08T03:49:32+0000 [CowrieTelnetTransport,48840,122.236.99.201] Command found: /bin/busybox MIRAI
+2017-03-08T03:49:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 113.179.97.239:53154 (10.8.41.81:2223) [session: TT48841]
+2017-03-08T03:49:53+0000 [CowrieTelnetTransport,48841,113.179.97.239] first time for 113.179.97.239, need: 1
+2017-03-08T03:49:53+0000 [CowrieTelnetTransport,48841,113.179.97.239] login attempt: 1
+2017-03-08T03:49:54+0000 [CowrieTelnetTransport,48841,113.179.97.239] login attempt [admin/12345] succeeded
+2017-03-08T03:49:56+0000 [CowrieTelnetTransport,48841,113.179.97.239] Opening TTY Log: log/tty/20170308-034956-None-48841i.log
+2017-03-08T03:49:56+0000 [CowrieTelnetTransport,48841,113.179.97.239] Warning: state changed and new state returned
+2017-03-08T03:49:56+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 122.236.99.201:44379 (10.8.41.81:2223) [session: TT48842]
+2017-03-08T03:49:57+0000 [CowrieTelnetTransport,48841,113.179.97.239] CMD: enable
+2017-03-08T03:49:57+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command found: enable 
+2017-03-08T03:49:57+0000 [CowrieTelnetTransport,48841,113.179.97.239] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-08T03:49:57+0000 [CowrieTelnetTransport,48841,113.179.97.239] CMD: shell
+2017-03-08T03:49:57+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command not found: shell
+2017-03-08T03:49:57+0000 [CowrieTelnetTransport,48841,113.179.97.239] CMD: sh
+2017-03-08T03:49:57+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command found: sh 
+2017-03-08T03:49:57+0000 [CowrieTelnetTransport,48841,113.179.97.239] CMD: cat /proc/mounts; /bin/busybox YLAJX
+2017-03-08T03:49:57+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command found: cat /proc/mounts
+2017-03-08T03:49:57+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command found: /bin/busybox YLAJX
+2017-03-08T03:49:58+0000 [CowrieTelnetTransport,48841,113.179.97.239] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox YLAJX
+2017-03-08T03:49:58+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command found: cd /dev/shm
+2017-03-08T03:49:58+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command found: cat .s
+2017-03-08T03:49:58+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command found: cp /bin/echo .s
+2017-03-08T03:49:58+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command found: /bin/busybox YLAJX
+2017-03-08T03:49:58+0000 [CowrieTelnetTransport,48841,113.179.97.239] CMD: nc; wget; /bin/busybox YLAJX
+2017-03-08T03:49:58+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command not found: nc
+2017-03-08T03:49:58+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command found: wget 
+2017-03-08T03:49:58+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command found: /bin/busybox YLAJX
+2017-03-08T03:49:58+0000 [CowrieTelnetTransport,48841,113.179.97.239] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-08T03:49:58+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command not found: dd bs=52 count=1 if=.s
+2017-03-08T03:49:58+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command found: cat /dev/shm/.s
+2017-03-08T03:49:59+0000 [CowrieTelnetTransport,48841,113.179.97.239] CMD: /bin/busybox YLAJX
+2017-03-08T03:49:59+0000 [CowrieTelnetTransport,48841,113.179.97.239] Command found: /bin/busybox YLAJX
