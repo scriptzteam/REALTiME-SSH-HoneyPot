@@ -527,3 +527,50 @@
 2017-03-08T01:31:32+0000 [CowrieTelnetTransport,48676,92.7.214.161] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-08T01:31:32+0000 [CowrieTelnetTransport,48676,92.7.214.161] Connection lost after 103 seconds
+2017-03-08T01:32:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 51.15.129.100:45008 (10.8.41.81:2222) [session: e50a14ca]
+2017-03-08T01:32:13+0000 [HoneyPotSSHTransport,12755,51.15.129.100] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-03-08T01:32:13+0000 [HoneyPotSSHTransport,12755,51.15.129.100] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-08T01:32:13+0000 [HoneyPotSSHTransport,12755,51.15.129.100] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-08T01:32:13+0000 [HoneyPotSSHTransport,12755,51.15.129.100] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-08T01:32:13+0000 [HoneyPotSSHTransport,12755,51.15.129.100] NEW KEYS
+2017-03-08T01:32:13+0000 [HoneyPotSSHTransport,12755,51.15.129.100] starting service 'ssh-userauth'
+2017-03-08T01:32:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12755,51.15.129.100] 'admin' trying auth 'password'
+2017-03-08T01:32:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12755,51.15.129.100] login attempt: 46
+2017-03-08T01:32:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12755,51.15.129.100] login return, expect: [root/root]
+2017-03-08T01:32:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12755,51.15.129.100] login attempt [admin/admin] failed
+2017-03-08T01:32:15+0000 [-] 'admin' failed auth 'password'
+2017-03-08T01:32:15+0000 [-] unauthorized login: 
+2017-03-08T01:32:15+0000 [HoneyPotSSHTransport,12755,51.15.129.100] connection lost
+2017-03-08T01:32:15+0000 [HoneyPotSSHTransport,12755,51.15.129.100] Connection lost after 2 seconds
+2017-03-08T01:32:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,12727,37.1.200.170] got channel 'direct-tcpip' request
+2017-03-08T01:32:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,12727,37.1.200.170] direct-tcp connection request to 66.147.244.193:25 from localhost:5556
+2017-03-08T01:32:49+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 178.37.102.2:60172 (10.8.41.81:2223) [session: TT48677]
+2017-03-08T01:32:50+0000 [CowrieTelnetTransport,48677,178.37.102.2] first time for 178.37.102.2, need: 1
+2017-03-08T01:32:50+0000 [CowrieTelnetTransport,48677,178.37.102.2] login attempt: 1
+2017-03-08T01:32:51+0000 [CowrieTelnetTransport,48677,178.37.102.2] login attempt [root/admin] succeeded
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] Opening TTY Log: log/tty/20170308-013253-None-48677i.log
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] Warning: state changed and new state returned
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] Received unhandled keyID: '\x00'
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] CMD: enable
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] Command found: enable 
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] Received unhandled keyID: '\x00'
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] CMD: system
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] Command not found: system
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] Received unhandled keyID: '\x00'
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] CMD: shell
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] Command not found: shell
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] Received unhandled keyID: '\x00'
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] CMD: sh
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] Command found: sh 
+2017-03-08T01:32:53+0000 [CowrieTelnetTransport,48677,178.37.102.2] Received unhandled keyID: '\x00'
+2017-03-08T01:32:54+0000 [CowrieTelnetTransport,48677,178.37.102.2] CMD: /bin/busybox MASUTA
+2017-03-08T01:32:54+0000 [CowrieTelnetTransport,48677,178.37.102.2] Command found: /bin/busybox MASUTA
+2017-03-08T01:32:54+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 89.248.163.3:52475 (10.8.41.81:2223) [session: TT48678]
+2017-03-08T01:32:54+0000 [CowrieTelnetTransport,48677,178.37.102.2] Closing TTY Log: log/tty/20170308-013253-None-48677i.log after 0 seconds
+2017-03-08T01:32:54+0000 [CowrieTelnetTransport,48677,178.37.102.2] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-08T01:32:54+0000 [CowrieTelnetTransport,48677,178.37.102.2] Connection lost after 4 seconds
+2017-03-08T01:32:58+0000 [CowrieTelnetTransport,48678,89.248.163.3] login attempt: 14643
+2017-03-08T01:32:58+0000 [CowrieTelnetTransport,48678,89.248.163.3] login return, expect: [root/admin]
+2017-03-08T01:32:59+0000 [CowrieTelnetTransport,48678,89.248.163.3] login attempt [root/admin] succeeded
