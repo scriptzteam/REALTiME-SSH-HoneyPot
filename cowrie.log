@@ -6564,3 +6564,45 @@
 2017-03-08T23:45:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13823,14.189.250.215] login attempt: 4
 2017-03-08T23:45:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13823,14.189.250.215] login return, expect: [user/1234]
 2017-03-08T23:45:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13823,14.189.250.215] login attempt [user/1234] succeeded
+2017-03-08T23:45:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13823,14.189.250.215] 'user' authenticated with 'password'
+2017-03-08T23:45:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13823,14.189.250.215] starting service 'ssh-connection'
+2017-03-08T23:45:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13823,14.189.250.215] got channel 'direct-tcpip' request
+2017-03-08T23:45:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13823,14.189.250.215] direct-tcp connection request to 216.146.43.70:80 from localhost:26829
+2017-03-08T23:45:04+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13823,14.189.250.215] direct-tcp forward to 216.146.43.70:80 with data 'GET http://checkip.dyndns.com/ HTTP/1.1\r\nHost: checkip.dyndns.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0\r\nConnection: Keep-Alive\r\n\r\n'
+2017-03-08T23:45:04+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13823,14.189.250.215] failed to connect: Connection refused
+2017-03-08T23:45:04+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13823,14.189.250.215] sending close 0
+2017-03-08T23:45:04+0000 [HoneyPotSSHTransport,13823,14.189.250.215] Got remote error, code 0
+	reason: 
+2017-03-08T23:45:04+0000 [HoneyPotSSHTransport,13823,14.189.250.215] avatar user logging out
+2017-03-08T23:45:04+0000 [HoneyPotSSHTransport,13823,14.189.250.215] connection lost
+2017-03-08T23:45:04+0000 [HoneyPotSSHTransport,13823,14.189.250.215] Connection lost after 7 seconds
+2017-03-08T23:45:05+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 82.233.2.158:37759 (10.8.41.81:2223) [session: TT50090]
+2017-03-08T23:45:05+0000 [CowrieTelnetTransport,50090,82.233.2.158] first time for 82.233.2.158, need: 1
+2017-03-08T23:45:05+0000 [CowrieTelnetTransport,50090,82.233.2.158] login attempt: 1
+2017-03-08T23:45:06+0000 [CowrieTelnetTransport,50090,82.233.2.158] login attempt [ubnt/ubnt] succeeded
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Opening TTY Log: log/tty/20170308-234508-None-50090i.log
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Warning: state changed and new state returned
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] CMD: enable
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command found: enable 
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] CMD: shell
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command not found: shell
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] CMD: sh
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command found: sh 
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] CMD: cat /proc/mounts; /bin/busybox YPJCQ
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command found: cat /proc/mounts
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command found: /bin/busybox YPJCQ
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox YPJCQ
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command found: cd /dev/shm
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command found: cat .s
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command found: cp /bin/echo .s
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command found: /bin/busybox YPJCQ
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] CMD: nc; wget; /bin/busybox YPJCQ
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command not found: nc
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command found: wget 
+2017-03-08T23:45:08+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command found: /bin/busybox YPJCQ
+2017-03-08T23:45:09+0000 [CowrieTelnetTransport,50090,82.233.2.158] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-08T23:45:09+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command not found: dd bs=52 count=1 if=.s
+2017-03-08T23:45:09+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command found: cat /dev/shm/.s
+2017-03-08T23:45:09+0000 [CowrieTelnetTransport,50090,82.233.2.158] CMD: /bin/busybox YPJCQ
+2017-03-08T23:45:09+0000 [CowrieTelnetTransport,50090,82.233.2.158] Command found: /bin/busybox YPJCQ
