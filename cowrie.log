@@ -2118,3 +2118,84 @@
 2017-03-08T02:09:49+0000 [-] unauthorized login: 
 2017-03-08T02:09:49+0000 [HoneyPotSSHTransport,12784,51.15.55.53] connection lost
 2017-03-08T02:09:49+0000 [HoneyPotSSHTransport,12784,51.15.55.53] Connection lost after 7 seconds
+2017-03-08T02:10:34+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 203.158.91.198:20188 (10.8.41.81:2222) [session: 3f2dabd9]
+2017-03-08T02:10:35+0000 [HoneyPotSSHTransport,12785,203.158.91.198] Remote SSH version: SSH-2.0-libssh-0.1
+2017-03-08T02:10:35+0000 [HoneyPotSSHTransport,12785,203.158.91.198] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-03-08T02:10:35+0000 [HoneyPotSSHTransport,12785,203.158.91.198] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-08T02:10:35+0000 [HoneyPotSSHTransport,12785,203.158.91.198] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-08T02:10:35+0000 [HoneyPotSSHTransport,12785,203.158.91.198] NEW KEYS
+2017-03-08T02:10:35+0000 [HoneyPotSSHTransport,12785,203.158.91.198] starting service 'ssh-userauth'
+2017-03-08T02:10:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12785,203.158.91.198] 'root' trying auth 'password'
+2017-03-08T02:10:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12785,203.158.91.198] first time for 203.158.91.198, need: 1
+2017-03-08T02:10:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12785,203.158.91.198] login attempt: 1
+2017-03-08T02:10:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12785,203.158.91.198] login attempt [root/123456] succeeded
+2017-03-08T02:10:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12785,203.158.91.198] 'root' authenticated with 'password'
+2017-03-08T02:10:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12785,203.158.91.198] starting service 'ssh-connection'
+2017-03-08T02:10:38+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 121.205.66.56:3005 (10.8.41.81:2223) [session: TT48709]
+2017-03-08T02:10:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,12785,203.158.91.198] got channel 'session' request
+2017-03-08T02:10:39+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12785,203.158.91.198] channel open
+2017-03-08T02:10:39+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12785,203.158.91.198] getting shell
+2017-03-08T02:10:39+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12785,203.158.91.198] Opening TTY Log: log/tty/20170308-021039-3f2dabd9-0i.log
+2017-03-08T02:10:40+0000 [CowrieTelnetTransport,48709,121.205.66.56] first time for 121.205.66.56, need: 1
+2017-03-08T02:10:40+0000 [CowrieTelnetTransport,48709,121.205.66.56] login attempt: 1
+2017-03-08T02:10:41+0000 [CowrieTelnetTransport,48709,121.205.66.56] login attempt [root/user] succeeded
+2017-03-08T02:10:43+0000 [CowrieTelnetTransport,48709,121.205.66.56] Opening TTY Log: log/tty/20170308-021043-None-48709i.log
+2017-03-08T02:10:43+0000 [CowrieTelnetTransport,48709,121.205.66.56] Warning: state changed and new state returned
+2017-03-08T02:10:43+0000 [CowrieTelnetTransport,48709,121.205.66.56] Received unhandled keyID: '\x00'
+2017-03-08T02:10:43+0000 [CowrieTelnetTransport,48709,121.205.66.56] CMD: enable
+2017-03-08T02:10:43+0000 [CowrieTelnetTransport,48709,121.205.66.56] Command found: enable 
+2017-03-08T02:10:43+0000 [CowrieTelnetTransport,48709,121.205.66.56] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-08T02:10:44+0000 [CowrieTelnetTransport,48709,121.205.66.56] Received unhandled keyID: '\x00'
+2017-03-08T02:10:44+0000 [CowrieTelnetTransport,48709,121.205.66.56] CMD: system
+2017-03-08T02:10:44+0000 [CowrieTelnetTransport,48709,121.205.66.56] Command not found: system
+2017-03-08T02:10:44+0000 [CowrieTelnetTransport,48709,121.205.66.56] Received unhandled keyID: '\x00'
+2017-03-08T02:10:44+0000 [CowrieTelnetTransport,48709,121.205.66.56] CMD: shell
+2017-03-08T02:10:44+0000 [CowrieTelnetTransport,48709,121.205.66.56] Command not found: shell
+2017-03-08T02:10:44+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12785,203.158.91.198] Closing TTY Log: log/tty/20170308-021039-3f2dabd9-0i.log after 5 seconds
+2017-03-08T02:10:44+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12785,203.158.91.198] honeypot terminal protocol connection lost disconnected
+2017-03-08T02:10:44+0000 [HoneyPotSSHTransport,12785,203.158.91.198] avatar root logging out
+2017-03-08T02:10:44+0000 [HoneyPotSSHTransport,12785,203.158.91.198] connection lost
+2017-03-08T02:10:44+0000 [HoneyPotSSHTransport,12785,203.158.91.198] Connection lost after 9 seconds
+2017-03-08T02:10:44+0000 [CowrieTelnetTransport,48709,121.205.66.56] Received unhandled keyID: '\x00'
+2017-03-08T02:10:45+0000 [CowrieTelnetTransport,48709,121.205.66.56] CMD: sh
+2017-03-08T02:10:45+0000 [CowrieTelnetTransport,48709,121.205.66.56] Command found: sh 
+2017-03-08T02:10:45+0000 [CowrieTelnetTransport,48709,121.205.66.56] Received unhandled keyID: '\x00'
+2017-03-08T02:10:46+0000 [CowrieTelnetTransport,48709,121.205.66.56] CMD: /bin/busybox MASUTA
+2017-03-08T02:10:46+0000 [CowrieTelnetTransport,48709,121.205.66.56] Command found: /bin/busybox MASUTA
+2017-03-08T02:10:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 89.248.163.3:34742 (10.8.41.81:2223) [session: TT48710]
+2017-03-08T02:10:47+0000 [CowrieTelnetTransport,48709,121.205.66.56] Closing TTY Log: log/tty/20170308-021043-None-48709i.log after 3 seconds
+2017-03-08T02:10:47+0000 [CowrieTelnetTransport,48709,121.205.66.56] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-08T02:10:47+0000 [CowrieTelnetTransport,48709,121.205.66.56] Connection lost after 8 seconds
+2017-03-08T02:10:51+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt: 14678
+2017-03-08T02:10:51+0000 [CowrieTelnetTransport,48710,89.248.163.3] login return, expect: [root/admin]
+2017-03-08T02:10:52+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt [root/user] failed
+2017-03-08T02:10:52+0000 [CowrieTelnetTransport,48710,89.248.163.3] Warning: state changed and new state returned
+2017-03-08T02:10:52+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt: 14679
+2017-03-08T02:10:52+0000 [CowrieTelnetTransport,48710,89.248.163.3] login return, expect: [root/admin]
+2017-03-08T02:10:53+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt [/enable] failed
+2017-03-08T02:10:53+0000 [CowrieTelnetTransport,48710,89.248.163.3] Warning: state changed and new state returned
+2017-03-08T02:10:53+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt: 14680
+2017-03-08T02:10:53+0000 [CowrieTelnetTransport,48710,89.248.163.3] login return, expect: [root/admin]
+2017-03-08T02:10:54+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt [system/shell] failed
+2017-03-08T02:10:54+0000 [CowrieTelnetTransport,48710,89.248.163.3] Warning: state changed and new state returned
+2017-03-08T02:10:55+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt: 14681
+2017-03-08T02:10:55+0000 [CowrieTelnetTransport,48710,89.248.163.3] login return, expect: [root/admin]
+2017-03-08T02:10:56+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt [sh/>/tmp/.ptmx && cd /tmp/] failed
+2017-03-08T02:10:56+0000 [CowrieTelnetTransport,48710,89.248.163.3] Warning: state changed and new state returned
+2017-03-08T02:10:56+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt: 14682
+2017-03-08T02:10:56+0000 [CowrieTelnetTransport,48710,89.248.163.3] login return, expect: [root/admin]
+2017-03-08T02:10:57+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt [>/var/.ptmx && cd /var//>/dev/.ptmx && cd /dev/] failed
+2017-03-08T02:10:57+0000 [CowrieTelnetTransport,48710,89.248.163.3] Warning: state changed and new state returned
+2017-03-08T02:10:57+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt: 14683
+2017-03-08T02:10:57+0000 [CowrieTelnetTransport,48710,89.248.163.3] login return, expect: [root/admin]
+2017-03-08T02:10:58+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt [>/mnt/.ptmx && cd /mnt//>/var/run/.ptmx && cd /var/run/] failed
+2017-03-08T02:10:58+0000 [CowrieTelnetTransport,48710,89.248.163.3] Warning: state changed and new state returned
+2017-03-08T02:10:58+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt: 14684
+2017-03-08T02:10:58+0000 [CowrieTelnetTransport,48710,89.248.163.3] login return, expect: [root/admin]
+2017-03-08T02:10:59+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt [>/var/tmp/.ptmx && cd /var/tmp//>/.ptmx && cd /] failed
+2017-03-08T02:10:59+0000 [CowrieTelnetTransport,48710,89.248.163.3] Warning: state changed and new state returned
+2017-03-08T02:11:00+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt: 14685
+2017-03-08T02:11:00+0000 [CowrieTelnetTransport,48710,89.248.163.3] login return, expect: [root/admin]
+2017-03-08T02:11:01+0000 [CowrieTelnetTransport,48710,89.248.163.3] login attempt [>/dev/netslink/.ptmx && cd /dev/netslink//>/dev/shm/.ptmx && cd /dev/shm/] failed
+2017-03-08T02:11:01+0000 [CowrieTelnetTransport,48710,89.248.163.3] Warning: state changed and new state returned
