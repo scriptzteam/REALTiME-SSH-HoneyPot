@@ -119,3 +119,55 @@
 2017-03-08T08:05:52+0000 [CowrieTelnetTransport,49119,201.2.225.204] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-08T08:05:52+0000 [CowrieTelnetTransport,49119,201.2.225.204] Connection lost after 106 seconds
+2017-03-08T08:07:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 221.194.44.231:57348 (10.8.41.81:2222) [session: fbbac4f6]
+2017-03-08T08:07:30+0000 [HoneyPotSSHTransport,12938,221.194.44.231] Remote SSH version: SSH-2.0-PUTTY
+2017-03-08T08:07:30+0000 [HoneyPotSSHTransport,12938,221.194.44.231] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-08T08:07:30+0000 [HoneyPotSSHTransport,12938,221.194.44.231] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-08T08:07:30+0000 [HoneyPotSSHTransport,12938,221.194.44.231] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-08T08:07:31+0000 [HoneyPotSSHTransport,12938,221.194.44.231] NEW KEYS
+2017-03-08T08:07:31+0000 [HoneyPotSSHTransport,12938,221.194.44.231] starting service 'ssh-userauth'
+2017-03-08T08:07:31+0000 [HoneyPotSSHTransport,12938,221.194.44.231] Got remote error, code 11
+	reason: 
+2017-03-08T08:07:31+0000 [HoneyPotSSHTransport,12938,221.194.44.231] connection lost
+2017-03-08T08:07:31+0000 [HoneyPotSSHTransport,12938,221.194.44.231] Connection lost after 1 seconds
+2017-03-08T08:07:39+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 202.170.206.155:45603 (10.8.41.81:2223) [session: TT49121]
+2017-03-08T08:07:41+0000 [CowrieTelnetTransport,49121,202.170.206.155] first time for 202.170.206.155, need: 1
+2017-03-08T08:07:41+0000 [CowrieTelnetTransport,49121,202.170.206.155] login attempt: 1
+2017-03-08T08:07:42+0000 [CowrieTelnetTransport,49121,202.170.206.155] login attempt [root/888888] succeeded
+2017-03-08T08:07:43+0000 [CowrieTelnetTransport,49121,202.170.206.155] Opening TTY Log: log/tty/20170308-080743-None-49121i.log
+2017-03-08T08:07:43+0000 [CowrieTelnetTransport,49121,202.170.206.155] Warning: state changed and new state returned
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] CMD: enable
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command found: enable 
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] CMD: shell
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command not found: shell
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] CMD: sh
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command found: sh 
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] CMD: cat /proc/mounts; /bin/busybox RJOGU
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command found: cat /proc/mounts
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command found: /bin/busybox RJOGU
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox RJOGU
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command found: cd /dev/shm
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command found: cat .s
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command found: cp /bin/echo .s
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command found: /bin/busybox RJOGU
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] CMD: nc; wget; /bin/busybox RJOGU
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command not found: nc
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command found: wget 
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command found: /bin/busybox RJOGU
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command not found: dd bs=52 count=1 if=.s
+2017-03-08T08:07:44+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command found: cat /dev/shm/.s
+2017-03-08T08:07:45+0000 [CowrieTelnetTransport,49121,202.170.206.155] CMD: /bin/busybox RJOGU
+2017-03-08T08:07:45+0000 [CowrieTelnetTransport,49121,202.170.206.155] Command found: /bin/busybox RJOGU
+2017-03-08T08:07:51+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 221.194.47.249:52579 (10.8.41.81:2222) [session: 7ec23da1]
+2017-03-08T08:07:51+0000 [HoneyPotSSHTransport,12939,221.194.47.249] Remote SSH version: SSH-2.0-PUTTY
+2017-03-08T08:07:51+0000 [HoneyPotSSHTransport,12939,221.194.47.249] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-08T08:07:51+0000 [HoneyPotSSHTransport,12939,221.194.47.249] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-08T08:07:51+0000 [HoneyPotSSHTransport,12939,221.194.47.249] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-08T08:07:52+0000 [HoneyPotSSHTransport,12939,221.194.47.249] NEW KEYS
+2017-03-08T08:07:53+0000 [HoneyPotSSHTransport,12939,221.194.47.249] starting service 'ssh-userauth'
+2017-03-08T08:07:53+0000 [HoneyPotSSHTransport,12939,221.194.47.249] Got remote error, code 11
+	reason: 
+2017-03-08T08:07:53+0000 [HoneyPotSSHTransport,12939,221.194.47.249] connection lost
+2017-03-08T08:07:53+0000 [HoneyPotSSHTransport,12939,221.194.47.249] Connection lost after 2 seconds
