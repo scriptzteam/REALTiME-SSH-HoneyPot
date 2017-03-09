@@ -1104,3 +1104,72 @@
 2017-03-09T17:01:00+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14627,194.88.107.14] direct-tcp forward to 212.42.75.250:465 with data "\x16\x03\x01\x01.\x01\x00\x01*\x03\x03\xfd\x91M}O5B\xb9P\x0c\xf0\xb9\xc7\xab\x13\xba+6\xa92I\xc9\xa7>\x97\xa3\xea&\xe4\x0b\xb7\xfe\x00\x00\xac\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0\n\x00\xa5\x00\xa3\x00\xa1\x00\x9f\x00k\x00j\x00i\x00h\x009\x008\x007\x006\x00\x88\x00\x87\x00\x86\x00\x85\xc02\xc0.\xc0*\xc0&\xc0\x0f\xc0\x05\x00\x9d\x00=\x005\x00\x84\xc0/\xc0+\xc0'\xc0#\xc0\x13\xc0\t\x00\xa4\x00\xa2\x00\xa0\x00\x9e\x00g\x00@\x00?\x00>\x003\x002\x001\x000\x00\x9a\x00\x99\x00\x98\x00\x97\x00E\x00D\x00C\x00B\xc01\xc0-\xc0)\xc0%\xc0\x0e\xc0\x04\x00\x9c\x00<\x00/\x00\x96\x00A\x00\x07\xc0\x11\xc0\x07\xc0\x0c\xc0\x02\x00\x05\x00\x04\xc0\x12\xc0\x08\x00\x16\x00\x13\x00\x10\x00\r\xc0\r\xc0\x03\x00\n\x00\xff\x01\x00\x00U\x00\x0b\x00\x04\x03\x00\x01\x02\x00\n\x00\x1c\x00\x1a\x00\x17\x00\x19\x00\x1c\x00\x1b\x00\x18\x00\x1a\x00\x16\x00\x0e\x00\r\x00\x0b\x00\x0c\x00\t\x00\n\x00#\x00\x00\x00\r\x00 \x00\x1e\x06\x01\x06\x02\x06\x03\x05\x01\x05\x02\x05\x03\x04\x01\x04\x02\x04\x03\x03\x01\x03\x02\x03\x03\x02\x01\x02\x02\x02\x03\x00\x0f\x00\x01\x01"
 2017-03-09T17:01:00+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14627,194.88.107.14] failed to connect: Connection refused
 2017-03-09T17:01:00+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14627,194.88.107.14] sending close 17
+2017-03-09T17:01:08+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 84.51.31.98:47868 (10.8.41.81:2222) [session: bb426705]
+2017-03-09T17:01:08+0000 [HoneyPotSSHTransport,14736,84.51.31.98] Remote SSH version: SSH-2.0-libssh-0.2
+2017-03-09T17:01:08+0000 [HoneyPotSSHTransport,14736,84.51.31.98] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-03-09T17:01:08+0000 [HoneyPotSSHTransport,14736,84.51.31.98] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-09T17:01:08+0000 [HoneyPotSSHTransport,14736,84.51.31.98] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-09T17:01:08+0000 [HoneyPotSSHTransport,14736,84.51.31.98] NEW KEYS
+2017-03-09T17:01:08+0000 [HoneyPotSSHTransport,14736,84.51.31.98] starting service 'ssh-userauth'
+2017-03-09T17:01:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14736,84.51.31.98] 'oracle' trying auth 'password'
+2017-03-09T17:01:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14736,84.51.31.98] login attempt: 250
+2017-03-09T17:01:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14736,84.51.31.98] login return, expect: [root/qwerty]
+2017-03-09T17:01:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14736,84.51.31.98] login attempt [oracle/123456] failed
+2017-03-09T17:01:11+0000 [-] 'oracle' failed auth 'password'
+2017-03-09T17:01:11+0000 [-] unauthorized login: 
+2017-03-09T17:01:11+0000 [HoneyPotSSHTransport,14736,84.51.31.98] Got remote error, code 11
+	reason: Bye Bye
+2017-03-09T17:01:11+0000 [HoneyPotSSHTransport,14736,84.51.31.98] connection lost
+2017-03-09T17:01:11+0000 [HoneyPotSSHTransport,14736,84.51.31.98] Connection lost after 2 seconds
+2017-03-09T17:01:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14625,194.88.107.23] got channel 'direct-tcpip' request
+2017-03-09T17:01:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14625,194.88.107.23] direct-tcp connection request to 66.196.118.33:25 from localhost:5556
+2017-03-09T17:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-09T17:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] direct-tcp connection request to 99.198.119.130:25 from localhost:5556
+2017-03-09T17:01:25+0000 [SSHChannel None (62) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14701,194.88.106.206] remote eof
+2017-03-09T17:01:25+0000 [SSHChannel None (62) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14701,194.88.106.206] remote close
+2017-03-09T17:01:25+0000 [SSHChannel None (62) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14701,194.88.106.206] sending close 62
+2017-03-09T17:01:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14701,194.88.106.206] got channel 'direct-tcpip' request
+2017-03-09T17:01:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14701,194.88.106.206] direct-tcp connection request to 74.125.28.27:25 from localhost:5556
+2017-03-09T17:01:27+0000 [SSHChannel None (134) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] direct-tcp forward to 106.10.166.54:25 with data 'QUIT\r\n'
+2017-03-09T17:01:27+0000 [SSHChannel None (134) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] failed to connect: Connection refused
+2017-03-09T17:01:27+0000 [SSHChannel None (134) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] sending close 134
+2017-03-09T17:01:27+0000 [SSHChannel None (134) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] remote eof
+2017-03-09T17:01:27+0000 [SSHChannel None (134) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] remote close
+2017-03-09T17:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-09T17:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] direct-tcp connection request to 172.217.17.67:443 from localhost:5556
+2017-03-09T17:01:28+0000 [SSHChannel None (142) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] direct-tcp forward to 172.217.17.67:443 with data '\x16\x03\x01\x01x\x01\x00\x01t\x03\x03X\xc1\x8aT\x136\x85\x85S\xf6\xcbye|\x86\x0b\xc9sZ\xb3\xc8\xbe\x19>\x9bi\xc1\\Xw\xdf\xa4\x00\x00\xca\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0\n\xc0"\xc0!\x00\xa3\x00\x9f\x00k\x00j\x009\x008\x00\x88\x00\x87\xc0\x19\xc0 \x00\xa7\x00m\x00:\x00\x89\xc02\xc0.\xc0*\xc0&\xc0\x0f\xc0\x05\x00\x9d\x00=\x005\x00\x84\xc0\x12\xc0\x08\xc0\x1c\xc0\x1b\x00\x16\x00\x13\xc0\x17\xc0\x1a\x00\x1b\xc0\r\xc0\x03\x00\n\xc0/\xc0+\xc0\'\xc0#\xc0\x13\xc0\t\xc0\x1f\xc0\x1e\x00\xa2\x00\x9e\x00g\x00@\x003\x002\x00\x9a\x00\x99\x00E\x00D\xc0\x18\xc0\x1d\x00\xa6\x00l\x004\x00\x9b\x00F\xc01\xc0-\xc0)\xc0%\xc0\x0e\xc0\x04\x00\x9c\x00<\x00/\x00\x96\x00A\x00\x07\xc0\x11\xc0\x07\xc0\x16\x00\x18\xc0\x0c\xc0\x02\x00\x05\x00\x04\x00\x15\x00\x12\x00\x1a\x00\t\x00\x14\x00\x11\x00\x19\x00\x08\x00\x06\x00\x17\x00\x03\x00\xff\x01\x00\x00\x81\x00\x00\x00\x12\x00\x10\x00\x00\rwww.google.ru\x00\x0b\x00\x04\x03\x00\x01\x02\x00\n\x004\x002\x00\x0e\x00\r\x00\x19\x00\x0b\x00\x0c\x00\x18\x00\t\x00\n\x00\x16\x00\x17\x00\x08\x00\x06\x00\x07\x00\x14\x00\x15\x00\x04\x00\x05\x00\x12\x00\x13\x00\x01\x00\x02\x00\x03\x00\x0f\x00\x10\x00\x11\x00\r\x00"\x00 \x06\x01\x06\x02\x06\x03\x05\x01\x05\x02\x05\x03\x04\x01\x04\x02\x04\x03\x03\x01\x03\x02\x03\x03\x02\x01\x02\x02\x02\x03\x01\x01\x00\x0f\x00\x01\x01'
+2017-03-09T17:01:28+0000 [SSHChannel None (142) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] failed to connect: Connection refused
+2017-03-09T17:01:28+0000 [SSHChannel None (142) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] sending close 142
+2017-03-09T17:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-09T17:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] direct-tcp connection request to 182.50.144.66:25 from localhost:5556
+2017-03-09T17:01:43+0000 [SSHChannel None (58) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14625,194.88.107.23] remote eof
+2017-03-09T17:01:43+0000 [SSHChannel None (58) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14625,194.88.107.23] remote close
+2017-03-09T17:01:43+0000 [SSHChannel None (58) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14625,194.88.107.23] sending close 58
+2017-03-09T17:01:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14625,194.88.107.23] got channel 'direct-tcpip' request
+2017-03-09T17:01:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14625,194.88.107.23] direct-tcp connection request to 63.250.192.46:25 from localhost:5556
+2017-03-09T17:01:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-09T17:01:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] direct-tcp connection request to 12.106.87.226:25 from localhost:5556
+2017-03-09T17:01:50+0000 [SSHChannel None (63) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14701,194.88.106.206] remote eof
+2017-03-09T17:01:50+0000 [SSHChannel None (63) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14701,194.88.106.206] remote close
+2017-03-09T17:01:50+0000 [SSHChannel None (63) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14701,194.88.106.206] sending close 63
+2017-03-09T17:01:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14701,194.88.106.206] got channel 'direct-tcpip' request
+2017-03-09T17:01:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14701,194.88.106.206] direct-tcp connection request to 173.194.67.26:25 from localhost:5556
+2017-03-09T17:01:57+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 84.51.31.98:35902 (10.8.41.81:2222) [session: 22e6a3d9]
+2017-03-09T17:01:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-09T17:01:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14700,194.88.106.181] direct-tcp connection request to 144.160.235.144:25 from localhost:5556
+2017-03-09T17:01:57+0000 [HoneyPotSSHTransport,14737,84.51.31.98] Remote SSH version: SSH-2.0-libssh-0.2
+2017-03-09T17:01:57+0000 [HoneyPotSSHTransport,14737,84.51.31.98] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-03-09T17:01:57+0000 [HoneyPotSSHTransport,14737,84.51.31.98] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-09T17:01:57+0000 [HoneyPotSSHTransport,14737,84.51.31.98] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-09T17:01:57+0000 [HoneyPotSSHTransport,14737,84.51.31.98] NEW KEYS
+2017-03-09T17:01:57+0000 [HoneyPotSSHTransport,14737,84.51.31.98] starting service 'ssh-userauth'
+2017-03-09T17:01:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14737,84.51.31.98] 'oracle' trying auth 'password'
+2017-03-09T17:01:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14737,84.51.31.98] login attempt: 251
+2017-03-09T17:01:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14737,84.51.31.98] login return, expect: [root/qwerty]
+2017-03-09T17:01:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14737,84.51.31.98] login attempt [oracle/1234567890] failed
+2017-03-09T17:02:00+0000 [-] 'oracle' failed auth 'password'
+2017-03-09T17:02:00+0000 [-] unauthorized login: 
+2017-03-09T17:02:00+0000 [HoneyPotSSHTransport,14737,84.51.31.98] Got remote error, code 11
+	reason: Bye Bye
+2017-03-09T17:02:00+0000 [HoneyPotSSHTransport,14737,84.51.31.98] connection lost
+2017-03-09T17:02:00+0000 [HoneyPotSSHTransport,14737,84.51.31.98] Connection lost after 3 seconds
