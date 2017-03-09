@@ -8911,3 +8911,42 @@
 2017-03-09T01:12:47+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13849,194.88.107.24] sending close 5
 2017-03-09T01:12:50+0000 [CowrieTelnetTransport,50141,59.127.9.243] Connection lost after 94 seconds
 2017-03-09T01:12:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.127.9.243:52854 (10.8.41.81:2223) [session: TT50145]
+2017-03-09T01:13:10+0000 [CowrieTelnetTransport,50145,59.127.9.243] login attempt: 3
+2017-03-09T01:13:10+0000 [CowrieTelnetTransport,50145,59.127.9.243] login return, expect: [root/888888]
+2017-03-09T01:13:11+0000 [CowrieTelnetTransport,50145,59.127.9.243] login attempt [root/admin] failed
+2017-03-09T01:13:11+0000 [CowrieTelnetTransport,50145,59.127.9.243] Warning: state changed and new state returned
+2017-03-09T01:13:17+0000 [CowrieTelnetTransport,50143,59.127.9.243] Connection lost after 42 seconds
+2017-03-09T01:13:22+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 179.153.204.221:34991 (10.8.41.81:2223) [session: TT50146]
+2017-03-09T01:13:23+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.127.9.243:53265 (10.8.41.81:2223) [session: TT50147]
+2017-03-09T01:13:23+0000 [CowrieTelnetTransport,50146,179.153.204.221] first time for 179.153.204.221, need: 1
+2017-03-09T01:13:23+0000 [CowrieTelnetTransport,50146,179.153.204.221] login attempt: 1
+2017-03-09T01:13:25+0000 [CowrieTelnetTransport,50146,179.153.204.221] login attempt [root/54321] succeeded
+2017-03-09T01:13:26+0000 [CowrieTelnetTransport,50146,179.153.204.221] Opening TTY Log: log/tty/20170309-011326-None-50146i.log
+2017-03-09T01:13:26+0000 [CowrieTelnetTransport,50146,179.153.204.221] Warning: state changed and new state returned
+2017-03-09T01:13:26+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.127.9.243:53150 (10.8.41.81:2223) [session: TT50148]
+2017-03-09T01:13:26+0000 [CowrieTelnetTransport,50144,59.127.9.243] Connection lost after 49 seconds
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] CMD: enable
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command found: enable 
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] CMD: shell
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command not found: shell
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] CMD: sh
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command found: sh 
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] CMD: cat /proc/mounts; /bin/busybox SSKKP
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command found: cat /proc/mounts
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command found: /bin/busybox SSKKP
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox SSKKP
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command found: cd /dev/shm
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command found: cat .s
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command found: cp /bin/echo .s
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command found: /bin/busybox SSKKP
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] CMD: nc; wget; /bin/busybox SSKKP
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command not found: nc
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command found: wget 
+2017-03-09T01:13:27+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command found: /bin/busybox SSKKP
+2017-03-09T01:13:28+0000 [CowrieTelnetTransport,50146,179.153.204.221] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-09T01:13:28+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command not found: dd bs=52 count=1 if=.s
+2017-03-09T01:13:28+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command found: cat /dev/shm/.s
+2017-03-09T01:13:28+0000 [CowrieTelnetTransport,50146,179.153.204.221] CMD: /bin/busybox SSKKP
+2017-03-09T01:13:28+0000 [CowrieTelnetTransport,50146,179.153.204.221] Command found: /bin/busybox SSKKP
+2017-03-09T01:13:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.127.9.243:53719 (10.8.41.81:2223) [session: TT50149]
