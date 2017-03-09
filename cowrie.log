@@ -3224,3 +3224,45 @@
 2017-03-09T13:35:59+0000 [CowrieTelnetTransport,50634,220.133.239.176] Command found: cat /dev/shm/.s
 2017-03-09T13:35:59+0000 [CowrieTelnetTransport,50634,220.133.239.176] CMD: /bin/busybox YKQEF
 2017-03-09T13:35:59+0000 [CowrieTelnetTransport,50634,220.133.239.176] Command found: /bin/busybox YKQEF
+2017-03-09T13:36:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14330,194.88.106.177] got channel 'direct-tcpip' request
+2017-03-09T13:36:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14330,194.88.106.177] direct-tcp connection request to 107.189.171.198:80 from localhost:5556
+2017-03-09T13:36:08+0000 [SSHChannel None (44) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14330,194.88.106.177] direct-tcp forward to 107.189.171.198:80 with data 'GET /ip/header?id_ip=12406706266&id_provider=19 HTTP/1.1\r\nHost: ipinfoplz.com\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) Version/9.0.3 Safari/601.4.4\r\nX-Group: 19\r\nX-Id: 12406706266\r\nAccept-Encoding: gzip\r\nConnection: close\r\n\r\n'
+2017-03-09T13:36:08+0000 [SSHChannel None (44) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14330,194.88.106.177] failed to connect: Connection refused
+2017-03-09T13:36:08+0000 [SSHChannel None (44) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14330,194.88.106.177] sending close 44
+2017-03-09T13:36:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 84.51.31.98:44136 (10.8.41.81:2222) [session: b7a93f54]
+2017-03-09T13:36:29+0000 [HoneyPotSSHTransport,14385,84.51.31.98] Remote SSH version: SSH-2.0-libssh-0.2
+2017-03-09T13:36:29+0000 [HoneyPotSSHTransport,14385,84.51.31.98] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-03-09T13:36:29+0000 [HoneyPotSSHTransport,14385,84.51.31.98] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-09T13:36:29+0000 [HoneyPotSSHTransport,14385,84.51.31.98] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-09T13:36:29+0000 [HoneyPotSSHTransport,14385,84.51.31.98] NEW KEYS
+2017-03-09T13:36:30+0000 [HoneyPotSSHTransport,14385,84.51.31.98] starting service 'ssh-userauth'
+2017-03-09T13:36:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14385,84.51.31.98] 'vnc' trying auth 'password'
+2017-03-09T13:36:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14385,84.51.31.98] login attempt: 4
+2017-03-09T13:36:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14385,84.51.31.98] login return, expect: [root/qwerty]
+2017-03-09T13:36:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14385,84.51.31.98] login attempt [vnc/vnc123] failed
+2017-03-09T13:36:32+0000 [-] 'vnc' failed auth 'password'
+2017-03-09T13:36:32+0000 [-] unauthorized login: 
+2017-03-09T13:36:32+0000 [HoneyPotSSHTransport,14385,84.51.31.98] Got remote error, code 11
+	reason: Bye Bye
+2017-03-09T13:36:32+0000 [HoneyPotSSHTransport,14385,84.51.31.98] connection lost
+2017-03-09T13:36:32+0000 [HoneyPotSSHTransport,14385,84.51.31.98] Connection lost after 2 seconds
+2017-03-09T13:36:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14322,194.88.107.23] got channel 'direct-tcpip' request
+2017-03-09T13:36:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14322,194.88.107.23] direct-tcp connection request to 63.250.192.45:25 from localhost:5556
+2017-03-09T13:36:49+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 194.88.106.206:63469 (10.8.41.81:2222) [session: c7fb73ac]
+2017-03-09T13:36:51+0000 [HoneyPotSSHTransport,14386,194.88.106.206] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-03-09T13:36:51+0000 [HoneyPotSSHTransport,14386,194.88.106.206] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-03-09T13:36:51+0000 [HoneyPotSSHTransport,14386,194.88.106.206] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-03-09T13:36:51+0000 [HoneyPotSSHTransport,14386,194.88.106.206] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-03-09T13:36:51+0000 [HoneyPotSSHTransport,14386,194.88.106.206] NEW KEYS
+2017-03-09T13:36:51+0000 [HoneyPotSSHTransport,14386,194.88.106.206] starting service 'ssh-userauth'
+2017-03-09T13:36:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14386,194.88.106.206] 'admin' trying auth 'password'
+2017-03-09T13:36:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14386,194.88.106.206] login attempt: 2
+2017-03-09T13:36:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14386,194.88.106.206] login return, expect: [admin/1111]
+2017-03-09T13:36:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14386,194.88.106.206] login attempt [admin/1111] succeeded
+2017-03-09T13:36:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14386,194.88.106.206] 'admin' authenticated with 'password'
+2017-03-09T13:36:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14386,194.88.106.206] starting service 'ssh-connection'
+2017-03-09T13:36:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14327,194.88.107.9] got channel 'direct-tcpip' request
+2017-03-09T13:36:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14327,194.88.107.9] direct-tcp connection request to 185.19.218.137:80 from localhost:5556
+2017-03-09T13:36:56+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14327,194.88.107.9] direct-tcp forward to 185.19.218.137:80 with data 'GET /get-ip.php HTTP/1.1\r\nHost: 185.19.218.137\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\nAccept: */*\r\nAccept-Encoding: deflate, gzip\r\n\r\n'
+2017-03-09T13:36:56+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14327,194.88.107.9] failed to connect: Connection refused
+2017-03-09T13:36:56+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14327,194.88.107.9] sending close 2
