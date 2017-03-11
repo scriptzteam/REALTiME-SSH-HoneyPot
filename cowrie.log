@@ -4130,3 +4130,28 @@
 2017-03-11T19:18:54+0000 [CowrieTelnetTransport,56349,77.126.121.185] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-03-11T19:18:54+0000 [CowrieTelnetTransport,56349,77.126.121.185] Connection lost after 11 seconds
+2017-03-11T19:19:38+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 194.88.106.206:61962 (10.8.41.81:2222) [session: 8e75e0ad]
+2017-03-11T19:19:39+0000 [HoneyPotSSHTransport,18865,194.88.106.206] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-03-11T19:19:39+0000 [HoneyPotSSHTransport,18865,194.88.106.206] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-03-11T19:19:39+0000 [HoneyPotSSHTransport,18865,194.88.106.206] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-03-11T19:19:39+0000 [HoneyPotSSHTransport,18865,194.88.106.206] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-03-11T19:19:40+0000 [HoneyPotSSHTransport,18865,194.88.106.206] NEW KEYS
+2017-03-11T19:19:40+0000 [HoneyPotSSHTransport,18865,194.88.106.206] starting service 'ssh-userauth'
+2017-03-11T19:19:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,18865,194.88.106.206] 'admin' trying auth 'password'
+2017-03-11T19:19:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,18865,194.88.106.206] login attempt: 19
+2017-03-11T19:19:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,18865,194.88.106.206] login return, expect: [admin/1111]
+2017-03-11T19:19:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,18865,194.88.106.206] login attempt [admin/1111] succeeded
+2017-03-11T19:19:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,18865,194.88.106.206] 'admin' authenticated with 'password'
+2017-03-11T19:19:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,18865,194.88.106.206] starting service 'ssh-connection'
+2017-03-11T19:19:44+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 13.81.10.196:1080 (10.8.41.81:2222) [session: c3800e1c]
+2017-03-11T19:19:44+0000 [HoneyPotSSHTransport,18866,13.81.10.196] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-11T19:19:44+0000 [HoneyPotSSHTransport,18866,13.81.10.196] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-11T19:19:44+0000 [HoneyPotSSHTransport,18866,13.81.10.196] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-11T19:19:44+0000 [HoneyPotSSHTransport,18866,13.81.10.196] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-11T19:19:44+0000 [HoneyPotSSHTransport,18866,13.81.10.196] connection lost
+2017-03-11T19:19:44+0000 [HoneyPotSSHTransport,18866,13.81.10.196] Connection lost after 0 seconds
+2017-03-11T19:20:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,18814,194.88.106.191] got channel 'direct-tcpip' request
+2017-03-11T19:20:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,18814,194.88.106.191] direct-tcp connection request to 52.223.196.107:80 from localhost:5556
+2017-03-11T19:20:01+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18814,194.88.106.191] direct-tcp forward to 52.223.196.107:80 with data 'GET /v0/CskB0I0mRlGkSEUBAqxssUT1WLGo9awo8mySJMZHFO1cmS4Cxe8wcgGUZF0PKwLuWZ4kWPLvACW_GkFdVbF3j1rLsxiMaQSYAfP-wZD7TTWvyt8iIsE5OsP57jHaW2vO63QDOv1XCrZvIRknRiUyjqF2tf8sDArworyTQQU7kwjwfaNsXGn4TOLtiamy3m3d2u1C7mISTsksloTonETzgxMYD5cde8PspgYIpOmPx-uNleYCHNY3L6BAazZKa2ZGG7Ac-fQ2kEYOOhxGEhD4OZgrtT8gBg3zJAEziensGgzO8YKtTkwbRa7WPcs/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c2a908.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-03-11T19:20:01+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18814,194.88.106.191] failed to connect: Connection refused
+2017-03-11T19:20:01+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18814,194.88.106.191] sending close 39
