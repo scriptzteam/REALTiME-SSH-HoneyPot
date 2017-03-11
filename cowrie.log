@@ -6967,3 +6967,73 @@
 2017-03-11T08:28:01+0000 [HoneyPotSSHTransport,17495,194.88.107.44] starting service 'ssh-userauth'
 2017-03-11T08:28:01+0000 [CowrieTelnetTransport,54692,171.248.22.154] first time for 171.248.22.154, need: 1
 2017-03-11T08:28:01+0000 [CowrieTelnetTransport,54692,171.248.22.154] login attempt: 1
+2017-03-11T08:28:03+0000 [CowrieTelnetTransport,54692,171.248.22.154] login attempt [root/system] succeeded
+2017-03-11T08:28:04+0000 [CowrieTelnetTransport,54692,171.248.22.154] Opening TTY Log: log/tty/20170311-082804-None-54692i.log
+2017-03-11T08:28:04+0000 [CowrieTelnetTransport,54692,171.248.22.154] Warning: state changed and new state returned
+2017-03-11T08:28:04+0000 [HoneyPotSSHTransport,17496,58.218.204.188] NEW KEYS
+2017-03-11T08:28:04+0000 [HoneyPotSSHTransport,17496,58.218.204.188] starting service 'ssh-userauth'
+2017-03-11T08:28:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17495,194.88.107.44] 'admin' trying auth 'password'
+2017-03-11T08:28:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17495,194.88.107.44] login attempt: 2
+2017-03-11T08:28:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17495,194.88.107.44] login return, expect: [admin/1111]
+2017-03-11T08:28:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17495,194.88.107.44] login attempt [admin/1111] succeeded
+2017-03-11T08:28:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17495,194.88.107.44] 'admin' authenticated with 'password'
+2017-03-11T08:28:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17495,194.88.107.44] starting service 'ssh-connection'
+2017-03-11T08:28:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17496,58.218.204.188] 'root' trying auth 'none'
+2017-03-11T08:28:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17496,58.218.204.188] 'root' authenticated with 'none'
+2017-03-11T08:28:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17496,58.218.204.188] starting service 'ssh-connection'
+2017-03-11T08:28:10+0000 [CowrieTelnetTransport,54692,171.248.22.154] CMD: enable
+2017-03-11T08:28:10+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command found: enable 
+2017-03-11T08:28:10+0000 [CowrieTelnetTransport,54692,171.248.22.154] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-11T08:28:10+0000 [CowrieTelnetTransport,54692,171.248.22.154] CMD: shell
+2017-03-11T08:28:10+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command not found: shell
+2017-03-11T08:28:10+0000 [CowrieTelnetTransport,54692,171.248.22.154] CMD: sh
+2017-03-11T08:28:10+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command found: sh 
+2017-03-11T08:28:10+0000 [HoneyPotSSHTransport,17496,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-03-11T08:28:10+0000 [HoneyPotSSHTransport,17496,58.218.204.188] avatar root logging out
+2017-03-11T08:28:10+0000 [HoneyPotSSHTransport,17496,58.218.204.188] connection lost
+2017-03-11T08:28:10+0000 [HoneyPotSSHTransport,17496,58.218.204.188] Connection lost after 9 seconds
+2017-03-11T08:28:11+0000 [CowrieTelnetTransport,54692,171.248.22.154] CMD: cat /proc/mounts; /bin/busybox VBCXI
+2017-03-11T08:28:11+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command found: cat /proc/mounts
+2017-03-11T08:28:11+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command found: /bin/busybox VBCXI
+2017-03-11T08:28:11+0000 [CowrieTelnetTransport,54692,171.248.22.154] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox VBCXI
+2017-03-11T08:28:11+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command found: cd /dev/shm
+2017-03-11T08:28:11+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command found: cat .s
+2017-03-11T08:28:11+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command found: cp /bin/echo .s
+2017-03-11T08:28:11+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command found: /bin/busybox VBCXI
+2017-03-11T08:28:11+0000 [CowrieTelnetTransport,54692,171.248.22.154] CMD: nc; wget; /bin/busybox VBCXI
+2017-03-11T08:28:11+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command not found: nc
+2017-03-11T08:28:11+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command found: wget 
+2017-03-11T08:28:11+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command found: /bin/busybox VBCXI
+2017-03-11T08:28:12+0000 [CowrieTelnetTransport,54692,171.248.22.154] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-11T08:28:12+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command not found: dd bs=52 count=1 if=.s
+2017-03-11T08:28:12+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command found: cat /dev/shm/.s
+2017-03-11T08:28:12+0000 [CowrieTelnetTransport,54692,171.248.22.154] CMD: /bin/busybox VBCXI
+2017-03-11T08:28:12+0000 [CowrieTelnetTransport,54692,171.248.22.154] Command found: /bin/busybox VBCXI
+2017-03-11T08:28:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17300,194.88.106.209] got channel 'direct-tcpip' request
+2017-03-11T08:28:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17300,194.88.106.209] direct-tcp connection request to 54.235.212.238:80 from localhost:5556
+2017-03-11T08:28:15+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17300,194.88.106.209] direct-tcp forward to 54.235.212.238:80 with data 'GET / HTTP/1.0\r\nHost: api.ipify.org\r\n\r\n'
+2017-03-11T08:28:15+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17300,194.88.106.209] failed to connect: Connection refused
+2017-03-11T08:28:15+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17300,194.88.106.209] sending close 1
+2017-03-11T08:28:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17455,194.88.107.8] got channel 'direct-tcpip' request
+2017-03-11T08:28:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17455,194.88.107.8] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-03-11T08:28:35+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:61036 (10.8.41.81:2222) [session: fa495341]
+2017-03-11T08:28:36+0000 [HoneyPotSSHTransport,17497,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-03-11T08:28:36+0000 [HoneyPotSSHTransport,17497,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-11T08:28:36+0000 [HoneyPotSSHTransport,17497,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-11T08:28:36+0000 [HoneyPotSSHTransport,17497,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-11T08:28:36+0000 [HoneyPotSSHTransport,17497,58.218.204.188] NEW KEYS
+2017-03-11T08:28:37+0000 [HoneyPotSSHTransport,17497,58.218.204.188] starting service 'ssh-userauth'
+2017-03-11T08:28:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17497,58.218.204.188] 'root' trying auth 'none'
+2017-03-11T08:28:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17497,58.218.204.188] 'root' authenticated with 'none'
+2017-03-11T08:28:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17497,58.218.204.188] starting service 'ssh-connection'
+2017-03-11T08:28:39+0000 [HoneyPotSSHTransport,17497,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-03-11T08:28:39+0000 [HoneyPotSSHTransport,17497,58.218.204.188] avatar root logging out
+2017-03-11T08:28:39+0000 [HoneyPotSSHTransport,17497,58.218.204.188] connection lost
+2017-03-11T08:28:39+0000 [HoneyPotSSHTransport,17497,58.218.204.188] Connection lost after 3 seconds
+2017-03-11T08:28:45+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17455,194.88.107.8] remote eof
+2017-03-11T08:28:45+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17455,194.88.107.8] remote close
+2017-03-11T08:28:45+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17455,194.88.107.8] sending close 2
+2017-03-11T08:28:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17455,194.88.107.8] got channel 'direct-tcpip' request
+2017-03-11T08:28:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17455,194.88.107.8] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
