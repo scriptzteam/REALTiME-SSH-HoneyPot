@@ -4926,3 +4926,38 @@
 2017-03-12T04:02:34+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19408,194.88.106.206] direct-tcp forward to 23.62.112.231:443 with data '\x16\x03\x01\x00\xb3\x01\x00\x00\xaf\x03\x03\xb04\xc8@\xe8e\xda\x9d\xe1\xe2\x7f\xe6\xceZ\xe7\x88\x05\x83*\xe8P"\x877\x93\x890\xa4?\xa9\x8e\xc9\x00\x006\xc0,\xc0\n\xc0+\xc0\t\xc00\xc0\x14\xc0/\xc0\x13\x00\x9f\x009\x008\x00k\x00\x9e\x003\x002\x00g\x00\x16\x00\x13\x00\x9d\x005\x00=\x00\x9c\x00/\x00<\x00\n\x00\x05\x00\x04\x01\x00\x00P\x00\x00\x00\x19\x00\x17\x00\x00\x14www.westernunion.com\xff\x01\x00\x01\x00\x00\n\x00\x08\x00\x06\x00\x17\x00\x18\x00\x19\x00\x0b\x00\x02\x01\x00\x00\r\x00\x18\x00\x16\x04\x01\x05\x01\x06\x01\x02\x01\x04\x03\x05\x03\x06\x03\x02\x03\x05\x02\x04\x02\x02\x02'
 2017-03-12T04:02:34+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19408,194.88.106.206] failed to connect: Connection refused
 2017-03-12T04:02:34+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19408,194.88.106.206] sending close 0
+2017-03-12T04:03:12+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 13.81.10.196:1080 (10.8.41.81:2222) [session: 85151991]
+2017-03-12T04:03:12+0000 [HoneyPotSSHTransport,19501,13.81.10.196] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-12T04:03:12+0000 [HoneyPotSSHTransport,19501,13.81.10.196] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-12T04:03:12+0000 [HoneyPotSSHTransport,19501,13.81.10.196] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-12T04:03:12+0000 [HoneyPotSSHTransport,19501,13.81.10.196] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-12T04:03:15+0000 [HoneyPotSSHTransport,19501,13.81.10.196] NEW KEYS
+2017-03-12T04:03:15+0000 [HoneyPotSSHTransport,19501,13.81.10.196] starting service 'ssh-userauth'
+2017-03-12T04:03:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19501,13.81.10.196] 'jakep' trying auth 'password'
+2017-03-12T04:03:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19501,13.81.10.196] login attempt: 114
+2017-03-12T04:03:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19501,13.81.10.196] login return, expect: [alex/alex]
+2017-03-12T04:03:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19501,13.81.10.196] login attempt [jakep/jakep] failed
+2017-03-12T04:03:19+0000 [HoneyPotSSHTransport,19501,13.81.10.196] connection lost
+2017-03-12T04:03:19+0000 [HoneyPotSSHTransport,19501,13.81.10.196] Connection lost after 7 seconds
+2017-03-12T04:03:19+0000 [-] 'jakep' failed auth 'password'
+2017-03-12T04:03:19+0000 [-] unauthorized login: 
+2017-03-12T04:03:19+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-12T04:03:19+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
