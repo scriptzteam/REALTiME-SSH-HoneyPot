@@ -4689,3 +4689,61 @@
 2017-03-12T03:58:42+0000 [CowrieTelnetTransport,58168,185.165.30.44] Connection lost after 47 seconds
 2017-03-12T03:58:56+0000 [CowrieTelnetTransport,58170,185.165.30.44] Connection lost after 41 seconds
 2017-03-12T03:58:59+0000 [CowrieTelnetTransport,58171,185.165.30.44] Connection lost after 45 seconds
+2017-03-12T03:59:03+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.165.30.44:59941 (10.8.41.81:2223) [session: TT58173]
+2017-03-12T03:59:06+0000 [CowrieTelnetTransport,58172,185.165.30.44] Connection lost after 44 seconds
+2017-03-12T03:59:11+0000 [CowrieTelnetTransport,58173,185.165.30.44] login attempt: 687
+2017-03-12T03:59:11+0000 [CowrieTelnetTransport,58173,185.165.30.44] login return, expect: [root/54321]
+2017-03-12T03:59:12+0000 [CowrieTelnetTransport,58173,185.165.30.44] login attempt [ubnt/ubnt] failed
+2017-03-12T03:59:12+0000 [CowrieTelnetTransport,58173,185.165.30.44] Warning: state changed and new state returned
+2017-03-12T03:59:12+0000 [CowrieTelnetTransport,58173,185.165.30.44] login attempt: 688
+2017-03-12T03:59:12+0000 [CowrieTelnetTransport,58173,185.165.30.44] login return, expect: [root/54321]
+2017-03-12T03:59:13+0000 [CowrieTelnetTransport,58173,185.165.30.44] login attempt [enable/shell] failed
+2017-03-12T03:59:13+0000 [CowrieTelnetTransport,58173,185.165.30.44] Warning: state changed and new state returned
+2017-03-12T03:59:14+0000 [CowrieTelnetTransport,58173,185.165.30.44] login attempt: 689
+2017-03-12T03:59:14+0000 [CowrieTelnetTransport,58173,185.165.30.44] login return, expect: [root/54321]
+2017-03-12T03:59:15+0000 [CowrieTelnetTransport,58173,185.165.30.44] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-12T03:59:15+0000 [CowrieTelnetTransport,58173,185.165.30.44] Warning: state changed and new state returned
+2017-03-12T03:59:15+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 13.81.10.196:1080 (10.8.41.81:2222) [session: 936082f7]
+2017-03-12T03:59:15+0000 [HoneyPotSSHTransport,19498,13.81.10.196] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-12T03:59:15+0000 [HoneyPotSSHTransport,19498,13.81.10.196] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-12T03:59:15+0000 [HoneyPotSSHTransport,19498,13.81.10.196] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-12T03:59:15+0000 [HoneyPotSSHTransport,19498,13.81.10.196] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-12T03:59:17+0000 [HoneyPotSSHTransport,19498,13.81.10.196] NEW KEYS
+2017-03-12T03:59:17+0000 [HoneyPotSSHTransport,19498,13.81.10.196] starting service 'ssh-userauth'
+2017-03-12T03:59:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19498,13.81.10.196] 'olu' trying auth 'password'
+2017-03-12T03:59:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19498,13.81.10.196] login attempt: 113
+2017-03-12T03:59:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19498,13.81.10.196] login return, expect: [alex/alex]
+2017-03-12T03:59:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19498,13.81.10.196] login attempt [olu/olu] failed
+2017-03-12T03:59:21+0000 [HoneyPotSSHTransport,19498,13.81.10.196] connection lost
+2017-03-12T03:59:21+0000 [HoneyPotSSHTransport,19498,13.81.10.196] Connection lost after 6 seconds
+2017-03-12T03:59:22+0000 [-] 'olu' failed auth 'password'
+2017-03-12T03:59:22+0000 [-] unauthorized login: 
+2017-03-12T03:59:22+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-12T03:59:22+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-12T03:59:34+0000 [CowrieTelnetTransport,58162,185.165.30.44] Closing TTY Log: log/tty/20170312-035731-None-58162i.log after 123 seconds
+2017-03-12T03:59:34+0000 [CowrieTelnetTransport,58162,185.165.30.44] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-12T03:59:34+0000 [CowrieTelnetTransport,58162,185.165.30.44] Connection lost after 133 seconds
+2017-03-12T03:59:45+0000 [CowrieTelnetTransport,58173,185.165.30.44] Connection lost after 41 seconds
+2017-03-12T03:59:55+0000 [CowrieTelnetTransport,58169,86.35.190.182] Closing TTY Log: log/tty/20170312-035814-None-58169i.log after 100 seconds
+2017-03-12T03:59:55+0000 [CowrieTelnetTransport,58169,86.35.190.182] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-12T03:59:55+0000 [CowrieTelnetTransport,58169,86.35.190.182] Connection lost after 115 seconds
