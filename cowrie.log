@@ -1571,3 +1571,65 @@
 	    self.transport.write(encPacket)
 	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
 	
+2017-03-12T03:15:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 13.81.10.196:1080 (10.8.41.81:2222) [session: 9b08da46]
+2017-03-12T03:15:42+0000 [HoneyPotSSHTransport,19463,13.81.10.196] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-12T03:15:42+0000 [HoneyPotSSHTransport,19463,13.81.10.196] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-12T03:15:42+0000 [HoneyPotSSHTransport,19463,13.81.10.196] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-12T03:15:42+0000 [HoneyPotSSHTransport,19463,13.81.10.196] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-12T03:15:43+0000 [HoneyPotSSHTransport,19463,13.81.10.196] NEW KEYS
+2017-03-12T03:15:43+0000 [HoneyPotSSHTransport,19463,13.81.10.196] starting service 'ssh-userauth'
+2017-03-12T03:15:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19463,13.81.10.196] 'guru' trying auth 'password'
+2017-03-12T03:15:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19463,13.81.10.196] login attempt: 88
+2017-03-12T03:15:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19463,13.81.10.196] login return, expect: [alex/alex]
+2017-03-12T03:15:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19463,13.81.10.196] login attempt [guru/guru] failed
+2017-03-12T03:15:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.162.87.39:38270 (10.8.41.81:2223) [session: TT58060]
+2017-03-12T03:15:46+0000 [CowrieTelnetTransport,58060,31.162.87.39] first time for 31.162.87.39, need: 1
+2017-03-12T03:15:46+0000 [CowrieTelnetTransport,58060,31.162.87.39] login attempt: 1
+2017-03-12T03:15:47+0000 [CowrieTelnetTransport,58060,31.162.87.39] login attempt [admin/1111111] succeeded
+2017-03-12T03:15:48+0000 [CowrieTelnetTransport,58060,31.162.87.39] Opening TTY Log: log/tty/20170312-031548-None-58060i.log
+2017-03-12T03:15:48+0000 [CowrieTelnetTransport,58060,31.162.87.39] Warning: state changed and new state returned
+2017-03-12T03:15:48+0000 [-] 'guru' failed auth 'password'
+2017-03-12T03:15:48+0000 [-] unauthorized login: 
+2017-03-12T03:15:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19463,13.81.10.196] 'guru' trying auth 'password'
+2017-03-12T03:15:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19463,13.81.10.196] login attempt: 89
+2017-03-12T03:15:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19463,13.81.10.196] login return, expect: [alex/alex]
+2017-03-12T03:15:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19463,13.81.10.196] login attempt [guru/guru@123] failed
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] Received unhandled keyID: '\x00'
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] CMD: enable
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] Command found: enable 
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] Received unhandled keyID: '\x00'
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] CMD: system
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] Command not found: system
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] Received unhandled keyID: '\x00'
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] CMD: shell
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] Command not found: shell
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] Received unhandled keyID: '\x00'
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] CMD: sh
+2017-03-12T03:15:50+0000 [CowrieTelnetTransport,58060,31.162.87.39] Command found: sh 
+2017-03-12T03:15:51+0000 [CowrieTelnetTransport,58060,31.162.87.39] Received unhandled keyID: '\x00'
+2017-03-12T03:15:51+0000 [CowrieTelnetTransport,58060,31.162.87.39] CMD: /bin/busybox MASUTA
+2017-03-12T03:15:51+0000 [CowrieTelnetTransport,58060,31.162.87.39] Command found: /bin/busybox MASUTA
+2017-03-12T03:15:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 89.248.163.3:33508 (10.8.41.81:2223) [session: TT58061]
+2017-03-12T03:15:51+0000 [CowrieTelnetTransport,58060,31.162.87.39] Closing TTY Log: log/tty/20170312-031548-None-58060i.log after 2 seconds
+2017-03-12T03:15:51+0000 [CowrieTelnetTransport,58060,31.162.87.39] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-12T03:15:51+0000 [CowrieTelnetTransport,58060,31.162.87.39] Connection lost after 6 seconds
+2017-03-12T03:15:51+0000 [-] 'guru' failed auth 'password'
+2017-03-12T03:15:51+0000 [-] unauthorized login: 
+2017-03-12T03:15:51+0000 [HoneyPotSSHTransport,19463,13.81.10.196] connection lost
+2017-03-12T03:15:51+0000 [HoneyPotSSHTransport,19463,13.81.10.196] Connection lost after 8 seconds
+2017-03-12T03:15:56+0000 [CowrieTelnetTransport,58061,89.248.163.3] login attempt: 18209
+2017-03-12T03:15:56+0000 [CowrieTelnetTransport,58061,89.248.163.3] login return, expect: [root/admin]
+2017-03-12T03:15:58+0000 [CowrieTelnetTransport,58061,89.248.163.3] login attempt [admin/1111111] failed
+2017-03-12T03:15:58+0000 [CowrieTelnetTransport,58061,89.248.163.3] Warning: state changed and new state returned
+2017-03-12T03:15:58+0000 [CowrieTelnetTransport,58061,89.248.163.3] login attempt: 18210
+2017-03-12T03:15:58+0000 [CowrieTelnetTransport,58061,89.248.163.3] login return, expect: [root/admin]
+2017-03-12T03:15:59+0000 [CowrieTelnetTransport,58061,89.248.163.3] login attempt [/enable] failed
+2017-03-12T03:15:59+0000 [CowrieTelnetTransport,58061,89.248.163.3] Warning: state changed and new state returned
+2017-03-12T03:15:59+0000 [CowrieTelnetTransport,58061,89.248.163.3] login attempt: 18211
+2017-03-12T03:15:59+0000 [CowrieTelnetTransport,58061,89.248.163.3] login return, expect: [root/admin]
+2017-03-12T03:16:01+0000 [CowrieTelnetTransport,58061,89.248.163.3] login attempt [system/shell] failed
+2017-03-12T03:16:01+0000 [CowrieTelnetTransport,58061,89.248.163.3] Warning: state changed and new state returned
+2017-03-12T03:16:01+0000 [CowrieTelnetTransport,58061,89.248.163.3] login attempt: 18212
+2017-03-12T03:16:01+0000 [CowrieTelnetTransport,58061,89.248.163.3] login return, expect: [root/admin]
