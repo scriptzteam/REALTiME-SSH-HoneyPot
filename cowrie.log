@@ -1732,3 +1732,46 @@
 2017-03-17T17:25:01+0000 [SSHChannel None (177) on SSHService 'ssh-connection' on HoneyPotSSHTransport,34466,194.88.106.175] direct-tcp forward to 107.189.171.198:80 with data 'GET /ip/header?id_ip=13667402615&id_provider=19 HTTP/1.1\r\nHost: ipinfoplz.com\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) Version/9.0.3 Safari/601.4.4\r\nX-Group: 19\r\nX-Id: 13667402615\r\nAccept-Encoding: gzip\r\nConnection: close\r\n\r\n'
 2017-03-17T17:25:01+0000 [SSHChannel None (177) on SSHService 'ssh-connection' on HoneyPotSSHTransport,34466,194.88.106.175] failed to connect: Connection refused
 2017-03-17T17:25:01+0000 [SSHChannel None (177) on SSHService 'ssh-connection' on HoneyPotSSHTransport,34466,194.88.106.175] sending close 177
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] CMD: enable
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command found: enable 
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] CMD: shell
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command not found: shell
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] CMD: sh
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command found: sh 
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] CMD: cat /proc/mounts; /bin/busybox IHNOB
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command found: cat /proc/mounts
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command found: /bin/busybox IHNOB
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox IHNOB
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command found: cd /dev/shm
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command found: cat .s
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command found: cp /bin/echo .s
+2017-03-17T17:25:01+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command found: /bin/busybox IHNOB
+2017-03-17T17:25:02+0000 [CowrieTelnetTransport,81077,95.14.217.61] CMD: nc; wget; /bin/busybox IHNOB
+2017-03-17T17:25:02+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command not found: nc
+2017-03-17T17:25:02+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command found: wget 
+2017-03-17T17:25:02+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command found: /bin/busybox IHNOB
+2017-03-17T17:25:02+0000 [CowrieTelnetTransport,81077,95.14.217.61] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-17T17:25:02+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command not found: dd bs=52 count=1 if=.s
+2017-03-17T17:25:02+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command found: cat /dev/shm/.s
+2017-03-17T17:25:02+0000 [CowrieTelnetTransport,81077,95.14.217.61] CMD: /bin/busybox IHNOB
+2017-03-17T17:25:02+0000 [CowrieTelnetTransport,81077,95.14.217.61] Command found: /bin/busybox IHNOB
+2017-03-17T17:25:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 194.88.107.14:58623 (10.8.41.81:2222) [session: b0fafe5c]
+2017-03-17T17:25:24+0000 [HoneyPotSSHTransport,34534,194.88.107.14] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-03-17T17:25:24+0000 [HoneyPotSSHTransport,34534,194.88.107.14] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-03-17T17:25:24+0000 [HoneyPotSSHTransport,34534,194.88.107.14] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-03-17T17:25:24+0000 [HoneyPotSSHTransport,34534,194.88.107.14] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-03-17T17:25:24+0000 [HoneyPotSSHTransport,34534,194.88.107.14] NEW KEYS
+2017-03-17T17:25:24+0000 [HoneyPotSSHTransport,34534,194.88.107.14] starting service 'ssh-userauth'
+2017-03-17T17:25:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,34534,194.88.107.14] 'admin' trying auth 'password'
+2017-03-17T17:25:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,34534,194.88.107.14] login attempt: 8
+2017-03-17T17:25:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,34534,194.88.107.14] login return, expect: [admin/1111]
+2017-03-17T17:25:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,34534,194.88.107.14] login attempt [admin/1111] succeeded
+2017-03-17T17:25:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,34534,194.88.107.14] 'admin' authenticated with 'password'
+2017-03-17T17:25:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,34534,194.88.107.14] starting service 'ssh-connection'
+2017-03-17T17:25:31+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,34499,91.195.103.179] remote eof
+2017-03-17T17:25:31+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,34499,91.195.103.179] remote close
+2017-03-17T17:25:31+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,34499,91.195.103.179] sending close 39
+2017-03-17T17:25:54+0000 [HoneyPotSSHTransport,34466,194.88.106.175] avatar admin logging out
+2017-03-17T17:25:54+0000 [HoneyPotSSHTransport,34466,194.88.106.175] connection lost
+2017-03-17T17:25:54+0000 [HoneyPotSSHTransport,34466,194.88.106.175] Connection lost after 12023 seconds
