@@ -2921,3 +2921,88 @@
 	    self.transport.write(encPacket)
 	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
 	
+2017-03-20T20:16:03+0000 [SSHChannel None (532) on SSHService 'ssh-connection' on HoneyPotSSHTransport,41206,194.88.106.181] remote eof
+2017-03-20T20:16:03+0000 [SSHChannel None (532) on SSHService 'ssh-connection' on HoneyPotSSHTransport,41206,194.88.106.181] remote close
+2017-03-20T20:16:03+0000 [SSHChannel None (532) on SSHService 'ssh-connection' on HoneyPotSSHTransport,41206,194.88.106.181] sending close 532
+2017-03-20T20:16:05+0000 [SSHChannel None (221) on SSHService 'ssh-connection' on HoneyPotSSHTransport,40976,194.88.107.8] remote eof
+2017-03-20T20:16:05+0000 [SSHChannel None (221) on SSHService 'ssh-connection' on HoneyPotSSHTransport,40976,194.88.107.8] remote close
+2017-03-20T20:16:05+0000 [SSHChannel None (221) on SSHService 'ssh-connection' on HoneyPotSSHTransport,40976,194.88.107.8] sending close 221
+2017-03-20T20:16:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,40976,194.88.107.8] got channel 'direct-tcpip' request
+2017-03-20T20:16:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,40976,194.88.107.8] direct-tcp connection request to 173.194.79.27:25 from localhost:5556
+2017-03-20T20:16:12+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 106.51.10.238:41913 (10.8.41.81:2222) [session: b28cf100]
+2017-03-20T20:16:12+0000 [HoneyPotSSHTransport,41399,106.51.10.238] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-20T20:16:12+0000 [HoneyPotSSHTransport,41399,106.51.10.238] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-20T20:16:12+0000 [HoneyPotSSHTransport,41399,106.51.10.238] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-20T20:16:12+0000 [HoneyPotSSHTransport,41399,106.51.10.238] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-20T20:16:12+0000 [HoneyPotSSHTransport,41399,106.51.10.238] NEW KEYS
+2017-03-20T20:16:12+0000 [HoneyPotSSHTransport,41399,106.51.10.238] starting service 'ssh-userauth'
+2017-03-20T20:16:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41399,106.51.10.238] 'guest' trying auth 'password'
+2017-03-20T20:16:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41399,106.51.10.238] login attempt: 17
+2017-03-20T20:16:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41399,106.51.10.238] login return, expect: [appuser/appuser]
+2017-03-20T20:16:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41399,106.51.10.238] login attempt [guest/qwerty] failed
+2017-03-20T20:16:16+0000 [HoneyPotSSHTransport,41399,106.51.10.238] connection lost
+2017-03-20T20:16:16+0000 [HoneyPotSSHTransport,41399,106.51.10.238] Connection lost after 4 seconds
+2017-03-20T20:16:16+0000 [-] 'guest' failed auth 'password'
+2017-03-20T20:16:16+0000 [-] unauthorized login: 
+2017-03-20T20:16:16+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-20T20:16:16+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-20T20:16:30+0000 [SSHChannel None (222) on SSHService 'ssh-connection' on HoneyPotSSHTransport,40976,194.88.107.8] remote eof
+2017-03-20T20:16:30+0000 [SSHChannel None (222) on SSHService 'ssh-connection' on HoneyPotSSHTransport,40976,194.88.107.8] remote close
+2017-03-20T20:16:30+0000 [SSHChannel None (222) on SSHService 'ssh-connection' on HoneyPotSSHTransport,40976,194.88.107.8] sending close 222
+2017-03-20T20:16:31+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 158.69.52.184:52496 (10.8.41.81:2222) [session: 200dce63]
+2017-03-20T20:16:31+0000 [HoneyPotSSHTransport,41400,158.69.52.184] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-20T20:16:31+0000 [HoneyPotSSHTransport,41400,158.69.52.184] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-20T20:16:31+0000 [HoneyPotSSHTransport,41400,158.69.52.184] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-20T20:16:31+0000 [HoneyPotSSHTransport,41400,158.69.52.184] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-20T20:16:32+0000 [HoneyPotSSHTransport,41400,158.69.52.184] NEW KEYS
+2017-03-20T20:16:32+0000 [HoneyPotSSHTransport,41400,158.69.52.184] starting service 'ssh-userauth'
+2017-03-20T20:16:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41400,158.69.52.184] 'control' trying auth 'password'
+2017-03-20T20:16:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41400,158.69.52.184] login attempt: 1566
+2017-03-20T20:16:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41400,158.69.52.184] login return, expect: [test/1qaz2wsx]
+2017-03-20T20:16:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41400,158.69.52.184] login attempt [control/password] failed
+2017-03-20T20:16:35+0000 [-] 'control' failed auth 'password'
+2017-03-20T20:16:35+0000 [-] unauthorized login: 
+2017-03-20T20:16:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41400,158.69.52.184] 'control' trying auth 'password'
+2017-03-20T20:16:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41400,158.69.52.184] login attempt: 1567
+2017-03-20T20:16:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41400,158.69.52.184] login return, expect: [test/1qaz2wsx]
+2017-03-20T20:16:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41400,158.69.52.184] login attempt [control/1234567] failed
+2017-03-20T20:16:38+0000 [-] 'control' failed auth 'password'
+2017-03-20T20:16:38+0000 [-] unauthorized login: 
+2017-03-20T20:16:38+0000 [HoneyPotSSHTransport,41400,158.69.52.184] connection lost
+2017-03-20T20:16:38+0000 [HoneyPotSSHTransport,41400,158.69.52.184] Connection lost after 6 seconds
+2017-03-20T20:16:40+0000 [SSHChannel None (533) on SSHService 'ssh-connection' on HoneyPotSSHTransport,41206,194.88.106.181] remote eof
+2017-03-20T20:16:40+0000 [SSHChannel None (533) on SSHService 'ssh-connection' on HoneyPotSSHTransport,41206,194.88.106.181] remote close
+2017-03-20T20:16:40+0000 [SSHChannel None (533) on SSHService 'ssh-connection' on HoneyPotSSHTransport,41206,194.88.106.181] sending close 533
+2017-03-20T20:16:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,40969,194.88.107.24] got channel 'direct-tcpip' request
+2017-03-20T20:16:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,40969,194.88.107.24] direct-tcp connection request to 98.136.217.203:25 from localhost:5556
+2017-03-20T20:16:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,40999,194.88.106.207] got channel 'direct-tcpip' request
+2017-03-20T20:16:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,40999,194.88.106.207] direct-tcp connection request to 2.17.227.183:443 from localhost:5556
+2017-03-20T20:16:53+0000 [SSHChannel None (89) on SSHService 'ssh-connection' on HoneyPotSSHTransport,40999,194.88.106.207] direct-tcp forward to 2.17.227.183:443 with data "\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\x9c'\xbbJC\xa3\xaa\xbb\xdc\x91+c\xdb\xf9\xd4\x17%T\x03\xe2\x97Z~\xde\xd0\x06\xb4\x16\xbaw\xb8\x89"
+2017-03-20T20:16:53+0000 [SSHChannel None (89) on SSHService 'ssh-connection' on HoneyPotSSHTransport,40999,194.88.106.207] failed to connect: Connection refused
+2017-03-20T20:16:53+0000 [SSHChannel None (89) on SSHService 'ssh-connection' on HoneyPotSSHTransport,40999,194.88.106.207] sending close 89
+2017-03-20T20:17:01+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 84.200.92.203:48506 (10.8.41.81:2222) [session: c376da23]
+2017-03-20T20:17:01+0000 [HoneyPotSSHTransport,41401,84.200.92.203] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-20T20:17:01+0000 [HoneyPotSSHTransport,41401,84.200.92.203] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-20T20:17:01+0000 [HoneyPotSSHTransport,41401,84.200.92.203] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-20T20:17:01+0000 [HoneyPotSSHTransport,41401,84.200.92.203] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-20T20:17:01+0000 [HoneyPotSSHTransport,41401,84.200.92.203] NEW KEYS
+2017-03-20T20:17:01+0000 [HoneyPotSSHTransport,41401,84.200.92.203] starting service 'ssh-userauth'
+2017-03-20T20:17:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,41401,84.200.92.203] 'ubuntu' trying auth 'password'
