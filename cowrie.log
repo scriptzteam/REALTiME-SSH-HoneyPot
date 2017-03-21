@@ -5350,3 +5350,33 @@
 2017-03-21T18:38:00+0000 [CowrieTelnetTransport,101967,93.174.95.38] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
 	]
 2017-03-21T18:38:00+0000 [CowrieTelnetTransport,101967,93.174.95.38] Connection lost after 141 seconds
+2017-03-21T18:38:01+0000 [-] 'faxadmin' failed auth 'password'
+2017-03-21T18:38:01+0000 [-] unauthorized login: 
+2017-03-21T18:38:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42948,84.200.92.203] 'faxadmin' trying auth 'password'
+2017-03-21T18:38:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42948,84.200.92.203] login attempt: 944
+2017-03-21T18:38:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42948,84.200.92.203] login return, expect: [a/a]
+2017-03-21T18:38:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42948,84.200.92.203] login attempt [faxadmin/Qwerty] failed
+2017-03-21T18:38:04+0000 [HoneyPotSSHTransport,42948,84.200.92.203] connection lost
+2017-03-21T18:38:04+0000 [HoneyPotSSHTransport,42948,84.200.92.203] Connection lost after 6 seconds
+2017-03-21T18:38:04+0000 [-] 'faxadmin' failed auth 'password'
+2017-03-21T18:38:04+0000 [-] unauthorized login: 
+2017-03-21T18:38:04+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-21T18:38:04+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
