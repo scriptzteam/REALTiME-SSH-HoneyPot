@@ -536,3 +536,76 @@
 2017-03-21T11:04:35+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42648,194.88.107.15] remote eof
 2017-03-21T11:04:35+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42648,194.88.107.15] remote close
 2017-03-21T11:04:35+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42648,194.88.107.15] sending close 0
+2017-03-21T11:05:02+0000 [SSHChannel None (1138) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42488,194.88.106.181] direct-tcp forward to 206.188.198.64:25 with data 'QUIT\r\n'
+2017-03-21T11:05:02+0000 [SSHChannel None (1138) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42488,194.88.106.181] failed to connect: Connection refused
+2017-03-21T11:05:02+0000 [SSHChannel None (1138) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42488,194.88.106.181] sending close 1138
+2017-03-21T11:05:02+0000 [SSHChannel None (1138) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42488,194.88.106.181] remote eof
+2017-03-21T11:05:02+0000 [SSHChannel None (1138) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42488,194.88.106.181] remote close
+2017-03-21T11:05:18+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 84.200.92.203:52124 (10.8.41.81:2222) [session: cd7be150]
+2017-03-21T11:05:18+0000 [HoneyPotSSHTransport,42661,84.200.92.203] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-21T11:05:18+0000 [HoneyPotSSHTransport,42661,84.200.92.203] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-21T11:05:18+0000 [HoneyPotSSHTransport,42661,84.200.92.203] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-21T11:05:18+0000 [HoneyPotSSHTransport,42661,84.200.92.203] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-21T11:05:19+0000 [HoneyPotSSHTransport,42661,84.200.92.203] NEW KEYS
+2017-03-21T11:05:19+0000 [HoneyPotSSHTransport,42661,84.200.92.203] starting service 'ssh-userauth'
+2017-03-21T11:05:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42661,84.200.92.203] 'PlcmSpIp' trying auth 'password'
+2017-03-21T11:05:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42661,84.200.92.203] login attempt: 816
+2017-03-21T11:05:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42661,84.200.92.203] login return, expect: [a/a]
+2017-03-21T11:05:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42661,84.200.92.203] login attempt [PlcmSpIp/321321] failed
+2017-03-21T11:05:22+0000 [-] 'PlcmSpIp' failed auth 'password'
+2017-03-21T11:05:22+0000 [-] unauthorized login: 
+2017-03-21T11:05:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42661,84.200.92.203] 'PlcmSpIp' trying auth 'password'
+2017-03-21T11:05:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42661,84.200.92.203] login attempt: 817
+2017-03-21T11:05:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42661,84.200.92.203] login return, expect: [a/a]
+2017-03-21T11:05:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42661,84.200.92.203] login attempt [PlcmSpIp/Passw0rd] failed
+2017-03-21T11:05:25+0000 [HoneyPotSSHTransport,42661,84.200.92.203] connection lost
+2017-03-21T11:05:25+0000 [HoneyPotSSHTransport,42661,84.200.92.203] Connection lost after 6 seconds
+2017-03-21T11:05:26+0000 [-] 'PlcmSpIp' failed auth 'password'
+2017-03-21T11:05:26+0000 [-] unauthorized login: 
+2017-03-21T11:05:26+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-21T11:05:26+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-21T11:05:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 213.152.168.125:49459 (10.8.41.81:2222) [session: 2b1338db]
+2017-03-21T11:05:31+0000 [HoneyPotSSHTransport,42662,213.152.168.125] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-03-21T11:05:31+0000 [HoneyPotSSHTransport,42662,213.152.168.125] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-03-21T11:05:31+0000 [HoneyPotSSHTransport,42662,213.152.168.125] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-03-21T11:05:31+0000 [HoneyPotSSHTransport,42662,213.152.168.125] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-03-21T11:05:32+0000 [HoneyPotSSHTransport,42662,213.152.168.125] NEW KEYS
+2017-03-21T11:05:32+0000 [HoneyPotSSHTransport,42662,213.152.168.125] starting service 'ssh-userauth'
+2017-03-21T11:05:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42662,213.152.168.125] 'admin' trying auth 'password'
+2017-03-21T11:05:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42662,213.152.168.125] login attempt: 2
+2017-03-21T11:05:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42662,213.152.168.125] login return, expect: [admin/1111]
+2017-03-21T11:05:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42662,213.152.168.125] login attempt [admin/1111] succeeded
+2017-03-21T11:05:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42662,213.152.168.125] 'admin' authenticated with 'password'
+2017-03-21T11:05:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42662,213.152.168.125] starting service 'ssh-connection'
+2017-03-21T11:05:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 194.88.107.16:54025 (10.8.41.81:2222) [session: a1451e6b]
+2017-03-21T11:05:49+0000 [HoneyPotSSHTransport,42663,194.88.107.16] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-03-21T11:05:49+0000 [HoneyPotSSHTransport,42663,194.88.107.16] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-03-21T11:05:49+0000 [HoneyPotSSHTransport,42663,194.88.107.16] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-03-21T11:05:49+0000 [HoneyPotSSHTransport,42663,194.88.107.16] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-03-21T11:05:49+0000 [HoneyPotSSHTransport,42663,194.88.107.16] NEW KEYS
+2017-03-21T11:05:49+0000 [HoneyPotSSHTransport,42663,194.88.107.16] starting service 'ssh-userauth'
+2017-03-21T11:05:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42663,194.88.107.16] 'admin' trying auth 'password'
+2017-03-21T11:05:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42663,194.88.107.16] login attempt: 11
+2017-03-21T11:05:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42663,194.88.107.16] login return, expect: [admin/1111]
+2017-03-21T11:05:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42663,194.88.107.16] login attempt [admin/1111] succeeded
+2017-03-21T11:05:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42663,194.88.107.16] 'admin' authenticated with 'password'
+2017-03-21T11:05:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,42663,194.88.107.16] starting service 'ssh-connection'
+2017-03-21T11:05:59+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:53340 (10.8.41.81:2223) [session: TT99200]
