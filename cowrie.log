@@ -8153,3 +8153,47 @@
 	reason: Bye Bye
 2017-03-23T17:28:58+0000 [HoneyPotSSHTransport,45402,103.212.223.57] connection lost
 2017-03-23T17:28:58+0000 [HoneyPotSSHTransport,45402,103.212.223.57] Connection lost after 5 seconds
+2017-03-23T17:29:44+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 106.51.39.201:51027 (10.8.41.81:2222) [session: 18517007]
+2017-03-23T17:29:44+0000 [HoneyPotSSHTransport,45403,106.51.39.201] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-23T17:29:44+0000 [HoneyPotSSHTransport,45403,106.51.39.201] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-23T17:29:44+0000 [HoneyPotSSHTransport,45403,106.51.39.201] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-23T17:29:44+0000 [HoneyPotSSHTransport,45403,106.51.39.201] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-23T17:29:45+0000 [HoneyPotSSHTransport,45403,106.51.39.201] NEW KEYS
+2017-03-23T17:29:45+0000 [HoneyPotSSHTransport,45403,106.51.39.201] starting service 'ssh-userauth'
+2017-03-23T17:29:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45403,106.51.39.201] 'adm' trying auth 'password'
+2017-03-23T17:29:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45403,106.51.39.201] login attempt: 159
+2017-03-23T17:29:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45403,106.51.39.201] login return, expect: [a/a]
+2017-03-23T17:29:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45403,106.51.39.201] login attempt [adm/sysadmin] failed
+2017-03-23T17:29:48+0000 [HoneyPotSSHTransport,45403,106.51.39.201] connection lost
+2017-03-23T17:29:48+0000 [HoneyPotSSHTransport,45403,106.51.39.201] Connection lost after 3 seconds
+2017-03-23T17:29:48+0000 [-] 'adm' failed auth 'password'
+2017-03-23T17:29:48+0000 [-] unauthorized login: 
+2017-03-23T17:29:48+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-23T17:29:48+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-23T17:29:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,45368,194.88.107.12] got channel 'direct-tcpip' request
+2017-03-23T17:29:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,45368,194.88.107.12] direct-tcp connection request to 182.22.12.116:25 from localhost:5556
+2017-03-23T17:29:59+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.212.223.57:44204 (10.8.41.81:2222) [session: 14818e3e]
+2017-03-23T17:30:00+0000 [HoneyPotSSHTransport,45404,103.212.223.57] Remote SSH version: SSH-2.0-libssh-0.2
+2017-03-23T17:30:00+0000 [HoneyPotSSHTransport,45404,103.212.223.57] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-03-23T17:30:00+0000 [HoneyPotSSHTransport,45404,103.212.223.57] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-23T17:30:00+0000 [HoneyPotSSHTransport,45404,103.212.223.57] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-23T17:30:01+0000 [HoneyPotSSHTransport,45404,103.212.223.57] NEW KEYS
+2017-03-23T17:30:01+0000 [HoneyPotSSHTransport,45404,103.212.223.57] starting service 'ssh-userauth'
