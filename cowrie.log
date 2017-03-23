@@ -7545,3 +7545,74 @@
 2017-03-23T17:22:00+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.212.223.57:52787 (10.8.41.81:2222) [session: 43168e1b]
 2017-03-23T17:22:00+0000 [HoneyPotSSHTransport,45390,103.212.223.57] connection lost
 2017-03-23T17:22:00+0000 [HoneyPotSSHTransport,45390,103.212.223.57] Connection lost after 0 seconds
+2017-03-23T17:22:06+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 106.51.39.201:12644 (10.8.41.81:2222) [session: f157292b]
+2017-03-23T17:22:07+0000 [HoneyPotSSHTransport,45391,106.51.39.201] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-23T17:22:07+0000 [HoneyPotSSHTransport,45391,106.51.39.201] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-23T17:22:07+0000 [HoneyPotSSHTransport,45391,106.51.39.201] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-23T17:22:07+0000 [HoneyPotSSHTransport,45391,106.51.39.201] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-23T17:22:07+0000 [HoneyPotSSHTransport,45391,106.51.39.201] NEW KEYS
+2017-03-23T17:22:07+0000 [HoneyPotSSHTransport,45391,106.51.39.201] starting service 'ssh-userauth'
+2017-03-23T17:22:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45391,106.51.39.201] 'administrator' trying auth 'password'
+2017-03-23T17:22:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45391,106.51.39.201] login attempt: 152
+2017-03-23T17:22:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45391,106.51.39.201] login return, expect: [a/a]
+2017-03-23T17:22:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45391,106.51.39.201] login attempt [administrator/adm] failed
+2017-03-23T17:22:11+0000 [-] 'administrator' failed auth 'password'
+2017-03-23T17:22:11+0000 [-] unauthorized login: 
+2017-03-23T17:22:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45391,106.51.39.201] 'administrator' trying auth 'password'
+2017-03-23T17:22:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45391,106.51.39.201] login attempt: 153
+2017-03-23T17:22:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45391,106.51.39.201] login return, expect: [a/a]
+2017-03-23T17:22:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45391,106.51.39.201] login attempt [administrator/administrator123] failed
+2017-03-23T17:22:14+0000 [HoneyPotSSHTransport,45391,106.51.39.201] connection lost
+2017-03-23T17:22:14+0000 [HoneyPotSSHTransport,45391,106.51.39.201] Connection lost after 7 seconds
+2017-03-23T17:22:14+0000 [-] 'administrator' failed auth 'password'
+2017-03-23T17:22:14+0000 [-] unauthorized login: 
+2017-03-23T17:22:14+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-23T17:22:14+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-23T17:22:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 78.187.37.189:51438 (10.8.41.81:2223) [session: TT113428]
+2017-03-23T17:22:52+0000 [CowrieTelnetTransport,113428,78.187.37.189] first time for 78.187.37.189, need: 1
+2017-03-23T17:22:52+0000 [CowrieTelnetTransport,113428,78.187.37.189] login attempt: 1
+2017-03-23T17:22:53+0000 [CowrieTelnetTransport,113428,78.187.37.189] login attempt [root/7ujMko0vizxv] succeeded
+2017-03-23T17:22:55+0000 [CowrieTelnetTransport,113428,78.187.37.189] Opening TTY Log: log/tty/20170323-172255-None-113428i.log
+2017-03-23T17:22:55+0000 [CowrieTelnetTransport,113428,78.187.37.189] Warning: state changed and new state returned
+2017-03-23T17:22:55+0000 [CowrieTelnetTransport,113428,78.187.37.189] CMD: enable
+2017-03-23T17:22:55+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command found: enable 
+2017-03-23T17:22:55+0000 [CowrieTelnetTransport,113428,78.187.37.189] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-23T17:22:55+0000 [CowrieTelnetTransport,113428,78.187.37.189] CMD: shell
+2017-03-23T17:22:55+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command not found: shell
+2017-03-23T17:22:55+0000 [CowrieTelnetTransport,113428,78.187.37.189] CMD: sh
+2017-03-23T17:22:55+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command found: sh 
+2017-03-23T17:22:55+0000 [CowrieTelnetTransport,113428,78.187.37.189] CMD: cat /proc/mounts; /bin/busybox PUBFA
+2017-03-23T17:22:55+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command found: cat /proc/mounts
+2017-03-23T17:22:55+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command found: /bin/busybox PUBFA
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox PUBFA
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command found: cd /dev/shm
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command found: cat .s
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command found: cp /bin/echo .s
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command found: /bin/busybox PUBFA
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] CMD: nc; wget; /bin/busybox PUBFA
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command not found: nc
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command found: wget 
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command found: /bin/busybox PUBFA
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command not found: dd bs=52 count=1 if=.s
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command found: cat /dev/shm/.s
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] CMD: /bin/busybox PUBFA
+2017-03-23T17:22:56+0000 [CowrieTelnetTransport,113428,78.187.37.189] Command found: /bin/busybox PUBFA
