@@ -3202,3 +3202,83 @@
 2017-03-23T22:07:56+0000 [SSHChannel None (462) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45692,194.88.106.181] remote eof
 2017-03-23T22:07:56+0000 [SSHChannel None (462) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45692,194.88.106.181] remote close
 2017-03-23T22:07:56+0000 [SSHChannel None (462) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45692,194.88.106.181] sending close 462
+2017-03-23T22:08:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.125.54.171:39061 (10.8.41.81:2223) [session: TT114381]
+2017-03-23T22:08:16+0000 [CowrieTelnetTransport,114381,59.125.54.171] first time for 59.125.54.171, need: 1
+2017-03-23T22:08:16+0000 [CowrieTelnetTransport,114381,59.125.54.171] login attempt: 1
+2017-03-23T22:08:17+0000 [CowrieTelnetTransport,114381,59.125.54.171] login attempt [root/12345] succeeded
+2017-03-23T22:08:20+0000 [CowrieTelnetTransport,114381,59.125.54.171] Opening TTY Log: log/tty/20170323-220820-None-114381i.log
+2017-03-23T22:08:20+0000 [CowrieTelnetTransport,114381,59.125.54.171] Warning: state changed and new state returned
+2017-03-23T22:08:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,45600,91.195.103.187] got channel 'direct-tcpip' request
+2017-03-23T22:08:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,45600,91.195.103.187] direct-tcp connection request to 107.189.171.198:80 from localhost:5556
+2017-03-23T22:08:20+0000 [SSHChannel None (72) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45600,91.195.103.187] direct-tcp forward to 107.189.171.198:80 with data 'GET /ip/header?id_ip=14585782704&id_provider=19 HTTP/1.1\r\nHost: ipinfoplz.com\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) Version/9.0.3 Safari/601.4.4\r\nX-Group: 19\r\nX-Id: 14585782704\r\nAccept-Encoding: gzip\r\nConnection: close\r\n\r\n'
+2017-03-23T22:08:20+0000 [SSHChannel None (72) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45600,91.195.103.187] failed to connect: Connection refused
+2017-03-23T22:08:20+0000 [SSHChannel None (72) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45600,91.195.103.187] sending close 72
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] CMD: enable
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command found: enable 
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] CMD: shell
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command not found: shell
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] CMD: sh
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command found: sh 
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] CMD: cat /proc/mounts; /bin/busybox VAXIS
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command found: cat /proc/mounts
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command found: /bin/busybox VAXIS
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox VAXIS
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command found: cd /dev/shm
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command found: cat .s
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command found: cp /bin/echo .s
+2017-03-23T22:08:21+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command found: /bin/busybox VAXIS
+2017-03-23T22:08:22+0000 [CowrieTelnetTransport,114381,59.125.54.171] CMD: nc; wget; /bin/busybox VAXIS
+2017-03-23T22:08:22+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command not found: nc
+2017-03-23T22:08:22+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command found: wget 
+2017-03-23T22:08:22+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command found: /bin/busybox VAXIS
+2017-03-23T22:08:22+0000 [CowrieTelnetTransport,114381,59.125.54.171] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-23T22:08:22+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command not found: dd bs=52 count=1 if=.s
+2017-03-23T22:08:22+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command found: cat /dev/shm/.s
+2017-03-23T22:08:22+0000 [CowrieTelnetTransport,114381,59.125.54.171] CMD: /bin/busybox VAXIS
+2017-03-23T22:08:22+0000 [CowrieTelnetTransport,114381,59.125.54.171] Command found: /bin/busybox VAXIS
+2017-03-23T22:08:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,45692,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-23T22:08:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,45692,194.88.106.181] direct-tcp connection request to 93.115.29.122:80 from localhost:5556
+2017-03-23T22:08:45+0000 [SSHChannel None (465) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45692,194.88.106.181] direct-tcp forward to 93.115.29.122:80 with data 'GET /internals/api/ip?1490306907411174989 HTTP/1.1\r\nHost: ip3.adspy.mobi\r\nConnection: close\r\nConnection: close\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip\r\n\r\n'
+2017-03-23T22:08:45+0000 [SSHChannel None (465) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45692,194.88.106.181] failed to connect: Connection refused
+2017-03-23T22:08:45+0000 [SSHChannel None (465) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45692,194.88.106.181] sending close 465
+2017-03-23T22:08:47+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 203.59.216.219:45518 (10.8.41.81:2223) [session: TT114382]
+2017-03-23T22:08:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,45601,194.88.107.16] got channel 'direct-tcpip' request
+2017-03-23T22:08:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,45601,194.88.107.16] direct-tcp connection request to 52.223.196.215:80 from localhost:5556
+2017-03-23T22:08:48+0000 [SSHChannel None (220) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45601,194.88.107.16] direct-tcp forward to 52.223.196.215:80 with data 'GET /v0/CtMBoWWGZlGDXD5vi9qIVQxxJPz1iim7fOSCN6INFgMl0RAKUrrvKAOHeBrQdqT5UW8UWHI5B2uykhDkv8oilw5c7m98wuXgR6Dym9rQwBJqWR7C3xy64TcIMfWO7ifwihq97OxudSrOHdqJ4TXj2vXcQYgh4AopJzizGI2wyt9ANYYdGcI1o6xuLNY_6aM4d_-4Sod7ZivyjtEZtqUngYyKTqG3QgU01SXq9nO7OM4ezc6Z6qs8r7Hsp9HJQ0tx-pM8WZGHWn229IH2GiyC_6ZCSvTvFRIQ10ZeqGExbXVMXNJo8vgUuBoMC-dG6cKtvAiJn83f/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c67d54.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-03-23T22:08:48+0000 [SSHChannel None (220) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45601,194.88.107.16] failed to connect: Connection refused
+2017-03-23T22:08:48+0000 [SSHChannel None (220) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45601,194.88.107.16] sending close 220
+2017-03-23T22:08:49+0000 [CowrieTelnetTransport,114382,203.59.216.219] first time for 203.59.216.219, need: 1
+2017-03-23T22:08:49+0000 [CowrieTelnetTransport,114382,203.59.216.219] login attempt: 1
+2017-03-23T22:08:50+0000 [CowrieTelnetTransport,114382,203.59.216.219] login attempt [root/vizxv] succeeded
+2017-03-23T22:08:52+0000 [CowrieTelnetTransport,114382,203.59.216.219] Opening TTY Log: log/tty/20170323-220852-None-114382i.log
+2017-03-23T22:08:52+0000 [CowrieTelnetTransport,114382,203.59.216.219] Warning: state changed and new state returned
+2017-03-23T22:08:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,45601,194.88.107.16] got channel 'direct-tcpip' request
+2017-03-23T22:08:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,45601,194.88.107.16] direct-tcp connection request to 52.223.196.87:80 from localhost:5556
+2017-03-23T22:08:52+0000 [SSHChannel None (221) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45601,194.88.107.16] direct-tcp forward to 52.223.196.87:80 with data 'GET /v0/CuUBLkIi5JTUCPgLDkW_hEAHxbAvADwitWl5so-aOfafztsillzwidYSfDRrtdg5lCP1odC0HVV6wykfnSL7s9hVjRoDTN4lbWdxTu_Gnh6GaFkHdM763snd7mbhXRkqwJwRpeJhTIi0qUCOO3AWv7s8cwTYK4IQXBkW9-QHu-CU86RdVI3jzIafMB8eBB9IicHP0uBYFKgFhRm3IlSAjWcPmlvGMQw_B4PfOBRhM4pHmVzfnh44fb3N02cHAQSaddUnzoR8wwWNBaVmlzuMu93RRyN1z35nF6B5_PdWigxvIjN1BQ2-YRIQ02DxHd3UGbV_AWQ5ct5tjRoMBuRAgoIQO-nGPrGY/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c1dd10.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-03-23T22:08:52+0000 [SSHChannel None (221) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45601,194.88.107.16] failed to connect: Connection refused
+2017-03-23T22:08:52+0000 [SSHChannel None (221) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45601,194.88.107.16] sending close 221
+2017-03-23T22:08:53+0000 [CowrieTelnetTransport,114382,203.59.216.219] CMD: enable
+2017-03-23T22:08:53+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command found: enable 
+2017-03-23T22:08:53+0000 [CowrieTelnetTransport,114382,203.59.216.219] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-23T22:08:53+0000 [CowrieTelnetTransport,114382,203.59.216.219] CMD: shell
+2017-03-23T22:08:53+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command not found: shell
+2017-03-23T22:08:53+0000 [CowrieTelnetTransport,114382,203.59.216.219] CMD: sh
+2017-03-23T22:08:53+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command found: sh 
+2017-03-23T22:08:53+0000 [CowrieTelnetTransport,114382,203.59.216.219] CMD: cat /proc/mounts; /bin/busybox NKASX
+2017-03-23T22:08:53+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command found: cat /proc/mounts
+2017-03-23T22:08:53+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command found: /bin/busybox NKASX
+2017-03-23T22:08:54+0000 [CowrieTelnetTransport,114382,203.59.216.219] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox NKASX
+2017-03-23T22:08:54+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command found: cd /dev/shm
+2017-03-23T22:08:54+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command found: cat .s
+2017-03-23T22:08:54+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command found: cp /bin/echo .s
+2017-03-23T22:08:54+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command found: /bin/busybox NKASX
+2017-03-23T22:08:54+0000 [CowrieTelnetTransport,114382,203.59.216.219] CMD: nc; wget; /bin/busybox NKASX
+2017-03-23T22:08:54+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command not found: nc
+2017-03-23T22:08:54+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command found: wget 
+2017-03-23T22:08:54+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command found: /bin/busybox NKASX
+2017-03-23T22:08:55+0000 [CowrieTelnetTransport,114382,203.59.216.219] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-23T22:08:55+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command not found: dd bs=52 count=1 if=.s
+2017-03-23T22:08:55+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command found: cat /dev/shm/.s
+2017-03-23T22:08:55+0000 [CowrieTelnetTransport,114382,203.59.216.219] CMD: /bin/busybox NKASX
+2017-03-23T22:08:55+0000 [CowrieTelnetTransport,114382,203.59.216.219] Command found: /bin/busybox NKASX
