@@ -3548,3 +3548,66 @@
 	    self.transport.write(encPacket)
 	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
 	
+2017-03-23T16:40:11+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 106.51.39.201:12761 (10.8.41.81:2222) [session: bec09c19]
+2017-03-23T16:40:11+0000 [HoneyPotSSHTransport,45339,106.51.39.201] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-23T16:40:11+0000 [HoneyPotSSHTransport,45339,106.51.39.201] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-23T16:40:11+0000 [HoneyPotSSHTransport,45339,106.51.39.201] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-23T16:40:11+0000 [HoneyPotSSHTransport,45339,106.51.39.201] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-23T16:40:12+0000 [HoneyPotSSHTransport,45339,106.51.39.201] NEW KEYS
+2017-03-23T16:40:12+0000 [HoneyPotSSHTransport,45339,106.51.39.201] starting service 'ssh-userauth'
+2017-03-23T16:40:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45339,106.51.39.201] 'deploy' trying auth 'password'
+2017-03-23T16:40:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45339,106.51.39.201] login attempt: 124
+2017-03-23T16:40:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45339,106.51.39.201] login return, expect: [a/a]
+2017-03-23T16:40:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45339,106.51.39.201] login attempt [deploy/deploy] failed
+2017-03-23T16:40:15+0000 [-] 'deploy' failed auth 'password'
+2017-03-23T16:40:15+0000 [-] unauthorized login: 
+2017-03-23T16:40:15+0000 [HoneyPotSSHTransport,45339,106.51.39.201] connection lost
+2017-03-23T16:40:15+0000 [HoneyPotSSHTransport,45339,106.51.39.201] Connection lost after 4 seconds
+2017-03-23T16:40:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 187.157.22.131:49356 (10.8.41.81:2222) [session: 99906395]
+2017-03-23T16:40:30+0000 [HoneyPotSSHTransport,45340,187.157.22.131] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-23T16:40:30+0000 [HoneyPotSSHTransport,45340,187.157.22.131] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-23T16:40:30+0000 [HoneyPotSSHTransport,45340,187.157.22.131] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-23T16:40:30+0000 [HoneyPotSSHTransport,45340,187.157.22.131] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-23T16:40:32+0000 [HoneyPotSSHTransport,45340,187.157.22.131] NEW KEYS
+2017-03-23T16:40:32+0000 [HoneyPotSSHTransport,45340,187.157.22.131] starting service 'ssh-userauth'
+2017-03-23T16:40:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45340,187.157.22.131] 'root' trying auth 'password'
+2017-03-23T16:40:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45340,187.157.22.131] login attempt: 4
+2017-03-23T16:40:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45340,187.157.22.131] login return, expect: [santosh/santosh]
+2017-03-23T16:40:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45340,187.157.22.131] login attempt [root/password] failed
+2017-03-23T16:40:35+0000 [-] 'root' failed auth 'password'
+2017-03-23T16:40:35+0000 [-] unauthorized login: 
+2017-03-23T16:40:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45340,187.157.22.131] 'root' trying auth 'password'
+2017-03-23T16:40:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45340,187.157.22.131] login attempt: 5
+2017-03-23T16:40:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45340,187.157.22.131] login return, expect: [santosh/santosh]
+2017-03-23T16:40:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45340,187.157.22.131] login attempt [root/p@ssw0rd] failed
+2017-03-23T16:40:38+0000 [HoneyPotSSHTransport,45340,187.157.22.131] connection lost
+2017-03-23T16:40:38+0000 [HoneyPotSSHTransport,45340,187.157.22.131] Connection lost after 8 seconds
+2017-03-23T16:40:38+0000 [-] 'root' failed auth 'password'
+2017-03-23T16:40:38+0000 [-] unauthorized login: 
+2017-03-23T16:40:38+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-23T16:40:38+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-23T16:40:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:38094 (10.8.41.81:2223) [session: TT113289]
+2017-03-23T16:40:57+0000 [CowrieTelnetTransport,113289,67.229.141.98] login attempt: 164984
+2017-03-23T16:40:57+0000 [CowrieTelnetTransport,113289,67.229.141.98] login return, expect: [root/666666]
+2017-03-23T16:40:58+0000 [CowrieTelnetTransport,113289,67.229.141.98] login attempt [admin/7ujMko0admin] failed
+2017-03-23T16:40:58+0000 [CowrieTelnetTransport,113289,67.229.141.98] Warning: state changed and new state returned
+2017-03-23T16:41:00+0000 [CowrieTelnetTransport,113289,67.229.141.98] login attempt: 164985
+2017-03-23T16:41:00+0000 [CowrieTelnetTransport,113289,67.229.141.98] login return, expect: [root/666666]
