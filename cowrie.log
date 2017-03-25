@@ -5698,3 +5698,126 @@
 2017-03-25T17:21:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50174,194.88.106.181] direct-tcp connection request to 206.188.198.64:25 from localhost:5556
 2017-03-25T17:21:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50174,194.88.106.181] got channel 'direct-tcpip' request
 2017-03-25T17:21:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50174,194.88.106.181] direct-tcp connection request to 176.74.176.187:25 from localhost:5556
+2017-03-25T17:22:09+0000 [SSHChannel None (200) on SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] remote eof
+2017-03-25T17:22:09+0000 [SSHChannel None (200) on SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] remote close
+2017-03-25T17:22:09+0000 [SSHChannel None (200) on SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] sending close 200
+2017-03-25T17:22:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] got channel 'direct-tcpip' request
+2017-03-25T17:22:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] direct-tcp connection request to 74.125.30.27:25 from localhost:5556
+2017-03-25T17:22:11+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 60.165.208.28:9224 (10.8.41.81:2222) [session: 8e1ea7c8]
+2017-03-25T17:22:11+0000 [HoneyPotSSHTransport,50305,60.165.208.28] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-03-25T17:22:11+0000 [HoneyPotSSHTransport,50305,60.165.208.28] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-03-25T17:22:11+0000 [HoneyPotSSHTransport,50305,60.165.208.28] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-25T17:22:11+0000 [HoneyPotSSHTransport,50305,60.165.208.28] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-25T17:22:13+0000 [HoneyPotSSHTransport,50305,60.165.208.28] NEW KEYS
+2017-03-25T17:22:13+0000 [HoneyPotSSHTransport,50305,60.165.208.28] starting service 'ssh-userauth'
+2017-03-25T17:22:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,50305,60.165.208.28] 'operator' trying auth 'password'
+2017-03-25T17:22:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,50305,60.165.208.28] login attempt: 9
+2017-03-25T17:22:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,50305,60.165.208.28] login return, expect: [zabbix/zabbix]
+2017-03-25T17:22:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,50305,60.165.208.28] login attempt [operator/operator] failed
+2017-03-25T17:22:17+0000 [HoneyPotSSHTransport,50305,60.165.208.28] connection lost
+2017-03-25T17:22:17+0000 [HoneyPotSSHTransport,50305,60.165.208.28] Connection lost after 5 seconds
+2017-03-25T17:22:18+0000 [-] 'operator' failed auth 'password'
+2017-03-25T17:22:18+0000 [-] unauthorized login: 
+2017-03-25T17:22:18+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-25T17:22:18+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-25T17:22:21+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50174,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-25T17:22:21+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50174,194.88.106.181] direct-tcp connection request to 62.38.2.71:25 from localhost:5556
+2017-03-25T17:22:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,49979,91.195.103.189] got channel 'direct-tcpip' request
+2017-03-25T17:22:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,49979,91.195.103.189] direct-tcp connection request to 107.189.171.198:80 from localhost:5556
+2017-03-25T17:22:22+0000 [SSHChannel None (105) on SSHService 'ssh-connection' on HoneyPotSSHTransport,49979,91.195.103.189] direct-tcp forward to 107.189.171.198:80 with data 'GET /ip/header?id_ip=14745961099&id_provider=19 HTTP/1.1\r\nHost: ipinfoplz.com\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) Version/9.0.3 Safari/601.4.4\r\nX-Group: 19\r\nX-Id: 14745961099\r\nAccept-Encoding: gzip\r\nConnection: close\r\n\r\n'
+2017-03-25T17:22:22+0000 [SSHChannel None (105) on SSHService 'ssh-connection' on HoneyPotSSHTransport,49979,91.195.103.189] failed to connect: Connection refused
+2017-03-25T17:22:22+0000 [SSHChannel None (105) on SSHService 'ssh-connection' on HoneyPotSSHTransport,49979,91.195.103.189] sending close 105
+2017-03-25T17:22:23+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 121.45.200.167:35918 (10.8.41.81:2223) [session: TT126047]
+2017-03-25T17:22:25+0000 [CowrieTelnetTransport,126047,121.45.200.167] first time for 121.45.200.167, need: 1
+2017-03-25T17:22:25+0000 [CowrieTelnetTransport,126047,121.45.200.167] login attempt: 1
+2017-03-25T17:22:27+0000 [CowrieTelnetTransport,126047,121.45.200.167] login attempt [root/7ujMko0vizxv] succeeded
+2017-03-25T17:22:28+0000 [CowrieTelnetTransport,126047,121.45.200.167] Opening TTY Log: log/tty/20170325-172228-None-126047i.log
+2017-03-25T17:22:28+0000 [CowrieTelnetTransport,126047,121.45.200.167] Warning: state changed and new state returned
+2017-03-25T17:22:28+0000 [SSHChannel None (439) on SSHService 'ssh-connection' on HoneyPotSSHTransport,50174,194.88.106.181] remote eof
+2017-03-25T17:22:28+0000 [SSHChannel None (439) on SSHService 'ssh-connection' on HoneyPotSSHTransport,50174,194.88.106.181] remote close
+2017-03-25T17:22:28+0000 [SSHChannel None (439) on SSHService 'ssh-connection' on HoneyPotSSHTransport,50174,194.88.106.181] sending close 439
+2017-03-25T17:22:29+0000 [CowrieTelnetTransport,126047,121.45.200.167] CMD: enable
+2017-03-25T17:22:29+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command found: enable 
+2017-03-25T17:22:29+0000 [CowrieTelnetTransport,126047,121.45.200.167] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-25T17:22:29+0000 [CowrieTelnetTransport,126047,121.45.200.167] CMD: shell
+2017-03-25T17:22:29+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command not found: shell
+2017-03-25T17:22:29+0000 [CowrieTelnetTransport,126047,121.45.200.167] CMD: sh
+2017-03-25T17:22:29+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command found: sh 
+2017-03-25T17:22:29+0000 [CowrieTelnetTransport,126047,121.45.200.167] CMD: cat /proc/mounts; /bin/busybox ALPMQ
+2017-03-25T17:22:29+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command found: cat /proc/mounts
+2017-03-25T17:22:29+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command found: /bin/busybox ALPMQ
+2017-03-25T17:22:30+0000 [CowrieTelnetTransport,126047,121.45.200.167] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox ALPMQ
+2017-03-25T17:22:30+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command found: cd /dev/shm
+2017-03-25T17:22:30+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command found: cat .s
+2017-03-25T17:22:30+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command found: cp /bin/echo .s
+2017-03-25T17:22:30+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command found: /bin/busybox ALPMQ
+2017-03-25T17:22:30+0000 [CowrieTelnetTransport,126047,121.45.200.167] CMD: nc; wget; /bin/busybox ALPMQ
+2017-03-25T17:22:30+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command not found: nc
+2017-03-25T17:22:30+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command found: wget 
+2017-03-25T17:22:30+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command found: /bin/busybox ALPMQ
+2017-03-25T17:22:30+0000 [CowrieTelnetTransport,126047,121.45.200.167] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-25T17:22:30+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command not found: dd bs=52 count=1 if=.s
+2017-03-25T17:22:30+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command found: cat /dev/shm/.s
+2017-03-25T17:22:31+0000 [CowrieTelnetTransport,126047,121.45.200.167] CMD: /bin/busybox ALPMQ
+2017-03-25T17:22:31+0000 [CowrieTelnetTransport,126047,121.45.200.167] Command found: /bin/busybox ALPMQ
+2017-03-25T17:22:34+0000 [SSHChannel None (201) on SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] remote eof
+2017-03-25T17:22:34+0000 [SSHChannel None (201) on SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] remote close
+2017-03-25T17:22:34+0000 [SSHChannel None (201) on SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] sending close 201
+2017-03-25T17:22:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] got channel 'direct-tcpip' request
+2017-03-25T17:22:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] direct-tcp connection request to 173.194.79.26:25 from localhost:5556
+2017-03-25T17:22:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 113.130.247.68:33444 (10.8.41.81:2223) [session: TT126048]
+2017-03-25T17:22:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] got channel 'direct-tcpip' request
+2017-03-25T17:22:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] direct-tcp connection request to 74.125.130.27:25 from localhost:5556
+2017-03-25T17:22:55+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 181.194.182.90:55257 (10.8.41.81:2223) [session: TT126049]
+2017-03-25T17:22:56+0000 [CowrieTelnetTransport,126049,181.194.182.90] first time for 181.194.182.90, need: 1
+2017-03-25T17:22:56+0000 [CowrieTelnetTransport,126049,181.194.182.90] login attempt: 1
+2017-03-25T17:22:58+0000 [CowrieTelnetTransport,126049,181.194.182.90] login attempt [admin/1111111] succeeded
+2017-03-25T17:23:00+0000 [CowrieTelnetTransport,126049,181.194.182.90] Opening TTY Log: log/tty/20170325-172300-None-126049i.log
+2017-03-25T17:23:00+0000 [CowrieTelnetTransport,126049,181.194.182.90] Warning: state changed and new state returned
+2017-03-25T17:23:00+0000 [SSHChannel None (202) on SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] remote eof
+2017-03-25T17:23:00+0000 [SSHChannel None (202) on SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] remote close
+2017-03-25T17:23:00+0000 [SSHChannel None (202) on SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] sending close 202
+2017-03-25T17:23:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] got channel 'direct-tcpip' request
+2017-03-25T17:23:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,49933,194.88.107.19] direct-tcp connection request to 173.194.79.26:25 from localhost:5556
+2017-03-25T17:23:00+0000 [CowrieTelnetTransport,126049,181.194.182.90] CMD: enable
+2017-03-25T17:23:00+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command found: enable 
+2017-03-25T17:23:00+0000 [CowrieTelnetTransport,126049,181.194.182.90] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-25T17:23:00+0000 [CowrieTelnetTransport,126049,181.194.182.90] CMD: shell
+2017-03-25T17:23:00+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command not found: shell
+2017-03-25T17:23:00+0000 [CowrieTelnetTransport,126049,181.194.182.90] CMD: sh
+2017-03-25T17:23:00+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command found: sh 
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] CMD: cat /proc/mounts; /bin/busybox VTLYX
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command found: cat /proc/mounts
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command found: /bin/busybox VTLYX
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox VTLYX
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command found: cd /dev/shm
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command found: cat .s
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command found: cp /bin/echo .s
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command found: /bin/busybox VTLYX
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] CMD: nc; wget; /bin/busybox VTLYX
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command not found: nc
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command found: wget 
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command found: /bin/busybox VTLYX
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command not found: dd bs=52 count=1 if=.s
+2017-03-25T17:23:01+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command found: cat /dev/shm/.s
+2017-03-25T17:23:02+0000 [CowrieTelnetTransport,126049,181.194.182.90] CMD: /bin/busybox VTLYX
+2017-03-25T17:23:02+0000 [CowrieTelnetTransport,126049,181.194.182.90] Command found: /bin/busybox VTLYX
