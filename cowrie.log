@@ -6926,3 +6926,118 @@
 2017-03-27T01:42:41+0000 [CowrieTelnetTransport,132698,67.229.141.98] Connection lost after 49 seconds
 2017-03-27T01:42:44+0000 [CowrieTelnetTransport,132697,67.229.141.98] Connection lost after 55 seconds
 2017-03-27T01:42:54+0000 [CowrieTelnetTransport,132699,67.229.141.98] Connection lost after 41 seconds
+2017-03-27T01:43:02+0000 [CowrieTelnetTransport,132700,67.229.141.98] Connection lost after 48 seconds
+2017-03-27T01:43:10+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 106.51.10.238:57767 (10.8.41.81:2222) [session: d963f325]
+2017-03-27T01:43:10+0000 [HoneyPotSSHTransport,52359,106.51.10.238] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-27T01:43:10+0000 [HoneyPotSSHTransport,52359,106.51.10.238] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-27T01:43:10+0000 [HoneyPotSSHTransport,52359,106.51.10.238] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T01:43:10+0000 [HoneyPotSSHTransport,52359,106.51.10.238] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T01:43:11+0000 [HoneyPotSSHTransport,52359,106.51.10.238] NEW KEYS
+2017-03-27T01:43:11+0000 [HoneyPotSSHTransport,52359,106.51.10.238] starting service 'ssh-userauth'
+2017-03-27T01:43:11+0000 [CowrieTelnetTransport,132701,67.229.141.98] Connection lost after 47 seconds
+2017-03-27T01:43:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52359,106.51.10.238] 'root' trying auth 'password'
+2017-03-27T01:43:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52359,106.51.10.238] login attempt: 78
+2017-03-27T01:43:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52359,106.51.10.238] login return, expect: [appuser/appuser]
+2017-03-27T01:43:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52359,106.51.10.238] login attempt [root/hackteam] failed
+2017-03-27T01:43:15+0000 [-] 'root' failed auth 'password'
+2017-03-27T01:43:15+0000 [-] unauthorized login: 
+2017-03-27T01:43:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52359,106.51.10.238] 'root' trying auth 'password'
+2017-03-27T01:43:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52359,106.51.10.238] login attempt: 79
+2017-03-27T01:43:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52359,106.51.10.238] login return, expect: [appuser/appuser]
+2017-03-27T01:43:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52359,106.51.10.238] login attempt [root/halloween] failed
+2017-03-27T01:43:18+0000 [HoneyPotSSHTransport,52359,106.51.10.238] connection lost
+2017-03-27T01:43:18+0000 [HoneyPotSSHTransport,52359,106.51.10.238] Connection lost after 8 seconds
+2017-03-27T01:43:18+0000 [-] 'root' failed auth 'password'
+2017-03-27T01:43:18+0000 [-] unauthorized login: 
+2017-03-27T01:43:18+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-27T01:43:18+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-27T01:43:26+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 37.145.115.158:51247 (10.8.41.81:2222) [session: 43c5ed4b]
+2017-03-27T01:43:26+0000 [HoneyPotSSHTransport,52360,37.145.115.158] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-03-27T01:43:26+0000 [HoneyPotSSHTransport,52360,37.145.115.158] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-03-27T01:43:26+0000 [HoneyPotSSHTransport,52360,37.145.115.158] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-03-27T01:43:26+0000 [HoneyPotSSHTransport,52360,37.145.115.158] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-03-27T01:43:26+0000 [HoneyPotSSHTransport,52360,37.145.115.158] NEW KEYS
+2017-03-27T01:43:26+0000 [HoneyPotSSHTransport,52360,37.145.115.158] starting service 'ssh-userauth'
+2017-03-27T01:43:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52360,37.145.115.158] 'root' trying auth 'password'
+2017-03-27T01:43:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52360,37.145.115.158] first time for 37.145.115.158, need: 1
+2017-03-27T01:43:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52360,37.145.115.158] login attempt: 1
+2017-03-27T01:43:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52360,37.145.115.158] login attempt [root/rpitc] succeeded
+2017-03-27T01:43:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52360,37.145.115.158] 'root' authenticated with 'password'
+2017-03-27T01:43:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52360,37.145.115.158] starting service 'ssh-connection'
+2017-03-27T01:43:30+0000 [HoneyPotSSHTransport,52360,37.145.115.158] avatar root logging out
+2017-03-27T01:43:30+0000 [HoneyPotSSHTransport,52360,37.145.115.158] connection lost
+2017-03-27T01:43:30+0000 [HoneyPotSSHTransport,52360,37.145.115.158] Connection lost after 4 seconds
+2017-03-27T01:43:32+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 195.22.127.83:60201 (10.8.41.81:2222) [session: e79f14bf]
+2017-03-27T01:43:32+0000 [HoneyPotSSHTransport,52361,195.22.127.83] Remote SSH version: SSH-2.0-sshlib-0.2
+2017-03-27T01:43:32+0000 [HoneyPotSSHTransport,52361,195.22.127.83] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-03-27T01:43:32+0000 [HoneyPotSSHTransport,52361,195.22.127.83] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-03-27T01:43:32+0000 [HoneyPotSSHTransport,52361,195.22.127.83] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-03-27T01:43:33+0000 [HoneyPotSSHTransport,52361,195.22.127.83] NEW KEYS
+2017-03-27T01:43:33+0000 [HoneyPotSSHTransport,52361,195.22.127.83] starting service 'ssh-userauth'
+2017-03-27T01:43:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] 'root' trying auth 'password'
+2017-03-27T01:43:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt: 15230
+2017-03-27T01:43:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-27T01:43:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt [root/rpitc] failed
+2017-03-27T01:43:36+0000 [-] 'root' failed auth 'password'
+2017-03-27T01:43:36+0000 [-] unauthorized login: 
+2017-03-27T01:43:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] 'root' trying auth 'password'
+2017-03-27T01:43:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt: 15231
+2017-03-27T01:43:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-27T01:43:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt [root/rpitc] failed
+2017-03-27T01:43:40+0000 [-] 'root' failed auth 'password'
+2017-03-27T01:43:40+0000 [-] unauthorized login: 
+2017-03-27T01:43:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] 'root' trying auth 'password'
+2017-03-27T01:43:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt: 15232
+2017-03-27T01:43:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-27T01:43:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt [root/rpitc] failed
+2017-03-27T01:43:43+0000 [-] 'root' failed auth 'password'
+2017-03-27T01:43:43+0000 [-] unauthorized login: 
+2017-03-27T01:43:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] 'root' trying auth 'password'
+2017-03-27T01:43:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt: 15233
+2017-03-27T01:43:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-27T01:43:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt [root/rpitc] failed
+2017-03-27T01:43:47+0000 [-] 'root' failed auth 'password'
+2017-03-27T01:43:47+0000 [-] unauthorized login: 
+2017-03-27T01:43:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] 'root' trying auth 'password'
+2017-03-27T01:43:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt: 15234
+2017-03-27T01:43:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-27T01:43:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt [root/rpitc] failed
+2017-03-27T01:43:50+0000 [-] 'root' failed auth 'password'
+2017-03-27T01:43:50+0000 [-] unauthorized login: 
+2017-03-27T01:43:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] 'root' trying auth 'password'
+2017-03-27T01:43:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt: 15235
+2017-03-27T01:43:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-27T01:43:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt [root/rpitc] failed
+2017-03-27T01:43:54+0000 [-] 'root' failed auth 'password'
+2017-03-27T01:43:54+0000 [-] unauthorized login: 
+2017-03-27T01:43:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] 'root' trying auth 'password'
+2017-03-27T01:43:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt: 15236
+2017-03-27T01:43:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-27T01:43:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt [root/rpitc] failed
+2017-03-27T01:43:57+0000 [-] 'root' failed auth 'password'
+2017-03-27T01:43:57+0000 [-] unauthorized login: 
+2017-03-27T01:43:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] 'root' trying auth 'password'
+2017-03-27T01:43:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt: 15237
+2017-03-27T01:43:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login return, expect: [root/welc0me]
+2017-03-27T01:43:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] login attempt [root/rpitc] failed
+2017-03-27T01:44:00+0000 [-] 'root' failed auth 'password'
+2017-03-27T01:44:00+0000 [-] unauthorized login: 
+2017-03-27T01:44:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52361,195.22.127.83] 'root' trying auth 'password'
