@@ -345,3 +345,48 @@
 2017-03-27T02:08:12+0000 [CowrieTelnetTransport,132764,67.229.141.98] Connection lost after 48 seconds
 2017-03-27T02:08:12+0000 [CowrieTelnetTransport,132765,67.229.141.98] Connection lost after 48 seconds
 2017-03-27T02:08:25+0000 [CowrieTelnetTransport,132766,67.229.141.98] Connection lost after 42 seconds
+2017-03-27T02:09:07+0000 [CowrieTelnetTransport,132763,115.203.62.109] Closing TTY Log: log/tty/20170327-020724-None-132763i.log after 103 seconds
+2017-03-27T02:09:07+0000 [CowrieTelnetTransport,132763,115.203.62.109] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-27T02:09:07+0000 [CowrieTelnetTransport,132763,115.203.62.109] Connection lost after 110 seconds
+2017-03-27T02:09:15+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 61.12.69.210:58346 (10.8.41.81:2222) [session: 8cc05b05]
+2017-03-27T02:09:15+0000 [HoneyPotSSHTransport,52390,61.12.69.210] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-27T02:09:15+0000 [HoneyPotSSHTransport,52390,61.12.69.210] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-27T02:09:15+0000 [HoneyPotSSHTransport,52390,61.12.69.210] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T02:09:15+0000 [HoneyPotSSHTransport,52390,61.12.69.210] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T02:09:15+0000 [HoneyPotSSHTransport,52390,61.12.69.210] NEW KEYS
+2017-03-27T02:09:16+0000 [HoneyPotSSHTransport,52390,61.12.69.210] starting service 'ssh-userauth'
+2017-03-27T02:09:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52390,61.12.69.210] 'root' trying auth 'password'
+2017-03-27T02:09:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52390,61.12.69.210] login attempt: 88
+2017-03-27T02:09:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52390,61.12.69.210] login return, expect: [dummy/dummy]
+2017-03-27T02:09:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52390,61.12.69.210] login attempt [root/jackass] failed
+2017-03-27T02:09:19+0000 [-] 'root' failed auth 'password'
+2017-03-27T02:09:19+0000 [-] unauthorized login: 
+2017-03-27T02:09:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52390,61.12.69.210] 'root' trying auth 'password'
+2017-03-27T02:09:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52390,61.12.69.210] login attempt: 89
+2017-03-27T02:09:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52390,61.12.69.210] login return, expect: [dummy/dummy]
+2017-03-27T02:09:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52390,61.12.69.210] login attempt [root/johny] failed
+2017-03-27T02:09:22+0000 [HoneyPotSSHTransport,52390,61.12.69.210] connection lost
+2017-03-27T02:09:22+0000 [HoneyPotSSHTransport,52390,61.12.69.210] Connection lost after 7 seconds
+2017-03-27T02:09:22+0000 [-] 'root' failed auth 'password'
+2017-03-27T02:09:22+0000 [-] unauthorized login: 
+2017-03-27T02:09:22+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-27T02:09:22+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
