@@ -4742,3 +4742,49 @@
 2017-03-27T16:39:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54093,194.88.107.20] 'admin' trying auth 'password'
 2017-03-27T16:39:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54093,194.88.107.20] login attempt: 11
 2017-03-27T16:39:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54093,194.88.107.20] login return, expect: [admin/1111]
+2017-03-27T16:39:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54093,194.88.107.20] login attempt [admin/1111] succeeded
+2017-03-27T16:39:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54093,194.88.107.20] 'admin' authenticated with 'password'
+2017-03-27T16:39:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54093,194.88.107.20] starting service 'ssh-connection'
+2017-03-27T16:39:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,53814,194.88.106.206] got channel 'direct-tcpip' request
+2017-03-27T16:39:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,53814,194.88.106.206] direct-tcp connection request to 195.154.156.29:25 from localhost:5556
+2017-03-27T16:39:37+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53814,194.88.106.206] remote eof
+2017-03-27T16:39:37+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53814,194.88.106.206] remote close
+2017-03-27T16:39:37+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53814,194.88.106.206] sending close 78
+2017-03-27T16:39:41+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 93.186.251.7:37423 (10.8.41.81:2223) [session: TT135864]
+2017-03-27T16:39:41+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 93.186.251.7:48923 (10.8.41.81:2223) [session: TT135865]
+2017-03-27T16:39:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 222.106.182.129:49563 (10.8.41.81:2222) [session: 6d0b226f]
+2017-03-27T16:39:46+0000 [HoneyPotSSHTransport,54094,222.106.182.129] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-27T16:39:46+0000 [HoneyPotSSHTransport,54094,222.106.182.129] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-27T16:39:46+0000 [HoneyPotSSHTransport,54094,222.106.182.129] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T16:39:46+0000 [HoneyPotSSHTransport,54094,222.106.182.129] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T16:39:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 93.186.251.7:56150 (10.8.41.81:2223) [session: TT135866]
+2017-03-27T16:39:46+0000 [HoneyPotSSHTransport,54094,222.106.182.129] NEW KEYS
+2017-03-27T16:39:47+0000 [HoneyPotSSHTransport,54094,222.106.182.129] starting service 'ssh-userauth'
+2017-03-27T16:39:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54094,222.106.182.129] 'git' trying auth 'password'
+2017-03-27T16:39:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54094,222.106.182.129] login attempt: 546
+2017-03-27T16:39:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54094,222.106.182.129] login return, expect: [nagios/n@g105]
+2017-03-27T16:39:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54094,222.106.182.129] login attempt [git/abcd1234] failed
+2017-03-27T16:39:51+0000 [CowrieTelnetTransport,135864,93.186.251.7] login attempt: 4079
+2017-03-27T16:39:51+0000 [CowrieTelnetTransport,135864,93.186.251.7] login return, expect: [root/54321]
+2017-03-27T16:39:53+0000 [CowrieTelnetTransport,135864,93.186.251.7] login attempt [root/54321] succeeded
+2017-03-27T16:39:55+0000 [CowrieTelnetTransport,135864,93.186.251.7] Opening TTY Log: log/tty/20170327-163955-None-135864i.log
+2017-03-27T16:39:55+0000 [CowrieTelnetTransport,135864,93.186.251.7] Warning: state changed and new state returned
+2017-03-27T16:39:55+0000 [CowrieTelnetTransport,135865,93.186.251.7] login attempt: 4080
+2017-03-27T16:39:55+0000 [CowrieTelnetTransport,135865,93.186.251.7] login return, expect: [root/54321]
+2017-03-27T16:39:57+0000 [CowrieTelnetTransport,135865,93.186.251.7] login attempt [admin/5up] failed
+2017-03-27T16:39:57+0000 [CowrieTelnetTransport,135865,93.186.251.7] Warning: state changed and new state returned
+2017-03-27T16:39:57+0000 [-] 'git' failed auth 'password'
+2017-03-27T16:39:57+0000 [-] unauthorized login: 
+2017-03-27T16:39:57+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.237.8.35:47714 (10.8.41.81:2223) [session: TT135867]
+2017-03-27T16:39:57+0000 [HoneyPotSSHTransport,54094,222.106.182.129] connection lost
+2017-03-27T16:39:57+0000 [HoneyPotSSHTransport,54094,222.106.182.129] Connection lost after 11 seconds
+2017-03-27T16:39:57+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.237.8.35:34994 (10.8.41.81:2223) [session: TT135868]
+2017-03-27T16:39:57+0000 [CowrieTelnetTransport,135864,93.186.251.7] CMD: enable
+2017-03-27T16:39:57+0000 [CowrieTelnetTransport,135864,93.186.251.7] Command found: enable 
+2017-03-27T16:39:57+0000 [CowrieTelnetTransport,135864,93.186.251.7] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-27T16:39:57+0000 [CowrieTelnetTransport,135865,93.186.251.7] login attempt: 4081
+2017-03-27T16:39:57+0000 [CowrieTelnetTransport,135865,93.186.251.7] login return, expect: [root/54321]
+2017-03-27T16:39:59+0000 [CowrieTelnetTransport,135865,93.186.251.7] login attempt [enable/shell] failed
+2017-03-27T16:39:59+0000 [CowrieTelnetTransport,135865,93.186.251.7] Warning: state changed and new state returned
+2017-03-27T16:40:00+0000 [CowrieTelnetTransport,135865,93.186.251.7] login attempt: 4082
+2017-03-27T16:40:00+0000 [CowrieTelnetTransport,135865,93.186.251.7] login return, expect: [root/54321]
