@@ -6740,3 +6740,31 @@
 2017-03-27T01:40:01+0000 [-] 'csgo3' failed auth 'password'
 2017-03-27T01:40:01+0000 [-] unauthorized login: 
 2017-03-27T01:40:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52356,222.106.182.129] 'csgo3' trying auth 'password'
+2017-03-27T01:40:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52356,222.106.182.129] login attempt: 140
+2017-03-27T01:40:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52356,222.106.182.129] login return, expect: [nagios/n@g105]
+2017-03-27T01:40:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52356,222.106.182.129] login attempt [csgo3/centos] failed
+2017-03-27T01:40:04+0000 [HoneyPotSSHTransport,52356,222.106.182.129] connection lost
+2017-03-27T01:40:04+0000 [HoneyPotSSHTransport,52356,222.106.182.129] Connection lost after 8 seconds
+2017-03-27T01:40:04+0000 [-] 'csgo3' failed auth 'password'
+2017-03-27T01:40:04+0000 [-] unauthorized login: 
+2017-03-27T01:40:04+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-27T01:40:04+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-27T01:40:29+0000 [CowrieTelnetTransport,132693,175.212.133.252] Connection lost after 55 seconds
