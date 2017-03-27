@@ -246,3 +246,36 @@
 2017-03-27T04:34:01+0000 [-] unauthorized login: 
 2017-03-27T04:34:01+0000 [HoneyPotSSHTransport,52566,106.51.126.25] connection lost
 2017-03-27T04:34:01+0000 [HoneyPotSSHTransport,52566,106.51.126.25] Connection lost after 7 seconds
+2017-03-27T04:34:02+0000 [HoneyPotSSHTransport,52565,222.106.182.129] connection lost
+2017-03-27T04:34:02+0000 [HoneyPotSSHTransport,52565,222.106.182.129] Connection lost after 9 seconds
+2017-03-27T04:34:02+0000 [-] 'csserver' failed auth 'password'
+2017-03-27T04:34:02+0000 [-] unauthorized login: 
+2017-03-27T04:34:02+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-27T04:34:02+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-27T04:34:07+0000 [CowrieTelnetTransport,133350,67.229.141.98] Connection lost after 56 seconds
+2017-03-27T04:34:21+0000 [CowrieTelnetTransport,133351,67.229.141.98] Connection lost after 68 seconds
+2017-03-27T04:34:21+0000 [CowrieTelnetTransport,133353,67.229.141.98] Connection lost after 64 seconds
+2017-03-27T04:34:21+0000 [CowrieTelnetTransport,133352,67.229.141.98] Connection lost after 64 seconds
+2017-03-27T04:34:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52519,91.195.103.178] got channel 'direct-tcpip' request
+2017-03-27T04:34:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52519,91.195.103.178] direct-tcp connection request to 107.189.171.198:80 from localhost:5556
+2017-03-27T04:34:27+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52519,91.195.103.178] direct-tcp forward to 107.189.171.198:80 with data 'GET /ip/header?id_ip=14864670467&id_provider=19 HTTP/1.1\r\nHost: ipinfoplz.com\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) Version/9.0.3 Safari/601.4.4\r\nX-Group: 19\r\nX-Id: 14864670467\r\nAccept-Encoding: gzip\r\nConnection: close\r\n\r\n'
+2017-03-27T04:34:27+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52519,91.195.103.178] failed to connect: Connection refused
+2017-03-27T04:34:27+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52519,91.195.103.178] sending close 35
