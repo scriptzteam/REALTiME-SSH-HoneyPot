@@ -4537,3 +4537,44 @@
 2017-03-27T16:34:57+0000 [SSHChannel None (263) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53731,194.88.107.15] remote eof
 2017-03-27T16:34:57+0000 [SSHChannel None (263) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53731,194.88.107.15] remote close
 2017-03-27T16:34:57+0000 [SSHChannel None (263) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53731,194.88.107.15] sending close 263
+2017-03-27T16:35:12+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 222.106.182.129:59006 (10.8.41.81:2222) [session: a8f42197]
+2017-03-27T16:35:12+0000 [HoneyPotSSHTransport,54091,222.106.182.129] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-27T16:35:12+0000 [HoneyPotSSHTransport,54091,222.106.182.129] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-27T16:35:12+0000 [HoneyPotSSHTransport,54091,222.106.182.129] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T16:35:12+0000 [HoneyPotSSHTransport,54091,222.106.182.129] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T16:35:13+0000 [HoneyPotSSHTransport,54091,222.106.182.129] NEW KEYS
+2017-03-27T16:35:13+0000 [HoneyPotSSHTransport,54091,222.106.182.129] starting service 'ssh-userauth'
+2017-03-27T16:35:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54091,222.106.182.129] 'git' trying auth 'password'
+2017-03-27T16:35:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54091,222.106.182.129] login attempt: 542
+2017-03-27T16:35:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54091,222.106.182.129] login return, expect: [nagios/n@g105]
+2017-03-27T16:35:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54091,222.106.182.129] login attempt [git/a123456] failed
+2017-03-27T16:35:18+0000 [-] 'git' failed auth 'password'
+2017-03-27T16:35:18+0000 [-] unauthorized login: 
+2017-03-27T16:35:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54091,222.106.182.129] 'git' trying auth 'password'
+2017-03-27T16:35:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54091,222.106.182.129] login attempt: 543
+2017-03-27T16:35:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54091,222.106.182.129] login return, expect: [nagios/n@g105]
+2017-03-27T16:35:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,54091,222.106.182.129] login attempt [git/a1s2d3f4] failed
+2017-03-27T16:35:21+0000 [HoneyPotSSHTransport,54091,222.106.182.129] connection lost
+2017-03-27T16:35:21+0000 [HoneyPotSSHTransport,54091,222.106.182.129] Connection lost after 9 seconds
+2017-03-27T16:35:22+0000 [-] 'git' failed auth 'password'
+2017-03-27T16:35:22+0000 [-] unauthorized login: 
+2017-03-27T16:35:22+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-27T16:35:22+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
