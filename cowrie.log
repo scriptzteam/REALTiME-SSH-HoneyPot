@@ -390,3 +390,66 @@
 	    self.transport.write(encPacket)
 	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
 	
+2017-03-27T02:10:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 222.106.182.129:54031 (10.8.41.81:2222) [session: f131e0f1]
+2017-03-27T02:10:23+0000 [HoneyPotSSHTransport,52391,222.106.182.129] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-27T02:10:23+0000 [HoneyPotSSHTransport,52391,222.106.182.129] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-27T02:10:23+0000 [HoneyPotSSHTransport,52391,222.106.182.129] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T02:10:23+0000 [HoneyPotSSHTransport,52391,222.106.182.129] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-27T02:10:24+0000 [HoneyPotSSHTransport,52391,222.106.182.129] NEW KEYS
+2017-03-27T02:10:24+0000 [HoneyPotSSHTransport,52391,222.106.182.129] starting service 'ssh-userauth'
+2017-03-27T02:10:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52391,222.106.182.129] 'csgo3' trying auth 'password'
+2017-03-27T02:10:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52391,222.106.182.129] login attempt: 161
+2017-03-27T02:10:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52391,222.106.182.129] login return, expect: [nagios/n@g105]
+2017-03-27T02:10:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52391,222.106.182.129] login attempt [csgo3/p@ssword1] failed
+2017-03-27T02:10:27+0000 [-] 'csgo3' failed auth 'password'
+2017-03-27T02:10:27+0000 [-] unauthorized login: 
+2017-03-27T02:10:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52391,222.106.182.129] 'csgo3' trying auth 'password'
+2017-03-27T02:10:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52391,222.106.182.129] login attempt: 162
+2017-03-27T02:10:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52391,222.106.182.129] login return, expect: [nagios/n@g105]
+2017-03-27T02:10:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52391,222.106.182.129] login attempt [csgo3/P@ssword1!] failed
+2017-03-27T02:10:31+0000 [HoneyPotSSHTransport,52391,222.106.182.129] connection lost
+2017-03-27T02:10:31+0000 [HoneyPotSSHTransport,52391,222.106.182.129] Connection lost after 8 seconds
+2017-03-27T02:10:31+0000 [-] 'csgo3' failed auth 'password'
+2017-03-27T02:10:31+0000 [-] unauthorized login: 
+2017-03-27T02:10:31+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-27T02:10:31+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-27T02:10:44+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 122.178.89.30:54617 (10.8.41.81:2223) [session: TT132767]
+2017-03-27T02:10:47+0000 [CowrieTelnetTransport,132767,122.178.89.30] first time for 122.178.89.30, need: 1
+2017-03-27T02:10:47+0000 [CowrieTelnetTransport,132767,122.178.89.30] login attempt: 1
+2017-03-27T02:10:49+0000 [CowrieTelnetTransport,132767,122.178.89.30] login attempt [root/realtek] succeeded
+2017-03-27T02:10:50+0000 [CowrieTelnetTransport,132767,122.178.89.30] Opening TTY Log: log/tty/20170327-021050-None-132767i.log
+2017-03-27T02:10:50+0000 [CowrieTelnetTransport,132767,122.178.89.30] Warning: state changed and new state returned
+2017-03-27T02:10:50+0000 [CowrieTelnetTransport,132767,122.178.89.30] Received unhandled keyID: '\x00'
+2017-03-27T02:10:51+0000 [CowrieTelnetTransport,132767,122.178.89.30] CMD: enable
+2017-03-27T02:10:51+0000 [CowrieTelnetTransport,132767,122.178.89.30] Command found: enable 
+2017-03-27T02:10:51+0000 [CowrieTelnetTransport,132767,122.178.89.30] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-27T02:10:51+0000 [CowrieTelnetTransport,132767,122.178.89.30] Received unhandled keyID: '\x00'
+2017-03-27T02:10:51+0000 [CowrieTelnetTransport,132767,122.178.89.30] CMD: system
+2017-03-27T02:10:51+0000 [CowrieTelnetTransport,132767,122.178.89.30] Command not found: system
+2017-03-27T02:10:51+0000 [CowrieTelnetTransport,132767,122.178.89.30] Received unhandled keyID: '\x00'
+2017-03-27T02:10:51+0000 [CowrieTelnetTransport,132767,122.178.89.30] CMD: shell
+2017-03-27T02:10:51+0000 [CowrieTelnetTransport,132767,122.178.89.30] Command not found: shell
+2017-03-27T02:10:52+0000 [CowrieTelnetTransport,132767,122.178.89.30] Received unhandled keyID: '\x00'
+2017-03-27T02:10:52+0000 [CowrieTelnetTransport,132767,122.178.89.30] CMD: sh
+2017-03-27T02:10:52+0000 [CowrieTelnetTransport,132767,122.178.89.30] Command found: sh 
+2017-03-27T02:10:53+0000 [CowrieTelnetTransport,132767,122.178.89.30] Received unhandled keyID: '\x00'
+2017-03-27T02:10:53+0000 [CowrieTelnetTransport,132767,122.178.89.30] CMD: /bin/busybox MASUTA
+2017-03-27T02:10:53+0000 [CowrieTelnetTransport,132767,122.178.89.30] Command found: /bin/busybox MASUTA
