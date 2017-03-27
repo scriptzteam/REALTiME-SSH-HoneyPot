@@ -4091,3 +4091,58 @@
 2017-03-27T01:13:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52329,222.106.182.129] login attempt: 125
 2017-03-27T01:13:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52329,222.106.182.129] login return, expect: [nagios/n@g105]
 2017-03-27T01:14:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52329,222.106.182.129] login attempt [csgo3/1qaz@WSX] failed
+2017-03-27T01:14:02+0000 [CowrieTelnetTransport,132603,175.212.133.252] login attempt: 35
+2017-03-27T01:14:02+0000 [CowrieTelnetTransport,132603,175.212.133.252] login return, expect: [root/7ujMko0vizxv]
+2017-03-27T01:14:04+0000 [CowrieTelnetTransport,132603,175.212.133.252] login attempt [root/hi3518] failed
+2017-03-27T01:14:04+0000 [CowrieTelnetTransport,132603,175.212.133.252] Warning: state changed and new state returned
+2017-03-27T01:14:04+0000 [-] 'csgo3' failed auth 'password'
+2017-03-27T01:14:04+0000 [-] unauthorized login: 
+2017-03-27T01:14:04+0000 [CowrieTelnetTransport,132602,175.212.133.252] Connection lost after 65 seconds
+2017-03-27T01:14:04+0000 [HoneyPotSSHTransport,52060,194.88.106.181] avatar admin logging out
+2017-03-27T01:14:04+0000 [HoneyPotSSHTransport,52060,194.88.106.181] connection lost
+2017-03-27T01:14:04+0000 [HoneyPotSSHTransport,52060,194.88.106.181] Connection lost after 11569 seconds
+2017-03-27T01:14:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52329,222.106.182.129] 'csgo3' trying auth 'password'
+2017-03-27T01:14:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52329,222.106.182.129] login attempt: 126
+2017-03-27T01:14:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52329,222.106.182.129] login return, expect: [nagios/n@g105]
+2017-03-27T01:14:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,52329,222.106.182.129] login attempt [csgo3/1QAZ@WSX] failed
+2017-03-27T01:14:08+0000 [HoneyPotSSHTransport,52329,222.106.182.129] connection lost
+2017-03-27T01:14:08+0000 [HoneyPotSSHTransport,52329,222.106.182.129] Connection lost after 10 seconds
+2017-03-27T01:14:08+0000 [HoneyPotSSHTransport,52061,194.88.106.206] avatar admin logging out
+2017-03-27T01:14:08+0000 [HoneyPotSSHTransport,52061,194.88.106.206] connection lost
+2017-03-27T01:14:08+0000 [HoneyPotSSHTransport,52061,194.88.106.206] Connection lost after 11570 seconds
+2017-03-27T01:14:09+0000 [CowrieTelnetTransport,132603,175.212.133.252] login attempt: 36
+2017-03-27T01:14:09+0000 [CowrieTelnetTransport,132603,175.212.133.252] login return, expect: [root/7ujMko0vizxv]
+2017-03-27T01:14:11+0000 [CowrieTelnetTransport,132603,175.212.133.252] login attempt [enable\x00/system\x00] failed
+2017-03-27T01:14:11+0000 [CowrieTelnetTransport,132603,175.212.133.252] Warning: state changed and new state returned
+2017-03-27T01:14:11+0000 [-] 'csgo3' failed auth 'password'
+2017-03-27T01:14:11+0000 [-] unauthorized login: 
+2017-03-27T01:14:11+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-27T01:14:11+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-27T01:14:13+0000 [CowrieTelnetTransport,132603,175.212.133.252] login attempt: 37
+2017-03-27T01:14:13+0000 [CowrieTelnetTransport,132603,175.212.133.252] login return, expect: [root/7ujMko0vizxv]
+2017-03-27T01:14:15+0000 [CowrieTelnetTransport,132603,175.212.133.252] login attempt [shell\x00/sh\x00] failed
+2017-03-27T01:14:15+0000 [CowrieTelnetTransport,132603,175.212.133.252] Warning: state changed and new state returned
+2017-03-27T01:14:48+0000 [CowrieTelnetTransport,132603,175.212.133.252] Connection lost after 49 seconds
+2017-03-27T01:14:48+0000 [CowrieTelnetTransport,132594,198.7.57.157] Closing TTY Log: log/tty/20170327-011217-None-132594i.log after 151 seconds
+2017-03-27T01:14:48+0000 [CowrieTelnetTransport,132594,198.7.57.157] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-27T01:14:48+0000 [CowrieTelnetTransport,132594,198.7.57.157] Connection lost after 162 seconds
+2017-03-27T01:14:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 67.229.141.98:47646 (10.8.41.81:2223) [session: TT132604]
