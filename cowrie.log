@@ -1924,3 +1924,214 @@
 2017-03-31T12:18:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64404,47.89.182.191] '1234' trying auth 'password'
 2017-03-31T12:19:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64404,47.89.182.191] login attempt: 147
 2017-03-31T12:19:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64404,47.89.182.191] login return, expect: [admin/admin]
+2017-03-31T12:19:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64404,47.89.182.191] login attempt [1234/1234] failed
+2017-03-31T12:19:02+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.17:62306 (10.8.41.81:2222) [session: ba17dd32]
+2017-03-31T12:19:02+0000 [CowrieTelnetTransport,158777,116.233.152.107] login attempt: 2
+2017-03-31T12:19:02+0000 [CowrieTelnetTransport,158777,116.233.152.107] login return, expect: [root/54321]
+2017-03-31T12:19:04+0000 [CowrieTelnetTransport,158777,116.233.152.107] login attempt [root/888888] failed
+2017-03-31T12:19:04+0000 [CowrieTelnetTransport,158777,116.233.152.107] Warning: state changed and new state returned
+2017-03-31T12:19:04+0000 [CowrieTelnetTransport,158779,116.233.152.107] login attempt: 3
+2017-03-31T12:19:04+0000 [CowrieTelnetTransport,158779,116.233.152.107] login return, expect: [root/54321]
+2017-03-31T12:19:06+0000 [CowrieTelnetTransport,158779,116.233.152.107] login attempt [root/juantech] failed
+2017-03-31T12:19:06+0000 [CowrieTelnetTransport,158779,116.233.152.107] Warning: state changed and new state returned
+2017-03-31T12:19:06+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 116.233.152.107:43894 (10.8.41.81:2223) [session: TT158780]
+2017-03-31T12:19:06+0000 [CowrieTelnetTransport,158778,116.233.152.107] CMD: enable
+2017-03-31T12:19:06+0000 [CowrieTelnetTransport,158778,116.233.152.107] Command found: enable 
+2017-03-31T12:19:06+0000 [CowrieTelnetTransport,158778,116.233.152.107] Reading txtcmd from "txtcmds/bin/enable"
+2017-03-31T12:19:06+0000 [-] '1234' failed auth 'password'
+2017-03-31T12:19:06+0000 [-] unauthorized login: 
+2017-03-31T12:19:06+0000 [HoneyPotSSHTransport,64405,116.31.116.17] Got remote error, code 11
+	reason: 
+2017-03-31T12:19:06+0000 [HoneyPotSSHTransport,64405,116.31.116.17] connection lost
+2017-03-31T12:19:06+0000 [HoneyPotSSHTransport,64405,116.31.116.17] Connection lost after 4 seconds
+2017-03-31T12:19:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] got channel 'direct-tcpip' request
+2017-03-31T12:19:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] direct-tcp connection request to 196.35.198.130:25 from localhost:5556
+2017-03-31T12:19:07+0000 [HoneyPotSSHTransport,64404,47.89.182.191] connection lost
+2017-03-31T12:19:07+0000 [HoneyPotSSHTransport,64404,47.89.182.191] Connection lost after 8 seconds
+2017-03-31T12:19:07+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 47.89.182.191:59485 (10.8.41.81:2222) [session: c7f3df74]
+2017-03-31T12:19:07+0000 [HoneyPotSSHTransport,64406,47.89.182.191] Remote SSH version: SSH-2.0-Granados-1.0
+2017-03-31T12:19:07+0000 [HoneyPotSSHTransport,64406,47.89.182.191] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-03-31T12:19:07+0000 [HoneyPotSSHTransport,64406,47.89.182.191] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-31T12:19:07+0000 [HoneyPotSSHTransport,64406,47.89.182.191] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-03-31T12:19:07+0000 [HoneyPotSSHTransport,64406,47.89.182.191] NEW KEYS
+2017-03-31T12:19:09+0000 [CowrieTelnetTransport,158779,116.233.152.107] login attempt: 4
+2017-03-31T12:19:09+0000 [CowrieTelnetTransport,158779,116.233.152.107] login return, expect: [root/54321]
+2017-03-31T12:19:11+0000 [CowrieTelnetTransport,158779,116.233.152.107] login attempt [enable\x00/system\x00] failed
+2017-03-31T12:19:11+0000 [CowrieTelnetTransport,158779,116.233.152.107] Warning: state changed and new state returned
+2017-03-31T12:19:11+0000 [HoneyPotSSHTransport,64406,47.89.182.191] starting service 'ssh-userauth'
+2017-03-31T12:19:11+0000 [CowrieTelnetTransport,158778,116.233.152.107] Received unhandled keyID: '\x00'
+2017-03-31T12:19:11+0000 [CowrieTelnetTransport,158778,116.233.152.107] CMD: system
+2017-03-31T12:19:11+0000 [CowrieTelnetTransport,158778,116.233.152.107] Command not found: system
+2017-03-31T12:19:11+0000 [CowrieTelnetTransport,158778,116.233.152.107] Received unhandled keyID: '\x00'
+2017-03-31T12:19:11+0000 [CowrieTelnetTransport,158778,116.233.152.107] CMD: shell
+2017-03-31T12:19:11+0000 [CowrieTelnetTransport,158778,116.233.152.107] Command not found: shell
+2017-03-31T12:19:11+0000 [CowrieTelnetTransport,158777,116.233.152.107] login attempt: 5
+2017-03-31T12:19:11+0000 [CowrieTelnetTransport,158777,116.233.152.107] login return, expect: [root/54321]
+2017-03-31T12:19:13+0000 [CowrieTelnetTransport,158777,116.233.152.107] login attempt [enable\x00/system\x00] failed
+2017-03-31T12:19:13+0000 [CowrieTelnetTransport,158777,116.233.152.107] Warning: state changed and new state returned
+2017-03-31T12:19:13+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.57.157:41550 (10.8.41.81:2223) [session: TT158781]
+2017-03-31T12:19:13+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.57.157:45590 (10.8.41.81:2223) [session: TT158782]
+2017-03-31T12:19:13+0000 [SSHChannel None (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64330,194.88.107.22] remote eof
+2017-03-31T12:19:13+0000 [SSHChannel None (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64330,194.88.107.22] remote close
+2017-03-31T12:19:13+0000 [SSHChannel None (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64330,194.88.107.22] sending close 8
+2017-03-31T12:19:13+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64330,194.88.107.22] got channel 'direct-tcpip' request
+2017-03-31T12:19:13+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64330,194.88.107.22] direct-tcp connection request to 98.136.217.202:25 from localhost:5556
+2017-03-31T12:19:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64406,47.89.182.191] 'support' trying auth 'password'
+2017-03-31T12:19:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64406,47.89.182.191] login attempt: 148
+2017-03-31T12:19:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64406,47.89.182.191] login return, expect: [admin/admin]
+2017-03-31T12:19:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64406,47.89.182.191] login attempt [support/support] failed
+2017-03-31T12:19:16+0000 [CowrieTelnetTransport,158778,116.233.152.107] Received unhandled keyID: '\x00'
+2017-03-31T12:19:16+0000 [CowrieTelnetTransport,158778,116.233.152.107] CMD: sh
+2017-03-31T12:19:16+0000 [CowrieTelnetTransport,158778,116.233.152.107] Command found: sh 
+2017-03-31T12:19:16+0000 [CowrieTelnetTransport,158779,116.233.152.107] login attempt: 6
+2017-03-31T12:19:16+0000 [CowrieTelnetTransport,158779,116.233.152.107] login return, expect: [root/54321]
+2017-03-31T12:19:18+0000 [CowrieTelnetTransport,158779,116.233.152.107] login attempt [shell\x00/sh\x00] failed
+2017-03-31T12:19:18+0000 [CowrieTelnetTransport,158779,116.233.152.107] Warning: state changed and new state returned
+2017-03-31T12:19:18+0000 [CowrieTelnetTransport,158780,116.233.152.107] login attempt: 7
+2017-03-31T12:19:18+0000 [CowrieTelnetTransport,158780,116.233.152.107] login return, expect: [root/54321]
+2017-03-31T12:19:20+0000 [CowrieTelnetTransport,158780,116.233.152.107] login attempt [root/00000000] failed
+2017-03-31T12:19:20+0000 [CowrieTelnetTransport,158780,116.233.152.107] Warning: state changed and new state returned
+2017-03-31T12:19:20+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.57.157:41912 (10.8.41.81:2223) [session: TT158783]
+2017-03-31T12:19:20+0000 [-] 'support' failed auth 'password'
+2017-03-31T12:19:20+0000 [-] unauthorized login: 
+2017-03-31T12:19:20+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.17:62472 (10.8.41.81:2222) [session: f96fb930]
+2017-03-31T12:19:20+0000 [CowrieTelnetTransport,158775,185.107.80.198] Connection lost after 67 seconds
+2017-03-31T12:19:20+0000 [CowrieTelnetTransport,158776,185.107.80.198] Connection lost after 67 seconds
+2017-03-31T12:19:20+0000 [CowrieTelnetTransport,158774,185.107.80.198] Connection lost after 71 seconds
+2017-03-31T12:19:20+0000 [HoneyPotSSHTransport,64407,116.31.116.17] Remote SSH version: SSH-2.0-PUTTY
+2017-03-31T12:19:20+0000 [HoneyPotSSHTransport,64407,116.31.116.17] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-31T12:19:20+0000 [HoneyPotSSHTransport,64407,116.31.116.17] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-31T12:19:20+0000 [HoneyPotSSHTransport,64407,116.31.116.17] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-31T12:19:21+0000 [CowrieTelnetTransport,158777,116.233.152.107] login attempt: 8
+2017-03-31T12:19:21+0000 [CowrieTelnetTransport,158777,116.233.152.107] login return, expect: [root/54321]
+2017-03-31T12:19:23+0000 [CowrieTelnetTransport,158777,116.233.152.107] login attempt [shell\x00/sh\x00] failed
+2017-03-31T12:19:23+0000 [CowrieTelnetTransport,158777,116.233.152.107] Warning: state changed and new state returned
+2017-03-31T12:19:23+0000 [CowrieTelnetTransport,158778,116.233.152.107] Received unhandled keyID: '\x00'
+2017-03-31T12:19:23+0000 [CowrieTelnetTransport,158778,116.233.152.107] CMD: /bin/busybox MIRAI
+2017-03-31T12:19:23+0000 [CowrieTelnetTransport,158778,116.233.152.107] Command found: /bin/busybox MIRAI
+2017-03-31T12:19:23+0000 [HoneyPotSSHTransport,64406,47.89.182.191] connection lost
+2017-03-31T12:19:23+0000 [HoneyPotSSHTransport,64406,47.89.182.191] Connection lost after 16 seconds
+2017-03-31T12:19:23+0000 [HoneyPotSSHTransport,64407,116.31.116.17] NEW KEYS
+2017-03-31T12:19:23+0000 [CowrieTelnetTransport,158778,116.233.152.107] Closing TTY Log: log/tty/20170331-121859-None-158778i.log after 24 seconds
+2017-03-31T12:19:23+0000 [CowrieTelnetTransport,158778,116.233.152.107] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-03-31T12:19:23+0000 [CowrieTelnetTransport,158778,116.233.152.107] Connection lost after 29 seconds
+2017-03-31T12:19:24+0000 [HoneyPotSSHTransport,64407,116.31.116.17] starting service 'ssh-userauth'
+2017-03-31T12:19:24+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 164.52.9.62:33725 (10.8.41.81:2223) [session: TT158784]
+2017-03-31T12:19:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64407,116.31.116.17] 'root' trying auth 'none'
+2017-03-31T12:19:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64407,116.31.116.17] 'root' authenticated with 'none'
+2017-03-31T12:19:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64407,116.31.116.17] starting service 'ssh-connection'
+2017-03-31T12:19:27+0000 [CowrieTelnetTransport,158780,116.233.152.107] login attempt: 9
+2017-03-31T12:19:27+0000 [CowrieTelnetTransport,158780,116.233.152.107] login return, expect: [root/54321]
+2017-03-31T12:19:29+0000 [CowrieTelnetTransport,158780,116.233.152.107] login attempt [enable\x00/system\x00] failed
+2017-03-31T12:19:29+0000 [CowrieTelnetTransport,158780,116.233.152.107] Warning: state changed and new state returned
+2017-03-31T12:19:29+0000 [HoneyPotSSHTransport,64407,116.31.116.17] Got remote error, code 11
+	reason: 
+2017-03-31T12:19:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 198.2.201.97:12239 (10.8.41.81:2222) [session: d4ac887c]
+2017-03-31T12:19:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] got channel 'direct-tcpip' request
+2017-03-31T12:19:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] direct-tcp connection request to 52.223.196.83:80 from localhost:5556
+2017-03-31T12:19:29+0000 [HoneyPotSSHTransport,64407,116.31.116.17] avatar root logging out
+2017-03-31T12:19:29+0000 [HoneyPotSSHTransport,64407,116.31.116.17] connection lost
+2017-03-31T12:19:29+0000 [HoneyPotSSHTransport,64407,116.31.116.17] Connection lost after 9 seconds
+2017-03-31T12:19:29+0000 [HoneyPotSSHTransport,64408,198.2.201.97] Got remote error, code 11
+	reason: 
+2017-03-31T12:19:29+0000 [HoneyPotSSHTransport,64408,198.2.201.97] connection lost
+2017-03-31T12:19:29+0000 [HoneyPotSSHTransport,64408,198.2.201.97] Connection lost after 0 seconds
+2017-03-31T12:19:29+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] direct-tcp forward to 52.223.196.83:80 with data 'GET /v0/CuUBBqPJlqXjJAhx9xTLf81T1lI8q09Q7Ei5vpK5gWb-3Ak7NnIQ1RZ0pe9twFapOegJKsO-tVPA7ImpnFvKfhM4b4Q-rk0n2G2wspSyrDcSxpcfW37g6tLMikV2x4APaotJl58bBBIWjglQasMePrqTI4mnpF0QUS6UgDpdx7eI_SqggT8Al6R7u-5GyczdJ4Kc4IwJOwkRDB2YlpcKXQurFK9m_L1AhttaEaAFkdWDGkhCAwlrZAp1U8_F57KfoKlGXXUAgnifo75rpcSyGwHSs5fk65zEhNeDwQ1SiXszPu73WYgYzRIQE_hwjvJQMXrKmUO3KBIOlhoMderblBNtH3IqMaMG/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c67b80.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-03-31T12:19:29+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] failed to connect: Connection refused
+2017-03-31T12:19:29+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] sending close 2
+2017-03-31T12:19:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64380,91.195.103.182] got channel 'direct-tcpip' request
+2017-03-31T12:19:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64380,91.195.103.182] direct-tcp connection request to 107.189.171.198:80 from localhost:5556
+2017-03-31T12:19:31+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64380,91.195.103.182] direct-tcp forward to 107.189.171.198:80 with data 'GET /ip/header?id_ip=15219369273&id_provider=19 HTTP/1.1\r\nHost: ipinfoplz.com\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) Version/9.0.3 Safari/601.4.4\r\nX-Group: 19\r\nX-Id: 15219369273\r\nAccept-Encoding: gzip\r\nConnection: close\r\n\r\n'
+2017-03-31T12:19:31+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64380,91.195.103.182] failed to connect: Connection refused
+2017-03-31T12:19:31+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64380,91.195.103.182] sending close 2
+2017-03-31T12:19:31+0000 [CowrieTelnetTransport,158784,164.52.9.62] login attempt: 44
+2017-03-31T12:19:31+0000 [CowrieTelnetTransport,158784,164.52.9.62] login return, expect: [root/default]
+2017-03-31T12:19:33+0000 [CowrieTelnetTransport,158784,164.52.9.62] login attempt [root/54321] failed
+2017-03-31T12:19:33+0000 [CowrieTelnetTransport,158784,164.52.9.62] Warning: state changed and new state returned
+2017-03-31T12:19:34+0000 [CowrieTelnetTransport,158780,116.233.152.107] login attempt: 10
+2017-03-31T12:19:34+0000 [CowrieTelnetTransport,158780,116.233.152.107] login return, expect: [root/54321]
+2017-03-31T12:19:35+0000 [CowrieTelnetTransport,158780,116.233.152.107] login attempt [shell\x00/sh\x00] failed
+2017-03-31T12:19:36+0000 [CowrieTelnetTransport,158780,116.233.152.107] Warning: state changed and new state returned
+2017-03-31T12:19:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] got channel 'direct-tcpip' request
+2017-03-31T12:19:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] direct-tcp connection request to 52.223.196.231:80 from localhost:5556
+2017-03-31T12:19:36+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.17:60462 (10.8.41.81:2222) [session: 439ab93b]
+2017-03-31T12:19:36+0000 [CowrieTelnetTransport,158784,164.52.9.62] login attempt: 45
+2017-03-31T12:19:36+0000 [CowrieTelnetTransport,158784,164.52.9.62] login return, expect: [root/default]
+2017-03-31T12:19:38+0000 [CowrieTelnetTransport,158784,164.52.9.62] login attempt [enable/shell] failed
+2017-03-31T12:19:38+0000 [CowrieTelnetTransport,158784,164.52.9.62] Warning: state changed and new state returned
+2017-03-31T12:19:38+0000 [HoneyPotSSHTransport,64409,116.31.116.17] Got remote error, code 11
+	reason: 
+2017-03-31T12:19:38+0000 [HoneyPotSSHTransport,64409,116.31.116.17] connection lost
+2017-03-31T12:19:38+0000 [HoneyPotSSHTransport,64409,116.31.116.17] Connection lost after 2 seconds
+2017-03-31T12:19:38+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] direct-tcp forward to 52.223.196.231:80 with data 'GET /v0/CtwBp_zu4k7J5AIy2nK0tGZhAWlOerQKW4jfp_S4Ev8OMT7TU1HiGaH-EGb5xbFzo4oGinFpVI1zNJdK5ybrB8xPI2tCu6bu03Zq4gvcEXgJ5eGRwdEce8RnBLLaKb9wdomBSNgAz_35rYfxeWQaNT7a4kCu_s1WSsQgQZo26lkorh1Ou76gaa2mFX5ug5HhqNCaQ2levcCopgPqODDcND09qVJMSx6FZkue92qi56_qnkYlpy_FgTOThmInEr1CSedxYXwwbZIDppI_cm1fUcUxEt7D6ldP5rr7MIfgeBIQSjnvuMoA0MADl10Dx6TGwxoMnfyuG9re1VDpiFYo/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c67f8c.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-03-31T12:19:38+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] failed to connect: Connection refused
+2017-03-31T12:19:38+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] sending close 3
+2017-03-31T12:19:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] got channel 'direct-tcpip' request
+2017-03-31T12:19:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] direct-tcp connection request to 52.223.196.231:80 from localhost:5556
+2017-03-31T12:19:39+0000 [CowrieTelnetTransport,158784,164.52.9.62] login attempt: 46
+2017-03-31T12:19:39+0000 [CowrieTelnetTransport,158784,164.52.9.62] login return, expect: [root/default]
+2017-03-31T12:19:41+0000 [CowrieTelnetTransport,158784,164.52.9.62] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-31T12:19:41+0000 [CowrieTelnetTransport,158784,164.52.9.62] Warning: state changed and new state returned
+2017-03-31T12:19:41+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64330,194.88.107.22] remote eof
+2017-03-31T12:19:41+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64330,194.88.107.22] remote close
+2017-03-31T12:19:41+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64330,194.88.107.22] sending close 9
+2017-03-31T12:19:41+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] direct-tcp forward to 52.223.196.231:80 with data 'GET /v0/CtwBZ0etkv6ThT0m954tLT6UvlSxROi6F7HQ8uNUdhOVIKm3qrtCwWDxgaVoJ0pFtePs0vSzJtqeSXPwVgQFJrAmA5MbknsChP7UZ7GrzMIt0YPs2JKGLuiKw2s9-35sH9cRiin08i7KMJ-FF7YZS8odbie9eRS-K3L3NX3gOQ9hYSvtplv6_d_vVQF92hfuCGkQP2uWOYmNNITDaezrO4p30fbCTYwnFvnYh6GLMDf8Q5YgewcrHtYGoCHZVCx2SdjF6RmmCJNEYyKb_RQdYC_g0z47wE1JjkdNEq7tNxIQUALkGIKutj7AWbbjancy0BoMdenRSqWSGm5zF8Gy/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c67f8c.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-03-31T12:19:41+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] failed to connect: Connection refused
+2017-03-31T12:19:41+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] sending close 4
+2017-03-31T12:19:41+0000 [SSHChannel None (615) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] direct-tcp forward to 144.160.159.22:25 with data 'QUIT\r\n'
+2017-03-31T12:19:41+0000 [SSHChannel None (615) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] failed to connect: Connection refused
+2017-03-31T12:19:41+0000 [SSHChannel None (615) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] sending close 615
+2017-03-31T12:19:41+0000 [SSHChannel None (615) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] remote eof
+2017-03-31T12:19:41+0000 [SSHChannel None (615) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] remote close
+2017-03-31T12:19:41+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.57.157:60513 (10.8.41.81:2223) [session: TT158785]
+2017-03-31T12:19:44+0000 [SSHChannel None (616) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] remote eof
+2017-03-31T12:19:45+0000 [SSHChannel None (616) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] remote close
+2017-03-31T12:19:45+0000 [SSHChannel None (616) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] sending close 616
+2017-03-31T12:19:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.107.80.198:33086 (10.8.41.81:2223) [session: TT158786]
+2017-03-31T12:19:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.17:60796 (10.8.41.81:2222) [session: 70c6cafd]
+2017-03-31T12:19:49+0000 [HoneyPotSSHTransport,64410,116.31.116.17] Remote SSH version: SSH-2.0-PUTTY
+2017-03-31T12:19:49+0000 [HoneyPotSSHTransport,64410,116.31.116.17] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-03-31T12:19:49+0000 [HoneyPotSSHTransport,64410,116.31.116.17] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-31T12:19:49+0000 [HoneyPotSSHTransport,64410,116.31.116.17] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-03-31T12:19:49+0000 [CowrieTelnetTransport,158786,185.107.80.198] login attempt: 7969
+2017-03-31T12:19:49+0000 [CowrieTelnetTransport,158786,185.107.80.198] login return, expect: [root/admin]
+2017-03-31T12:19:51+0000 [CowrieTelnetTransport,158786,185.107.80.198] login attempt [user/user] failed
+2017-03-31T12:19:51+0000 [CowrieTelnetTransport,158786,185.107.80.198] Warning: state changed and new state returned
+2017-03-31T12:19:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] got channel 'direct-tcpip' request
+2017-03-31T12:19:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] direct-tcp connection request to 52.223.196.226:80 from localhost:5556
+2017-03-31T12:19:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] got channel 'direct-tcpip' request
+2017-03-31T12:19:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] direct-tcp connection request to 52.223.196.83:80 from localhost:5556
+2017-03-31T12:19:52+0000 [CowrieTelnetTransport,158786,185.107.80.198] login attempt: 7970
+2017-03-31T12:19:52+0000 [CowrieTelnetTransport,158786,185.107.80.198] login return, expect: [root/admin]
+2017-03-31T12:19:54+0000 [CowrieTelnetTransport,158786,185.107.80.198] login attempt [enable/shell] failed
+2017-03-31T12:19:54+0000 [CowrieTelnetTransport,158786,185.107.80.198] Warning: state changed and new state returned
+2017-03-31T12:19:54+0000 [CowrieTelnetTransport,158779,116.233.152.107] Connection lost after 54 seconds
+2017-03-31T12:19:54+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 116.233.152.107:44085 (10.8.41.81:2223) [session: TT158787]
+2017-03-31T12:19:55+0000 [CowrieTelnetTransport,158786,185.107.80.198] login attempt: 7971
+2017-03-31T12:19:55+0000 [CowrieTelnetTransport,158786,185.107.80.198] login return, expect: [root/admin]
+2017-03-31T12:19:57+0000 [CowrieTelnetTransport,158786,185.107.80.198] login attempt [sh//bin/busybox ECCHI] failed
+2017-03-31T12:19:57+0000 [CowrieTelnetTransport,158786,185.107.80.198] Warning: state changed and new state returned
+2017-03-31T12:19:57+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] direct-tcp forward to 52.223.196.83:80 with data 'GET /v0/CuUBTFwDLxX07TOyUHRPWsJsUcNStRDF2A0ZITww6EpX1AVTyOZqf_DWsrcE74YXKOGwY31X9yum5ivajP92423MWSBXCMrbJKHEWXRDAv1qU4xy11hR5o8Bw-SP4YKGNuYAwsGXJ9qk7B4WUiy2eqH71Fanra8Y6Qdy3p6EMuDjxfqTJfcsFU6JouDjFMmtd24oTxSqwG_MReksK6JTz2IkL0Sei9QKIrDVc26_VeASE0Uqxmzk7-OnUd7VrbvYabd5boCod2i4yKZ0cFWJCaulUPKoyWH8XnvB9BpmM0Y3O6ijaUlaPRIQCsFa1r-kcbdGh8snS_Wi7xoMpa1XEVqbDjq0bqMp/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c67b80.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-03-31T12:19:57+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] failed to connect: Connection refused
+2017-03-31T12:19:57+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] sending close 6
+2017-03-31T12:19:57+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] direct-tcp forward to 52.223.196.226:80 with data 'GET /v0/CuUBW3WdzTAiQWowLurEiRWl7v9wf7T8fx_U7LNwN5q1BU2Lyd2-DLxrqZEgFJv_ncRHLi0bEMUuhtDPX5sXqBOmZ-pTC4BGYHoi6DDEY6vXmuhUWQw4FOfktzrkXv8cOZF-coWKAS9RLMu3dNidThT87jUWyWqO6aNZVc6PA8Ue6LV8UPneydKzBAbUVKm7FbY1sq_5Wb4l7wd7QIrgyLFuhBc-co9-7JFT9arE15Nri9k9Ykb9mzpxzD9fXopmwm1nvX4UboNGw2qn--w9U--7kmbpCK_dqIaDDYjy4Gc4lsUpFKvcihIQCIcVsXtivOoaD7H6npZ30hoMpxhpXGuVS_zUD4EG/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c1d700.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-03-31T12:19:57+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] failed to connect: Connection refused
+2017-03-31T12:19:57+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64371,194.88.107.47] sending close 5
+2017-03-31T12:19:57+0000 [HoneyPotSSHTransport,64410,116.31.116.17] NEW KEYS
+2017-03-31T12:19:57+0000 [HoneyPotSSHTransport,64410,116.31.116.17] starting service 'ssh-userauth'
+2017-03-31T12:19:57+0000 [SSHChannel None (618) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] remote eof
+2017-03-31T12:19:57+0000 [SSHChannel None (618) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] remote close
+2017-03-31T12:19:57+0000 [SSHChannel None (618) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63635,91.230.47.81] sending close 618
+2017-03-31T12:19:57+0000 [CowrieTelnetTransport,158777,116.233.152.107] Connection lost after 64 seconds
+2017-03-31T12:19:57+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 116.233.152.107:44095 (10.8.41.81:2223) [session: TT158788]
+2017-03-31T12:19:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64410,116.31.116.17] 'root' trying auth 'none'
+2017-03-31T12:19:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64410,116.31.116.17] 'root' authenticated with 'none'
+2017-03-31T12:19:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64410,116.31.116.17] starting service 'ssh-connection'
+2017-03-31T12:20:00+0000 [HoneyPotSSHTransport,64410,116.31.116.17] Got remote error, code 11
+	reason: 
+2017-03-31T12:20:00+0000 [HoneyPotSSHTransport,64410,116.31.116.17] avatar root logging out
+2017-03-31T12:20:00+0000 [HoneyPotSSHTransport,64410,116.31.116.17] connection lost
+2017-03-31T12:20:00+0000 [HoneyPotSSHTransport,64410,116.31.116.17] Connection lost after 11 seconds
+2017-03-31T12:20:00+0000 [CowrieTelnetTransport,158788,116.233.152.107] login attempt: 11
+2017-03-31T12:20:00+0000 [CowrieTelnetTransport,158788,116.233.152.107] login return, expect: [root/54321]
