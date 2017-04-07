@@ -1566,3 +1566,129 @@
 2017-04-07T06:02:59+0000 [CowrieTelnetTransport,206688,52.166.118.62] login return, expect: [root/juantech]
 2017-04-07T06:03:01+0000 [CowrieTelnetTransport,206688,52.166.118.62] login attempt [sh//bin/busybox ECCHI] failed
 2017-04-07T06:03:01+0000 [CowrieTelnetTransport,206688,52.166.118.62] Warning: state changed and new state returned
+2017-04-07T06:03:03+0000 [CowrieTelnetTransport,206689,1.34.36.165] login attempt: 14
+2017-04-07T06:03:03+0000 [CowrieTelnetTransport,206689,1.34.36.165] login return, expect: [root/pass]
+2017-04-07T06:03:05+0000 [CowrieTelnetTransport,206689,1.34.36.165] login attempt [admin1/password] failed
+2017-04-07T06:03:05+0000 [CowrieTelnetTransport,206689,1.34.36.165] Warning: state changed and new state returned
+2017-04-07T06:03:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 142.0.35.34:60391 (10.8.41.81:2222) [session: 2f9b514e]
+2017-04-07T06:03:05+0000 [HoneyPotSSHTransport,96082,142.0.35.34] Remote SSH version: SSH-2.0-Granados-1.0
+2017-04-07T06:03:05+0000 [HoneyPotSSHTransport,96082,142.0.35.34] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-04-07T06:03:05+0000 [HoneyPotSSHTransport,96082,142.0.35.34] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-04-07T06:03:05+0000 [HoneyPotSSHTransport,96082,142.0.35.34] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-04-07T06:03:05+0000 [HoneyPotSSHTransport,96082,142.0.35.34] NEW KEYS
+2017-04-07T06:03:05+0000 [HoneyPotSSHTransport,96082,142.0.35.34] starting service 'ssh-userauth'
+2017-04-07T06:03:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96082,142.0.35.34] 'user' trying auth 'password'
+2017-04-07T06:03:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96082,142.0.35.34] login attempt: 2
+2017-04-07T06:03:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96082,142.0.35.34] login return, expect: [user/1234]
+2017-04-07T06:03:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96082,142.0.35.34] login attempt [user/1234] succeeded
+2017-04-07T06:03:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96082,142.0.35.34] 'user' authenticated with 'password'
+2017-04-07T06:03:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96082,142.0.35.34] starting service 'ssh-connection'
+2017-04-07T06:03:09+0000 [CowrieTelnetTransport,206662,103.50.4.26] Connection lost after 300 seconds
+2017-04-07T06:03:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96082,142.0.35.34] got channel 'direct-tcpip' request
+2017-04-07T06:03:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96082,142.0.35.34] direct-tcp connection request to 64.182.208.181:80 from localhost:1349
+2017-04-07T06:03:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96082,142.0.35.34] direct-tcp forward to 64.182.208.181:80 with data 'GET / HTTP/1.0\r\n\r\n'
+2017-04-07T06:03:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96082,142.0.35.34] failed to connect: Connection refused
+2017-04-07T06:03:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96082,142.0.35.34] sending close 0
+2017-04-07T06:03:10+0000 [HoneyPotSSHTransport,96082,142.0.35.34] Got remote error, code 0
+	reason: 
+2017-04-07T06:03:10+0000 [HoneyPotSSHTransport,96082,142.0.35.34] avatar user logging out
+2017-04-07T06:03:10+0000 [HoneyPotSSHTransport,96082,142.0.35.34] connection lost
+2017-04-07T06:03:10+0000 [HoneyPotSSHTransport,96082,142.0.35.34] Connection lost after 5 seconds
+2017-04-07T06:03:10+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 52.166.118.62:45089 (10.8.41.81:2223) [session: TT206690]
+2017-04-07T06:03:14+0000 [CowrieTelnetTransport,206690,52.166.118.62] login attempt: 4836
+2017-04-07T06:03:14+0000 [CowrieTelnetTransport,206690,52.166.118.62] login return, expect: [root/juantech]
+2017-04-07T06:03:16+0000 [CowrieTelnetTransport,206690,52.166.118.62] login attempt [admin/123456] failed
+2017-04-07T06:03:16+0000 [CowrieTelnetTransport,206690,52.166.118.62] Warning: state changed and new state returned
+2017-04-07T06:03:16+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 1.34.36.165:43755 (10.8.41.81:2223) [session: TT206691]
+2017-04-07T06:03:17+0000 [CowrieTelnetTransport,206690,52.166.118.62] login attempt: 4837
+2017-04-07T06:03:17+0000 [CowrieTelnetTransport,206690,52.166.118.62] login return, expect: [root/juantech]
+2017-04-07T06:03:19+0000 [CowrieTelnetTransport,206690,52.166.118.62] login attempt [enable/shell] failed
+2017-04-07T06:03:19+0000 [CowrieTelnetTransport,206690,52.166.118.62] Warning: state changed and new state returned
+2017-04-07T06:03:19+0000 [CowrieTelnetTransport,206690,52.166.118.62] login attempt: 4838
+2017-04-07T06:03:19+0000 [CowrieTelnetTransport,206690,52.166.118.62] login return, expect: [root/juantech]
+2017-04-07T06:03:21+0000 [CowrieTelnetTransport,206690,52.166.118.62] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-07T06:03:21+0000 [CowrieTelnetTransport,206690,52.166.118.62] Warning: state changed and new state returned
+2017-04-07T06:03:21+0000 [CowrieTelnetTransport,206686,1.34.36.165] Connection lost after 48 seconds
+2017-04-07T06:03:22+0000 [CowrieTelnetTransport,206687,52.166.118.62] Connection lost after 42 seconds
+2017-04-07T06:03:24+0000 [CowrieTelnetTransport,206691,1.34.36.165] login attempt: 15
+2017-04-07T06:03:24+0000 [CowrieTelnetTransport,206691,1.34.36.165] login return, expect: [root/pass]
+2017-04-07T06:03:27+0000 [CowrieTelnetTransport,206691,1.34.36.165] login attempt [admin/1111] failed
+2017-04-07T06:03:27+0000 [CowrieTelnetTransport,206691,1.34.36.165] Warning: state changed and new state returned
+2017-04-07T06:03:27+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 1.34.36.165:43874 (10.8.41.81:2223) [session: TT206692]
+2017-04-07T06:03:28+0000 [CowrieTelnetTransport,206688,52.166.118.62] Connection lost after 42 seconds
+2017-04-07T06:03:29+0000 [CowrieTelnetTransport,206690,52.166.118.62] Connection lost after 18 seconds
+2017-04-07T06:03:30+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 52.166.118.62:43808 (10.8.41.81:2223) [session: TT206693]
+2017-04-07T06:03:30+0000 [-] Process ended. Telnet Session disconnected
+2017-04-07T06:03:30+0000 [CowrieTelnetTransport,206678,178.168.17.250] Closing TTY Log: log/tty/20170407-060021-None-206678i.log after 189 seconds
+2017-04-07T06:03:30+0000 [CowrieTelnetTransport,206678,178.168.17.250] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-07T06:03:30+0000 [CowrieTelnetTransport,206678,178.168.17.250] Connection lost after 212 seconds
+2017-04-07T06:03:34+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:56366 (10.8.41.81:2223) [session: TT206694]
+2017-04-07T06:03:35+0000 [CowrieTelnetTransport,206693,52.166.118.62] login attempt: 4839
+2017-04-07T06:03:35+0000 [CowrieTelnetTransport,206693,52.166.118.62] login return, expect: [root/juantech]
+2017-04-07T06:03:37+0000 [CowrieTelnetTransport,206693,52.166.118.62] login attempt [admin/123456] failed
+2017-04-07T06:03:37+0000 [CowrieTelnetTransport,206693,52.166.118.62] Warning: state changed and new state returned
+2017-04-07T06:03:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96072,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-07T06:03:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96072,91.230.47.82] direct-tcp connection request to 173.194.222.94:443 from localhost:5556
+2017-04-07T06:03:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:60013 (10.8.41.81:2223) [session: TT206695]
+2017-04-07T06:03:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 52.166.118.62:39137 (10.8.41.81:2223) [session: TT206696]
+2017-04-07T06:03:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:45685 (10.8.41.81:2223) [session: TT206697]
+2017-04-07T06:03:39+0000 [CowrieTelnetTransport,206693,52.166.118.62] login attempt: 4840
+2017-04-07T06:03:39+0000 [CowrieTelnetTransport,206693,52.166.118.62] login return, expect: [root/juantech]
+2017-04-07T06:03:41+0000 [CowrieTelnetTransport,206693,52.166.118.62] login attempt [enable/shell] failed
+2017-04-07T06:03:41+0000 [CowrieTelnetTransport,206693,52.166.118.62] Warning: state changed and new state returned
+2017-04-07T06:03:41+0000 [CowrieTelnetTransport,206694,198.7.62.232] login attempt: 1306
+2017-04-07T06:03:41+0000 [CowrieTelnetTransport,206694,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-07T06:03:43+0000 [CowrieTelnetTransport,206694,198.7.62.232] login attempt [root/vizxv] failed
+2017-04-07T06:03:43+0000 [CowrieTelnetTransport,206694,198.7.62.232] Warning: state changed and new state returned
+2017-04-07T06:03:43+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96072,91.230.47.82] direct-tcp forward to 173.194.222.94:443 with data '\x16\x03\x01\x01x\x01\x00\x01t\x03\x03X\xe7+\x99\x0c\x96~=\xd0-[M\xa2B\x0b0\xdd\x05l\x13[\xea\x9c\xc4\xcb\x89Bkl/\xfe\xc3\x00\x00\xca\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0\n\xc0"\xc0!\x00\xa3\x00\x9f\x00k\x00j\x009\x008\x00\x88\x00\x87\xc0\x19\xc0 \x00\xa7\x00m\x00:\x00\x89\xc02\xc0.\xc0*\xc0&\xc0\x0f\xc0\x05\x00\x9d\x00=\x005\x00\x84\xc0\x12\xc0\x08\xc0\x1c\xc0\x1b\x00\x16\x00\x13\xc0\x17\xc0\x1a\x00\x1b\xc0\r\xc0\x03\x00\n\xc0/\xc0+\xc0\'\xc0#\xc0\x13\xc0\t\xc0\x1f\xc0\x1e\x00\xa2\x00\x9e\x00g\x00@\x003\x002\x00\x9a\x00\x99\x00E\x00D\xc0\x18\xc0\x1d\x00\xa6\x00l\x004\x00\x9b\x00F\xc01\xc0-\xc0)\xc0%\xc0\x0e\xc0\x04\x00\x9c\x00<\x00/\x00\x96\x00A\x00\x07\xc0\x11\xc0\x07\xc0\x16\x00\x18\xc0\x0c\xc0\x02\x00\x05\x00\x04\x00\x15\x00\x12\x00\x1a\x00\t\x00\x14\x00\x11\x00\x19\x00\x08\x00\x06\x00\x17\x00\x03\x00\xff\x01\x00\x00\x81\x00\x00\x00\x12\x00\x10\x00\x00\rwww.google.ru\x00\x0b\x00\x04\x03\x00\x01\x02\x00\n\x004\x002\x00\x0e\x00\r\x00\x19\x00\x0b\x00\x0c\x00\x18\x00\t\x00\n\x00\x16\x00\x17\x00\x08\x00\x06\x00\x07\x00\x14\x00\x15\x00\x04\x00\x05\x00\x12\x00\x13\x00\x01\x00\x02\x00\x03\x00\x0f\x00\x10\x00\x11\x00\r\x00"\x00 \x06\x01\x06\x02\x06\x03\x05\x01\x05\x02\x05\x03\x04\x01\x04\x02\x04\x03\x03\x01\x03\x02\x03\x03\x02\x01\x02\x02\x02\x03\x01\x01\x00\x0f\x00\x01\x01'
+2017-04-07T06:03:43+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96072,91.230.47.82] failed to connect: Connection refused
+2017-04-07T06:03:43+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96072,91.230.47.82] sending close 119
+2017-04-07T06:03:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96072,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-07T06:03:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96072,91.230.47.82] direct-tcp connection request to 216.32.180.42:25 from localhost:5556
+2017-04-07T06:03:43+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 52.166.118.62:54270 (10.8.41.81:2223) [session: TT206698]
+2017-04-07T06:03:43+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 1.34.36.165:44334 (10.8.41.81:2223) [session: TT206699]
+2017-04-07T06:03:44+0000 [CowrieTelnetTransport,206692,1.34.36.165] login attempt: 16
+2017-04-07T06:03:44+0000 [CowrieTelnetTransport,206692,1.34.36.165] login return, expect: [root/pass]
+2017-04-07T06:03:46+0000 [CowrieTelnetTransport,206692,1.34.36.165] login attempt [root/pass] succeeded
+2017-04-07T06:03:47+0000 [CowrieTelnetTransport,206692,1.34.36.165] Opening TTY Log: log/tty/20170407-060347-None-206692i.log
+2017-04-07T06:03:47+0000 [CowrieTelnetTransport,206692,1.34.36.165] Warning: state changed and new state returned
+2017-04-07T06:03:47+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:38314 (10.8.41.81:2223) [session: TT206700]
+2017-04-07T06:03:47+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:36698 (10.8.41.81:2223) [session: TT206701]
+2017-04-07T06:03:47+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:55566 (10.8.41.81:2223) [session: TT206702]
+2017-04-07T06:03:47+0000 [CowrieTelnetTransport,206692,1.34.36.165] Closing TTY Log: log/tty/20170407-060347-None-206692i.log after 0 seconds
+2017-04-07T06:03:47+0000 [CowrieTelnetTransport,206692,1.34.36.165] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-07T06:03:47+0000 [CowrieTelnetTransport,206692,1.34.36.165] Connection lost after 20 seconds
+2017-04-07T06:03:48+0000 [CowrieTelnetTransport,206693,52.166.118.62] login attempt: 4841
+2017-04-07T06:03:48+0000 [CowrieTelnetTransport,206693,52.166.118.62] login return, expect: [root/juantech]
+2017-04-07T06:03:50+0000 [CowrieTelnetTransport,206693,52.166.118.62] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-07T06:03:50+0000 [CowrieTelnetTransport,206693,52.166.118.62] Warning: state changed and new state returned
+2017-04-07T06:03:50+0000 [CowrieTelnetTransport,206694,198.7.62.232] login attempt: 1307
+2017-04-07T06:03:50+0000 [CowrieTelnetTransport,206694,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-07T06:03:52+0000 [CowrieTelnetTransport,206694,198.7.62.232] login attempt [enable/shell] failed
+2017-04-07T06:03:52+0000 [CowrieTelnetTransport,206694,198.7.62.232] Warning: state changed and new state returned
+2017-04-07T06:03:53+0000 [CowrieTelnetTransport,206695,198.7.62.232] login attempt: 1308
+2017-04-07T06:03:53+0000 [CowrieTelnetTransport,206695,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-07T06:03:55+0000 [CowrieTelnetTransport,206695,198.7.62.232] login attempt [Admin/atc456] succeeded
+2017-04-07T06:03:58+0000 [CowrieTelnetTransport,206695,198.7.62.232] Opening TTY Log: log/tty/20170407-060358-None-206695i.log
+2017-04-07T06:03:58+0000 [CowrieTelnetTransport,206695,198.7.62.232] Warning: state changed and new state returned
+2017-04-07T06:03:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96072,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-07T06:03:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96072,91.230.47.82] direct-tcp connection request to 209.86.93.122:25 from localhost:5556
+2017-04-07T06:03:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:39717 (10.8.41.81:2223) [session: TT206703]
+2017-04-07T06:03:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:55330 (10.8.41.81:2223) [session: TT206704]
+2017-04-07T06:03:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 1.34.36.165:44768 (10.8.41.81:2223) [session: TT206705]
+2017-04-07T06:03:58+0000 [CowrieTelnetTransport,206699,1.34.36.165] Connection lost after 14 seconds
+2017-04-07T06:03:59+0000 [CowrieTelnetTransport,206694,198.7.62.232] login attempt: 1309
+2017-04-07T06:03:59+0000 [CowrieTelnetTransport,206694,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-07T06:04:01+0000 [CowrieTelnetTransport,206694,198.7.62.232] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-07T06:04:01+0000 [CowrieTelnetTransport,206694,198.7.62.232] Warning: state changed and new state returned
+2017-04-07T06:04:01+0000 [CowrieTelnetTransport,206695,198.7.62.232] CMD: enable
+2017-04-07T06:04:01+0000 [CowrieTelnetTransport,206695,198.7.62.232] Command found: enable 
+2017-04-07T06:04:01+0000 [CowrieTelnetTransport,206695,198.7.62.232] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-07T06:04:01+0000 [CowrieTelnetTransport,206695,198.7.62.232] CMD: shell
+2017-04-07T06:04:01+0000 [CowrieTelnetTransport,206695,198.7.62.232] Command not found: shell
+2017-04-07T06:04:01+0000 [CowrieTelnetTransport,206695,198.7.62.232] CMD: sh
+2017-04-07T06:04:01+0000 [CowrieTelnetTransport,206695,198.7.62.232] Command found: sh 
+2017-04-07T06:04:01+0000 [CowrieTelnetTransport,206696,52.166.118.62] login attempt: 4842
+2017-04-07T06:04:01+0000 [CowrieTelnetTransport,206696,52.166.118.62] login return, expect: [root/juantech]
