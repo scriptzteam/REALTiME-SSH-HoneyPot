@@ -6899,3 +6899,60 @@
 2017-04-07T11:50:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96165,195.22.127.83] 'root' trying auth 'password'
 2017-04-07T11:50:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96165,195.22.127.83] login attempt: 17699
 2017-04-07T11:50:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96165,195.22.127.83] login return, expect: [root/welc0me]
+2017-04-07T11:50:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96165,195.22.127.83] login attempt [root/waldo] failed
+2017-04-07T11:50:04+0000 [-] 'root' failed auth 'password'
+2017-04-07T11:50:04+0000 [-] unauthorized login: 
+2017-04-07T11:50:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96165,195.22.127.83] 'root' trying auth 'password'
+2017-04-07T11:50:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96165,195.22.127.83] login attempt: 17700
+2017-04-07T11:50:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96165,195.22.127.83] login return, expect: [root/welc0me]
+2017-04-07T11:50:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96165,195.22.127.83] login attempt [root/waldo] failed
+2017-04-07T11:50:07+0000 [-] 'root' failed auth 'password'
+2017-04-07T11:50:07+0000 [-] unauthorized login: 
+2017-04-07T11:50:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96165,195.22.127.83] 'root' trying auth 'password'
+2017-04-07T11:50:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96165,195.22.127.83] login attempt: 17701
+2017-04-07T11:50:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96165,195.22.127.83] login return, expect: [root/welc0me]
+2017-04-07T11:50:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96165,195.22.127.83] login attempt [root/waldo] failed
+2017-04-07T11:50:10+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 118.69.32.184:53363 (10.8.41.81:2223) [session: TT207641]
+2017-04-07T11:50:11+0000 [-] 'root' failed auth 'password'
+2017-04-07T11:50:11+0000 [-] unauthorized login: 
+2017-04-07T11:50:11+0000 [-] Disconnecting with error, code 14
+	reason: too many bad auths
+2017-04-07T11:50:11+0000 [HoneyPotSSHTransport,96165,195.22.127.83] connection lost
+2017-04-07T11:50:11+0000 [HoneyPotSSHTransport,96165,195.22.127.83] Connection lost after 82 seconds
+2017-04-07T11:50:12+0000 [CowrieTelnetTransport,207641,118.69.32.184] first time for 118.69.32.184, need: 1
+2017-04-07T11:50:12+0000 [CowrieTelnetTransport,207641,118.69.32.184] login attempt: 1
+2017-04-07T11:50:14+0000 [CowrieTelnetTransport,207641,118.69.32.184] login attempt [666666/666666] succeeded
+2017-04-07T11:50:15+0000 [CowrieTelnetTransport,207641,118.69.32.184] Opening TTY Log: log/tty/20170407-115015-None-207641i.log
+2017-04-07T11:50:15+0000 [CowrieTelnetTransport,207641,118.69.32.184] Warning: state changed and new state returned
+2017-04-07T11:50:16+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96151,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-07T11:50:16+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96151,91.230.47.82] direct-tcp connection request to 108.177.14.26:25 from localhost:5556
+2017-04-07T11:50:16+0000 [CowrieTelnetTransport,207641,118.69.32.184] CMD: enable
+2017-04-07T11:50:16+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command found: enable 
+2017-04-07T11:50:16+0000 [CowrieTelnetTransport,207641,118.69.32.184] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-07T11:50:16+0000 [CowrieTelnetTransport,207641,118.69.32.184] CMD: shell
+2017-04-07T11:50:16+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command not found: shell
+2017-04-07T11:50:16+0000 [CowrieTelnetTransport,207641,118.69.32.184] CMD: sh
+2017-04-07T11:50:16+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command found: sh 
+2017-04-07T11:50:16+0000 [CowrieTelnetTransport,207641,118.69.32.184] CMD: cat /proc/mounts; /bin/busybox UGBBX
+2017-04-07T11:50:16+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command found: cat /proc/mounts
+2017-04-07T11:50:16+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command found: /bin/busybox UGBBX
+2017-04-07T11:50:17+0000 [CowrieTelnetTransport,207641,118.69.32.184] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox UGBBX
+2017-04-07T11:50:17+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command found: cd /dev/shm
+2017-04-07T11:50:17+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command found: cat .s
+2017-04-07T11:50:17+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command found: cp /bin/echo .s
+2017-04-07T11:50:17+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command found: /bin/busybox UGBBX
+2017-04-07T11:50:17+0000 [CowrieTelnetTransport,207641,118.69.32.184] CMD: nc; wget; /bin/busybox UGBBX
+2017-04-07T11:50:17+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command not found: nc
+2017-04-07T11:50:17+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command found: wget 
+2017-04-07T11:50:17+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command found: /bin/busybox UGBBX
+2017-04-07T11:50:17+0000 [CowrieTelnetTransport,207636,94.177.203.243] Closing TTY Log: log/tty/20170407-114750-None-207636i.log after 147 seconds
+2017-04-07T11:50:17+0000 [CowrieTelnetTransport,207636,94.177.203.243] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-07T11:50:17+0000 [CowrieTelnetTransport,207636,94.177.203.243] Connection lost after 157 seconds
+2017-04-07T11:50:18+0000 [CowrieTelnetTransport,207641,118.69.32.184] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-04-07T11:50:18+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command not found: dd bs=52 count=1 if=.s
+2017-04-07T11:50:18+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command found: cat /dev/shm/.s
+2017-04-07T11:50:18+0000 [CowrieTelnetTransport,207641,118.69.32.184] CMD: /bin/busybox UGBBX
+2017-04-07T11:50:18+0000 [CowrieTelnetTransport,207641,118.69.32.184] Command found: /bin/busybox UGBBX
+2017-04-07T11:50:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96156,91.195.103.211] got channel 'direct-tcpip' request
+2017-04-07T11:50:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96156,91.195.103.211] direct-tcp connection request to 64.233.160.26:25 from localhost:5556
