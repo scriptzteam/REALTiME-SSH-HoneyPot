@@ -4502,3 +4502,60 @@
 2017-04-08T11:54:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] 'root' trying auth 'password'
 2017-04-08T11:54:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] login attempt: 17911
 2017-04-08T11:54:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] login return, expect: [root/welc0me]
+2017-04-08T11:54:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] login attempt [root/uClinux] failed
+2017-04-08T11:54:03+0000 [-] 'root' failed auth 'password'
+2017-04-08T11:54:03+0000 [-] unauthorized login: 
+2017-04-08T11:54:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] 'root' trying auth 'password'
+2017-04-08T11:54:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] login attempt: 17912
+2017-04-08T11:54:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] login return, expect: [root/welc0me]
+2017-04-08T11:54:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] login attempt [root/uClinux] failed
+2017-04-08T11:54:07+0000 [-] 'root' failed auth 'password'
+2017-04-08T11:54:07+0000 [-] unauthorized login: 
+2017-04-08T11:54:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] 'root' trying auth 'password'
+2017-04-08T11:54:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] login attempt: 17913
+2017-04-08T11:54:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] login return, expect: [root/welc0me]
+2017-04-08T11:54:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] login attempt [root/uClinux] failed
+2017-04-08T11:54:10+0000 [-] 'root' failed auth 'password'
+2017-04-08T11:54:10+0000 [-] unauthorized login: 
+2017-04-08T11:54:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] 'root' trying auth 'password'
+2017-04-08T11:54:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] login attempt: 17914
+2017-04-08T11:54:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] login return, expect: [root/welc0me]
+2017-04-08T11:54:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98407,195.22.127.83] login attempt [root/uClinux] failed
+2017-04-08T11:54:13+0000 [HoneyPotSSHTransport,98407,195.22.127.83] connection lost
+2017-04-08T11:54:13+0000 [HoneyPotSSHTransport,98407,195.22.127.83] Connection lost after 92 seconds
+2017-04-08T11:54:14+0000 [-] 'root' failed auth 'password'
+2017-04-08T11:54:14+0000 [-] unauthorized login: 
+2017-04-08T11:54:14+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-04-08T11:54:14+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 247, in _ebBadAuth
+	    b'too many bad auths')
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 160, in sendDisconnect
+	    transport.SSHServerTransport.sendDisconnect(self, reason, desc)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 1032, in sendDisconnect
+	    MSG_DISCONNECT, struct.pack('>L', reason) + NS(desc) + NS(b''))
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-04-08T11:54:23+0000 [CowrieTelnetTransport,210717,192.227.180.136] Connection lost after 56 seconds
+2017-04-08T11:54:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.227.180.136:52890 (10.8.41.81:2223) [session: TT210718]
+2017-04-08T11:54:54+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.227.180.136:56596 (10.8.41.81:2223) [session: TT210719]
+2017-04-08T11:54:56+0000 [CowrieTelnetTransport,210715,31.206.163.95] Closing TTY Log: log/tty/20170408-115311-None-210715i.log after 104 seconds
+2017-04-08T11:54:56+0000 [CowrieTelnetTransport,210715,31.206.163.95] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-08T11:54:56+0000 [CowrieTelnetTransport,210715,31.206.163.95] Connection lost after 108 seconds
+2017-04-08T11:54:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.227.180.136:59231 (10.8.41.81:2223) [session: TT210720]
+2017-04-08T11:55:00+0000 [CowrieTelnetTransport,210719,192.227.180.136] login attempt: 224
+2017-04-08T11:55:00+0000 [CowrieTelnetTransport,210719,192.227.180.136] login return, expect: [admin/meinsm]
