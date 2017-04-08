@@ -2225,3 +2225,40 @@
 2017-04-08T13:12:43+0000 [CowrieTelnetTransport,210836,94.102.63.200] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-04-08T13:12:43+0000 [CowrieTelnetTransport,210836,94.102.63.200] Connection lost after 186 seconds
+2017-04-08T13:15:27+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.197.235.11:58841 (10.8.41.81:2222) [session: 05c1ee92]
+2017-04-08T13:15:27+0000 [HoneyPotSSHTransport,98428,91.197.235.11] Remote SSH version: SSH-2.0-ssh2js0.3.6
+2017-04-08T13:15:27+0000 [HoneyPotSSHTransport,98428,91.197.235.11] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-08T13:15:27+0000 [HoneyPotSSHTransport,98428,91.197.235.11] outgoing: '3des-cbc' 'hmac-sha1' 'none'
+2017-04-08T13:15:27+0000 [HoneyPotSSHTransport,98428,91.197.235.11] incoming: '3des-cbc' 'hmac-sha1' 'none'
+2017-04-08T13:15:27+0000 [HoneyPotSSHTransport,98428,91.197.235.11] NEW KEYS
+2017-04-08T13:15:27+0000 [HoneyPotSSHTransport,98428,91.197.235.11] starting service 'ssh-userauth'
+2017-04-08T13:15:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98428,91.197.235.11] 'admin' trying auth 'password'
+2017-04-08T13:15:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98428,91.197.235.11] login attempt: 527
+2017-04-08T13:15:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98428,91.197.235.11] login return, expect: [admin/1111]
+2017-04-08T13:15:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98428,91.197.235.11] login attempt [admin/1111] succeeded
+2017-04-08T13:15:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98428,91.197.235.11] 'admin' authenticated with 'password'
+2017-04-08T13:15:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98428,91.197.235.11] starting service 'ssh-connection'
+2017-04-08T13:15:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98428,91.197.235.11] got channel 'direct-tcpip' request
+2017-04-08T13:15:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98428,91.197.235.11] direct-tcp connection request to yahoo.com:443 from localhost:0
+2017-04-08T13:15:32+0000 [HoneyPotSSHTransport,98428,91.197.235.11] avatar admin logging out
+2017-04-08T13:15:32+0000 [HoneyPotSSHTransport,98428,91.197.235.11] connection lost
+2017-04-08T13:15:32+0000 [HoneyPotSSHTransport,98428,91.197.235.11] Connection lost after 5 seconds
+2017-04-08T13:15:34+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.38.148.3:9107 (10.8.41.81:2222) [session: d10a8029]
+2017-04-08T13:15:34+0000 [HoneyPotSSHTransport,98429,185.38.148.3] Remote SSH version: SSH-2.0-OpenSSH_6.1
+2017-04-08T13:15:34+0000 [HoneyPotSSHTransport,98429,185.38.148.3] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-08T13:15:34+0000 [HoneyPotSSHTransport,98429,185.38.148.3] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-08T13:15:34+0000 [HoneyPotSSHTransport,98429,185.38.148.3] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-08T13:15:34+0000 [HoneyPotSSHTransport,98429,185.38.148.3] NEW KEYS
+2017-04-08T13:15:34+0000 [HoneyPotSSHTransport,98429,185.38.148.3] starting service 'ssh-userauth'
+2017-04-08T13:15:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98429,185.38.148.3] 'admin' trying auth 'none'
+2017-04-08T13:15:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98429,185.38.148.3] 'admin' authenticated with 'none'
+2017-04-08T13:15:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98429,185.38.148.3] starting service 'ssh-connection'
+2017-04-08T13:15:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98429,185.38.148.3] got channel 'direct-tcpip' request
+2017-04-08T13:15:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98429,185.38.148.3] direct-tcp connection request to google.com:80 from localhost:8080
+2017-04-08T13:15:36+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98429,185.38.148.3] direct-tcp forward to google.com:80 with data 'GET /\r\n'
+2017-04-08T13:15:36+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98429,185.38.148.3] failed to connect: Connection refused
+2017-04-08T13:15:36+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98429,185.38.148.3] sending close 0
+2017-04-08T13:15:36+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98429,185.38.148.3] remote eof
+2017-04-08T13:15:36+0000 [HoneyPotSSHTransport,98429,185.38.148.3] avatar admin logging out
+2017-04-08T13:15:36+0000 [HoneyPotSSHTransport,98429,185.38.148.3] connection lost
+2017-04-08T13:15:36+0000 [HoneyPotSSHTransport,98429,185.38.148.3] Connection lost after 2 seconds
