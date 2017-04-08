@@ -311,3 +311,47 @@
 2017-04-08T23:34:58+0000 [SSHChannel None (149) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98514,91.230.47.78] direct-tcp forward to 23.53.43.19:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\x1c\xaf\x9e\xb2B\xad\xe9E\x04\xbd$\x00\xbe\x03\xc3\x03\xec\xb9"\xe4\x067\x91R\x8e`\xac\x1b\xfa\x03!Q'
 2017-04-08T23:34:58+0000 [SSHChannel None (149) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98514,91.230.47.78] failed to connect: Connection refused
 2017-04-08T23:34:58+0000 [SSHChannel None (149) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98514,91.230.47.78] sending close 149
+2017-04-08T23:35:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 93.174.95.38:46334 (10.8.41.81:2223) [session: TT212352]
+2017-04-08T23:35:37+0000 [CowrieTelnetTransport,212352,93.174.95.38] login attempt: 1824
+2017-04-08T23:35:37+0000 [CowrieTelnetTransport,212352,93.174.95.38] login return, expect: [root/admin]
+2017-04-08T23:35:39+0000 [CowrieTelnetTransport,212352,93.174.95.38] login attempt [root/admin] succeeded
+2017-04-08T23:35:40+0000 [CowrieTelnetTransport,212352,93.174.95.38] Opening TTY Log: log/tty/20170408-233540-None-212352i.log
+2017-04-08T23:35:40+0000 [CowrieTelnetTransport,212352,93.174.95.38] Warning: state changed and new state returned
+2017-04-08T23:35:44+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.195.103.200:65110 (10.8.41.81:2222) [session: b6379bfa]
+2017-04-08T23:35:45+0000 [CowrieTelnetTransport,212352,93.174.95.38] CMD: shell
+2017-04-08T23:35:45+0000 [CowrieTelnetTransport,212352,93.174.95.38] Command not found: shell
+2017-04-08T23:35:45+0000 [CowrieTelnetTransport,212352,93.174.95.38] CMD: enable
+2017-04-08T23:35:45+0000 [CowrieTelnetTransport,212352,93.174.95.38] Command found: enable 
+2017-04-08T23:35:45+0000 [CowrieTelnetTransport,212352,93.174.95.38] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-08T23:35:45+0000 [CowrieTelnetTransport,212352,93.174.95.38] CMD: system
+2017-04-08T23:35:45+0000 [CowrieTelnetTransport,212352,93.174.95.38] Command not found: system
+2017-04-08T23:35:45+0000 [CowrieTelnetTransport,212352,93.174.95.38] CMD: sh
+2017-04-08T23:35:45+0000 [CowrieTelnetTransport,212352,93.174.95.38] Command found: sh 
+2017-04-08T23:35:45+0000 [CowrieTelnetTransport,212352,93.174.95.38] CMD: run
+2017-04-08T23:35:45+0000 [CowrieTelnetTransport,212352,93.174.95.38] Command not found: run
+2017-04-08T23:35:46+0000 [HoneyPotSSHTransport,98537,91.195.103.200] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-04-08T23:35:46+0000 [HoneyPotSSHTransport,98537,91.195.103.200] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-04-08T23:35:46+0000 [HoneyPotSSHTransport,98537,91.195.103.200] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-08T23:35:46+0000 [HoneyPotSSHTransport,98537,91.195.103.200] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-08T23:35:47+0000 [HoneyPotSSHTransport,98537,91.195.103.200] NEW KEYS
+2017-04-08T23:35:47+0000 [HoneyPotSSHTransport,98537,91.195.103.200] starting service 'ssh-userauth'
+2017-04-08T23:35:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98537,91.195.103.200] 'admin' trying auth 'password'
+2017-04-08T23:35:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98537,91.195.103.200] first time for 91.195.103.200, need: 1
+2017-04-08T23:35:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98537,91.195.103.200] login attempt: 1
+2017-04-08T23:35:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98537,91.195.103.200] login attempt [admin/1111] succeeded
+2017-04-08T23:35:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98537,91.195.103.200] 'admin' authenticated with 'password'
+2017-04-08T23:35:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98537,91.195.103.200] starting service 'ssh-connection'
+2017-04-08T23:35:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98514,91.230.47.78] got channel 'direct-tcpip' request
+2017-04-08T23:35:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98514,91.230.47.78] direct-tcp connection request to 23.38.211.155:443 from localhost:5556
+2017-04-08T23:35:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98506,91.195.103.214] got channel 'direct-tcpip' request
+2017-04-08T23:35:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98506,91.195.103.214] direct-tcp connection request to 50.63.218.1:25 from localhost:5556
+2017-04-08T23:35:52+0000 [SSHChannel None (150) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98514,91.230.47.78] direct-tcp forward to 23.38.211.155:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80e/x\n\xa5\x8a\xceb6"\xa8t\'S\xc6\x9bV\xbfc\x9a\xf1\xd0H\xc5E\xcf\xddb\xcd\xc6\xb3\xb6'
+2017-04-08T23:35:52+0000 [SSHChannel None (150) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98514,91.230.47.78] failed to connect: Connection refused
+2017-04-08T23:35:52+0000 [SSHChannel None (150) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98514,91.230.47.78] sending close 150
+2017-04-08T23:35:55+0000 [CowrieTelnetTransport,212352,93.174.95.38] CMD: killall wget; killall ping; killall sh
+2017-04-08T23:35:55+0000 [CowrieTelnetTransport,212352,93.174.95.38] Command found: killall wget
+2017-04-08T23:35:55+0000 [CowrieTelnetTransport,212352,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-04-08T23:35:55+0000 [CowrieTelnetTransport,212352,93.174.95.38] Command found: killall ping
+2017-04-08T23:35:55+0000 [CowrieTelnetTransport,212352,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-04-08T23:35:55+0000 [CowrieTelnetTransport,212352,93.174.95.38] Command found: killall sh
+2017-04-08T23:35:55+0000 [CowrieTelnetTransport,212352,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
