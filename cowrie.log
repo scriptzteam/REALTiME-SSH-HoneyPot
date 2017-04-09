@@ -434,3 +434,46 @@
 2017-04-09T21:59:52+0000 [CowrieTelnetTransport,216082,151.235.64.208] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-04-09T21:59:52+0000 [CowrieTelnetTransport,216082,151.235.64.208] Connection lost after 106 seconds
+2017-04-09T22:00:04+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 5.200.23.14:54989 (10.8.41.81:2223) [session: TT216083]
+2017-04-09T22:00:10+0000 [CowrieTelnetTransport,216083,5.200.23.14] login attempt: 420
+2017-04-09T22:00:10+0000 [CowrieTelnetTransport,216083,5.200.23.14] login return, expect: [Administrator/]
+2017-04-09T22:00:12+0000 [CowrieTelnetTransport,216083,5.200.23.14] login attempt [daemon/] failed
+2017-04-09T22:00:12+0000 [CowrieTelnetTransport,216083,5.200.23.14] Warning: state changed and new state returned
+2017-04-09T22:00:13+0000 [CowrieTelnetTransport,216083,5.200.23.14] login attempt: 421
+2017-04-09T22:00:13+0000 [CowrieTelnetTransport,216083,5.200.23.14] login return, expect: [Administrator/]
+2017-04-09T22:00:15+0000 [CowrieTelnetTransport,216083,5.200.23.14] login attempt [enable/shell] failed
+2017-04-09T22:00:15+0000 [CowrieTelnetTransport,216083,5.200.23.14] Warning: state changed and new state returned
+2017-04-09T22:00:15+0000 [CowrieTelnetTransport,216083,5.200.23.14] login attempt: 422
+2017-04-09T22:00:15+0000 [CowrieTelnetTransport,216083,5.200.23.14] login return, expect: [Administrator/]
+2017-04-09T22:00:17+0000 [CowrieTelnetTransport,216083,5.200.23.14] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-09T22:00:18+0000 [CowrieTelnetTransport,216083,5.200.23.14] Warning: state changed and new state returned
+2017-04-09T22:00:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 163.172.134.145:43364 (10.8.41.81:2222) [session: 1edcf565]
+2017-04-09T22:00:48+0000 [HoneyPotSSHTransport,98903,163.172.134.145] Remote SSH version: SSH-2.0-libssh-0.1
+2017-04-09T22:00:48+0000 [HoneyPotSSHTransport,98903,163.172.134.145] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-04-09T22:00:48+0000 [HoneyPotSSHTransport,98903,163.172.134.145] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-04-09T22:00:48+0000 [HoneyPotSSHTransport,98903,163.172.134.145] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-04-09T22:00:48+0000 [HoneyPotSSHTransport,98903,163.172.134.145] NEW KEYS
+2017-04-09T22:00:48+0000 [HoneyPotSSHTransport,98903,163.172.134.145] starting service 'ssh-userauth'
+2017-04-09T22:00:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98903,163.172.134.145] 'admin' trying auth 'password'
+2017-04-09T22:00:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98903,163.172.134.145] first time for 163.172.134.145, need: 1
+2017-04-09T22:00:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98903,163.172.134.145] login attempt: 1
+2017-04-09T22:00:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98903,163.172.134.145] login attempt [admin/admin] succeeded
+2017-04-09T22:00:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98903,163.172.134.145] 'admin' authenticated with 'password'
+2017-04-09T22:00:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98903,163.172.134.145] starting service 'ssh-connection'
+2017-04-09T22:00:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98892,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-09T22:00:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98892,91.230.47.81] direct-tcp connection request to 107.6.167.194:80 from localhost:5556
+2017-04-09T22:00:52+0000 [CowrieTelnetTransport,216083,5.200.23.14] Connection lost after 47 seconds
+2017-04-09T22:00:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98903,163.172.134.145] got channel 'session' request
+2017-04-09T22:00:52+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98903,163.172.134.145] channel open
+2017-04-09T22:00:52+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98903,163.172.134.145] pty request: 'xterm' (24, 80, 0, 0)
+2017-04-09T22:00:52+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98903,163.172.134.145] Terminal Size: 24 80
+2017-04-09T22:00:52+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98903,163.172.134.145] getting shell
+2017-04-09T22:00:52+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98903,163.172.134.145] Opening TTY Log: log/tty/20170409-220052-1edcf565-0i.log
+2017-04-09T22:00:54+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98892,91.230.47.81] remote eof
+2017-04-09T22:00:54+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98892,91.230.47.81] remote close
+2017-04-09T22:00:54+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98892,91.230.47.81] sending close 23
+2017-04-09T22:00:58+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98903,163.172.134.145] Closing TTY Log: log/tty/20170409-220052-1edcf565-0i.log after 5 seconds
+2017-04-09T22:00:58+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98903,163.172.134.145] honeypot terminal protocol connection lost disconnected
+2017-04-09T22:00:58+0000 [HoneyPotSSHTransport,98903,163.172.134.145] avatar admin logging out
+2017-04-09T22:00:58+0000 [HoneyPotSSHTransport,98903,163.172.134.145] connection lost
+2017-04-09T22:00:58+0000 [HoneyPotSSHTransport,98903,163.172.134.145] Connection lost after 9 seconds
