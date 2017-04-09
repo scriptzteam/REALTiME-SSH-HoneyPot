@@ -2445,3 +2445,50 @@
 2017-04-09T22:45:49+0000 [SSHChannel None (222) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98890,91.230.47.77] sending close 222
 2017-04-09T22:45:52+0000 [CowrieTelnetTransport,216278,198.7.62.232] Connection lost after 45 seconds
 2017-04-09T22:46:00+0000 [CowrieTelnetTransport,216279,198.7.62.232] Connection lost after 48 seconds
+2017-04-09T22:46:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98892,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-09T22:46:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98892,91.230.47.81] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-04-09T22:46:24+0000 [SSHChannel None (34) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98892,91.230.47.81] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: hipcow.pw\r\nAccept: */*\r\n\r\n'
+2017-04-09T22:46:24+0000 [SSHChannel None (34) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98892,91.230.47.81] failed to connect: Connection refused
+2017-04-09T22:46:24+0000 [SSHChannel None (34) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98892,91.230.47.81] sending close 34
+2017-04-09T22:46:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 112.160.218.161:39176 (10.8.41.81:2223) [session: TT216280]
+2017-04-09T22:46:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:35295 (10.8.41.81:2223) [session: TT216281]
+2017-04-09T22:46:48+0000 [CowrieTelnetTransport,216280,112.160.218.161] first time for 112.160.218.161, need: 1
+2017-04-09T22:46:48+0000 [CowrieTelnetTransport,216280,112.160.218.161] login attempt: 1
+2017-04-09T22:46:51+0000 [CowrieTelnetTransport,216280,112.160.218.161] login attempt [ubnt/ubnt] succeeded
+2017-04-09T22:46:53+0000 [CowrieTelnetTransport,216280,112.160.218.161] Opening TTY Log: log/tty/20170409-224653-None-216280i.log
+2017-04-09T22:46:53+0000 [CowrieTelnetTransport,216280,112.160.218.161] Warning: state changed and new state returned
+2017-04-09T22:46:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:38512 (10.8.41.81:2223) [session: TT216282]
+2017-04-09T22:46:53+0000 [CowrieTelnetTransport,216280,112.160.218.161] CMD: enable
+2017-04-09T22:46:53+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command found: enable 
+2017-04-09T22:46:53+0000 [CowrieTelnetTransport,216280,112.160.218.161] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-09T22:46:53+0000 [CowrieTelnetTransport,216280,112.160.218.161] CMD: shell
+2017-04-09T22:46:53+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command not found: shell
+2017-04-09T22:46:53+0000 [CowrieTelnetTransport,216280,112.160.218.161] CMD: sh
+2017-04-09T22:46:53+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command found: sh 
+2017-04-09T22:46:53+0000 [CowrieTelnetTransport,216280,112.160.218.161] CMD: cat /proc/mounts; /bin/busybox HZHUX
+2017-04-09T22:46:53+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command found: cat /proc/mounts
+2017-04-09T22:46:53+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command found: /bin/busybox HZHUX
+2017-04-09T22:46:54+0000 [CowrieTelnetTransport,216280,112.160.218.161] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox HZHUX
+2017-04-09T22:46:54+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command found: cd /dev/shm
+2017-04-09T22:46:54+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command found: cat .s
+2017-04-09T22:46:54+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command found: cp /bin/echo .s
+2017-04-09T22:46:54+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command found: /bin/busybox HZHUX
+2017-04-09T22:46:54+0000 [CowrieTelnetTransport,216280,112.160.218.161] CMD: nc; wget; /bin/busybox HZHUX
+2017-04-09T22:46:54+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command not found: nc
+2017-04-09T22:46:54+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command found: wget 
+2017-04-09T22:46:54+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command found: /bin/busybox HZHUX
+2017-04-09T22:46:54+0000 [CowrieTelnetTransport,216280,112.160.218.161] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-04-09T22:46:54+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command not found: dd bs=52 count=1 if=.s
+2017-04-09T22:46:54+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command found: cat /dev/shm/.s
+2017-04-09T22:46:55+0000 [CowrieTelnetTransport,216280,112.160.218.161] CMD: /bin/busybox HZHUX
+2017-04-09T22:46:55+0000 [CowrieTelnetTransport,216280,112.160.218.161] Command found: /bin/busybox HZHUX
+2017-04-09T22:46:55+0000 [CowrieTelnetTransport,216281,198.7.62.232] login attempt: 9497
+2017-04-09T22:46:55+0000 [CowrieTelnetTransport,216281,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-09T22:46:57+0000 [CowrieTelnetTransport,216281,198.7.62.232] login attempt [admin/5up] failed
+2017-04-09T22:46:58+0000 [CowrieTelnetTransport,216281,198.7.62.232] Warning: state changed and new state returned
+2017-04-09T22:46:58+0000 [CowrieTelnetTransport,216281,198.7.62.232] login attempt: 9498
+2017-04-09T22:46:58+0000 [CowrieTelnetTransport,216281,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-09T22:47:00+0000 [CowrieTelnetTransport,216281,198.7.62.232] login attempt [enable/shell] failed
+2017-04-09T22:47:00+0000 [CowrieTelnetTransport,216281,198.7.62.232] Warning: state changed and new state returned
+2017-04-09T22:47:01+0000 [CowrieTelnetTransport,216281,198.7.62.232] login attempt: 9499
+2017-04-09T22:47:01+0000 [CowrieTelnetTransport,216281,198.7.62.232] login return, expect: [Admin/atc456]
