@@ -7657,3 +7657,47 @@
 2017-04-10T02:53:00+0000 [HoneyPotSSHTransport,98961,185.145.252.26] NEW KEYS
 2017-04-10T02:53:00+0000 [HoneyPotSSHTransport,98961,185.145.252.26] starting service 'ssh-userauth'
 2017-04-10T02:53:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98961,185.145.252.26] 'user' trying auth 'none'
+2017-04-10T02:53:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98961,185.145.252.26] 'user' authenticated with 'none'
+2017-04-10T02:53:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,98961,185.145.252.26] starting service 'ssh-connection'
+2017-04-10T02:53:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98961,185.145.252.26] got channel 'direct-tcpip' request
+2017-04-10T02:53:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,98961,185.145.252.26] direct-tcp connection request to google.com:80 from localhost:8080
+2017-04-10T02:53:02+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98961,185.145.252.26] direct-tcp forward to google.com:80 with data 'GET /\r\n'
+2017-04-10T02:53:02+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98961,185.145.252.26] failed to connect: Connection refused
+2017-04-10T02:53:02+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98961,185.145.252.26] sending close 0
+2017-04-10T02:53:02+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,98961,185.145.252.26] remote eof
+2017-04-10T02:53:02+0000 [HoneyPotSSHTransport,98961,185.145.252.26] avatar user logging out
+2017-04-10T02:53:02+0000 [HoneyPotSSHTransport,98961,185.145.252.26] connection lost
+2017-04-10T02:53:02+0000 [HoneyPotSSHTransport,98961,185.145.252.26] Connection lost after 2 seconds
+2017-04-10T02:53:06+0000 [CowrieTelnetTransport,217026,90.178.13.223] Connection lost after 31 seconds
+2017-04-10T02:53:06+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 90.178.13.223:33754 (10.8.41.81:2223) [session: TT217027]
+2017-04-10T02:53:15+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 203.29.87.8:48402 (10.8.41.81:2223) [session: TT217028]
+2017-04-10T02:53:17+0000 [CowrieTelnetTransport,217028,203.29.87.8] first time for 203.29.87.8, need: 1
+2017-04-10T02:53:17+0000 [CowrieTelnetTransport,217028,203.29.87.8] login attempt: 1
+2017-04-10T02:53:19+0000 [CowrieTelnetTransport,217028,203.29.87.8] login attempt [root/anko] succeeded
+2017-04-10T02:53:21+0000 [CowrieTelnetTransport,217028,203.29.87.8] Opening TTY Log: log/tty/20170410-025321-None-217028i.log
+2017-04-10T02:53:21+0000 [CowrieTelnetTransport,217028,203.29.87.8] Warning: state changed and new state returned
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] CMD: enable
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command found: enable 
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] CMD: shell
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command not found: shell
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] CMD: sh
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command found: sh 
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] CMD: cat /proc/mounts; /bin/busybox XVWCE
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command found: cat /proc/mounts
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command found: /bin/busybox XVWCE
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox XVWCE
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command found: cd /dev/shm
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command found: cat .s
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command found: cp /bin/echo .s
+2017-04-10T02:53:22+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command found: /bin/busybox XVWCE
+2017-04-10T02:53:23+0000 [CowrieTelnetTransport,217028,203.29.87.8] CMD: nc; wget; /bin/busybox XVWCE
+2017-04-10T02:53:23+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command not found: nc
+2017-04-10T02:53:23+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command found: wget 
+2017-04-10T02:53:23+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command found: /bin/busybox XVWCE
+2017-04-10T02:53:23+0000 [CowrieTelnetTransport,217028,203.29.87.8] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-04-10T02:53:23+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command not found: dd bs=52 count=1 if=.s
+2017-04-10T02:53:23+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command found: cat /dev/shm/.s
+2017-04-10T02:53:23+0000 [CowrieTelnetTransport,217028,203.29.87.8] CMD: /bin/busybox XVWCE
+2017-04-10T02:53:23+0000 [CowrieTelnetTransport,217028,203.29.87.8] Command found: /bin/busybox XVWCE
+2017-04-10T02:53:37+0000 [CowrieTelnetTransport,217027,90.178.13.223] Connection lost after 30 seconds
