@@ -970,3 +970,44 @@
 2017-04-11T00:22:30+0000 [CowrieTelnetTransport,221238,46.166.185.62] login return, expect: [admin/]
 2017-04-11T00:22:32+0000 [CowrieTelnetTransport,221238,46.166.185.62] login attempt [sh//bin/busybox ECCHI] failed
 2017-04-11T00:22:32+0000 [CowrieTelnetTransport,221238,46.166.185.62] Warning: state changed and new state returned
+2017-04-11T00:23:11+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 117.79.156.130:46831 (10.8.41.81:2222) [session: 1e3e4494]
+2017-04-11T00:23:11+0000 [HoneyPotSSHTransport,103043,117.79.156.130] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-11T00:23:11+0000 [HoneyPotSSHTransport,103043,117.79.156.130] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-11T00:23:11+0000 [HoneyPotSSHTransport,103043,117.79.156.130] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T00:23:11+0000 [HoneyPotSSHTransport,103043,117.79.156.130] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T00:23:12+0000 [HoneyPotSSHTransport,103043,117.79.156.130] NEW KEYS
+2017-04-11T00:23:12+0000 [HoneyPotSSHTransport,103043,117.79.156.130] starting service 'ssh-userauth'
+2017-04-11T00:23:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,103043,117.79.156.130] 'ff' trying auth 'password'
+2017-04-11T00:23:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,103043,117.79.156.130] login attempt: 55
+2017-04-11T00:23:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,103043,117.79.156.130] login return, expect: [steam/steam]
+2017-04-11T00:23:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,103043,117.79.156.130] login attempt [ff/ff] failed
+2017-04-11T00:23:19+0000 [HoneyPotSSHTransport,103043,117.79.156.130] connection lost
+2017-04-11T00:23:19+0000 [HoneyPotSSHTransport,103043,117.79.156.130] Connection lost after 8 seconds
+2017-04-11T00:23:19+0000 [CowrieTelnetTransport,221237,46.166.185.83] Connection lost after 87 seconds
+2017-04-11T00:23:19+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 46.166.185.62:54127 (10.8.41.81:2223) [session: TT221240]
+2017-04-11T00:23:20+0000 [-] 'ff' failed auth 'password'
+2017-04-11T00:23:20+0000 [-] unauthorized login: 
+2017-04-11T00:23:20+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-04-11T00:23:20+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-04-11T00:23:20+0000 [CowrieTelnetTransport,221238,46.166.185.62] Connection lost after 76 seconds
+2017-04-11T00:23:21+0000 [CowrieTelnetTransport,221239,46.166.185.83] Connection lost after 54 seconds
+2017-04-11T00:23:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 46.166.185.62:36079 (10.8.41.81:2223) [session: TT221241]
+2017-04-11T00:23:51+0000 [CowrieTelnetTransport,221240,46.166.185.62] Connection lost after 32 seconds
