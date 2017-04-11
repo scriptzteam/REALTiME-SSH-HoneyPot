@@ -3130,3 +3130,100 @@
 2017-04-11T20:14:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104954,190.196.145.74] 'root' trying auth 'password'
 2017-04-11T20:14:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104954,190.196.145.74] login attempt: 506
 2017-04-11T20:14:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104954,190.196.145.74] login return, expect: [doctor/doctor]
+2017-04-11T20:14:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104954,190.196.145.74] login attempt [root/service] failed
+2017-04-11T20:14:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.54.188.72:25 from localhost:5556
+2017-04-11T20:14:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.54.188.72:25 from localhost:5556
+2017-04-11T20:14:05+0000 [-] 'root' failed auth 'password'
+2017-04-11T20:14:05+0000 [-] unauthorized login: 
+2017-04-11T20:14:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104954,190.196.145.74] 'root' trying auth 'password'
+2017-04-11T20:14:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104954,190.196.145.74] login attempt: 507
+2017-04-11T20:14:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104954,190.196.145.74] login return, expect: [doctor/doctor]
+2017-04-11T20:14:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104954,190.196.145.74] login attempt [root/shadow] failed
+2017-04-11T20:14:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 212.54.42.8:25 from localhost:5556
+2017-04-11T20:14:08+0000 [HoneyPotSSHTransport,104954,190.196.145.74] connection lost
+2017-04-11T20:14:08+0000 [HoneyPotSSHTransport,104954,190.196.145.74] Connection lost after 8 seconds
+2017-04-11T20:14:08+0000 [-] 'root' failed auth 'password'
+2017-04-11T20:14:08+0000 [-] unauthorized login: 
+2017-04-11T20:14:08+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-04-11T20:14:08+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-04-11T20:14:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 144.160.159.22:25 from localhost:5556
+2017-04-11T20:14:16+0000 [SSHChannel None (72) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] remote eof
+2017-04-11T20:14:16+0000 [SSHChannel None (72) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] remote close
+2017-04-11T20:14:16+0000 [SSHChannel None (72) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] sending close 72
+2017-04-11T20:14:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 67.130.123.29:25 from localhost:5556
+2017-04-11T20:14:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 68.178.213.203:25 from localhost:5556
+2017-04-11T20:14:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.55.37.104:25 from localhost:5556
+2017-04-11T20:14:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 144.160.159.22:25 from localhost:5556
+2017-04-11T20:14:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 104.44.194.234:25 from localhost:5556
+2017-04-11T20:14:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 104.44.194.231:25 from localhost:5556
+2017-04-11T20:14:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.55.33.119:25 from localhost:5556
+2017-04-11T20:14:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.54.188.72:25 from localhost:5556
+2017-04-11T20:14:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104873,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-11T20:14:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104873,91.230.47.81] direct-tcp connection request to 136.243.80.213:80 from localhost:5556
+2017-04-11T20:14:44+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104873,91.230.47.81] direct-tcp forward to 136.243.80.213:80 with data 'GET /internals/api/ip?1491941655049730818 HTTP/1.1\r\nHost: ip.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-04-11T20:14:44+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104873,91.230.47.81] failed to connect: Connection refused
+2017-04-11T20:14:44+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104873,91.230.47.81] sending close 15
+2017-04-11T20:14:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.55.92.136:25 from localhost:5556
+2017-04-11T20:14:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 104.44.194.231:25 from localhost:5556
+2017-04-11T20:14:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 207.46.8.167:25 from localhost:5556
+2017-04-11T20:14:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.55.33.119:25 from localhost:5556
+2017-04-11T20:14:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.55.37.72:25 from localhost:5556
+2017-04-11T20:14:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.55.33.119:25 from localhost:5556
+2017-04-11T20:14:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.54.188.72:25 from localhost:5556
+2017-04-11T20:14:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.55.92.184:25 from localhost:5556
+2017-04-11T20:14:54+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:54+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.55.92.168:25 from localhost:5556
+2017-04-11T20:14:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 104.44.194.235:25 from localhost:5556
+2017-04-11T20:14:58+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 221.229.160.210:51702 (10.8.41.81:2222) [session: 86a61ef9]
+2017-04-11T20:14:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 104.44.194.234:25 from localhost:5556
+2017-04-11T20:14:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:14:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 104.44.194.236:25 from localhost:5556
+2017-04-11T20:14:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104814,91.195.103.196] got channel 'direct-tcpip' request
+2017-04-11T20:14:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104814,91.195.103.196] direct-tcp connection request to 217.76.128.100:587 from localhost:5556
+2017-04-11T20:14:59+0000 [HoneyPotSSHTransport,104955,221.229.160.210] Remote SSH version: SSH-2.0-PUTTY
+2017-04-11T20:14:59+0000 [HoneyPotSSHTransport,104955,221.229.160.210] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-11T20:14:59+0000 [HoneyPotSSHTransport,104955,221.229.160.210] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T20:14:59+0000 [HoneyPotSSHTransport,104955,221.229.160.210] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T20:15:00+0000 [HoneyPotSSHTransport,104955,221.229.160.210] NEW KEYS
+2017-04-11T20:15:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-11T20:15:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104933,91.230.47.82] direct-tcp connection request to 65.55.33.119:25 from localhost:5556
