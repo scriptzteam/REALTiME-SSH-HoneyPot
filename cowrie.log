@@ -2329,3 +2329,52 @@
 2017-04-11T17:13:01+0000 [HoneyPotSSHTransport,104736,122.225.27.134] starting service 'ssh-userauth'
 2017-04-11T17:13:01+0000 [HoneyPotSSHTransport,104736,122.225.27.134] connection lost
 2017-04-11T17:13:01+0000 [HoneyPotSSHTransport,104736,122.225.27.134] Connection lost after 2 seconds
+2017-04-11T17:14:22+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 122.225.27.134:9224 (10.8.41.81:2222) [session: 270d97e0]
+2017-04-11T17:14:22+0000 [HoneyPotSSHTransport,104737,122.225.27.134] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-04-11T17:14:22+0000 [HoneyPotSSHTransport,104737,122.225.27.134] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-11T17:14:22+0000 [HoneyPotSSHTransport,104737,122.225.27.134] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T17:14:22+0000 [HoneyPotSSHTransport,104737,122.225.27.134] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T17:14:23+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 117.1.77.230:59498 (10.8.41.81:2223) [session: TT223599]
+2017-04-11T17:14:23+0000 [HoneyPotSSHTransport,104737,122.225.27.134] NEW KEYS
+2017-04-11T17:14:23+0000 [HoneyPotSSHTransport,104737,122.225.27.134] starting service 'ssh-userauth'
+2017-04-11T17:14:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104737,122.225.27.134] 'workpress' trying auth 'password'
+2017-04-11T17:14:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104737,122.225.27.134] login attempt: 68
+2017-04-11T17:14:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104737,122.225.27.134] login return, expect: [xerox/xerox123]
+2017-04-11T17:14:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104737,122.225.27.134] login attempt [workpress/workpress] failed
+2017-04-11T17:14:27+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 84.200.92.145:39534 (10.8.41.81:2222) [session: c9ff8025]
+2017-04-11T17:14:27+0000 [HoneyPotSSHTransport,104738,84.200.92.145] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-11T17:14:27+0000 [HoneyPotSSHTransport,104738,84.200.92.145] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-11T17:14:27+0000 [HoneyPotSSHTransport,104738,84.200.92.145] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T17:14:27+0000 [HoneyPotSSHTransport,104738,84.200.92.145] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T17:14:27+0000 [HoneyPotSSHTransport,104737,122.225.27.134] connection lost
+2017-04-11T17:14:27+0000 [HoneyPotSSHTransport,104737,122.225.27.134] Connection lost after 5 seconds
+2017-04-11T17:14:28+0000 [-] 'workpress' failed auth 'password'
+2017-04-11T17:14:28+0000 [-] unauthorized login: 
+2017-04-11T17:14:28+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-04-11T17:14:28+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-04-11T17:14:29+0000 [HoneyPotSSHTransport,104738,84.200.92.145] connection lost
+2017-04-11T17:14:29+0000 [HoneyPotSSHTransport,104738,84.200.92.145] Connection lost after 2 seconds
+2017-04-11T17:14:44+0000 [CowrieTelnetTransport,223599,117.1.77.230] Connection lost after 21 seconds
+2017-04-11T17:14:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104509,91.230.47.69] got channel 'direct-tcpip' request
+2017-04-11T17:14:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104509,91.230.47.69] direct-tcp connection request to 23.40.208.124:443 from localhost:5556
+2017-04-11T17:14:46+0000 [SSHChannel None (42) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104509,91.230.47.69] direct-tcp forward to 23.40.208.124:443 with data '\x16\x03\x01\x01E\x01\x00\x01A\x03\x01X\xed\x0e\xed\x05P\x97\xc6\xf7\xb9&\x82\xea\xfe*\xa9\x84\x0fW\x18\xd4M\x9c,\xb3s97[\x12\xed\xae\x00\x00\x18\xc0\x14\xc0\x13\x005\x00/\xc0\n\xc0\t\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x01\x00\x00\x00\x00\x1f\x00\x1d\x00\x00\x1aauth.np.ac.playstation.net\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\xc0\x00\x00\x19\x9e1\x0b\x0f$*\x8a\xddS*-y\xa7\xfb\xda\xf8\xea\xd5\xb9\xafT\xcc\x85\xdd\x19P/\xd9V\xbbGq/\xa1\xd6\xe6\xcdj^\xfe@M\x88y\xc0FDV\x17\xfb\xd5\x1d\xb7\x8e\xc4\xa3@\xe3\xf8(4H\xeb\xaa)6#^\xb8}Lp\x19\xcd\x0f\xf1\xa8R4wD\xc8-T\xf4\xc5\xa2}p\x8b\x829a#8g\n\x91\xfd\x82\xa3\x0e\xd8]"\xbc\x9a\x1d\xd1\xe6\xb8\xc9jN-\x99\x98\xf83\xbf\xa3\xb2\xbf\xbd\xf8\xe6\xb2\x00d\r\xa2\x03!0]\r\xf9\xd2\xda\xfa\xc0Gp\xcc\xbdGS\x80\x81\x85I\x98K^\x07\xe4\xbe\xb3\xc7\x97R\xde\xd9C\x07\x0b8\x9c\xab8\x1e+\x0f>\xa3:\x1b]\xa6\x9a\x1e\xf8]\x12\xa8\xfa\x88\xdb\x96\x00\x17\x00\x00\xff\x01\x00\x01\x00'
+2017-04-11T17:14:46+0000 [SSHChannel None (42) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104509,91.230.47.69] failed to connect: Connection refused
+2017-04-11T17:14:46+0000 [SSHChannel None (42) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104509,91.230.47.69] sending close 42
