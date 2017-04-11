@@ -2252,3 +2252,62 @@
 	    self.transport.write(encPacket)
 	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
 	
+2017-04-11T14:44:04+0000 [HoneyPotSSHTransport,104318,91.195.103.218] avatar admin logging out
+2017-04-11T14:44:04+0000 [HoneyPotSSHTransport,104318,91.195.103.218] connection lost
+2017-04-11T14:44:04+0000 [HoneyPotSSHTransport,104318,91.195.103.218] Connection lost after 11446 seconds
+2017-04-11T14:44:27+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 122.225.27.134:9224 (10.8.41.81:2222) [session: e39950d8]
+2017-04-11T14:44:28+0000 [HoneyPotSSHTransport,104498,122.225.27.134] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-04-11T14:44:28+0000 [HoneyPotSSHTransport,104498,122.225.27.134] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-11T14:44:28+0000 [HoneyPotSSHTransport,104498,122.225.27.134] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T14:44:28+0000 [HoneyPotSSHTransport,104498,122.225.27.134] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T14:44:29+0000 [HoneyPotSSHTransport,104498,122.225.27.134] NEW KEYS
+2017-04-11T14:44:30+0000 [HoneyPotSSHTransport,104498,122.225.27.134] starting service 'ssh-userauth'
+2017-04-11T14:44:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104498,122.225.27.134] 'nodejs' trying auth 'password'
+2017-04-11T14:44:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104498,122.225.27.134] login attempt: 16
+2017-04-11T14:44:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104498,122.225.27.134] login return, expect: [xerox/xerox123]
+2017-04-11T14:44:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104498,122.225.27.134] login attempt [nodejs/nodejs] failed
+2017-04-11T14:44:33+0000 [HoneyPotSSHTransport,104498,122.225.27.134] connection lost
+2017-04-11T14:44:33+0000 [HoneyPotSSHTransport,104498,122.225.27.134] Connection lost after 5 seconds
+2017-04-11T14:44:34+0000 [-] 'nodejs' failed auth 'password'
+2017-04-11T14:44:34+0000 [-] unauthorized login: 
+2017-04-11T14:44:34+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-04-11T14:44:34+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-04-11T14:44:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 212.175.7.194:60649 (10.8.41.81:2222) [session: a41c9eb3]
+2017-04-11T14:44:48+0000 [HoneyPotSSHTransport,104499,212.175.7.194] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-04-11T14:44:48+0000 [HoneyPotSSHTransport,104499,212.175.7.194] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-04-11T14:44:48+0000 [HoneyPotSSHTransport,104499,212.175.7.194] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-04-11T14:44:48+0000 [HoneyPotSSHTransport,104499,212.175.7.194] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-04-11T14:44:48+0000 [HoneyPotSSHTransport,104499,212.175.7.194] NEW KEYS
+2017-04-11T14:44:48+0000 [HoneyPotSSHTransport,104499,212.175.7.194] starting service 'ssh-userauth'
+2017-04-11T14:44:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104499,212.175.7.194] 'root' trying auth 'password'
+2017-04-11T14:44:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104499,212.175.7.194] first time for 212.175.7.194, need: 1
+2017-04-11T14:44:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104499,212.175.7.194] login attempt: 1
+2017-04-11T14:44:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104499,212.175.7.194] login attempt [root/password] succeeded
+2017-04-11T14:44:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104499,212.175.7.194] 'root' authenticated with 'password'
+2017-04-11T14:44:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104499,212.175.7.194] starting service 'ssh-connection'
+2017-04-11T14:44:55+0000 [HoneyPotSSHTransport,104499,212.175.7.194] avatar root logging out
+2017-04-11T14:44:55+0000 [HoneyPotSSHTransport,104499,212.175.7.194] connection lost
+2017-04-11T14:44:55+0000 [HoneyPotSSHTransport,104499,212.175.7.194] Connection lost after 6 seconds
+2017-04-11T14:44:56+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 195.22.127.83:44615 (10.8.41.81:2222) [session: 77708f41]
+2017-04-11T14:44:56+0000 [HoneyPotSSHTransport,104500,195.22.127.83] Remote SSH version: SSH-2.0-sshlib-0.2
+2017-04-11T14:44:56+0000 [HoneyPotSSHTransport,104500,195.22.127.83] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-04-11T14:44:56+0000 [HoneyPotSSHTransport,104500,195.22.127.83] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-04-11T14:44:56+0000 [HoneyPotSSHTransport,104500,195.22.127.83] incoming: 'aes128-cbc' 'hmac-md5' 'none'
