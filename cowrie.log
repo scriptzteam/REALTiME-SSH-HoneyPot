@@ -4039,3 +4039,84 @@
 	    self.transport.write(encPacket)
 	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
 	
+2017-04-11T15:13:02+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 113.183.61.104:40270 (10.8.41.81:2223) [session: TT223406]
+2017-04-11T15:13:03+0000 [CowrieTelnetTransport,223406,113.183.61.104] first time for 113.183.61.104, need: 1
+2017-04-11T15:13:03+0000 [CowrieTelnetTransport,223406,113.183.61.104] login attempt: 1
+2017-04-11T15:13:06+0000 [CowrieTelnetTransport,223406,113.183.61.104] login attempt [ubnt/ubnt] succeeded
+2017-04-11T15:13:07+0000 [CowrieTelnetTransport,223406,113.183.61.104] Opening TTY Log: log/tty/20170411-151307-None-223406i.log
+2017-04-11T15:13:07+0000 [CowrieTelnetTransport,223406,113.183.61.104] Warning: state changed and new state returned
+2017-04-11T15:13:08+0000 [CowrieTelnetTransport,223406,113.183.61.104] CMD: enable
+2017-04-11T15:13:08+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command found: enable 
+2017-04-11T15:13:08+0000 [CowrieTelnetTransport,223406,113.183.61.104] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-11T15:13:08+0000 [CowrieTelnetTransport,223406,113.183.61.104] CMD: shell
+2017-04-11T15:13:08+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command not found: shell
+2017-04-11T15:13:08+0000 [CowrieTelnetTransport,223406,113.183.61.104] CMD: sh
+2017-04-11T15:13:08+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command found: sh 
+2017-04-11T15:13:08+0000 [CowrieTelnetTransport,223406,113.183.61.104] CMD: cat /proc/mounts; /bin/busybox HVPBL
+2017-04-11T15:13:08+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command found: cat /proc/mounts
+2017-04-11T15:13:08+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command found: /bin/busybox HVPBL
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox HVPBL
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command found: cd /dev/shm
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command found: cat .s
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command found: cp /bin/echo .s
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command found: /bin/busybox HVPBL
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] CMD: nc; wget; /bin/busybox HVPBL
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command not found: nc
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command found: wget 
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command found: /bin/busybox HVPBL
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command not found: dd bs=52 count=1 if=.s
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command found: cat /dev/shm/.s
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] CMD: /bin/busybox HVPBL
+2017-04-11T15:13:09+0000 [CowrieTelnetTransport,223406,113.183.61.104] Command found: /bin/busybox HVPBL
+2017-04-11T15:13:12+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104506,134.19.187.78] remote eof
+2017-04-11T15:13:12+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104506,134.19.187.78] remote close
+2017-04-11T15:13:12+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104506,134.19.187.78] sending close 27
+2017-04-11T15:13:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104506,134.19.187.78] got channel 'direct-tcpip' request
+2017-04-11T15:13:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104506,134.19.187.78] direct-tcp connection request to 74.125.30.26:25 from localhost:5556
+2017-04-11T15:13:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 190.196.145.74:49429 (10.8.41.81:2222) [session: 658b9745]
+2017-04-11T15:13:30+0000 [HoneyPotSSHTransport,104544,190.196.145.74] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-11T15:13:30+0000 [HoneyPotSSHTransport,104544,190.196.145.74] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-11T15:13:30+0000 [HoneyPotSSHTransport,104544,190.196.145.74] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T15:13:30+0000 [HoneyPotSSHTransport,104544,190.196.145.74] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T15:13:30+0000 [HoneyPotSSHTransport,104544,190.196.145.74] NEW KEYS
+2017-04-11T15:13:30+0000 [HoneyPotSSHTransport,104544,190.196.145.74] starting service 'ssh-userauth'
+2017-04-11T15:13:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104544,190.196.145.74] 'root' trying auth 'password'
+2017-04-11T15:13:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104544,190.196.145.74] login attempt: 301
+2017-04-11T15:13:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104544,190.196.145.74] login return, expect: [doctor/doctor]
+2017-04-11T15:13:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104544,190.196.145.74] login attempt [root/desktop] failed
+2017-04-11T15:13:36+0000 [-] 'root' failed auth 'password'
+2017-04-11T15:13:36+0000 [-] unauthorized login: 
+2017-04-11T15:13:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104544,190.196.145.74] 'root' trying auth 'password'
+2017-04-11T15:13:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104544,190.196.145.74] login attempt: 302
+2017-04-11T15:13:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104544,190.196.145.74] login return, expect: [doctor/doctor]
+2017-04-11T15:13:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104544,190.196.145.74] login attempt [root/dexter] failed
+2017-04-11T15:13:39+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104506,134.19.187.78] remote eof
+2017-04-11T15:13:39+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104506,134.19.187.78] remote close
+2017-04-11T15:13:39+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104506,134.19.187.78] sending close 28
+2017-04-11T15:13:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104506,134.19.187.78] got channel 'direct-tcpip' request
+2017-04-11T15:13:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104506,134.19.187.78] direct-tcp connection request to 74.125.143.27:25 from localhost:5556
+2017-04-11T15:13:40+0000 [HoneyPotSSHTransport,104544,190.196.145.74] connection lost
+2017-04-11T15:13:40+0000 [HoneyPotSSHTransport,104544,190.196.145.74] Connection lost after 10 seconds
+2017-04-11T15:13:40+0000 [-] 'root' failed auth 'password'
+2017-04-11T15:13:40+0000 [-] unauthorized login: 
+2017-04-11T15:13:40+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-04-11T15:13:40+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
