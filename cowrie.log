@@ -2969,3 +2969,46 @@
 2017-04-11T17:23:49+0000 [SSHChannel None (45) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104509,91.230.47.69] failed to connect: Connection refused
 2017-04-11T17:23:49+0000 [SSHChannel None (45) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104509,91.230.47.69] sending close 45
 2017-04-11T17:24:01+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 51.254.140.20:39550 (10.8.41.81:2222) [session: b83773ef]
+2017-04-11T17:24:01+0000 [HoneyPotSSHTransport,104756,51.254.140.20] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-04-11T17:24:01+0000 [HoneyPotSSHTransport,104756,51.254.140.20] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-11T17:24:01+0000 [HoneyPotSSHTransport,104756,51.254.140.20] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T17:24:01+0000 [HoneyPotSSHTransport,104756,51.254.140.20] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T17:24:05+0000 [HoneyPotSSHTransport,104756,51.254.140.20] connection lost
+2017-04-11T17:24:05+0000 [HoneyPotSSHTransport,104756,51.254.140.20] Connection lost after 3 seconds
+2017-04-11T17:24:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104570,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-11T17:24:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104570,91.230.47.81] direct-tcp connection request to 107.6.186.178:80 from localhost:5556
+2017-04-11T17:24:07+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104570,91.230.47.81] direct-tcp forward to 107.6.186.178:80 with data 'GET /internals/api/ip?1491931422048578061 HTTP/1.1\r\nHost: ip5.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-04-11T17:24:07+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104570,91.230.47.81] failed to connect: Connection refused
+2017-04-11T17:24:07+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104570,91.230.47.81] sending close 24
+2017-04-11T17:24:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104506,134.19.187.78] got channel 'direct-tcpip' request
+2017-04-11T17:24:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104506,134.19.187.78] direct-tcp connection request to 74.125.68.26:25 from localhost:5556
+2017-04-11T17:24:48+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 186.91.44.120:4142 (10.8.41.81:2223) [session: TT223605]
+2017-04-11T17:24:49+0000 [CowrieTelnetTransport,223605,186.91.44.120] first time for 186.91.44.120, need: 1
+2017-04-11T17:24:49+0000 [CowrieTelnetTransport,223605,186.91.44.120] login attempt: 1
+2017-04-11T17:24:52+0000 [CowrieTelnetTransport,223605,186.91.44.120] login attempt [admin/1111] succeeded
+2017-04-11T17:24:53+0000 [CowrieTelnetTransport,223605,186.91.44.120] Opening TTY Log: log/tty/20170411-172453-None-223605i.log
+2017-04-11T17:24:53+0000 [CowrieTelnetTransport,223605,186.91.44.120] Warning: state changed and new state returned
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] CMD: enable
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command found: enable 
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] CMD: shell
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command not found: shell
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] CMD: sh
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command found: sh 
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] CMD: cat /proc/mounts; /bin/busybox ZZIXA
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command found: cat /proc/mounts
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command found: /bin/busybox ZZIXA
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox ZZIXA
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command found: cd /dev/shm
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command found: cat .s
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command found: cp /bin/echo .s
+2017-04-11T17:24:54+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command found: /bin/busybox ZZIXA
+2017-04-11T17:24:55+0000 [CowrieTelnetTransport,223605,186.91.44.120] CMD: nc; wget; /bin/busybox ZZIXA
+2017-04-11T17:24:55+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command not found: nc
+2017-04-11T17:24:55+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command found: wget 
+2017-04-11T17:24:55+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command found: /bin/busybox ZZIXA
+2017-04-11T17:24:55+0000 [CowrieTelnetTransport,223605,186.91.44.120] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-04-11T17:24:55+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command not found: dd bs=52 count=1 if=.s
+2017-04-11T17:24:55+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command found: cat /dev/shm/.s
+2017-04-11T17:24:55+0000 [CowrieTelnetTransport,223605,186.91.44.120] CMD: /bin/busybox ZZIXA
+2017-04-11T17:24:55+0000 [CowrieTelnetTransport,223605,186.91.44.120] Command found: /bin/busybox ZZIXA
