@@ -301,3 +301,48 @@
 	    self.transport.write(encPacket)
 	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
 	
+2017-04-11T12:01:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104326,91.195.103.220] got channel 'direct-tcpip' request
+2017-04-11T12:01:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104326,91.195.103.220] direct-tcp connection request to 104.81.107.236:443 from localhost:5556
+2017-04-11T12:01:02+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104326,91.195.103.220] direct-tcp forward to 104.81.107.236:443 with data '\x16\x03\x01\x01E\x01\x00\x01A\x03\x01X\xec\xc5g\xbf\xf8xt\xc5Q\x95\x9d\xab\xe0\xd6\x0e\xb0\xed\x91\xa9\xdf\xe6\x9c\x0c\xe4\x99fczfGP\x00\x00\x18\xc0\x14\xc0\x13\x005\x00/\xc0\n\xc0\t\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x01\x00\x00\x00\x00\x1f\x00\x1d\x00\x00\x1aauth.np.ac.playstation.net\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\xc0\x00\x00\x19\x9e\x9dy\xaai\xc1T\xd4\xbe\x10\x07c\xfe!\x8a^3\x0b\x95u\xce\xcc\x8b)\xfc\xfd\\%\x07Xex;\xa2\rk\x9c\xfa\xb8\xdcX"\xf0kC>\x97d\xa1G\xaapf"\xa7,g\xc9\x85\x94B\x83\xdd\x8f\xe2\xde4V\xbd\xd9\xd2\xa5\x82\x16\xde\xc7e\xc3\xf4\n\xba\xf4\xceRQq\x04\xd1\xda7\n7\xb8jl\xae\x94\x96i\xc3X\xa2\xff2\xefI\xd2\x8aS\xbc$UO\xe69f\xbcz\xe2\xf7\xa5\x84k\xd8\xfd\xf5\xc6l\xe3\xc0\xfa\xb0S\x1dO\xe9)\x0f\xb4\xa8DT\xcd\n\x04\x04u\xa9\xca\x1c_|K\x9b\x8c.\xcfZtr\x14R\x0c\xcd\xdf\x9at\xfc]\x9fB\x0eY\xa3c\xfd_\xd1v\xa4\xb4\xf3\x95\xaa\xb0\x90\xc8\xa1\xa5\x00\x17\x00\x00\xff\x01\x00\x01\x00'
+2017-04-11T12:01:02+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104326,91.195.103.220] failed to connect: Connection refused
+2017-04-11T12:01:02+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104326,91.195.103.220] sending close 5
+2017-04-11T12:01:20+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 190.196.145.74:60134 (10.8.41.81:2222) [session: 745da2ad]
+2017-04-11T12:01:20+0000 [HoneyPotSSHTransport,104341,190.196.145.74] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-11T12:01:20+0000 [HoneyPotSSHTransport,104341,190.196.145.74] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-11T12:01:20+0000 [HoneyPotSSHTransport,104341,190.196.145.74] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T12:01:20+0000 [HoneyPotSSHTransport,104341,190.196.145.74] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-11T12:01:21+0000 [HoneyPotSSHTransport,104341,190.196.145.74] NEW KEYS
+2017-04-11T12:01:21+0000 [HoneyPotSSHTransport,104341,190.196.145.74] starting service 'ssh-userauth'
+2017-04-11T12:01:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104341,190.196.145.74] 'james' trying auth 'password'
+2017-04-11T12:01:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104341,190.196.145.74] login attempt: 154
+2017-04-11T12:01:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104341,190.196.145.74] login return, expect: [doctor/doctor]
+2017-04-11T12:01:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104341,190.196.145.74] login attempt [james/james] failed
+2017-04-11T12:01:24+0000 [HoneyPotSSHTransport,104341,190.196.145.74] connection lost
+2017-04-11T12:01:24+0000 [HoneyPotSSHTransport,104341,190.196.145.74] Connection lost after 4 seconds
+2017-04-11T12:01:25+0000 [-] 'james' failed auth 'password'
+2017-04-11T12:01:25+0000 [-] unauthorized login: 
+2017-04-11T12:01:25+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-04-11T12:01:25+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-04-11T12:01:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104316,91.230.47.72] got channel 'direct-tcpip' request
+2017-04-11T12:01:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104316,91.230.47.72] direct-tcp connection request to 87.240.165.86:443 from localhost:5556
+2017-04-11T12:01:50+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104316,91.230.47.72] direct-tcp forward to 87.240.165.86:443 with data '\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x03}\\\xdb\xc8\x9av9\xd7\xb6\x852\x99\xf6D(\xd0\x04>\x9c)\xcc\xea\x18\xa19{\xb6\xa8\xf5\xa3\xa8\n\x00\x00\xa0\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0\n\xc0"\xc0!\x00\xa3\x00\x9f\x00k\x00j\x009\x008\x00\x88\x00\x87\xc02\xc0.\xc0*\xc0&\xc0\x0f\xc0\x05\x00\x9d\x00=\x005\x00\x84\xc0\x12\xc0\x08\xc0\x1c\xc0\x1b\x00\x16\x00\x13\xc0\r\xc0\x03\x00\n\xc0/\xc0+\xc0\'\xc0#\xc0\x13\xc0\t\xc0\x1f\xc0\x1e\x00\xa2\x00\x9e\x00g\x00@\x003\x002\x00\x9a\x00\x99\x00E\x00D\xc01\xc0-\xc0)\xc0%\xc0\x0e\xc0\x04\x00\x9c\x00<\x00/\x00\x96\x00A\x00\x07\xc0\x11\xc0\x07\xc0\x0c\xc0\x02\x00\x05\x00\x04\x00\x15\x00\x12\x00\t\x00\x14\x00\x11\x00\x08\x00\x06\x00\x03\x00\xff\x01\x00\x013\x00\x00\x00\x11\x00\x0f\x00\x00\x0coauth.vk.com\x00\x0b\x00\x04\x03\x00\x01\x02\x00\n\x004\x002\x00\x0e\x00\r\x00\x19\x00\x0b\x00\x0c\x00\x18\x00\t\x00\n\x00\x16\x00\x17\x00\x08\x00\x06\x00\x07\x00\x14\x00\x15\x00\x04\x00\x05\x00\x12\x00\x13\x00\x01\x00\x02\x00\x03\x00\x0f\x00\x10\x00\x11\x00#\x00\x00\x00\r\x00 \x00\x1e\x06\x01\x06\x02\x06\x03\x05\x01\x05\x02\x05\x03\x04\x01\x04\x02\x04\x03\x03\x01\x03\x02\x03\x03\x02\x01\x02\x02\x02\x03\x00\x0f\x00\x01\x01\x00\x15\x00\xad\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2017-04-11T12:01:50+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104316,91.230.47.72] failed to connect: Connection refused
+2017-04-11T12:01:50+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104316,91.230.47.72] sending close 1
